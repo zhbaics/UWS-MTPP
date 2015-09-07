@@ -1,0 +1,700 @@
+2015-6-17 15:15:08 INFO:[guisanboot.ui.SanBootView] UWS 管理器 6.2.0 版 buildtime:   Log Level: 1
+2015-6-17 15:15:08 INFO:[guisanboot.ui.SanBootView] Restore mirror type: 2
+2015-6-17 15:15:08 INFO:[guisanboot.ui.SanBootView] global high delta: 20
+2015-6-17 15:15:08 INFO:[guisanboot.ui.SanBootView] global width delta: 20
+2015-6-17 15:15:10 INFO:[guisanboot.action.LoginAction] ########### Entering login action. 
+2015-6-17 15:15:16 INFO:[guisanboot.data.ManageDB] begin to login server.
+2015-6-17 15:15:16 INFO:[guisanboot.data.ManageDB] login server successfully.
+2015-6-17 15:15:16 INFO:[guisanboot.data.GetConfigFile]  get config file cmd: cat /etc/odybk.conf
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> INSTALL_PATH=/usr/odybk
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> SNAPDB=/usr/odybk/vsnap/db/snapdb
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> VIBOOTDB=/usr/odybk/vsnap/vidb/ibootdb
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> UIBOOTDB=/usr/odybk/vsnap/uidb/ibootdb
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> SNAPPATH=/usr/odybk/vsnap
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> SYNC_INSTALL_PATH=/usr/odysync
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> SYNCDB=/usr/odysync/db/Odysyncdb
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> ODBROOT=/usr/odybk/server/db/OdyBkinfo
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> D2DODBROOT=/usr/odybk/d2dserver/db/d2dOdyBkinfo
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> compress_cmd=/usr/bin/bzip2
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> compress_suffix=bz2
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> compress_days=7
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> admin_email=root
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> task_expired=60
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> MAX_BACKUP_LEVEL=6
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> MSPORT=6020
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> MSDB=/usr/odybk/d2dserver/db/msdb
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> IBOOTDB=/usr/odybk/server/db/ibootdb
+2015-6-17 15:15:17 DEBUG:[guisanboot.data.GetConfigFile] ========> DEBUG=1
+2015-6-17 15:15:17 INFO:[guisanboot.data.GetConfigFile]  get config file retcode: 0
+2015-6-17 15:15:17 INFO:[guisanboot.data.GetDhcpConfig]  get dhcp config cmd: cat /usr/odybk/server/conf/dhcp.conf
+2015-6-17 15:15:18 INFO:[guisanboot.data.GetDhcpConfig]  get dhcp config retcode: 0
+2015-6-17 15:15:18 INFO:[guisanboot.ui.InitApp] getting dhcp info.....
+2015-6-17 15:15:18 INFO:[guisanboot.data.ViewTextFile] viewFile cmd: cat /etc/sysconfig/customdrv/dhcpenable
+2015-6-17 15:15:19 INFO:[guisanboot.data.ViewTextFile] viewFile cmd retcode: 0
+2015-6-17 15:15:19 INFO:[guisanboot.ui.InitApp]  dhcpEnable: true
+2015-6-17 15:15:19 INFO:[guisanboot.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listglobal
+2015-6-17 15:15:20 DEBUG:[guisanboot.data.GetGlobalOptFromDHCP] ========> domain
+2015-6-17 15:15:20 DEBUG:[guisanboot.data.GetGlobalOptFromDHCP] ========> gateway
+2015-6-17 15:15:20 DEBUG:[guisanboot.data.GetGlobalOptFromDHCP] ========> os
+2015-6-17 15:15:20 INFO:[guisanboot.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP retcode: 0
+2015-6-17 15:15:20 INFO:[guisanboot.data.GetSubnetFromDHCP] getSubnet from dhcp cmd: /usr/odybk/server/bin/dhcp_set.sh getsubnetinfo
+2015-6-17 15:15:21 DEBUG:[guisanboot.data.GetSubnetFromDHCP] ========> 192.168.1.0 255.255.255.0 192.168.1.1 192.168.1.254 86400 -1
+2015-6-17 15:15:21 INFO:[guisanboot.data.GetSubnetFromDHCP] getSubnet from dhcp retcode: 0
+2015-6-17 15:15:21 INFO:[guisanboot.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listnextserver
+2015-6-17 15:15:22 DEBUG:[guisanboot.data.GetIBootSrvFromDHCP] ========> 192.168.1.253 0
+2015-6-17 15:15:22 INFO:[guisanboot.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP retcode: 0
+2015-6-17 15:15:22 INFO:[guisanboot.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2015-6-17 15:15:23 DEBUG:[guisanboot.data.GetClientFromDHCP] ======>192.168.1.28 00:0C:29:41:7F:B7 unspecified 192.168.1.253 unspecified unspecified windows emboot
+2015-6-17 15:15:23 DEBUG:[guisanboot.data.GetClientFromDHCP] ======>192.168.1.118 00:0C:29:7A:80:35 unspecified 192.168.1.253 unspecified unspecified windows emboot
+2015-6-17 15:15:23 INFO:[guisanboot.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2015-6-17 15:15:23 INFO:[guisanboot.data.GetBootHost]  get BootHost cmd: /usr/odybk/server/bin/idbmgr -clnt -prt all
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: Record:  1
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_id=16
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 16
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_name=UWSTEST1
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: UWSTEST1
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_ip=192.168.1.118
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 192.168.1.118
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_machine=x86
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: x86
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_port=2015
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 2015
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_os=WinXP
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: WinXP
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_status=Online
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: Online
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_conf=c87084f3-b816-41ec-984f-8047be82484f
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: c87084f3-b816-41ec-984f-8047be82484f
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_inited_flag=1
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 1
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_auto_dr_flag=0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_auto_reboot_flag=0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_stop_base_service=1
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 1
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_mac_address=00-0C-29-7A-80-35
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 00-0C-29-7A-80-35
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_boot_mode=1
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 1
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_mode=0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_portname=
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_protect_type=2
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 2
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_auto_switch_disk=0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_port1=5000
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 5000
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_cluster_id=0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_d2d_cid=0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_pri_ip=
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_vip=
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] #####: clnt_opt=0
+2015-6-17 15:15:24 DEBUG:[guisanboot.data.GetBootHost] @@@@@: 0
+2015-6-17 15:15:24 INFO:[guisanboot.data.GetBootHost]  get BootHost retcode: 0
+2015-6-17 15:15:24 INFO:[guisanboot.datadup.cmd.GetBakClient]  get bak clnt cmd: /usr/odybk/server/bin/dbmgr -clnt -prt all
+2015-6-17 15:15:25 INFO:[guisanboot.datadup.cmd.GetBakClient]  get bak clnt cmd retcode: 0
+2015-6-17 15:15:25 INFO:[guisanboot.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): Record:  1
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_name=16_C_cmdp_BZH
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_clntid=16
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_disklabel=C:\
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_target_id=32768
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_max_snap=1433903421
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_desc=mg-C
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_mgid=11
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_rootid=29
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_uuid=3bc77a5e-0182-149c-9aae-7c5f80aea5ae_32256
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_current_localid=0
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_info=1
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_capacity=6432168960
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_view_targetid=32773
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): crsnap_services=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): changever_services=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): database_instances=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): others=uuid:3bc77a5e-0182-149c-9aae-7c5f80aea5ae_32256;
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupinfo=-2
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupinfodetail=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupname=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): setversion=-10
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_sel_boot_version=32773
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_sel_boot_info=20150610103119
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_lun=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_permit=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): last_good_boot_disk_type=-1
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): last_sel_boot_disk_type=-1
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_good_boot_info=20150610103119
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): rollback_orgi_volname=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): rollback_orgi_uws=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_version=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_info=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_disk_type=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_version=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_info=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_disk_type=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_protect_type=2
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_cluster_id=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_opt=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): Record:  2
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_name=16_E_cmdp_BZH
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_clntid=16
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_disklabel=E:\
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_target_id=32769
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_max_snap=1433903324
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_desc=mg-E
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_mgid=12
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_rootid=30
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_uuid=53918664-1bb5-30c5-f99e-9bd1d93576a0_32256
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_current_localid=0
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_info=0
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_capacity=1069254144
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_view_targetid=32774
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): crsnap_services=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): changever_services=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): database_instances=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): others=uuid:53918664-1bb5-30c5-f99e-9bd1d93576a0_32256;
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupinfo=-2
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupinfodetail=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupname=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): setversion=-10
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_sel_boot_version=32774
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_sel_boot_info=20150610103122
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_lun=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_permit=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): last_good_boot_disk_type=-1
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): last_sel_boot_disk_type=-1
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_good_boot_info=20150610103122
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): rollback_orgi_volname=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): rollback_orgi_uws=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_version=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_info=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_disk_type=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_version=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_info=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_disk_type=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_protect_type=2
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_cluster_id=
+2015-6-17 15:15:26 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_opt=
+2015-6-17 15:15:26 INFO:[guisanboot.data.GetVolumeMap]  get volmap list retcode: 0
+2015-6-17 15:15:26 INFO:[guisanboot.cluster.cmd.GetCluster]  get cluster cmd: /usr/odybk/server/bin/idbmgr -cluster -prt all
+2015-6-17 15:15:27 INFO:[guisanboot.cluster.cmd.GetCluster]  get cluster retcode: 0
+2015-6-17 15:15:27 INFO:[guisanboot.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2015-6-17 15:15:28 DEBUG:[guisanboot.data.GetIbootObjList] ========> ibenc table:
+2015-6-17 15:15:28 DEBUG:[guisanboot.data.GetIbootObjList] ========> --------------------
+2015-6-17 15:15:28 DEBUG:[guisanboot.data.GetIbootObjList] ========> #MAC_Address Ena Host_IP         Host_Name        Portal_IP       PPort Options  RAMs UNDIs UserName             Password             Initiator_Name Target_Name Living_Days
+2015-6-17 15:15:28 DEBUG:[guisanboot.data.GetIbootObjList] ========> 000C297A8035 Yes <NULL>          <NULL>           192.168.1.253   3260  000000a0  128     0 <NULL>               <NULL>               <NULL> iqn.2005-05.cn.com.odysys.iscsi.bzh:32773 0-0:38
+2015-6-17 15:15:28 DEBUG:[guisanboot.data.GetIbootObjList] 
+ mac: 000C297A8035
+ ena: Yes
+ hostip: <NULL>
+ hostName: <NULL>
+ pip: 192.168.1.253
+ pport: 3260
+ options: 000000a0
+ rams: 128
+ unids: 0
+ uname: <NULL>
+ password: <NULL>
+ ini_name: <NULL>
+ tgt_name: iqn.2005-05.cn.com.odysys.iscsi.bzh:32773
+ living_days: 0-0:38
+2015-6-17 15:15:28 DEBUG:[guisanboot.data.GetIbootObjList] ========> --------------------
+2015-6-17 15:15:28 INFO:[guisanboot.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2015-6-17 15:15:28 INFO:[guisanboot.data.GetServMap]  get servicemap cmd: /usr/odybk/server/bin/idbmgr -serv -prt all
+2015-6-17 15:15:29 INFO:[guisanboot.data.GetServMap]  get servicemap retcode: 0
+2015-6-17 15:15:29 INFO:[guisanboot.data.GetBackupUser]  get bak user cmd: /usr/odybk/server/bin/dbmgr -acct -prt all
+2015-6-17 15:15:30 DEBUG:[guisanboot.data.GetBackupUser]  ======> Record:  1
+2015-6-17 15:15:30 DEBUG:[guisanboot.data.GetBackupUser]  ======> account_id=1
+2015-6-17 15:15:30 DEBUG:[guisanboot.data.GetBackupUser]  ======> account_name=admin
+2015-6-17 15:15:30 DEBUG:[guisanboot.data.GetBackupUser]  ======> account_pass=admin
+2015-6-17 15:15:30 DEBUG:[guisanboot.data.GetBackupUser]  ======> account_priv=1
+2015-6-17 15:15:30 DEBUG:[guisanboot.data.GetBackupUser]  ======> account_dev_list=
+2015-6-17 15:15:30 INFO:[guisanboot.data.GetBackupUser]  get bak user cmd retcode: 0
+2015-6-17 15:15:30 INFO:[guisanboot.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2015-6-17 15:15:31 DEBUG:[guisanboot.data.GetPool] ========> Record:  1
+2015-6-17 15:15:31 DEBUG:[guisanboot.data.GetPool] ========> pool_id=1
+2015-6-17 15:15:31 DEBUG:[guisanboot.data.GetPool] ========> pool_name=bzh
+2015-6-17 15:15:31 DEBUG:[guisanboot.data.GetPool] ========> pool_path=/mnt/ResVol0
+2015-6-17 15:15:31 DEBUG:[guisanboot.data.GetPool] ========> pool_vol_name=/dev/evms/ResVol0
+2015-6-17 15:15:31 DEBUG:[guisanboot.data.GetPool] ========> pool_passwd=admin
+2015-6-17 15:15:31 DEBUG:[guisanboot.data.GetPool] ========> pool_flag=1
+2015-6-17 15:15:31 DEBUG:[guisanboot.data.GetPool] ========> pool_melt_move_data=0
+2015-6-17 15:15:31 DEBUG:[guisanboot.data.GetPool] ========> pool_type=0
+2015-6-17 15:15:31 INFO:[guisanboot.data.GetPool]  getpool retcode: 0
+2015-6-17 15:15:31 INFO:[guisanboot.data.GetUWSrvNode]  get SWU server cmd: /usr/odybk/vsnap/vdbmgr -uws -prt all
+2015-6-17 15:15:32 INFO:[guisanboot.data.GetUWSrvNode]  get SWU server retcode: 0
+2015-6-17 15:15:32 INFO:[guisanboot.data.GetSrcAgnt]  get src_agent cmd: /usr/odybk/server/bin/idbmgr -srcagnt -prt all
+2015-6-17 15:15:33 INFO:[guisanboot.data.GetSrcAgnt]  get src_agent retcode: 0
+2015-6-17 15:15:33 INFO:[guisanboot.data.GetMGList]  get mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt all
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: Record:  1
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_id=11
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 11
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_name=16_C_cmdp_BZH
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 16_C_cmdp_BZH
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_type=2
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 2
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_src_ip=192.168.1.118
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 192.168.1.118
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_src_port=2015
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 2015
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_src_disk_uuid=3bc77a5e-0182-149c-9aae-7c5f80aea5ae_32256
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 3bc77a5e-0182-149c-9aae-7c5f80aea5ae_32256
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_src_root_id=29
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 29
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_interval_time=3600
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 3600
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_min_snap_size=65536
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 65536
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_max_snapshot=4
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 4
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_pid=16041
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 16041
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_before_cmd=/www/cgi-bin/mg_snapbf
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: /www/cgi-bin/mg_snapbf
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_after_cmd=/www/cgi-bin/mg_snapaf
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: /www/cgi-bin/mg_snapaf
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_desc=mg-C
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: mg-C
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_type=0
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 0
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_minute=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_hour=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_day=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_month=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_week=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_clock_zone=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_hour1=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_clock_set=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_log_max_size=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_log_max_time=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: Record:  2
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_id=12
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 12
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_name=16_E_cmdp_BZH
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 16_E_cmdp_BZH
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_type=2
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 2
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_src_ip=192.168.1.118
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 192.168.1.118
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_src_port=2015
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 2015
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_src_disk_uuid=53918664-1bb5-30c5-f99e-9bd1d93576a0_32256
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 53918664-1bb5-30c5-f99e-9bd1d93576a0_32256
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_src_root_id=30
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 30
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_interval_time=3600
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 3600
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_min_snap_size=65536
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 65536
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_max_snapshot=4
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 4
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_pid=17106
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 17106
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_before_cmd=/www/cgi-bin/mg_snapbf
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: /www/cgi-bin/mg_snapbf
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_after_cmd=/www/cgi-bin/mg_snapaf
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: /www/cgi-bin/mg_snapaf
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_desc=mg-E
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: mg-E
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_type=0
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 0
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_minute=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_hour=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_day=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_month=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_week=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_clock_zone=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_hour1=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_schedule_clock_set=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_log_max_size=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] #####: mg_log_max_time=
+2015-6-17 15:15:34 DEBUG:[guisanboot.data.GetMGList] @@@@@: 
+2015-6-17 15:15:34 INFO:[guisanboot.data.GetMGList]  get mg retcode: 0
+2015-6-17 15:15:34 INFO:[guisanboot.data.GetMJList]  get mj cmd: /usr/odybk/vsnap/vdbmgr -mj -prt all
+2015-6-17 15:15:35 INFO:[guisanboot.data.GetMJList]  get mj retcode: 0
+2015-6-17 15:15:35 INFO:[guisanboot.remotemirror.cmd.GetMJScheduler]  get mj-sch list cmd:/usr/odybk/vsnap/vdbmgr -scheduler -prt all
+2015-6-17 15:15:36 INFO:[guisanboot.remotemirror.cmd.GetMJScheduler]  get mj-sch list cmd retcode:0
+2015-6-17 15:15:36 INFO:[guisanboot.data.GetNetBootedHost]  get netbooted-host cmd: /usr/odybk/server/bin/idbmgr -dstagnt -prt all
+2015-6-17 15:15:38 INFO:[guisanboot.data.GetNetBootedHost]  get netbooted-host retcode: 0
+2015-6-17 15:15:38 INFO:[guisanboot.data.GetMirrorSnapusage]  get mirror_snap_usage cmd: /usr/odybk/server/bin/idbmgr -snapusage -prt all
+2015-6-17 15:15:39 INFO:[guisanboot.data.GetMirrorSnapusage]  get mirror_snap_usage retcode: 0
+2015-6-17 15:15:39 INFO:[guisanboot.data.GetMirrorDiskInfo]  get mirror_disk_info cmd: /usr/odybk/server/bin/idbmgr -diskinfo -prt all
+2015-6-17 15:15:40 INFO:[guisanboot.data.GetMirrorDiskInfo]  get mirror_disk_info retcode: 0
+2015-6-17 15:15:40 INFO:[guisanboot.cmdp.service.GetDriveGroup]  get drivegroup cmd: /usr/odybk/server/bin/phydup_hash.sh uws_drivesgroup_getall
+2015-6-17 15:15:41 INFO:[guisanboot.cmdp.service.GetDriveGroup]  get drivegroup retcode: 0
+2015-6-17 15:15:41 DEBUG:[guisanboot.data.VolumeMap] vol_info: 1 for 16_C_cmdp_BZH
+2015-6-17 15:15:41 INFO:[guisanboot.data.ManageDB] db type: 0 for 16_C_cmdp_BZH
+2015-6-17 15:15:41 DEBUG:[guisanboot.data.VolumeMap] vol_info: 0 for 16_E_cmdp_BZH
+2015-6-17 15:15:41 INFO:[guisanboot.data.ManageDB] db type: 0 for 16_E_cmdp_BZH
+2015-6-17 15:15:41 INFO:[guisanboot.datadup.cmd.ListProfile]  list profile cmd: /usr/odybk/server/bin/listprofile
+2015-6-17 15:15:42 INFO:[guisanboot.datadup.cmd.ListProfile]  list profile recode: 0
+2015-6-17 15:15:42 INFO:[guisanboot.datadup.cmd.GetBakObjList]  list bakobj cmd: /usr/odybk/server/bin/dbmgr -bobj -prt all
+2015-6-17 15:15:43 INFO:[guisanboot.datadup.cmd.GetBakObjList]  list bakobj cmd retcode: 0
+2015-6-17 15:15:43 INFO:[guisanboot.datadup.cmd.GetSchList]  get sch list cmd: /usr/odybk/server/bin/dbmgr -sch -prt all
+2015-6-17 15:15:44 INFO:[guisanboot.datadup.cmd.GetSchList]  get sch list cmd retcode: 0
+2015-6-17 15:15:44 INFO:[guisanboot.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2015-6-17 15:15:45 DEBUG:[guisanboot.data.GetPoolInfo] ========> /mnt/ResVol0 capacity=105689214976 freecapaciy=92089479168 visual_used=15518598464
+2015-6-17 15:15:45 INFO:[guisanboot.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2015-6-17 15:15:45 INFO:[guisanboot.data.GetLicence]  get license cmd: /usr/odybk/server/bin/listlicence
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence] ========> MTPP:32 250 0
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence]  product of license: MTPP
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence]  point of license: 32 for MTPP
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence]  maxsnap of license: 250 for MTPP
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence] ========> CMDP:32 250 0
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence]  product of license: CMDP
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence]  point of license: 32 for CMDP
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence]  maxsnap of license: 250 for CMDP
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence] ========> DEFAULT:2 4 512
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence]  product of license: DEFAULT
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence]  point of license: 2 for DEFAULT
+2015-6-17 15:15:47 DEBUG:[guisanboot.data.GetLicence]  maxsnap of license: 4 for DEFAULT
+2015-6-17 15:15:47 INFO:[guisanboot.data.GetLicence]  get license retcode: 0
+2015-6-17 15:15:47 INFO:[guisanboot.ui.InitApp] mtpp point: 32
+2015-6-17 15:15:47 INFO:[guisanboot.ui.InitApp] cmdp point: 32
+2015-6-17 15:15:47 INFO:[guisanboot.ui.InitApp] mtpp maxsnap num: 250
+2015-6-17 15:15:47 INFO:[guisanboot.ui.InitApp] cmdp maxsnap num: 250
+2015-6-17 15:15:47 INFO:[guisanboot.data.GetVMHostInfo]  get mirror_disk_info cmd: /usr/odybk/server/bin/getvminfo 
+2015-6-17 15:15:48 DEBUG:[guisanboot.data.GetVMHostInfo] #####: /usr/odybk/server/bin/getvminfo: line 11: cd: /usr/odybk/server/conf/vm/: No such file or directory
+2015-6-17 15:15:48 INFO:[guisanboot.data.GetVMHostInfo]  get mirror_disk_info retcode: 0
+2015-6-17 15:15:48 INFO:[guisanboot.data.ManageDB] getUcsDiskCount cmd :/usr/odybk/server/bin/isucsview.sh 29
+2015-6-17 15:15:49 DEBUG:[guisanboot.data.GetUcsDiskCountByView] ========> count=0
+2015-6-17 15:15:49 INFO:[guisanboot.data.ManageDB] getUcsDiskCount cmd retCode :0
+2015-6-17 15:15:49 INFO:[guisanboot.data.ManageDB] getUcsDiskCount cmd :/usr/odybk/server/bin/isucsview.sh 30
+2015-6-17 15:15:50 DEBUG:[guisanboot.data.GetUcsDiskCountByView] ========> count=0
+2015-6-17 15:15:50 INFO:[guisanboot.data.ManageDB] getUcsDiskCount cmd retCode :0
+2015-6-17 15:15:50 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 0 ] root node on tree
+2015-6-17 15:15:50 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] type ======> : 0
+2015-6-17 15:15:50 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] level ======> : 0
+2015-6-17 15:15:50 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] select level: 0
+2015-6-17 15:15:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:15:50 INFO:[guisanboot.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20150617151550 audit_clnt_id=0 audit_event_id=2  "audit_event_desc=Logon to system successfully."
+2015-6-17 15:15:51 DEBUG:[guisanboot.data.AddCmdNetworkRunning] =====> 186
+2015-6-17 15:15:51 INFO:[guisanboot.data.ManageDB]  add audit log retcode: 0
+2015-6-17 15:15:51 INFO:[guisanboot.action.LoginAction] ########### End of login action. 
+2015-6-17 15:16:15 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 1 ] local swu manager
+2015-6-17 15:16:15 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] type ======> : 1
+2015-6-17 15:16:15 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] level ======> : 99
+2015-6-17 15:16:15 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] select level: 99
+2015-6-17 15:16:20 INFO:[guisanboot.action.InitHostAction] ########### Entering window host's init process
+2015-6-17 15:16:20 INFO:[guisanboot.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2015-6-17 15:16:21 DEBUG:[guisanboot.data.GetPool] ========> Record:  1
+2015-6-17 15:16:21 DEBUG:[guisanboot.data.GetPool] ========> pool_id=1
+2015-6-17 15:16:21 DEBUG:[guisanboot.data.GetPool] ========> pool_name=bzh
+2015-6-17 15:16:21 DEBUG:[guisanboot.data.GetPool] ========> pool_path=/mnt/ResVol0
+2015-6-17 15:16:21 DEBUG:[guisanboot.data.GetPool] ========> pool_vol_name=/dev/evms/ResVol0
+2015-6-17 15:16:21 DEBUG:[guisanboot.data.GetPool] ========> pool_passwd=admin
+2015-6-17 15:16:21 DEBUG:[guisanboot.data.GetPool] ========> pool_flag=1
+2015-6-17 15:16:21 DEBUG:[guisanboot.data.GetPool] ========> pool_melt_move_data=0
+2015-6-17 15:16:21 DEBUG:[guisanboot.data.GetPool] ========> pool_type=0
+2015-6-17 15:16:21 INFO:[guisanboot.data.GetPool]  getpool retcode: 0
+2015-6-17 15:16:21 INFO:[guisanboot.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2015-6-17 15:16:22 DEBUG:[guisanboot.data.GetPoolInfo] ========> /mnt/ResVol0 capacity=105689214976 freecapaciy=92089479168 visual_used=15518598464
+2015-6-17 15:16:22 INFO:[guisanboot.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2015-6-17 15:16:33 INFO:[guisanboot.data.GetAgentInfo]  get agt cmd: /usr/odybk/server/bin/ibootcmd 192.168.1.28 5000 ib_get_osinfo.exe
+2015-6-17 15:16:35 DEBUG:[guisanboot.data.GetAgentInfo] ####: OS_NAME=windows
+2015-6-17 15:16:35 DEBUG:[guisanboot.data.GetAgentInfo] ####: OS_RELEASE=XP
+2015-6-17 15:16:35 DEBUG:[guisanboot.data.GetAgentInfo] ####: OS_BIT=32
+2015-6-17 15:16:35 DEBUG:[guisanboot.data.GetAgentInfo] ####: ARCHITECTURE=x86
+2015-6-17 15:16:35 DEBUG:[guisanboot.data.GetAgentInfo] ####: HOSTNAME=bzh-ed9c7a86a88
+2015-6-17 15:16:35 DEBUG:[guisanboot.data.GetAgentInfo] ####: HOSTID=00000000
+2015-6-17 15:16:35 INFO:[guisanboot.data.GetAgentInfo]  get agt cmd retcode: 0
+2015-6-17 15:16:35 INFO:[guisanboot.data.GetAgentUUID]  get agt uuid cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.28 5000 pc_gen_uuid.exe zxcvb12345 -get
+2015-6-17 15:16:36 DEBUG:[guisanboot.data.GetAgentUUID] 19cf2a78-6817-4b16-803b-dfcfd98cd392
+2015-6-17 15:16:36 INFO:[guisanboot.data.GetAgentUUID]  get agt uuid cmd retcode: 0
+2015-6-17 15:16:36 INFO:[guisanboot.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): Record:  1
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_name=16_C_cmdp_BZH
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_clntid=16
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_disklabel=C:\
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_target_id=32768
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_max_snap=1433903421
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_desc=mg-C
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_mgid=11
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_rootid=29
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_uuid=3bc77a5e-0182-149c-9aae-7c5f80aea5ae_32256
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_current_localid=0
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_info=1
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_capacity=6432168960
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_view_targetid=32773
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): crsnap_services=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): changever_services=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): database_instances=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): others=uuid:3bc77a5e-0182-149c-9aae-7c5f80aea5ae_32256;
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupinfo=-2
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupinfodetail=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupname=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): setversion=-10
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_sel_boot_version=32773
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_sel_boot_info=20150610103119
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_lun=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_permit=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): last_good_boot_disk_type=-1
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): last_sel_boot_disk_type=-1
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_good_boot_info=20150610103119
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): rollback_orgi_volname=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): rollback_orgi_uws=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_version=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_info=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_disk_type=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_version=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_info=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_disk_type=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_protect_type=2
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_cluster_id=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_opt=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): Record:  2
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_name=16_E_cmdp_BZH
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_clntid=16
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_disklabel=E:\
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_target_id=32769
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_max_snap=1433903324
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_desc=mg-E
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_mgid=12
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_rootid=30
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_uuid=53918664-1bb5-30c5-f99e-9bd1d93576a0_32256
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_current_localid=0
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_info=0
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_capacity=1069254144
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_view_targetid=32774
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): crsnap_services=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): changever_services=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): database_instances=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): others=uuid:53918664-1bb5-30c5-f99e-9bd1d93576a0_32256;
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupinfo=-2
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupinfodetail=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): groupname=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): setversion=-10
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_sel_boot_version=32774
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_sel_boot_info=20150610103122
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_lun=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_permit=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): last_good_boot_disk_type=-1
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): last_sel_boot_disk_type=-1
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_last_good_boot_info=20150610103122
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): rollback_orgi_volname=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): rollback_orgi_uws=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_version=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_info=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_sel_disk_type=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_version=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_info=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_switch_last_good_disk_type=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_protect_type=2
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_cluster_id=
+2015-6-17 15:16:37 DEBUG:[guisanboot.data.GetVolumeMap] (GetVolumeMap): vol_opt=
+2015-6-17 15:16:37 INFO:[guisanboot.data.GetVolumeMap]  get volmap list retcode: 0
+2015-6-17 15:16:37 INFO:[guisanboot.data.GetMirrorDiskInfo]  get mirror_disk_info cmd: /usr/odybk/server/bin/idbmgr -diskinfo -prt all
+2015-6-17 15:16:38 INFO:[guisanboot.data.GetMirrorDiskInfo]  get mirror_disk_info retcode: 0
+2015-6-17 15:16:38 INFO:[guisanboot.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd:/usr/odybk/vsnap/idbmgr -cloneinfo -prt  all 
+2015-6-17 15:16:39 INFO:[guisanboot.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd retcode:0
+2015-6-17 15:16:39 INFO:[guisanboot.data.GetFreePhyVol] listdisk cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_opened_type=2 or snap_opened_type=3 or snap_opened_type=4;"
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> Record:  1
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_root_id=21
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_local_snapid=2
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_name=C192.168.1.118
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_pool_id=1
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_map_file=2.map
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_dat_file=2.dat
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_orig_id=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_block_size=17
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_max_block_no=49152
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_opened_type=2
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_target_id=32771
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_parent=1
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_child_list=
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_create_time=20150609180921
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_localid=28
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_desc=testc
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_tag=
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_owner=MTPP
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_no=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_pos=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_uuid=
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> Record:  2
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_root_id=22
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_local_snapid=2
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_name=E192.168.1.118
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_pool_id=1
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_map_file=2.map
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_dat_file=2.dat
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_orig_id=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_block_size=17
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_max_block_no=8192
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_opened_type=2
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_target_id=32772
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_parent=1
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_child_list=
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_create_time=20150609181145
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_localid=29
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_desc=teste
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_tag=
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_owner=MTPP
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_no=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_pos=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_uuid=
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> Record:  3
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_root_id=30
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_local_snapid=2
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_name=16_E_cmdp_BZH
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_pool_id=1
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_map_file=2.map
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_dat_file=2.dat
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_orig_id=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_block_size=17
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_max_block_no=8238
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_opened_type=3
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_target_id=32769
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_parent=1
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_child_list=
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_create_time=20150610102843
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_localid=41
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_desc=teste[flawed_snap]
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_tag=
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_owner=CMDP
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_no=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_pos=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_uuid=
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> Record:  4
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_root_id=29
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_local_snapid=4
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_name=16_C_cmdp_BZH
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_pool_id=1
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_map_file=4.map
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_dat_file=4.dat
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_orig_id=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_block_size=17
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_max_block_no=49154
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_opened_type=3
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_target_id=32768
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_parent=1
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_child_list=
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_create_time=20150610102908
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_localid=40
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_desc=testc
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_tag=
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_owner=CMDP
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_no=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_pos=0
+2015-6-17 15:16:40 DEBUG:[guisanboot.data.GetFreePhyVol] ========> snap_log_uuid=
+2015-6-17 15:16:40 INFO:[guisanboot.data.GetFreePhyVol] listdisk cmd retcode: 0
+2015-6-17 15:16:40 INFO:[guisanboot.data.GetPartitionOnClnt]  get partition (confile) cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.28 5000 ib_get_partition_info.exe
+2015-6-17 15:16:43 DEBUG:[guisanboot.data.GetPartitionOnClnt] ========> C:\;*;local ;\\?\Volume{d3df7170-0f17-11e5-96a3-806d6172696f}\;NTFS;5110;1423;Scsi VMware,;
+2015-6-17 15:16:43 INFO:[guisanboot.data.GetPartitionOnClnt]  get partition (confile) retcode: 0
+2015-6-17 15:16:43 INFO:[guisanboot.data.GetDiskPartitionTableForWinOnClnt]  get old(new) disk partition table for win cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.28 5000 ib_save_partition.exe -list_local
+2015-6-17 15:16:44 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> diskno=0;disk_size=5366538240;PartitionCount=4;signature=2901454064
+2015-6-17 15:16:44 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=28672;PartitionLength=5359198208;HiddenSectors=56;PartitionNumber=1;PartitionType=7;BootIndicator=1;RecognizedPartition=1;RewritePartition=0;letter=C;label=local ;filesystem=NTFS;
+2015-6-17 15:16:44 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-6-17 15:16:44 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-6-17 15:16:44 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-6-17 15:16:44 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> diskno=1;disk_size=1069286400;PartitionCount=4;signature=1818067699
+2015-6-17 15:16:44 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=32256;PartitionLength=1069254144;HiddenSectors=63;PartitionNumber=1;PartitionType=7;BootIndicator=1;RecognizedPartition=1;RewritePartition=0;
+2015-6-17 15:16:44 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-6-17 15:16:44 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-6-17 15:16:44 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-6-17 15:16:44 INFO:[guisanboot.data.GetDiskPartitionTableForWinOnClnt]  get old(new) disk partition table for win retcode: 0
+2015-6-17 15:16:44 INFO:[guisanboot.data.ManageDB] isStartupfromSAN cmd: /usr/odybk/server/bin/ibootcmd 192.168.1.28 5000 ib_get_disk_type.exe C
+2015-6-17 15:16:45 DEBUG:[guisanboot.data.IsStartupFromSAN] ========> Bus:Scsi Vendor:VMware,
+2015-6-17 15:16:45 INFO:[guisanboot.data.ManageDB] isStartupFromSAN cmd retcode: 0
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]  ######### init new host: 192.168.1.28 / 5000
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.InitBootHostWizardDialog] disk num: 4
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.SanBootView] add volmap into un-sel hash table: 32771
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.SanBootView] add volmap into un-sel hash table: 32772
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.SanBootView] add volmap into un-sel hash table: 32769
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.SanBootView] add volmap into un-sel hash table: 32768
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.InitBootHostWizardDialog] VolMap num: 2
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]   volmap object is in unsel hash table: 32768 pick it into selected hash table.
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.SanBootView] remove volmap from un-sel hash table: 32768
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]   volmap object is in unsel hash table: 32769 pick it into selected hash table.
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.SanBootView] remove volmap from un-sel hash table: 32769
+2015-6-17 15:16:45 DEBUG:[guisanboot.ui.InitBootHostWizardDialog] mdi num: 0
+2015-6-17 15:16:47 INFO:[guisanboot.data.GetLicenseCount]  get LicenseCount cmd: /usr/odybk/server/bin/phydup_hash.sh zulu_mtpp_can_protect_system_database 
+2015-6-17 15:16:49 INFO:[guisanboot.data.GetLicenseCount]  get LicenseCount retcode: 0
+2015-6-17 15:16:49 INFO:[guisanboot.ui.SelectProtectedSysVolPane]  num: 4 res:maxsnap: 250 for [ 0,8 ]
+2015-6-17 15:16:49 INFO:[guisanboot.data.SystemPartitionForWin]  disk total size : 5110 disk avaliable size: 1423
+2015-6-17 15:16:49 INFO:[guisanboot.data.SystemPartitionForWin]  disk total size : 5110 disk avaliable size: 1423
+2015-6-17 15:16:49 INFO:[guisanboot.data.SystemPartitionForWin]  disk total size : 5110 disk avaliable size: 1423
+2015-6-17 15:16:49 INFO:[guisanboot.data.GetServiceOnClnt]  get service (confile) cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.28 5000 services_process.exe list
+2015-6-17 15:16:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:16:51 DEBUG:[guisanboot.data.GetServiceOnClnt] ========> Themes Themes
+2015-6-17 15:16:51 DEBUG:[guisanboot.data.GetServiceOnClnt] ========> TPAutoConnSvc TP AutoConnect Service
+2015-6-17 15:16:51 DEBUG:[guisanboot.data.GetServiceOnClnt] ========> VMTools VMware Tools
+2015-6-17 15:16:51 DEBUG:[guisanboot.data.GetServiceOnClnt] ========> VMware Physical Disk Helper Service VMware 物理磁盘助手服务
+2015-6-17 15:16:51 DEBUG:[guisanboot.data.GetServiceOnClnt] ========> VRVWatchServer VRVWatchServer
+2015-6-17 15:16:51 DEBUG:[guisanboot.data.GetServiceOnClnt] ========> WebClient WebClient
+2015-6-17 15:16:51 DEBUG:[guisanboot.data.GetServiceOnClnt] ========> wscsvc Security Center
+2015-6-17 15:16:51 INFO:[guisanboot.data.GetServiceOnClnt]  get service (confile) retcode: 0
+2015-6-17 15:16:51 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]  host ==null 0000000000000000000000
+2015-6-17 15:16:52 INFO:[guisanboot.data.GetIpInfoOnClnt]  get IP info of client cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.28 5000 ib_get_net_info.exe -a 00-00-00-00-00-00
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> HostName: 	BZH-ED9C7A86A88
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Adapter: 	AMD PCNET Family PCI Ethernet Adapter - 数据包计划程序微型端口
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Mac Address:  	00-0C-29-41-7F-B7
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Connection:  	本地连接
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Conn Type:  	Ethernet
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> IP Address: 	192.168.1.28
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Sub Mask: 	255.255.255.0
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Gateway: 	192.168.1.1
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> DHCP Enabled: 	No
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Have Wins: 	No
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> DNS Address: 	192.168.1.1
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Media Status:
+2015-6-17 15:16:54 INFO:[guisanboot.data.GetIpInfoOnClnt]  get IP info of client retcode: 0
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)HostName: 	BZH-ED9C7A86A88
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)2
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)HostName
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)Adapter: 	AMD PCNET Family PCI Ethernet Adapter - 数据包计划程序微型端口
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)2
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)Adapter
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Mac Address:  	00-0C-29-41-7F-B7
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  111111111111111111111: Mac Address:  	00-0C-29-41-7F-B7
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Connection:  	本地连接
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Conn Type:  	Ethernet
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: IP Address: 	192.168.1.28
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  222222222222222222222222: IP Address: 	192.168.1.28
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  333333333333333333: Gateway: 	192.168.1.1
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Gateway: 	192.168.1.1
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  gateway indx: 7
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Gateway: 	192.168.1.1
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: DHCP Enabled: 	No
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Have Wins: 	No
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: DNS Address: 	192.168.1.1
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Media Status:
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  Media Status indx: 11
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  ip=======: IP Address: 	192.168.1.28
+2015-6-17 15:16:54 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  mask=======: Sub Mask: 	255.255.255.0
+2015-6-17 15:17:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:18:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:19:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:20:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:21:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:22:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:23:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:24:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:25:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:26:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:27:50 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-6-17 15:28:45 INFO:[guisanboot.action.InitHostAction] ########### End of window host's init process action. 

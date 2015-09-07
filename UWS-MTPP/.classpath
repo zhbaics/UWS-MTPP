@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Users/zhbai/git/UWS-MTPP/UWS-MTPP/dist/lib/AbsoluteLayout.jar"/>
+	<classpathentry kind="lib" path="D:/Users/zhbai/git/UWS-MTPP/UWS-MTPP/dist/lib/GUILib.jar"/>
+	<classpathentry kind="lib" path="D:/Users/zhbai/git/UWS-MTPP/UWS-MTPP/dist/lib/jxl.jar"/>
+	<classpathentry kind="lib" path="D:/Users/zhbai/git/UWS-MTPP/UWS-MTPP/dist/lib/swing-layout-1.0.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,3 @@
+1)在198.88.88.150的\公司软件\OS&Patchs\下有winxp-jp-with-sp3.iso和sn文件
+2)在198.88.88.199的I:\PUBLIC\windows\winxp-japan\下也有上述版本
+3)在198.88.88.199的I:\zjj\winxp-jp\下有一个日文版的虚拟机，并且安装了jdk1.5

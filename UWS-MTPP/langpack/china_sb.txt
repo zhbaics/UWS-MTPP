@@ -1,0 +1,3555 @@
+##################### common
+common.button.ok     = 确定
+common.button.cancel = 取消
+common.button.close  = 关闭
+common.button.start  = 开始
+common.button.add    = 增加...
+common.button.mod    = 编辑...
+common.button.del    = 删除
+common.button.change = 修改...
+common.button.save   = 保存
+common.button.add1   = 增加
+common.button.finish = 完成
+common.button.stop   = 停止
+common.button.up     = 启动
+common.button.mod1   = 修改
+common.button.refresh = 刷新
+common.button.import = 引入
+
+## language
+common.language = 语言
+common.us       = English
+common.china    = Chinese
+common.jp       = Japanese
+common.run      = 运行
+common.unknown  = 未知
+common.logical  = 逻辑
+common.physical = 物理
+common.sync     = 同步
+common.nsync    = 异步
+common.rebuild  = 重建
+common.init     = 初始化
+common.async2sync = 异步转同步
+common.wait = 等待...
+common.protected = 已被保护
+common.nprotected = 未被保护
+common.NotConsistent = 数据不一致
+common.conError  = 连接不上客户端
+common.timeout = 连接客户端超时
+common.rstError  = 恢复数据失败
+common.server = *服务器*
+
+## misc
+common.bakMode.full = 全量
+common.bakMode.incremental = 增量
+common.completed = 完成
+common.error   = 错误
+common.confirm = 确认
+common.message = 消息
+common.failed  = 失败
+common.success = 执行成功.
+common.ignore  = 下列是不能复制而被忽略的文件:
+common.ok = 成功
+common.id = ID 
+common.name = 名字
+common.desc = 描述
+common.adminperm  = 管理员权限
+common.normalperm = 普通权限
+common.nodb = 没有数据库
+common.host = 客户端
+common.phyprof = 物理策略
+common.error.loginerr = 用户名或密码错误。
+common.error.loginLimit = 超过最大的登录数。
+common.error.unknownHost = 未知的主机名
+common.error.io = 网络发生错误
+common.error.loginfail = 登陆服务器失败
+common.error.loginfail1 = 登陆提供DHCP服务的服务器失败
+common.error.getsrvdir = 浏览服务器目录失败。
+common.error.lostProf  = 下列调度对应的复制策略文件丢失
+common.error.timeout = 网络超时，请重新连接。
+common.error.noVG1 = 系统中没有卷组，请访问http://
+common.error.noDHCP = 提供DHCP服务的服务器信息不全。
+common.error.ibootNotStartup = 服务器没有启动网络启动功能
+common.error.initLog = 日志系统初始化失败，将退出系统。
+common.error.nopostprocessip = 没有指定Linux后处理主机的IP，请在配置文件中指定。
+common.error.disconnect = 图形界面与服务器的链接中断了，请重新登陆。
+common.error.noneName = 空的名字。
+common.error.clonedisk = 克隆盘失败。
+common.error.crtSyncSnap = 连接不上客户端，无法创建一致性快照
+common.error.postProcess = 创建快照后处理失败
+common.table.item = 项目
+common.table.desc = 说明
+common.every = 每
+common.hours = 小时
+common.minutes = 分钟
+common.hostlist = 主机列表
+common.rbhostlist = 回滚主机列表
+common.copyprofile = 复制策略
+common.copyproflist = 逻辑保护策略
+common.copypproflist = 物理保护策略
+common.memberNodelist = 成员节点列表
+common.schlist = 逻辑保护调度
+common.sch = 调度
+common.uimSnapList = 无限增量快照列表
+common.clonediskList = 克隆盘列表
+common.cjList = 复制任务列表
+common.hostvollist = 主机卷列表
+common.memberNodelist = 节点成员列表
+common.netboothostlist = 网络启动主机
+common.orphanvollist = 空闲卷列表
+common.freeuimvollist= 空闲无限增量卷
+common.mjlist = 镜像任务管理
+common.mjSchList = 镜像时间计划
+common.user = 用户
+common.poolList = 存储池列表
+common.destSWU = 镜像服务器
+common.pool = 存储池
+common.lmlist = 主机映射
+common.snaplist = 快照列表
+common.swulist = 镜像服务器
+common.mirrorlist = 镜像任务列表
+common.cplist = 复制任务列表
+common.cloneDiskList=克隆盘列表
+common.unlimitedmirrorsnap = 无限增量快照列表
+common.unlimitedmirrorvol=无限增量镜像卷列表
+common.snap = 快照
+common.uisnap = 无限增量快照
+common.view = 快照副本
+common.vol = 本地卷
+common.cdisk = 克隆盘
+common.crt = 创建
+common.sel = 选择
+common.task = 任务
+common.restoreLocalDisk.restore = 恢复
+common.restoreLocalDisk.to = 分别到
+common.restoreLocalDisk.to1 = 到
+common.desc.schList     = 由UWS服务器管理的逻辑保护调度
+common.desc.hostList    = 由UWS服务器管理的客户端
+common.desc.rbhostList  = 由UWS服务器管理的回滚主机 
+common.desc.orphVolList = 不属于任何客户端的目标卷
+common.desc.freeuimvollist = 不属于任何客户端的无限增量卷
+common.desc.localSWU = 管理本地UWS服务器
+common.desc.remoteSWU = 管理远端镜像过来的UWS服务器
+common.desc.poollist = 管理本地UWS上的存储池
+common.desc.rhostList = 被镜像到本地的UWS服务器上的客户端 
+common.desc.rFreeVolList = 被镜像到本地的UWS服务器上不属于任何客户端的目标卷
+common.desc.destSWU = 要镜像本地数据的远端UWS服务器
+common.desc.mjlist = 管理所有的镜像任务
+common.desc.mjSchList = 管理所有的镜像时间计划
+common.desc.hostVolList = 属于该主机的卷
+common.desc.hostVolList1 = 属于该集群的卷
+common.desc.uimSnapList = 属于该镜像卷的快照
+common.desc.clonediskList =  属于该镜像卷的克隆盘
+common.desc.netbootedHostList = 以该主机为基础进行过网络启动的机器
+common.desc.netbootedHostList1 = 以该集群为基础进行过网络启动的机器
+common.desc.profList = 属于该主机的逻辑保护策略
+common.desc.pprofList = 属于该主机的物理保护策略
+common.desc.pprofList1 = 属于该集群的物理保护策略
+common.desc.profList1 = 属于该集群的逻辑保护策略
+common.desc.memberNodeList = 属于该集群的成员节点
+common.desc.cjList = 属于该镜像卷的复制任务
+common.localSWU = 本地UWS管理
+common.remoteSWU = 镜像到本地的UWS
+common.disk = 磁盘
+common.status.online=目标卷在线
+common.status.offline=目标卷离线
+common.noprotected = 未网络启动
+common.product = UWS
+common.loglevel.debug   = 调试
+common.loglevel.info    = 信息
+common.loglevel.warning = 警告
+common.loglevel.error   = 错误
+common.error.noVol = 找不到卷
+common.boottype.boot = 推荐方式
+common.boottype.iboot = 替代方式
+common.boottype.iscsihba = iSCSI HBA
+common.local = 本地
+common.remote = 远程
+common.mjtype.local = 本地镜像
+common.mjtype.remote = 远程镜像
+common.mjtype.localtrack=本地无限增量
+common.mjtype.remotetrack=远程无限增量
+common.mjtype.remotecopy=远程复制
+common.noneedinit = 初始化已经完成
+common.selectLatestVer = 选择最新版本
+common.selectAll = 全选
+common.noMjSch = 不配置镜像时间计划
+common.notime  = 全天不许镜像
+common.linear = 线性
+common.non-linear = 非线性
+common.nonLinearContent = 没有设置非线性策略
+common.clockzone = 时段控制
+common.clockZoneCtrl = 但是只能在如下时段发生:
+common.tooltip.mjsch = 镜像时间计划详情
+common.localdisk = 本地
+common.sharedDisk = 共享
+common.error.noMasterNode = 找不到主节点
+
+####### init tasks
+common.inittask.dhcp = 在DHCP服务器上进行MAC地址和IP的绑定
+common.inittask.crtVol = 创建目标卷
+common.inittask.crtProtect = 在客户端上为本地盘建立镜像
+common.inittask.formatVol =  格式化目标卷
+common.inittask.getInfo = 获取其它信息
+common.inittask.saveInfo = 保存信息
+common.inittask.copyOs = 数据复制
+common.inittask.embootBind = 绑定MAC地址和目标卷
+
+common.DrRecover.selOsSnap = 选择操作系统快照
+common.DrRecover.chgBIOS   = 修改BIOS从网络启动
+common.DrRecover.connect   = 连接客户端，并确定其从网络启动
+common.DrRecover.connect1  = 连接客户端，并确定其从本地盘启动
+common.DrRecover.stopServ  = 停止有关服务
+common.DrRecover.loadInfo  = 加载相关信息
+common.DrRecover.chgLabel  = 分配或修改盘符
+common.DrRecover.startServ = 启动有关服务
+common.DrRecover.reboot    = 系统重启
+common.DrRecover.removePersistentTgt = 删除永久目标卷
+
+common.failback.chgBIOS  = 修改BIOS从本地启动
+common.failback.stopServ = 停止有关服务     
+common.failback.chgLabel = 分配或修改盘符
+common.failback.delPersistenTgt = 删除永久目标卷
+common.failback.startServ = 启动有关服务
+
+common.taskSta.ready    = 待运行 
+common.taskSta.running  = 运行中
+common.taskSta.end      = 结束
+common.taskSta.failed   = 失败
+common.taskSta.warning  = 警告
+common.taskSta.unknown  = 未知
+
+### common.loadstatus
+common.loadstatus.dhcpConf  = 正在加载DHCP配置
+common.loadstatus.conf      = 正在加载配置信息
+common.loadstatus.host      = 正在加载客户端
+common.loadstatus.cluster   = 正在加载集群信息
+common.loadstatus.vol	    = 正在加载卷信息
+common.loadstatus.sch       = 正在加载调度信息
+common.loadstatus.user      = 正在加载管理用户信息
+common.loadstatus.isCrtVg   = 正在加载卷组信息
+common.loadstatus.service   = 正在获取主机服务
+common.loadstatus.subnet    = 正在加载子网信息
+common.loadstatus.ibootsrv  = 正在加载网络启动服务器
+common.loadstatus.clnt      = 正在加载DHCP分配信息
+common.loadstatus.global    = 正在加载全局选项
+common.loadstatus.isDHCPStart = 正在检查DHCP开启状态
+common.loadstatus.iboot     = 正在加载网络启动配置
+common.loadstatus.getPool   = 正在加载存储池
+common.loadstatus.chkLic    = 检查软件许可
+common.loadstatus.getswu    = 正在加载镜像服务器
+common.loadstatus.getmg     = 正在加载MG
+common.loadstatus.getmj     = 正在加载镜像任务
+common.loadstatus.getmjsch  = 正在加载镜像时间计划
+common.loadstatus.getDA     = 正在加载网络启动主机
+common.loadstatus.getSU     = 正在加载启动版本对象
+common.loadstatus.profile   = 正在加载逻辑保护策略
+common.loadstatus.parse     = 正在分析逻辑保护策略
+common.loadstatus.pprofile  = 正在加载物理保护策略
+common.loadstatus.pparse    = 正在分析物理保护策略
+common.loadstatus.objlist   = 正在获取保护内容
+common.loadstatus.clnt      = 正在加载复制主机
+common.loadstatus.schlist   = 正在加载调度
+common.loadstatus.getDiskInfo = 正在加载镜像卷
+common.loadstatus.getsrcagnt = 正在加载回滚主机
+
+### command errcode 
+common.errcode.unknown = 发生未知错误
+common.errcode.delVol.hasSnap = 卷上有快照
+
+common.errcode.crtSnap.sameSnap = 重复的快照名
+common.errcode.crtSnap.noTid = 无可用的目标ID
+common.errcode.crtSnap.crtDevLink = 无法创建设备链接
+common.errcode.crtSnap.crtVol=底层设备无法创建相应卷
+
+common.errcode.delSnap.noVol = 没有找到卷名  
+common.errcode.delSnap.hasSnap = 该卷上快照
+common.errcode.delSnap.noOrgVol = 无法找到源卷名
+common.errcode.delSnap.delVol = 底层设备无法删除相应卷
+
+common.errcode.extSnap.tooSmall = 输入的大小小于快照原来的大小
+common.errcode.extSnap.notChange = 底层设备无法改变快照大小
+
+common.errcode.crtVol.sameVol    = 重复的卷名
+common.errcode.getVolSize.noVol  = 底层驱动找不到指定卷
+common.errcode.inconsistentProf  = 该复制策略信息不完整，不能使用!
+common.errcode.errProfReason     = 错误原因 :
+common.errcode.consistentProf    = 该复制策略合格!
+common.errcode.profile.noBkClnt  = 复制主机信息丢失!
+common.errcode.profile.noDest    = 复制目的端丢失!
+common.errcode.profile.noCmd     = 复制后脚本丢失!
+common.errcode.profile.notFoundWindir = 找不到操作系统目录!
+
+## Command
+common.cmd.addVol 	= 增加目标卷
+common.cmd.delVol	= 删除目标卷
+common.cmd.getVol 	= 获取目标卷
+common.cmd.getVolSize   = 获取卷大小 
+common.cmd.getVgSize    = 获取卷组大小
+common.cmd.isCrtedVg    = 存在卷组
+common.cmd.onlineDev    = 激活设备
+common.cmd.offlineDev   = 离线设备
+
+common.cmd.addVolMap    = 增加卷信息
+common.cmd.delVolMap    = 删除卷信息
+common.cmd.modVolMap    = 修改卷信息
+common.cmd.getVolMap    = 获取卷信息
+
+common.cmd.addUser   	= 增加用户
+common.cmd.delUser   	= 删除用户
+common.cmd.modUser 	= 修改用户
+common.cmd.getUser   	= 获取用户
+common.cmd.modUserPwd   = 修改用户口令
+
+common.cmd.initClnt     = 初始化客户端
+common.cmd.drRecover    = 灾难恢复
+common.cmd.restDisk     = 恢复源盘
+common.cmd.unknown     	= 未知命令
+
+common.cmd.addDBSche    = 增加管理数据库调度
+common.cmd.delDBSche    = 删除管理数据库调度
+common.cmd.modDBSche    = 修改管理数据库调度
+common.cmd.getDBSche    = 获取管理数据库调度
+
+common.cmd.getConf = 获取配置文件 
+
+common.cmd.getClnt = 获取客户端
+common.cmd.modClnt = 修改客户端
+common.cmd.delClnt = 删除客户端
+common.cmd.addClnt = 增加客户端
+common.cmd.getClntInfo = 获取客户端信息
+
+common.cmd.addClient = 增加客户端
+common.cmd.delClient = 删除客户端
+common.cmd.modClient = 修改客户端
+common.cmd.getClient = 获取客户端
+
+common.cmd.listdir = 列目录
+common.cmd.isdir  = 获取文件状态
+common.cmd.getLastModTime = 获取文件修改时间
+
+common.cmd.getServMap = 获取服务关联
+common.cmd.delServMap = 删除服务关联
+common.cmd.addServMap = 增加服务关联
+common.cmd.getServ = 获取服务
+common.cmd.delServ = 删除服务
+
+common.cmd.addSnap = 创建快照
+common.cmd.delSnap = 删除快照
+common.cmd.resetSnap = 重置快照
+common.cmd.getSnap = 获取快照
+common.cmd.expSSpace = 扩展快照空间
+common.cmd.modSnap = 修改快照
+
+common.cmd.addLM = 主机映射
+common.cmd.delLM = 取消主机映射
+
+common.cmd.getActLink = 获取活动连接
+common.cmd.getCluster = 获取集群信息
+common.cmd.addCluster = 增加集群信息
+common.cmd.modCluster = 修改集群信息
+common.cmd.delCluster = 删除集群信息
+
+common.cmd.getView = 获取快照副本
+common.cmd.addView = 创建快照副本
+common.cmd.delView = 删除快照副本
+
+common.cmd.getPool = 获取存储池
+common.cmd.getPoolInfo = 获取存储池信息
+
+common.cmd.login = 登录
+common.cmd.logout = 注销 
+common.cmd.catFile = 查看文件
+common.cmd.mvFile = 移动文件
+common.cmd.delFile = 删除文件
+common.cmd.mkDir = 创建目录
+common.cmd.cpFile = 拷贝文件
+common.cmd.getPart = 获取系统分区
+common.cmd.getFsList = 获取文件系统
+common.cmd.getNetCard = 获取网卡
+common.cmd.getService = 获取系统服务
+common.cmd.getHostName = 获取主机名
+common.cmd.format = 格式化
+common.cmd.isTargetVol = 获取磁盘类型
+common.cmd.getCopyProcess = 获取复制进度
+common.cmd.getSubNetList = 获取DHCP子网列表
+common.cmd.getDhcpClnt = 获取DHCP客户端列表
+common.cmd.getDhcpGlobalOpt = 获取DHCP全局选项
+common.cmd.getDhcpIbootSrv = 获取DHCP iBoot服务器列表
+common.cmd.dhcpIsStart = 检查DHCP开启状态
+common.cmd.startDHCP = 启用DHCP
+common.cmd.stopDHCP = 停用DHCP
+common.cmd.chgOpt = 修改全局选项
+common.cmd.listIBoot = 获取网络启动配置
+common.cmd.chkLic = 检查软件许可
+common.cmd.getSnapUnderDisk = 获取直属于卷的快照   
+common.cmd.getSnapUnderView = 获取直属于快照副本的快照
+common.cmd.queryDB = 查询数据库
+common.cmd.getRemotePool = 获取镜像服务器的存储池
+common.cmd.getRemotePoolInfo = 获取镜像服务器存储池的信息
+common.cmd.getUUID= 获取主机UUID
+common.cmd.getIf = 获取服务器的网络接口
+common.cmd.adjustDrv = 更换盘符
+common.cmd.viewErrLog = 诊断日志
+common.cmd.dup = 数据复制
+common.cmd.anti-dup = 数据恢复
+common.cmd.queryDB = 查询数据库
+
+common.cmd.getSWUSrv = 获取镜像服务器
+common.cmd.modSWUSrv = 修改镜像服务器
+common.cmd.delSWUSrv = 删除镜像服务器
+common.cmd.addSWUSrv = 增加镜像服务器
+
+common.cmd.getmglist = 获取MG
+common.cmd.modmg     = 修改MG
+common.cmd.delmg     = 删除MG
+common.cmd.addmg     = 增加MG
+common.cmd.chkmg     = 检查MG状态
+common.cmd.startmg   = 启动MG
+common.cmd.stopmg    = 停止MG
+common.cmd.sendSig2Mg = 通知创建快照消息
+
+common.cmd.getmjlist = 获取镜像任务
+common.cmd.modmj     = 修改镜像任务
+common.cmd.delmj     = 删除镜像任务
+common.cmd.addmj     = 增加镜像任务
+common.cmd.startmj   = 启动镜像任务
+common.cmd.stopmj    = 停止镜像任务
+common.cmd.getMjStatus = 获取镜像任务状态
+
+common.cmd.getmjschlist = 获取镜像时间计划
+common.cmd.modmjsch     = 修改镜像时间计划
+common.cmd.delmjsch     = 删除镜像时间计划
+common.cmd.addmjsch     = 增加镜像时间计划
+
+common.cmd.getSrcAgnt = 获取远程主机
+common.cmd.delSrcAgnt = 删除远程主机
+common.cmd.modSrcAgnt = 修改远程主机
+common.cmd.getMirrorDisk = 获取镜像卷
+common.cmd.delMirrorDisk = 删除镜像卷
+common.cmd.modMirrorDisk = 修改镜像卷
+
+common.cmd.getNetbootedHost = 获取网络启动主机
+common.cmd.addNetbootedHost = 增加网络启动主机
+common.cmd.delNetbootedHost = 删除网络启动主机
+common.cmd.modNetbootedHost = 修改网络启动主机
+
+common.cmd.getSnapUsage = 获取启动版本对象
+common.cmd.addSnapUsage = 增加启动版本对象
+common.cmd.delSnapUsage = 删除启动版本对象
+
+common.cmd.addProfile 	= 增加策略文件
+common.cmd.delProfile 	= 删除策略文件
+common.cmd.modProfile  	= 修改策略文件
+common.cmd.getProfile 	= 获取策略模版
+common.cmd.renameProf   = 重命令策略文件
+
+common.cmd.getTskLog    = 获取备份日志
+common.cmd.delTskLog    = 清除备份日志
+common.cmd.delAllTskLog = 清除所有备份日志
+common.cmd.delTask	= 删除任务
+common.cmd.killTask    	= 取消任务
+common.cmd.activeTask   = 启动任务
+common.cmd.getTask     	= 获取任务
+
+common.cmd.addBkObj = 增加复制内容
+common.cmd.modBkObj = 修改复制内容
+common.cmd.delBkObj = 删除复制内容
+
+common.cmd.getDhcpConf = 获取DHCP配置
+common.cmd.getConf = 获取系统配置
+common.cmd.saveDhcpConf =保存DHCP配置
+common.cmd.getWinDir = 获取操作系统目录
+
+common.cmd.clonedisk = 克隆盘
+common.cmd.getCloneDisk = 获取克隆盘
+common.cmd.destorydisk = 删除盘
+common.cmd.addConeDisk = 增加克隆盘
+common.cmd.delConeDisk = 删除克隆盘
+common.cmd.modConeDisk = 修改克隆盘
+common.cmd.getUISnapSum = 获取无限增量快照个数
+common.cmd.getDriveGrp = 获取磁盘组
+
+common.cmd.addPortal = 增加target服务器
+common.cmd.loginTarget = 登陆target服务器
+common.cmd.logoutTarget = 撤离target服务器
+common.cmd.modCloneDisk = 修改克隆盘
+
+common.table.ms.id           = ID
+common.table.ms.name 	     = 名字
+common.table.ms.service_type = 协议
+common.table.ms.media_type   = 介质类型
+common.table.ms.path 	     = 路径
+common.table.ms.capacity     = 容量[M]
+common.table.ms.user 	     = 用户
+common.table.ms.passwd 	     = 口令
+common.table.ms.used 	     = 被使用率
+
+## common communication error msg
+common.errmsg1 = The communication protocol dismatch!
+common.errmsg2 = The communication was interrupted!
+common.errmsg3 = 登录失败!
+common.errmsg4 = 通信中断或服务器出错!
+common.error.initfail = 初始化程序发生以下错误 :
+common.errmsg.badmagic = 通信协议错误：不正确的幻数!
+common.errmsg.badLen = 通信协议错误：不正确的包长!
+common.errmsg.badVer = 通信协议错误：不正确的协议版本!
+common.errmsg.netio  = 网络通信出错!
+common.errmsg.timeout= 网络通信超时!
+common.errmsg.generalErr = 未知错误!
+common.errmsg.crtTmpFileLocallyFailed = 创建临时文件失败!
+common.errmsg.sendFileFailed = 发送文件内容失败!
+common.errmsg.rstfiletoolong = 要恢复的文件列表长度应该 < 1024。
+common.errmsg.noPool = 系统还没有创建存储池!
+common.errmsg.format = 错误的协议格式。
+common.errmsg.parsePool = 分析存储池空间失败。
+
+#####################   SanBootView
+View.frameTitle = UWS 管理器
+
+View.Menu.file  = 文件(F)
+View.Menu.logicalPro = 逻辑保护(L)
+View.Menu.physicalPro = 物理保护(P)
+View.Menu.winop = Windows主机
+View.Menu.nwinop = 非Windows主机
+View.Menu.dup    = 数据保护
+View.Menu.setup = 设置(S)
+View.Menu.rdr   = 远程容灾管理(E)
+View.Menu.help  = 帮助(H)
+View.Menu.device = 设备(D)
+View.Menu.vol  = 卷
+View.Menu.view = 快照副本
+View.Menu.snap = 快照
+View.Menu.lm   = 主机映射 
+View.Menu.host = 主机
+View.Menu.user = 用户
+View.Menu.SWU  = 镜像服务器
+View.Menu.mj   = 镜像任务
+View.Menu.prof = 策略
+View.Menu.sch  = 调度
+View.Menu.sdhm = 数据健康管理
+
+View.MenuItem.connect    = 连接...
+View.MenuItem.disConnect = 断开连接
+View.MenuItem.exit       = 退出
+View.MenuItem.property   = 属性
+View.MenuItem.bakMdb     = 备份管理数据库
+View.MenuItem.resMdb     = 恢复管理数据库
+View.MenuItem.about      = 关于...
+View.MenuItem.init       = 初始化
+View.MenuItem.init1	 = 逻辑初始化Windows主机
+View.MenuItem.init2	 = 逻辑初始化Linux主机
+View.MenuItem.init3	 = 物理初始化Windows主机
+View.MenuItem.init4	 = 物理初始化Windows集群
+View.MenuItem.dataDisater= 灾难恢复 
+View.MenuItem.failover   = 网络启动
+View.MenuItem.switchDisk  = 切换到网络盘
+View.MenuItem.switchDisk1 = 切换回本地盘
+View.MenuItem.cpnetdisk   = 复制网络盘
+View.MenuItem.failback   = 恢复源盘后本地启动
+View.MenuItem.startStopMjInBatch = 批量启/停镜像任务
+View.MenuItem.crtMjInBatch = 批量创建镜像任务
+View.MenuItem.modMjInBatch = 批量修改镜像任务
+View.MenuItem.rstOriData = 恢复源盘
+View.MenuItem.crtVol     = 创建卷
+View.MenuItem.delVol     = 删除卷
+View.MenuItem.crtView    = 创建快照副本
+View.MenuItem.delView    = 删除快照副本
+View.MenuItem.crtSnap    = 创建快照
+View.MenuItem.crtSnap1   = 创建一致性快照
+View.MenuItem.crtSnap2   = 创建最新快照
+View.MenuItem.delSnap    = 删除快照
+View.MenuItem.resetSnap  = 重置快照
+View.MenuItem.expsspace  = 扩展快照
+View.MenuItem.crtLm 	 = 映射
+View.MenuItem.delLm      = 取消映射
+View.MenuItem.crtHost = 增加主机
+View.MenuItem.delHost = 删除主机
+View.MenuItem.delRHost = 删除回滚主机
+View.MenuItem.modHost = 修改主机
+View.MenuItem.modHostBoot = 修改网启
+View.MenuItem.delCluster = 删除集群
+View.MenuItem.modCluster = 修改集群 
+View.MenuItem.crtUser = 增加用户
+View.MenuItem.delUser = 删除用户
+View.MenuItem.modUser = 修改用户
+View.MenuItem.modPasswd = 修改密码
+View.MenuItem.msgReport = 报表
+View.MenuItem.dhcp     = DHCP
+View.MenuItem.selBootVer = 选择恢复版本
+View.MenuItem.pool = 存储池
+View.MenuItem.crtPool = 创建
+View.MenuItem.delPool = 删除
+View.MenuItem.adminOpt = 管理选项
+View.MenuItem.crtSWU = 增加镜像服务器
+View.MenuItem.delSWU = 删除镜像服务器
+View.MenuItem.modSWU = 修改镜像服务器
+View.MenuItem.crtMj  = 增加镜像任务
+View.MenuItem.crtIncMj=增加无限增量镜像任务
+View.MenuItem.delMj  = 删除镜像任务
+View.MenuItem.modMj  = 修改镜像任务
+View.MenuItem.startMj = 启动镜像任务
+View.MenuItem.qstartMj = 快速启动镜像任务
+View.MenuItem.stopMj  = 停止镜像任务
+View.MenuItem.monMj   = 监控镜像任务
+View.MenuItem.crtCj   = 创建复制任务
+View.MenuItem.delCj   = 删除复制任务
+View.MenuItem.modCj   = 修改复制任务
+View.MenuItem.startCj = 启动复制任务
+View.MenuItem.qstartCj = 快速启动复制任务
+View.MenuItem.stopCj  = 停止复制任务
+View.MenuItem.monCj   = 监控复制任务
+View.MenuItem.modSrcSWU = 修改镜像到本地的UWS服务器
+View.MenuItem.onlineDev = 激活
+View.MenuItem.offlineDev = 离线
+View.MenuItem.addProf = 增加策略
+View.MenuItem.modProf = 修改策略
+View.MenuItem.delProf = 删除策略
+View.MenuItem.renameProf = 重命名
+View.MenuItem.addSch = 增加调度
+View.MenuItem.modSch = 修改调度
+View.MenuItem.delSch = 删除调度
+View.MenuItem.duplog = 日志
+View.MenuItem.mon = 监控
+View.MenuItem.snaptree = 快照树
+View.MenuItem.runProf = 运行策略
+View.MenuItem.verifyProf = 校验策略
+View.MenuItem.modPass =  用户口令
+View.MenuItem.delDstAgnt = 删除网络启动主机
+View.MenuItem.ibootForLinux = 网络启动向导
+View.MenuItem.mntSnap = 安装快照
+View.MenuItem.mntView = 安装快照副本
+View.MenuItem.umntView = 卸载快照副本
+View.MenuItem.sdhmInfo = 信息
+View.MenuItem.sdhmSet = 设置
+View.MenuItem.sdhmReport = 报告
+View.MenuItem.sdhmMirror = 系统健康报告
+View.MenuItem.rollback = 回滚Windows主机
+View.MenuItem.rollbackvol = 回滚镜像卷 
+View.MenuItem.rollbacknwin = 回滚非Windows主机
+View.MenuItem.clonedisk = 克隆无限增量快照
+View.MenuItem.deluimirvol = 删除无限增量镜像卷
+View.MenuItem.delCloneDisk = 删除克隆盘
+View.MenuItem.queryUISnap = 查询无限增量快照
+View.MenuItem.querySyncState = 查询同步状态
+View.MenuItem.queryInitState = 查询初始化进度
+View.MenuItem.startAutoCrtSnap = 开启自动创建快照
+View.MenuItem.crtMjSch = 创建镜像时间计划
+View.MenuItem.modMjSch = 修改镜像时间计划
+View.MenuItem.delMjSch = 删除镜像时间计划
+
+View.MenuItem.setupMjSch = 设置镜像时间计划
+View.MenuItem.userMgr = 用户管理
+View.MenuItem.audit = 审计日志
+View.MenuItem.mjob = mjob
+
+MjobLogDialog.title = mjob传输量统计
+MjobLogDialog.table.mjob.beginTime = beginTime
+MjobLogDialog.table.mjob.endTime = endTime
+MjobLogDialog.table.mjob.id = id
+MjobLogDialog.table.mjob.rootid = rootid 
+MjobLogDialog.table.mjob.destrootid = destrootid
+MjobLogDialog.table.mjob.size = size
+MjobLogDialog.table.mjob.transfersize = transfersize
+MjobLogDialog.table.mjob.runtime = runtime
+
+View.comment1 = 查看系统的所有信息
+View.tooltip.connect        = 连接
+View.tooltip.disconnect     = 断开连接
+View.tooltip.about          = 关于
+View.tooltip.exit           = 退出
+View.tooltip.initHost 	    = 初始化主机(逻辑保护)
+View.tooltip.failover       = 从本地盘迁移到iSCSI卷(逻辑保护)
+View.tooltip.rstOriData     = 恢复源盘（逻辑保护）
+View.tooltip.productReport  = 报表
+View.tooltip.duplog	    = 查看复制日志（逻辑保护）
+View.tooltip.mon            = 监控复制任务（逻辑保护）
+
+View.table.scheduler.id = 标识
+View.table.scheduler.enable = 生效?
+View.table.scheduler.name = 调度名称
+View.table.scheduler.startTime = 开始时间
+View.table.scheduler.profileName = 策略文件
+View.table.scheduler.client = 主机
+
+View.table.host.id   = ID
+View.table.host.name = 主机名
+View.table.host.ip   = IP
+View.table.host.priip = 私有IP
+View.table.host.vip  = 虚拟IP
+View.table.host.port = 端口
+View.table.host.os   = 操作系统
+View.table.host.machine = 机器类型
+View.table.host.status  = 状态
+View.table.host.protecttype = 保护类型
+View.table.host.inited  = 初始化?
+View.table.host.autoDR  = 自动灾难恢复?
+View.table.host.autoReboot = 自动重启?
+View.table.host.mac = 启动网卡的MAC
+View.table.host.bootMode = 快速启动方式
+View.table.host.uuid  = UUID
+
+View.table.volmap.name = 卷名
+View.table.volmap.fs   = 文件系统
+View.table.volmap.targetid = 卷ID
+View.table.volmap.disklabel = 盘符
+View.table.volmap.maxSnap = 最大快照#
+View.table.volmap.size = 容量
+View.table.volmap.status = 状态
+View.table.volmap.desc = 描述
+View.table.volmap.selBootVer = 最后一次所选版本
+View.table.volmap.bootVer = 最后一次成功启动所用版本
+View.table.volmap.id   = 标识
+View.table.volmap.type = 卷类型
+View.table.volmap.uuid = UUID
+View.table.volmap.autoCrtSnap = 自动生成版本
+
+View.table.vol.name = 名字
+View.table.vol.targetid = 目标ID
+View.table.vol.cap = 容量
+View.table.vol.raid = 数据安全模式
+View.table.vol.status = 状态
+View.table.vol.id  = 标识
+
+View.table.user.id    = ID
+View.table.user.name  = 名字
+View.table.user.right = 权限
+
+View.table.actlink.ip = IP
+View.table.actlink.initor = 启动者
+View.table.actlink.targetID = 目标ID
+View.table.actlink.send = 发送
+View.table.actlink.rec = 接收
+
+View.table.lm.ip = IP
+View.table.lm.mask = 掩码
+View.table.lm.access = 访问权限
+View.table.lm.srvusr = 服务器用户名
+View.table.lm.cltusr = 客户端用户名
+
+View.table.snap.viewid = 快照副本标识
+View.table.snap.snapid = 快照标识
+View.table.snap.targetID = 目标ID
+View.table.snap.name = 名字
+View.table.snap.size = 快照大小
+View.table.snap.crtTime = 创建时间
+View.table.snap.cap = 容量
+View.table.snap.status = 状态
+View.table.snap.used = 使用%
+View.table.snap.occuped = 占源卷%
+View.table.snap.finish  = 完成
+
+View.table.pool.id   = ID
+View.table.pool.name = 名称
+View.table.pool.path = 路径
+View.table.pool.size = 总大小
+View.table.pool.used = 可用空间
+
+View.table.disk.name = 卷
+View.table.disk.cap  = 容量
+
+View.tree.userobject.topnode = UWS 管理器
+
+View.table.swu.id   = 标识
+View.table.swu.ip   = IP
+View.table.swu.port = 端口
+View.table.swu.psn  = 产品序列号
+
+View.table.mj.id    = 标识
+View.table.mj.name  = 名称
+View.table.mj.type  = 类型
+View.table.mj.swu_ip = UWS镜像服务器地址
+View.table.mj.swu_port = UWS镜像服务器端口
+View.table.mj.swu_pool = UWS镜像上的存储池
+View.table.mj.opt      = 传输方式
+View.table.mj.status   = 状态
+View.table.mj.desc     = 描述
+View.table.mj.toTransferNum = 待传快照数
+View.table.mj.mjInfo = 镜像错误消息
+View.table.mj.swu = 镜像服务器
+View.table.mj.sch = 镜像时间计划对象标识
+
+View.table.profile.name = 策略文件名
+View.table.profile.sch  = 调度个数
+View.table.profile.autocrtversion = 版本生成频率
+View.table.profile.content = 内容摘要
+View.table.profile.content1 = 保护对象
+View.table.profile.dbtype = 数据库类型
+View.table.profile.dbinstances = 数据库实例
+View.table.profile.services = 相关服务
+View.table.profile.minSnapSize = 最小数据增量
+
+View.table.clonedisk.id = 标识
+View.table.clonedisk.label = 文件系统
+View.table.clonedisk.crttime = 源快照的创建时间
+View.table.clonedisk.tid = 目标ID
+View.table.clonedisk.desc = 描述
+
+View.table.mjsch.id = 标识
+View.table.mjsch.mon = 周一
+View.table.mjsch.tue = 周二
+View.table.mjsch.wed = 周三
+View.table.mjsch.thu = 周四
+View.table.mjsch.fri = 周五
+View.table.mjsch.sat = 周六
+View.table.mjsch.sun = 周日
+
+
+View.pdiagTitle.delSnap = 正在删除快照
+View.pdiagTip.delSnap = 正在删除快照，请稍候...
+
+View.pdiagTitle.crtSnap = 正在创建快照
+View.pdiagTip.crtSnap = 正在创建快照，请稍候...
+
+View.pdiagTitle.getInitInfo = 正在收集主机信息
+View.pdiagTip.getInitInfo = 正在收集主机信息，请稍候...
+
+View.pdiagTitle.delview = 正在删除快照副本
+View.pdiagTip.delview = 正在删除快照副本，请稍候...
+
+View.pdiagTitle.getSnapVer = 正在准备恢复版本
+View.pdiagTip.getSnapVer = 正在准备恢复版本，请稍候...
+
+View.pdiagTitle.modifyHost = 正在修改
+View.pdiagTip.modifyHost = 正在修改，请稍候...
+
+View.pdiagTitle.modifyHost1 = 正在更新主机信息
+View.pdiagTip.modifyHost1 = 发现主机信息发生变化，正在更新服务器，请稍候...
+
+View.pdiagTitle.selRstVer = 正在设置恢复版本
+View.pdiagTip.selRstVer = 正在设置恢复版本，请稍候...
+
+View.pdiagTitle.crtView = 创建快照副本
+View.pdiagTip.crtView = 正在为所选快照创建快照副本，请稍候...
+
+View.pdiagTitle.delvol = 正在删除空闲卷
+View.pdiagTip.delvol = 正在删除空闲卷，请稍候...
+
+View.pdiagTitle.getView = 正在获取快照副本
+View.pdiagTip.getView = 正在获取快照副本，请稍候...
+
+View.pdiagTitle.getActlink = 正在获取活动连接
+View.pdiagTip.getActlink = 正在获取活动连接，请稍候...
+
+View.pdiagTitle.getSnap = 正在获取快照
+View.pdiagTip.getSnap = 正在获取快照，请稍候...
+
+View.pdiagTitle.getPool = 正在获取存储池信息
+View.pdiagTip.getPool = 正在获取存储池信息，请稍候...
+
+View.pdiagTitle.getPool1 = 正在检查存储池有无可用空间
+View.pdiagTip.getPool1 = 正在检查存储池有无可用空间，请稍候...
+
+View.pdiagTitle.getPool2 = 正在获取镜像服务器上的存储池信息
+View.pdiagTip.getPool2 = 正在获取镜像服务器上的存储池信息，请稍候...
+
+View.pdiagTitle.crtPool = 正在创建存储池
+View.pdiagTip.crtPool = 正在创建存储池，请稍候...
+
+View.pdiagTitle.getOrphVol = 正在获取空闲卷
+View.pdiagTip.getOrphVol = 正在获取空闲卷，请稍候...
+
+View.pdiagTitle.getLunMap = 正在获取主机映射
+View.pdiagTip.getLunMap = 正在获取主机映射，请稍候...
+
+View.pdiagTitle.getVol = 正在获取主机卷
+View.pdiagTip.getVol = 正在获取主机卷，请稍候...
+
+View.pdiagTitle.getVolState = 正在获取卷状态
+View.pdiagTip.getVolState = 正在获取卷状态，请稍候...
+
+View.pdiagTitle.generateRpt = 正在生成报表
+View.pdiagTip.generateRpt = 正在生成报表，请稍候...
+
+View.pdiagTitle.getSDHMInfo = 正在获取主机设定信息
+View.pdiagTip.getSDHMInfo = 正在获取主机设定信息，请稍候...
+
+View.pdiagTitle.setSDHMInfo = 正在修改主机设定信息
+View.pdiagTip.setSDHMInfo = 正在修改主机设定信息，请稍候...
+
+View.pdiagTitle.getSDHMHostList = 正在获取主机列表
+View.pdiagTip.getSDHMHostList = 正在获取主机列表，请稍候...
+View.pdiagTitle.getSDHMUWSInfo = 正在获取UWS信息
+View.pdiagTip.getSDHMUWSInfo = 正在获取UWS信息，请稍候...
+
+View.pdiagTitle.getSDHMMirrorUWSList = 正在获取镜像UWS列表
+View.pdiagTip.getSDHMMirrorUWSList = 正在获取镜像UWS列表，请稍候...
+
+View.pdiagTitle.generateReport = 正在生成报表
+View.pdiagTip.generateReport = 正在生成报表，请稍候...
+View.pdiagTitle.getMj = 正在获取镜像任务
+View.pdiagTip.getMj = 正在获取镜像任务，请稍候...
+
+View.pdiagTitle.getCj = 正在获取复制任务
+View.pdiagTip.getCj = 正在获取复制任务，请稍候...
+
+View.pdiagTitle.startMj = 正在启动镜像任务
+View.pdiagTip.startMj = 正在启动镜像任务，请稍候...
+
+View.pdiagTitle.startCj = 正在启动复制任务
+View.pdiagTip.startCj = 正在启动复制任务，请稍候...
+
+View.pdiagTitle.stopMj = 正在停止镜像任务
+View.pdiagTip.stopMj = 正在停止镜像任务，请稍候...
+
+View.pdiagTitle.stopCj = 正在停止复制任务
+View.pdiagTip.stopCj = 正在停止复制任务，请稍候...
+
+View.pdiagTitle.getSrcSWU = 正在获取镜像到本地的UWS服务器
+View.pdiagTip.getSrcSWU = 正在获取镜像到本地的UWS服务器，请稍候...
+
+View.pdiagTitle.getDestSWU = 正在获取镜像服务器
+View.pdiagTip.getDestSWU = 正在获取镜像服务器，请稍候...
+
+View.pdiagTitle.getRHost = 正在获取远程主机
+View.pdiagTip.getRHost = 正在获取远程主机，请稍候...
+
+View.pdiagTitle.getMirrorVol = 正在获取镜像卷
+View.pdiagTip.getMirrorVol = 正在获取镜像卷，请稍候...
+
+View.pdiagTitle.getUnlitIncMirrorVol = 正在获取无限增量镜像卷
+View.pdiagTip.getUnlitIncMirrorVol = 正在获取无限增量镜像卷，请稍后...
+
+View.pdiagTitle.getCloneDisk = 正在获取克隆盘
+View.pdiagTip.getCloneDisk = 正在获取克隆盘，请稍后...
+
+View.pdiagTitle.getFreeMirrorVol = 正在获取空闲镜像卷
+View.pdiagTip.getFreeMirrorVol = 正在获取空闲镜像卷，请稍候...
+
+View.pdiagTitle.getMirrorProcess = 正在获取镜像进度
+View.pdiagTip.getMirrorProcess = 正在获取镜像进度，请稍候...
+
+View.pdiagTitle.onlineDev = 正在激活设备
+View.pdiagTip.onlineDev = 正在激活设备，请稍候...
+
+View.pdiagTitle.getNetbootedHost = 正在获取网络启动主机 
+View.pdiagTip.getNetbootedHost = 正在获取网络启动主机，请稍候...
+
+View.pdiagTitle.generateDhcpConf = 正在生成DHCP缺省配置
+View.pdiagTip.generateDhcpConf = 正在生成DHCP缺省配置，请稍候...
+
+View.pdiagTitle.delMj = 正在删除镜像任务
+View.pdiagTip.delMj = 正在删除镜像任务，请稍候...
+
+View.pdiagTitle.mntLocalVol = 正在为本地硬盘指派盘符
+View.pdiagTip.mntLocalVol = 正在为本地硬盘指派盘符，请稍候...
+
+View.pdiagTitle.getSch = 正在获取调度策略
+View.pdiagTip.getSch = 正在获取调度策略，请稍候... 
+
+View.pdiagTitle.getProf = 正在获取复制策略 
+View.pdiagTip.getProf = 正在获取复制策略，请稍候...
+
+View.pdiagTitle.delHost = 正在删除主机 
+View.pdiagTip.delHost = 正在删除主机，请稍候...
+
+View.pdiagTitle.delCluster = 正在删除集群
+View.pdiagTip.delCluster = 正在删除集群，请稍候...
+
+View.pdiagTitle.modUser = 正在修改用户/口令
+View.pdiagTip.modUser = 正在修改用户/口令，请稍候...
+
+View.pdiagTitle.modProf = 正在更新复制模板
+View.pdiagTip.modProf = 正在更新复制模板，请稍候..
+
+View.pdiagTitle.delNBHost = 正在删除网络启动主机
+View.pdiagTip.delNBHost = 正在删除网络启动主机，请稍候...
+View.pdiagTitle.modSWUSrvNode = 正在修改镜像服务器
+View.pdiagTip.modSWUSrvNode = 正在修改镜像服务器，请稍候...
+
+View.pdiagTitle.rollback = 正在进行回滚
+View.pdiagTip.rollback = 正在进行回滚，请稍候...
+View.pdiagTitle.stAutoCrtSnap = 正在启动自动创建快照
+View.pdiagTip.stAutoCrtSnap = 正在启动自动创建快照，请稍后...
+View.pdiagTitle.crtSWUSrvNode = 正在创建镜像服务器
+View.pdiagTip.crtSWUSrvNode = 正在创建镜像服务器，请稍候...
+
+View.pdiagTitle.clonedisk = 正在克隆盘
+View.pdiagTip.clonedisk = 正在克隆盘，请稍候...
+
+View.pdiagTitle.destroyDisk = 正在删除盘
+View.pdiagTip.destroyDisk = 正在删除盘，请稍候...
+
+View.pdiagTitle.delCloneDisk = 正在删除克隆盘
+View.pdiagTip.delCloneDisk = 正在删除克隆盘，请稍候...
+View.pdiagTitle.editPPProf = 正在修改物理保护策略
+View.pdiagTip.editPPProf = 正在修改物理保护策略，请稍候...
+
+##################### MenuAndBtnCenter
+MenuAndBtnCenter.confirm1 = 你真的要删除这些卷吗? 
+MenuAndBtnCenter.confirm2 = 你真的要删除这个快照吗?
+MenuAndBtnCenter.confirm3 = 你真的要删除这个主机吗?
+MenuAndBtnCenter.confirm4 = 你真的要取消这个主机映射吗?
+MenuAndBtnCenter.confirm5 = 该操作必须在“恢复源盘向导”成功完成后再做，你确定该条件满足吗? 
+MenuAndBtnCenter.confirm6 = 你真的要网络启动吗?
+MenuAndBtnCenter.confirm7 = 你真的要删除这些快照副本吗?
+MenuAndBtnCenter.confirm8 = 你真的要删除这个存储池吗?
+MenuAndBtnCenter.confirm9 = 删除该存储池必须先删除它上面的卷/快照/快照副本。是否继续?
+MenuAndBtnCenter.confirm10 = 要删除的主机连接不上，有可能该主机已经不存在，是否继续删除?
+MenuAndBtnCenter.confirm11 = 快照数已经达到最大值，你是否确定删除最老的快照以便创建新的快照?
+MenuAndBtnCenter.confirm12 = 删除该镜像服务器意味着将删除跟它相关的镜像任务。是否继续?
+MenuAndBtnCenter.confirm13 = 你真的要删除这个镜像任务吗?
+MenuAndBtnCenter.confirm14 = 你真的要删除这个调度吗?
+MenuAndBtnCenter.confirm15 = 你真的要删除这个复制策略吗?
+MenuAndBtnCenter.confirm16 = 当前无法判断主机的状态，版本选择只能在系统启在本地盘或系统关闭的情况下进行。是否继续操作?
+MenuAndBtnCenter.confirm17 = 通过比较待修改主机的信息和新获取的信息，系统认为它们是不同的主机。是否继续操作?
+MenuAndBtnCenter.confirm18 = 你真的要删除这个网络启动主机吗?
+MenuAndBtnCenter.confirm19 = 该操作必须满足如下条件中的一个：\n1）源端UWS服务器上对应的镜像任务已删除;\n2）或者源端UWS服务器已经不存在。\n上述条件是否满足?
+MenuAndBtnCenter.confirm20 = 删除该镜像任务对应的主机信息吗?
+MenuAndBtnCenter.confirm21 = 该无限增量镜像卷还存在对应的镜像任务，是否要删除?
+MenuAndBtnCenter.confirm22 = 你真的要删除这个克隆盘吗?
+MenuAndBtnCenter.confirm23 = 你真的要删除这个复制任务吗?
+MenuAndBtnCenter.confirm24 = 目的端镜像服务器连接不上，也许已经不存在，是否继续删除?
+MenuAndBtnCenter.confirm25 = 你真的要删除这个镜像时间计划吗?
+MenuAndBtnCenter.confirm26 = 存储池空间已经被使用完了。初始化操作将不能创建新目标卷，但是仍然可以使用之前分配的目标卷。是否继续操作?
+MenuAndBtnCenter.confirm27 = 你真的要切换到网络盘吗?
+MenuAndBtnCenter.confirm28 = 你真的要切换到本地盘吗?
+MenuAndBtnCenter.confirm29 = 系统盘和其他数据盘属于同一个保护策略，应该一起做切换。是否继续只做数据盘的切换?
+MenuAndBtnCenter.confirm30 = 恢复目标盘比源盘容量小。是否继续恢复？
+MenuAndBtnCenter.confirm31 = 你真的要删除这个集群吗?
+MenuAndBtnCenter.confirm32 = 要删除的集群成员主机连接不上，有可能该主机已经不存在，是否继续删除?
+
+MenuAndBtnCenter.pdiagTitle.gettingAgentInfo = 正在获取客户端信息
+MenuAndBtnCenter.pdiagTip.gettingAgentInfo = 正在获取客户端信息，请稍候...
+
+MenuAndBtnCenter.error.crtSnap = 无法创建快照。
+MenuAndBtnCenter.error.crtView = 无法创建快照副本。
+MenuAndBtnCenter.error.notInited = 该客户端还没有被成功初始化。
+MenuAndBtnCenter.error.notInited1 = 该集群还没有被成功初始化。
+MenuAndBtnCenter.error.notChgVerWhenNetboot = 该主机已经网络启动，不能进行版本选择，否则将使主机出现严重故障。
+MenuAndBtnCenter.error.notStartFromNet = 该客户端不是从网络启动的。
+MenuAndBtnCenter.error.notStartFromLocal = 请将客户端从本地盘完全启动后再进行该操作。
+MenuAndBtnCenter.error.getVgSize = 获取系统卷空间大小失败。
+MenuAndBtnCenter.error.noVgSpace = 系统已经没有可用卷空间了。
+MenuAndBtnCenter.error.notWinHost = 该向导只适用于Windows主机。
+MenuAndBtnCenter.error.TaskIsRunning = 正在对磁盘切换涉及到的盘进行数据复制，请停止这些任务后再进行切换。
+MenuAndBtnCenter.error.isWinHost = 该向导只适用于非Windows主机。
+MenuAndBtnCenter.error.notFoundTgtVolMap = 在MDB中找不到如下lv对应的目标卷信息:
+MenuAndBtnCenter.error.addPool = 创建存储池对象失败:
+MenuAndBtnCenter.error.mountFS = 安装存储池失败:
+MenuAndBtnCenter.error.mkfs = 格式化存储池失败:
+MenuAndBtnCenter.error.umountFS = 卸载存储池失败:
+MenuAndBtnCenter.error.crtResVol = 为存储池分配空间失败:
+MenuAndBtnCenter.error.delPool = 删除存储池对象失败:
+MenuAndBtnCenter.error.delResVol = 回收存储池空间失败:
+MenuAndBtnCenter.error.notFoundPool = 找不到该卷对应的存储池，无法创建快照。
+MenuAndBtnCenter.error.getPool = 获取存储池失败:
+MenuAndBtnCenter.error.noPool = 系统中没有可用的存储池。
+MenuAndBtnCenter.error.noPool1 = 镜像服务器上没有可用的存储池。
+MenuAndBtnCenter.error.noEnoughSpace = 所有存储池的空间都被用尽了。
+MenuAndBtnCenter.error.noEnoughSpace1 = 镜像服务器上所有存储池的空间都被用尽了。
+MenuAndBtnCenter.error.badSnapNum = 系统不允许做快照或者无法正确得到软件许可中规定的最大快照数。
+MenuAndBtnCenter.error.badSnapNum1 = 初始化时规定该卷不做快照。
+MenuAndBtnCenter.error.getVerifyDir = 获取代理程序的安装路径失败。
+MenuAndBtnCenter.error.noPostProcessHost = 还没有指定Linux后处理主机的IP，请在配置文件中指定。
+MenuAndBtnCenter.error.beyondMaxSnapNum = 必须确保每个卷至少有一个没有快照副本的快照，否则无法自动创建新快照。
+MenuAndBtnCenter.error.startMjOk = 启动镜像任务成功。
+MenuAndBtnCenter.error.startMjWarning = 警告: 镜像任务启动成功，但是一部分管理信息没有镜像过去。
+MenuAndBtnCenter.error.stopMjOk  = 停止镜像任务成功。
+MenuAndBtnCenter.error.startCjOk = 启动复制任务成功。
+MenuAndBtnCenter.error.stopCjOk  = 停止复制任务成功。
+MenuAndBtnCenter.error.mjisrunning = 不能删除正在启动中的镜像任务。
+MenuAndBtnCenter.error.mjisrunning1 = 不能修改正在启动中的镜像任务
+MenuAndBtnCenter.error.hasActiveMj = 下列卷上还有正在启动着的镜像任务，所以不能被删除
+MenuAndBtnCenter.error.prepareJobFail = 启动镜像任务前的准备工作失败，请详细检查日志。
+MenuAndBtnCenter.error.prepareJobFail1 = 该镜像任务对应的目的端主机已经被回滚了，无法继续镜像。
+MenuAndBtnCenter.error.getIbootConf = 获取网络启动设置失败。
+MenuAndBtnCenter.error.delSrcSWU = 请将该镜像服务器下的主机和空闲卷全部回滚后，再删除它。
+MenuAndBtnCenter.error.getLVMInfo = 获取LVM信息失败
+MenuAndBtnCenter.error.sameUUID = 该主机的唯一号与别的主机冲突，请重新生成一个。
+MenuAndBtnCenter.error.mismatchedOS = 不同平台间的主机不能相互修改。
+MenuAndBtnCenter.error.badConsistance = 数据库信息不一致，需要手动干预。
+MenuAndBtnCenter.error.findUser = 找不到对应的用户信息。
+MenuAndBtnCenter.error.modUser = 找不到对应的用户信息。
+MenuAndBtnCenter.error.notFoundWinDir = 找不到操作系统目录。
+MenuAndBtnCenter.error.modmj   = 修改如下镜像任务失败:
+MenuAndBtnCenter.error.startmj = 启动如下镜像任务失败:
+MenuAndBtnCenter.error.noVersion = 找不到某些文件系统的快照版本
+MenuAndBtnCenter.error.parseVolInfo = 分析卷信息失败
+MenuAndBtnCenter.error.missinglv = 找不到卷信息
+MenuAndBtnCenter.error.missingvg = 找不到卷组信息
+MenuAndBtnCenter.error.getHostName = 获取服务器序列号失败
+MenuAndBtnCenter.error.notSameSWU = 只能修改镜像服务器的IP和端口信息。
+MenuAndBtnCenter.error.delUiMirVol = 该无限增量镜像卷对应的镜像任务处于启动状态，不能删除该镜像卷。
+MenuAndBtnCenter.error.getUISnapSum = 无限增量快照个数为0，无需查看。
+MenuAndBtnCenter.error.updateMj = 刷新镜像任务失败。
+MenuAndBtnCenter.error.runningMj = 还存在未结束的复制任务
+MenuAndBtnCenter.error.getFreeVol = 获取空闲卷失败
+MenuAndBtnCenter.error.getHidenFs = 获取隐藏分区信息失败
+MenuAndBtnCenter.error.notexistdisk = 真实的卷不存在，不能创建镜像任务。
+MenuAndBtnCenter.error.editPPProf = 修改物理保护策略失败。
+MenuAndBtnCenter.error.editPPProf1 = 修改自动创建快照参数失败
+MenuAndBtnCenter.error.editPPProf2 = 修改相关服务失败 
+MenuAndBtnCenter.error.editPPProf3 = 修改数据库信息失败
+MenuAndBtnCenter.error.editPPProf4 = 删除旧的保护策略失败
+MenuAndBtnCenter.error.editPPProf5 = 创建新的保护策略失败
+MenuAndBtnCenter.error.editPPProf6 = 刷新卷信息失败
+MenuAndBtnCenter.error.editPPProf7 = 刷新磁盘组信息失败
+MenuAndBtnCenter.error.editPPProf8 = 刷新保护策略失败
+MenuAndBtnCenter.error.editPPProf9 = 刷新mg信息失败
+MenuAndBtnCenter.error.editPPProf10 = 通知自动创建快照进程失败
+MenuAndBtnCenter.error.selVerOnNetBoot = 当前主机正处在网启状态下，此时选择版本会干扰网启系统正常运行。请在主机运行在本地盘或者关机的情况下进行该操作。
+MenuAndBtnCenter.error.crtLatestSnapForOSDisk = 不能对操作系统盘创建最新快照
+MenuAndBtnCenter.error.crtLatestSnapForOSDisk1 = 该盘和操作系统盘组成一个整体，因为不能对操作系统盘创建最新快照，所以也不能对该盘创建最新快照
+MenuAndBtnCenter.error.delPPProf = 删除物理保护策略失败 :
+MenuAndBtnCenter.error.delMirror = 解除客户端的镜像失败 :
+MenuAndBtnCenter.error.delMirrorInfo = 清除集群信息失败。 
+MenuAndBtnCenter.error.getMainBranch = 获取快照主分支失败
+MenuAndBtnCenter.error.getSnapList = 获取快照列表失败
+MenuAndBtnCenter.error.getIdOnMainBranch = 获取主分支上相关ID失败
+MenuAndBtnCenter.error.startAutoCrtSnapOK = 启动自动创建快照成功
+MenuAndBtnCenter.error.startAutoCrtSnapFail = 启动自动创建快照失败
+MenuAndBtnCenter.error.isProtectedByLP = 该主机已经按逻辑方式进行了保护，不能再按物理方式保护。
+MenuAndBtnCenter.error.isProtectedByLP1 = 该集群已经按逻辑方式进行了保护，不能再按物理方式保护。
+MenuAndBtnCenter.error.isProtectedByPP = 该主机已经按物理方式进行了保护，不能再按逻辑方式保护。
+MenuAndBtnCenter.error.isProtectedByPP1 = 该集群已经按物理方式进行了保护，不能再按逻辑方式保护。
+MenuAndBtnCenter.error.shutdown = 关闭命令已提交，该操作需要几分钟。完成后在界面的左下角会提示界面和服务器已断开。
+#####################  AboutDialog
+AboutDialog.dialog_title = 关于 UWS 管理器 GUI
+AboutDialog.label.manager = 管理器
+AboutDialog.copyright = 版权所有(C) 2002-2012 Odysys Inc.
+AboutDialog.version = 6.2.0 版
+AboutDialog.about = 关于 
+AboutDialog.right = 该产品的所有权利归Odysys所有.
+
+#################### CreateSchedulerDialog
+CreateSchedulerDialog.border.crtScheduler = Create Scheduler
+CreateSchedulerDialog.border.detail = Detail
+CreateSchedulerDialog.label.strategyMode = Strategy  Mode :
+
+#################### DayBakPane
+DayBakPane.label.day = 日 :
+DayBakPane.label.year= 年 :
+DayBakPane.label.month = 月 :
+DayBakPane.label.bakType = 备份类型 :
+
+#################### MonthWeeklyDayPane
+MonthWeeklyDayPane.1stWeek  = 第一周
+MonthWeeklyDayPane.2sedWeek = 第二周
+MonthWeeklyDayPane.3thdWeek = 第三周
+MonthWeeklyDayPane.4thWeek  = 第四周
+
+MonthWeeklyDayPane.label.bakType = 备份类型 :
+MonthWeeklyDayPane.label.week = 周 :
+MonthWeeklyDayPane.label.day = 日 :
+
+MonthWeeklyDayPane.bakType.none = 
+MonthWeeklyDayPane.bakType.full = 全
+MonthWeeklyDayPane.bakType.incremental = 增量
+
+MonthWeeklyDayPane.table.one    = 星期一
+MonthWeeklyDayPane.table.two    = 星期二
+MonthWeeklyDayPane.table.three  = 星期三
+MonthWeeklyDayPane.table.four   = 星期四
+MonthWeeklyDayPane.table.five   = 星期五
+MonthWeeklyDayPane.table.six    = 星期六
+MonthWeeklyDayPane.table.senven = 星期日
+
+######################     ConnectDialog
+ConnectDialog.dialog_title = 连接
+
+ConnectDialog.border.title1 = 连接
+ConnectDialog.border.title2 = 登录
+
+ConnectDialog.button.connect = 连接
+ConnectDialog.button.adminOpt = 管理选项...
+
+ConnectDialog.label.text1 = 密码 :
+ConnectDialog.label.text2 = 用户 :
+ConnectDialog.label.text3 = 服务器 :
+ConnectDialog.label.text4 = 端口 :
+
+ConnectDialog.errmsg = 无效的输入!
+ConnectDialog.errMsg.nullPort = 空的端口值。
+ConnectDialog.errMsg.badPort  = 端口值必须是正整数!
+ConnectDialog.errMsg.toosmallport = 端口值必须 > 0。
+ConnectDialog.error.noneIP = 空的IP地址。
+ConnectDialog.error.badIP = 无效的IP地址
+ConnectDialog.errMsg.invalidPort = 端口应该是位于1-65535之间的正整数(包括1和65535)。
+ConnectDialog.errMsg.noneUser = 空的用户名。
+ConnectDialog.errMsg.badUser = 用户名中不能含有英文单双引号，空格，TAB键和<>。
+ConnectDialog.errMsg.invalidUser = 用户名长度应该>0，且<32。
+ConnectDialog.errMsg.invalidPwd = 口令长度应该>0 ，且<32。
+
+######################  WeeklyBakPane
+WeeklyBakPane.label.day = 日 :
+WeeklyBakPane.label.bakType = 备份类型 :
+WeeklyBakPane.table.one = 星期一
+WeeklyBakPane.table.two = 星期二
+WeeklyBakPane.table.three =星期三
+WeeklyBakPane.table.four = 星期四
+WeeklyBakPane.table.five = 星期五
+WeeklyBakPane.table.six = 星期六
+WeeklyBakPane.table.senven = 星期日
+
+###################### MonthDayBakPane
+MonthDayBakPane.label.day = 日 :
+MonthDayBakPane.label.bakType = 备份类型 :
+MonthlyDayBakPane.label.lastDay = 最后一天
+
+###################### WeeklyScheduler
+WeeklyScheduler.firstWeek = 第一周
+WeeklyScheduler.twoWeek   = 第二周
+WeeklyScheduler.threeWeek = 第三周
+WeeklyScheduler.fourWeek  = 第四周
+
+####################### ProfileChooser
+ProfileChooser.title.open   = 打开
+ProfileChooser.title.saveas = 保存为文件
+ProfileChooser.label.name   = 文件名字 :
+ProfileChooser.label.type   = 文件类型 :
+ProfileChooser.button.open  = 打开
+ProfileChooser.button.save  = 保存
+
+ProfileChooser.errMsg.notSelect = 没有选取模板。
+ProfileChooser.errMsg.notExist  = 不存在该模板。
+ProfileChooser.errMsg.notName   = 没有为模板取名字。
+
+ProfileChooser.confirmmsg1 = 该策略文件已经存在. 要替换它吗 ?
+
+ProfileChooser.errmsg.badname   = 模板名中不能含有英文单双引号,空格和<>。
+ProfileChooser.errmsg.tooLargePname = 模板名长度不能 >= 1000。
+
+##################### SchedulerDialog
+SchedulerDialog.dialogTitle.scheduler = 调度
+SchedulerDialog.button.new    = 新建
+SchedulerDialog.button.modify = 修改
+SchedulerDialog.button.delete = 删除
+SchedulerDialog.button.close  = 关闭
+
+SchedulerDialog.table.scheduler.id           = 调度ID
+SchedulerDialog.table.scheduler.profileName  = 模板名
+SchedulerDialog.table.scheduler.profileDes   = 模板描述
+SchedulerDialog.table.scheduler.strategyName = 备份策略名
+SchedulerDialog.table.scheduler.strategyDes  = 备份策略描述
+
+SchedulerDialog.table.scheduler.desc        = 名字
+SchedulerDialog.table.scheduler.startTime   = 开始时间
+SchedulerDialog.table.scheduler.type        = 类型
+SchedulerDialog.table.scheduler.profileName = 模板名
+SchedulerDialog.table.scheduler.profileDes  = 模板描述
+SchedulerDialog.table.scheduler.level       = 复制级别
+SchedulerDialog.table.scheduler.id          = ID
+SchedulerDialog.table.scheduler.name        = 名字
+SchedulerDialog.table.scheduler.src   	    = 源
+SchedulerDialog.table.scheduler.active      = 生效?
+SchedulerDialog.table.scheduler.dest        = 数据流向
+SchedulerDialog.table.scheduler.node        = 节点方向
+SchedulerDialog.table.scheduler.dataType    = 数据类型
+SchedulerDialog.table.scheduler.enable      = 生效?
+
+SchedulerDialog.errMsg.wrongprof = 下列调度涉及的同步节点或同步模板已经不存在：
+SchedulerDialog.error.noneScher  = 没有选中的调度，请选中一个。
+SchedulerDialog.confirm1 = 你现在要真的删除这个调度吗?
+
+#####################  Strategy
+Strategy.bakType.none = 
+Strategy.bakType.full = 全
+Strategy.bakType.incremental1 = I 增量
+Strategy.bakType.incremental2 = II 增量
+
+Strategy.bakType.selective   = 选择
+Strategy.bakType.master      = 全量
+Strategy.bakType.incremental = 增量
+
+Strategy.period.month   = 每月
+Strategy.period.month1  = 每月的第
+Strategy.period.week    = 每周
+Strategy.period.week1   = 每周的
+Strategy.period.day     = 每天
+Strategy.period.day1    = 每天的
+Strategy.period.onlyOne = 一次性
+Strategy.period.every   = 每隔
+Strategy.period.unknown = 未知
+
+Strategy.strategyType.onlyone   = 一次性
+Strategy.strategyType.frequency = 重复
+Strategy.strategyType.unknown   = 未知
+
+##################### PrivateInfoOfStrategy
+PrivateInfoOfStrategy.privateInfo = 备份级别信息
+PrivateInfoOfStrategy.val         = 备份日期
+PrivateInfoOfStrategy.level       = 备份级别
+
+################### InputPasswdDialog
+InputPasswdDialog.dialogTitle.modify = 设置用户/口令
+InputPasswdDialog.dialogTitle1 = 提供存储空间密码
+InputPasswdDialog.label.name   = 用户名 :
+InputPasswdDialog.label.newPwd = 新口令 :
+InputPasswdDialog.label.oldPwd = 旧口令 :
+InputPasswdDialog.label.inputAgain = 口令校验 :
+InputPasswdDialog.label.tip = 此窗口允许您同时修改用户名和口令。
+InputPasswdDialog.label.pwd = 密码 : 
+InputPasswdDialog.label.tip1 = 为了安全性，请提供所选存储空间的密码 :
+
+InputPasswordDialog.errMsg.nonName = 用户名不能为空。
+InputPasswordDialog.errMsg.badName = 用户名中不能含有英文单双引号,空格和<>。
+InputPasswordDialog.errMsg.tooLargeUser = 用户名长度应该 > 0，且<32。
+InputPasswordDialog.errMsg.sameName = 存在相同名字的用户。
+InputPasswordDialog.errMsg.nonNewPasswd = 密码不能为空。
+InputPasswordDialog.errMsg.badPasswd = 用户名中不能含有英文单双引号,空格和<>。
+InputPasswordDialog.errMsg.wrongOldPwd  = 原有口令输入错误。
+InputPasswordDialog.errMsg.disMatched   = 新口令两次输入不一致。
+InputPasswordDialog.errMsg.tooBigPasswd = 密码长度应该 > 0，且<32。
+InputPasswordDialog.msg.modOk = 修改登陆信息成功。
+InputPasswordDialog.msg.modfail = 修改登陆信息 :
+
+#################### SchedDialog
+SchedDialog.dialogTitle = 调度
+SchedDialog.dialogTitle1 = 编辑非线性策略
+SchedDialog.dialogTitle2 = 编辑时刻点
+SchedDialog.borderTitle.frequence = 发生频率
+SchedDialog.borderTitle.weekly  = 每周
+SchedDialog.borderTitle.dailyfreq = 每日频率
+SchedDialog.borderTitle.once = 一次
+SchedDialog.borderTitle.daily = 每日
+SchedDialog.borderTitle.monthly = 每月
+SchedDialog.borderTitle.content = 内容
+SchedDialog.borderTitle.snode = 同步节点
+SchedDialog.borderTitle.sprof = 同步模板
+SchedDialog.borderTitle.mode  = 动作
+SchedDialog.check.active = 生效
+SchedDialog.label.name = 名字 :
+SchedDialog.label.profile = 策略 :
+SchedDialog.label.syncnode = 同步节点 :
+SchedDialog.label.sdir    = 同步目录 :
+SchedDialog.label.type    = 类型 :
+SchedDialog.label.client  = 主机 :
+SchedDialog.radioButton.once = 一次
+SchedDialog.label.year = 年 :
+SchedDialog.label.hour1 = 小时 :
+SchedDialog.label.month = 月 :
+SchedDialog.label.min1   = 分钟 :
+SchedDialog.label.day  = 日 :
+SchedDialog.label.level = 复制级别 :
+SchedDialog.radioButton.freq = 反复出现
+SchedDialog.radioButton.monthly = 每月
+SchedDialog.radioButton.weekly = 每周
+SchedDialog.radioButton.daily = 每日
+SchedDialog.radioButton.onceOccur = 一次发生于 :
+SchedDialog.radioButton.multiOccur = 多次发生于 :
+SchedDialog.radioButton.freqOccur = 发生周期 :
+SchedDialog.radioButton.syncnode = 同步节点
+SchedDialog.radioButton.syncprof = 同步模板
+SchedDialog.label.hour = 小时
+SchedDialog.label.min = 分钟
+SchedDialog.button.browse = 浏览 ...
+SchedDialog.unit.hour = 小时
+SchedDialog.unit.min  = 分钟
+
+SchedDialog.errmsg.noneProfile    = 必须指定一个复制策略。
+SchedDialog.errmsg.noneSyncNode   = 必须指定一个同步节点。
+SchedDialog.errmsg.noneSyncProf   = 必须指定一个同步模板。
+SchedDialog.errmsg.nonesdir       = 必须制定一个同步目录。
+SchedDialog.errmsg.noDayofWeek    = 必须至少选择一周中的某一天运行该作业。
+SchedDialog.errmsg.noDayofMonth   = 必须至少选择一月中的某一天运行该作业。
+SchedDialog.errmsg.noneName       = 必须键入调度名。
+SchedDialog.errmsg.sameSchedName  = 该调度名字已经存在, 请取其它名字。
+SchedDialog.errmsg.sameSched      = 已经存在和该调度的时间和复制策略相同的调度。
+SchedDialog.error.tooOlder        = 所选的时间太老。
+SchedDialog.errmsg.noneclient     = 所选模板的备份客户端不存在。
+SchedDialog.errmsg.badName = 调度名中不能含有英文单/双引号和空格。
+SchedDialog.errmsg.tooLargeName = 调度名长度应该>0，且<32。
+SchedDialog.errmsg.invalidObj   = 复制模板中的复制内容不存在。
+SchedDialog.errmsg.noSelClock   = 必须至少选择一个时刻点。
+SchedDialog.errmsg.noSelClock1  = 没有指定时刻点。
+SchedDialog.errmsg.sameClock = 已经存在该时刻了。
+
+################# MonthlyPane
+MonthlyPane.label.each = 每
+MonthlyPane.label.month = 个月
+
+################# Weekly
+WeeklyPane.checkBox.monday      = 星期一
+WeeklyPane.checkBox.tuesday     = 星期二
+WeeklyPane.checkBox.wednesday   = 星期三
+WeeklyPane.checkBox.thursday    = 星期四
+WeeklyPane.checkBox.friday      = 星期五
+WeeklyPane.checkBox.saturday    = 星期六
+WeeklyPane.checkBox.sunday      = 星期日
+
+###############  MonitorDialog
+MonitorDialog.table.task.id     = 任务ID
+MonitorDialog.table.task.msg    = 任务消息
+MonitorDialog.table.task.client = 主机
+MonitorDialog.table.task.type   = 类型
+MonitorDialog.table.task.pid    = 进程ID
+MonitorDialog.table.task.dev    = 设备
+MonitorDialog.table.task.log    = 日志
+MonitorDialog.table.task.status = 状态
+MonitorDialog.table.task.stime  = 服务器开始时间
+MonitorDialog.table.task.bakSet = 备份集
+MonitorDialog.table.task.schid  = 调度ID
+MonitorDialog.table.task.prof   = 策略
+
+MonitorDialog.diagTitle.monitor = 监控逻辑保护任务
+MonitorDialog.button.close      = 关闭
+MonitorDialog.button.killJob    = 取消任务
+MonitorDialog.button.activeJob  = 启动任务
+MonitorDialog.border.message    = 任务消息
+
+MonitorDialog.errMsg.notFoundClient = 找不到对应的客户端。
+MonitorDialog.errMsg.killJobFailed  = 取消任务失败。
+MonitorDialog.errMsg.killJobOk      = 成功取消任务。
+MonitorDialog.errMsg.getTaskerPid   = 获取tasker的进程ID失败。 
+MonitorDialog.errMsg.badTaskerPid   = 无效的tasker进程ID
+MonitorDialog.errMsg.activeJobFailed = 启动任务失败
+MonitorDialog.confirm = 你真的要取消这个任务吗?
+
+############## AbstractSchedule
+AbstractSchedule.once = 一次性
+AbstractSchedule.freq = 周期性
+
+############## BackupMDBDialog
+BackupMDBDialog.diagTitle.bakMdb = 备份管理数据库
+BackupMDBDialog.border.bakMode = 备份方式
+BackupMDBDialog.label.bakPath = 备份路径 :
+BackupMDBDialog.button.browse = 浏览
+BackupMDBDialog.radioButton.manual = 手工
+BackupMDBDialog.radioButton.schedule = 调度
+BackupMDBDialog.label.every = 每
+BackupMDBDialog.label.hours = 小时(s)
+
+BackupMDBDialog.button.del = 删除
+BackupMDBDialog.JFileChooser.select = 请选择存放MDB的目的路
+BackupMDBDialog.error.notargetpath = 空的备份目的路径。
+BackupMDBDialog.error.bakMDBFail = 手工备份MDB失败. 可能磁盘空间满了。
+BackupMDBDialog.error.saveScheFail = 保存备份MDB的调度信息失败。
+
+BackupMDBDialog.ok.bakMDBOK = 手工备份MDB成功。
+BackupMDBDialog.ok.saveScheOK = 保存备份MDB的调度信息成功。
+BackupMDBDialog.error.badPath = 备份目的路径中不能含有英文单/双引号或空格。
+BackupMDBDialog.error.toolongpath = 备份目的路径长度不能 >1024。
+BackupMDBDialog.error.notexistpath = 备份目的路径不存在。
+BackupMDBDialog.error.permissionDenied = 对备份目的路径没有写权限。
+
+BackupMDBDialog.error.delScheFail = 删除备份管理数据库调度失败。
+BackupMDBDialog.error.delScheOk   = 删除备份管理数据库调度成功。
+
+BackupMDBDialog.error.listerr = 列目录或文件失败。
+BackupMDBDialog.error.isFile  = 备份目的路径必须为一个目录。
+
+BackupMDBDialog.pdiagTitle.backuping = 正在备份管理数据库
+BackupMDBDialog.pdiagTip.backuping = 正在备份管理数据库，请稍候 ...
+
+############### RestoreMDBDialog
+RestoreMDBDialog.diagTitle = 恢复管理数据库
+RestoreMDBDialog.button.restore = 恢复
+RestoreMDBDialog.radioButton.manual = 手工恢复
+RestoreMDBDialog.label.restFrom = 恢复路径 :
+RestoreMDBDialog.button.browse = 浏览
+RestoreMDBDialog.radioButton.schedule = 调度恢复
+RestoreMDBDialog.label.bakTime = 最后一次备份时间 :
+RestoreMDBDialog.label.bakStatus = 最后一次备份状态 :
+
+RestoreMDBDialog.JFileChooser.select = 请选择恢复MDB的目的路径
+
+RestoreMDBDialog.error.noRestPath  = 空的恢复目的路径。
+RestoreMDBDialog.error.incompleted = 备份的管理数据库不完整。
+RestoreMDBDialog.error.noneRestDir = 空的恢复目录。
+RestoreMDBDialog.restMDBOK         = 恢复管理数据库成功。
+RestoreMDBDialog.error.restMDBFailed = 恢复管理数据库失败。可能磁盘空间满了。
+
+
+RestoreMDBDialog.error.tooLongRestDir = 恢复路径长度不能 >1024。
+RestoreMDBDialog.error.notexistpath = 管理数据库源路径不存在。
+RestoreMDBDialog.error.permissionDenied = 对管理数据库源路径没有读权限。
+RestoreMDBDialog.confirm = 警告: 恢复管理数据库之前，请确认已停止备份服务器上的服务。是否继续恢复?
+
+RestoreMDBDialog.pdiagTitle.restoring = 正在恢复管理数据库
+RestoreMDBDialog.pdiagTip.restoring = 正在恢复管理数据库, 请稍候 ...
+
+################### InitProgramDialog
+InitProgramDialog.title = 初始化程序
+InitProgramDialog.label.tip = 正在初始化应用程序，请稍候 ...
+
+#################### IndicatorPane
+IndicatorPane.tooltip.back = 上一页
+IndicatorPane.tooltip.next = 下一页
+IndicatorPane.label.curPage  = 当前页 :
+IndicatorPane.label.go     = 到
+IndicatorPane.label.page2  = 页
+IndicatorPane.title.indicator = 指示器
+
+IndicatorPane.error.invalidPage = 页数必须是正整数。
+IndicatorPane.error.beyondLimit = 页数超出了有效范围。
+IndicatorPane.error.rightPage   = 已经是当前页了，无需翻页。
+
+####################### AddUserDialog
+AddUserDialog.diagTitle.Add = 新增用户
+AddUserDialog.diagTitle.mod = 修改用户
+AddUserDialog.label.name   = 名字 :
+AddUserDialog.label.passwd = 口令 :
+AddUserDialog.label.passwdAgain = 确认口令 :
+AddUserDialog.label.perm = 权限 :
+AddUserDialog.radioButton.admin = 管理员权限
+AddUserDialog.radioButton.oper  = 普通权限
+
+AddUserDialog.errMsg.moduserfail  = 修改用户失败!
+AddUserDialog.errMsg.sameUser     = 重复的用户名。
+AddUserDialog.errMsg.adduserfail  = 增加用户失败! 
+AddUserDialog.errMsg.mismatchpasswd = 两次输入的口令不匹配, 请重新输入。
+
+AddUserDialog.errMsg.nonename = 空的用户名。
+AddUserDialog.errMsg.badName = 用户名中不能含有英文单/双引号和空格。
+AddUserDialog.errMsg.invalidName = 用户名长度应该>0，且 <32。
+AddUserDialog.errMsg.invalidPwd = 口令长度应该<8。
+AddUserDialog.error.delAdmUser  = 该用户是系统最后一个管理员用户，不能把它改为普通用户。
+
+#####################  AddHostDialog
+AddHostDialog.dialogTitle.addHost  = 增加主机
+AddHostDialog.dialogTitle.editHost = 修改主机 
+AddHostDialog.dialogTitle.aRbHost  = 增加回滚主机 
+AddHostDialog.label.ip       = IP :
+AddHostDialog.label.port     = 端口 :
+AddHostDialog.checkBox.autoDR = 自动灾难恢复
+AddHostDialog.checkBox.autoReboot = 自动重启
+AddHostDialog.errMsg.noneName  = 空的主机名。
+AddHostDialog.errMsg.noneIP    = 空的IP地址。
+AddHostDialog.errMsg.noneUUID  = 空的唯一号。
+AddHostDialog.errMsg.invalidIP = 无效的IP地址。
+AddHostDialog.errMsg.sameIP    = 存在重复的IP地址。
+AddHostDialog.errMsg.nonePort  = 空的端口号。
+AddHostDialog.errMsg.invalidPort = 端口号应该为正整数。
+AddHostDialog.errMsg.badPort   = 端口号应该位于1和65535之间（包括1和65535）。
+AddHostDialog.errMsg.noneOsVer = 空的OS版本。
+AddHostDialog.errMsg.sameHost  = 重复的主机名或IP。
+AddHostDialog.errMsg.badName = 主机名不能包括英文单/双引号和空格。
+AddHostDialog.errMsg.invalidName = 主机名长度应该>0，且<16。
+AddHostDialog.errMsg.nonePasswd = 空的admin口令。
+
+####################### AddLunMapDialog
+AddLunMapDialog.title.add = 增加主机映射
+AddLunMapDialog.label.ip = IP :
+AddLunMapDialog.label.mask = 掩码 :
+AddLunMapDialog.label.access = 访问权限 :
+AddLunMapDialog.label.srvusr = 服务器用户名 :
+AddLunMapDialog.label.passwd = 密码 :
+AddLunMapDialog.label.passwd1 = 确认密码 : 
+AddLunMapDialog.label.clntusr = 客户端用户名 :
+
+AddLunMapDialog.error.noneIP = 空的IP地址。
+AddLunMapDialog.errMsg.invalidIP = 无效的IP地址。
+AddLunMapDialog.error.noneMask = 空的掩码。
+AddLunMapDialog.errMsg.invalidMask = 无效的掩码。
+AddLunMapDialog.errMsg.misMatchedSrvPass = 服务器密码不匹配。
+AddLunMapDialog.errMsg.misMatchedClntPass = 客户端密码不匹配。
+
+####################### InputPercentDialog
+InputPercentDialog.title.input = 输入百分比
+InputPercentDialog.label.increase = 将快照容量占源卷容量百分比提高到
+InputPercentDialog.errMsg.nonePercent = 空的百分比值。
+InputPercentDialog.errMsg.invalidPercent = 百分比值必须>0，同时<100。
+InputPercentDialog.errMsg.mustBig = 百分比值只能增加，不能减少。
+
+####################### CreateSnapDialog
+CreateSnapDialog.title = 创建快照
+CreateSnapDialog.title1 = 创建快照副本
+CreateSnapDialog.label.name = 快照名 :
+CreateSnapDialog.label.name1 = 快照副本名 :
+CreateSnapDialog.label.size = 快照容量预留（最大占用容量等于源卷的大小,但是一般不需要这么大）
+CreateSnapDialog.label.pool = 存储池 :
+CreateSnapDialog.text = 注意：此种情况下的快照，有可能出现内容不一致。
+
+CreateSnapDialog.error.noneName = 空的快照名。
+CreateSnapDialog.error.nonePoolName = 空的存储池名。
+CreateSnapDialog.error.noneViewName = 空的快照副本名。
+CreateSnapDialog.error.badName = 快照名不能包含英文单双引号,空格和<>。
+CreateSnapDialog.error.nametoolong = 快照名长度必须 < 255。
+CreateSnapDialog.error.badViewName = 快照副本名不能包含英文单双引号,空格和<>。
+CreateSnapDialog.error.viewNametoolong = 快照副本名长度必须 < 255。
+CreateSnapDialog.error.badPoolName = 存储池名不能包含英文单双引号,空格和<>。
+CreateSnapDialog.error.poolNametoolong = 存储池名长度必须 < 255。
+CreateSnapDialog.error.nonePool = 没有可用的存储池。
+CreateSnapDialog.error.noneVal = 空的百分比值。
+CreateSnapDialog.error.invalidVal = 百分比值必须是>0且<=100的整数。
+
+####################### CreateOrphanVol
+CreateOrphanVol.title = 创建卷
+CreateOrphanVol.label.name = 卷名 :
+CreateOrphanVol.label.size = 卷大小[GB] 
+CreateOrphanVol.label.max = (最大值=
+CreateOrphanVol.label.blksize = 块大小[KB] :
+CreateOrphanVol.label.pool = 存储池
+
+CreateOrphanVol.error.nonePool = 没有可用的存储池。
+CreateOrphanVol.error.noneName = 空的卷名。
+CreateOrphanVol.error.sameName = 存在相同名字, 请另选一个。
+CreateOrphanVol.error.badName = 卷名不能包含英文单双引号,空格和<>。
+CreateOrphanVol.error.nametoolong = 卷名长度必须 < 255。
+CreateOrphanVol.error.noneVal = 空的卷大小。
+CreateOrphanVol.error.invalidVal = 卷的大小必须是>0 且<= 最大值的数字。
+CreateOrphanVol.error.nonePoolVal = 空的存储池大小。
+CreateOrphanVol.error.invalidPoolVal =存储池大小必须是>0 且<=最大值的数字。
+CreateOrphanVol.error.invalidName = 卷名最大和最小长度分别为4和2，并且开头必须是字母(但不能以sd/sD/Sd/SD开头)，比如c188,D35,v0。
+CreateOrphanVol.error.noSpaceOnPool = 该存储池空间已被用尽:
+CreateOrphanVol.error.noSpaceOnPool1 = 该卷对应的存储池空间已被用尽:
+CreateOrphanVol.error.noSpaceOnPool2 = 该快照对应的存储池空间已被用尽:
+CreateOrphanVol.error.pwdMisMatched = 两次输入的密码不匹配!
+
+######################  WizardDialogSample
+WizardDialogSample.button.back   = 上一步
+WizardDialogSample.button.next   = 下一步
+WizardDialogSample.button.cancel = 取消
+WizardDialogSample.button.exit   = 退出
+WizardDialogSample.button.finish = 完成
+
+WizardDialogSample.wizardText = 利用该向导, 可以完成如下:
+
+###################### InitBootHostWizardDialog
+InitBootHostWizardDialog.title   = Windows客户端逻辑初始化向导
+InitBootHostWizardDialog.htitle  = Windows客户端物理初始化向导
+InitBootHostWizardDialog.htitlez = CMDP初始化向导
+InitBootHostWizardDialog.title1 = 选择客户端
+InitBootHostWizardDialog.title2 = 选择需要保护的文件系统
+InitBootHostWizardDialog.selDisk = 选择需要保护的卷
+InitBootHostWizardDialog.selHBDsk = 选择心跳或仲裁盘
+InitBootHostWizardDialog.title3 = 选择服务
+InitBootHostWizardDialog.selNetBootMode = 选择快速启动方式
+InitBootHostWizardDialog.title4 = 选择启动网卡
+InitBootHostWizardDialog.title5 = 设置DHCP
+InitBootHostWizardDialog.title6 = 定制保护策略
+InitBootHostWizardDialog.title7 = 运行任务
+
+InitBootHostWizardDialog.tip1 = 在该窗口中，请输入客户端的IP地址和端口。也可以通过下拉列表来选择已有的客户端。
+InitBootHostWizardDialog.tip2 = 在该窗口中，选择需要保护的文件系统，并为它们在服务器上创建对应的卷，也可以选择\n现有的空闲卷。这里的“格式化”指对服务器上分配的卷进行格式化，而不是对客户端本地盘\n进行格式化。
+InitBootHostWizardDialog.p-tip2 = 在该窗口中，选择需要保护的本地卷，并为它们在服务器上创建对应的卷。
+InitBootHostWizardDialog.tip3 = 在该窗口中，请选择需要关注的服务。所有选中的服务将在系统恢复时被自动\n停止，而后再自动启动。
+InitBootHostWizardDialog.tip4 = 在该窗口中，请定制保护策略。一个保护策略包含了所选内容、自动调度和保护选项等信息。必须为操作系统创建一个策略，即复制内容为 C 盘的策略。
+InitBootHostWizardDialog.p-tip4 = 在该窗口中，请定制保护策略。一个保护策略包含了所选磁盘、版本生成和保护选项等信息。必须为操作系统所在的磁盘创建一个策略，即包含C 盘的策略。
+InitBootHostWizardDialog.tip5 = 在该窗口中，请选择灾难发生时需要启动的网卡。系统将从选中的网卡上进行系统启动。
+InitBootHostWizardDialog.tip6 = 在该窗口中，对应任务的“完成”检查框被勾选上，表示该任务已经完成；反之，\n则该任务将在下一步中完成。
+InitBootHostWizardDialog.tip7 = 在该窗口中，将运行所有需要的任务。
+InitBootHostWizardDialog.tip8 = 在该窗口中，请选择快速启动方式。其中, 快速启动IP必须与主机网卡绑定的IP不同, \n否则将影响iSCSI HBA方式的快速启动。
+InitBootHostWizardDialog.tip9 = 在该窗口中，请输入集群各节点的IP配置信息和端口。
+InitBootHostWizardDialog.tip10 = 在该窗口中，请选择用于心跳或仲裁的共享盘。
+InitBootHostWizardDialog.wizardText1 = \n * 选择需要保护的文件系统 \n * 定制保护策略 \n * 进行数据保护(含操作系统)
+InitBootHostWizardDialog.p-wizardText1 = \n * 选择需要保护的卷 \n * 定制保护策略 \n * 建立镜像关系(含操作系统)
+InitBootHostWizardDialog.c-wizardText2 = \n * 选择集群中需要保护的卷 \n * 定制保护策略 \n * 建立镜像关系(含操作系统)
+InitBootHostWizardDialog.error.notSelCard = 没有选择启动网卡。
+InitBootHostWizardDialog.error.noProtectedDisk = 没有需要保护的文件系统。
+InitBootHostWizardDialog.error.notProtectCdisk = C盘没有被选择保护，不能进行操作系统备份。
+InitBootHostWizardDialog.error.mustProtectOS = 必须选择保护C盘(操作系统)。
+InitBootHostWizardDialog.error.notActivePart = 本机当前没有从C盘启动，不能进行操作系统备份。
+InitBootHostWizardDialog.error.noSelService = 没有选择任何服务。
+InitBootHostWizardDialog.error.initOK = 初始化客户端成功完成。
+InitBootHostWizardDialog.error.notDoneManualJob = 请确认手工工作是否完成；如果完成，请将对应的检查框勾选上。
+InitBootHostWizardDialog.error.needReInit = 初始化客户端没有完全成功。请查明原因后，再次进行初始化。
+InitBootHostWizardDialog.error.getOrphanVol = 获取目标卷信息失败。
+InitBootHostWizardDialog.error.bootFromNet = 该主机从网络启动, 不能进行初始化。只能对从本地盘启动的主机进行初始化。
+InitBootHostWizardDialog.error.notAllowtoFormat = 不能格式化操作系统对应卷，否则修改注册表将失败。
+InitBootHostWizardDialog.error.notWinHost = 该向导只保护Windows主机。
+InitBootHostWizardDialog.error.conflictIP = iSCSI HBA卡的IP与本机的其他IP冲突, 请另换一个。
+InitBootHostWizardDialog.error.volInfoIsNull = 没有找到合格的本地盘。
+InitBootHostWizardDialog.error.noSystemLicense = 系统License已用完，请申请License后继续。
+InitBootHostWizardDialog.error.notbindviewmac = 绑定MAC地址失败，请确认失败原因后继续！
+InitBootHostWizardDialog.confirm1 = 没有任务需要做，是否退出?
+InitBootHostWizardDialog.confirm2 = 你真的不复制操作系统吗?
+InitBootHostWizardDialog.confirm3 = 修改注册表之前必须先复制操作系统，你确信已经复制操作系统了吗?
+InitBootHostWizardDialog.confirm4 = 初始化所需信息已经填写完毕，下面即将开始真正的初始化操作，是否继续?
+ 
+InitBootHostWizardDialog.log.crtNothing = 没有需要创建的目标卷。
+InitBootHostWizardDialog.log.crtNothing1 = 没有需要保护的新盘。
+InitBootHostWizardDialog.log.crtVol = 创建目标卷
+InitBootHostWizardDialog.log.crtVol1 = 建立镜像
+InitBootHostWizardDialog.log.getHostNameFailed = 无法获取iscsi target服务器的主机名
+InitBootHostWizardDialog.log.formatVol = 格式化目标卷
+InitBootHostWizardDialog.log.formatNothing = 没有需要格式化的目标卷。
+InitBootHostWizardDialog.log.tooLargeFsSize = 可能原因：文件系统的尺寸对FAT来说太大了
+InitBootHostWizardDialog.log.invalidSize = 无效的卷大小
+
+InitBootHostWizardDialog.log.delMirOnClnt = 删除之前的镜像失败
+InitBootHostWizardDialog.log.setInitType.pause = 暂停初始化失败
+InitBootHostWizardDialog.log.setInitType.resuem = 重新初始化失败
+InitBootHostWizardDialog.log.notFindVol = 在管理数据库中找不到卷信息
+InitBootHostWizardDialog.log.notFindMg = 在管理数据库中找不到镜像组信息
+InitBootHostWizardDialog.log.addPortal = 登陆iscsi Target 服务器 
+InitBootHostWizardDialog.log.refreshTargets = 刷新目标卷
+InitBootHostWizardDialog.log.notFoundTDisk = 找不到目标卷
+InitBootHostWizardDialog.log.loginTarget = 登陆目标卷
+InitBootHostWizardDialog.log.logoutTarget = 注销目标卷
+InitBootHostWizardDialog.log.getIpInfo = 获取其它信息
+InitBootHostWizardDialog.log.getHostInfo = 获取客户端信息
+InitBootHostWizardDialog.log.addHost = 增加客户端
+InitBootHostWizardDialog.log.addHost1 = 增加客户端失败。\n取消后续所有操作。
+InitBootHostWizardDialog.log.modHost = 修改客户端
+InitBootHostWizardDialog.log.modCluster = 修改集群
+InitBootHostWizardDialog.log.notNeedCopyOS = 不需要复制操作系统。
+InitBootHostWizardDialog.log.modVolMap = 修改MDB中的卷信息
+InitBootHostWizardDialog.log.addVolMap = 向MDB增加卷信息
+InitBootHostWizardDialog.log.delProtect = 删除卷保护
+InitBootHostWizardDialog.log.modUIMVol = 修改无限增量卷信息
+InitBootHostWizardDialog.log.modCloneDisk = 修改克隆盘信息
+InitBootHostWizardDialog.log.delVolMap = 从MDB中删除卷信息
+InitBootHostWizardDialog.log.saveIPConf = 保存网络信息
+InitBootHostWizardDialog.log.saveServiceInfo = 保存系统服务
+InitBootHostWizardDialog.log.saveHbDsk = 保存心跳、仲裁盘信息
+InitBootHostWizardDialog.log.saveFsInfo = 保存文件系统信息
+InitBootHostWizardDialog.log.savePartInfo = 保存系统分区信息
+InitBootHostWizardDialog.log.addServMap = 向MDB增加服务信息
+InitBootHostWizardDialog.log.delServMap = 从MDB中删除服务信息
+InitBootHostWizardDialog.log.notFormat = 没有格式化操作系统对应的卷或格式化失败
+InitBootHostWizardDialog.log.loginOSDiskFailed = 登陆操作系统对应的卷失败
+InitBootHostWizardDialog.log.crtOSDiskFailed = 创建操作系统对应卷失败
+InitBootHostWizardDialog.log.notFoundDriver = 找不到操作系统对应卷的盘符 
+InitBootHostWizardDialog.log.notFoundOSDriver = 找不到操作系统分区信息
+InitBootHostWizardDialog.log.notFoundWindir = 找不到操作系统安装目录
+InitBootHostWizardDialog.log.copyOSOK = 复制操作系统
+InitBootHostWizardDialog.log.regOS = 修改注册表（以便从iscsi启动操作系统）
+InitBootHostWizardDialog.log.regOS1 = 修改注册表（以便从本地盘启动操作系统）
+InitBootHostWizardDialog.log.regOS2 = 修改注册表前准备工作（以便从本地盘启动操作系统）
+InitBootHostWizardDialog.log.regOS3 = 对于64位操作系统且指定操作系统的恢复源，需要手工修改注册表（以便从本地盘启动操作系统）
+InitBootHostWizardDialog.log.lunmap = 主机映射
+InitBootHostWizardDialog.log.submitCopy = 发送复制命令
+InitBootHostWizardDialog.log.setactive = 设置活动分区
+InitBootHostWizardDialog.log.unknowOSType = 未知的windows平台，无法进行操作系统复制
+InitBootHostWizardDialog.log.noWayToCopy = 不支持对该平台的复制
+InitBootHostWizardDialog.log.copyingOS = 正在复制操作系统
+InitBootHostWizardDialog.log.needSetActive = 该分区不是活动分区，请手工改成活动分区
+InitBootHostWizardDialog.log.invalidOccupied = 获取的操作系统已用空间无效
+InitBootHostWizardDialog.log.invalidFree = 获取的操作系统对应卷空闲空间无效
+InitBootHostWizardDialog.log.tooSmallDest = 操作系统对应卷太小
+InitBootHostWizardDialog.log.delLunMap = 删除主机映射
+InitBootHostWizardDialog.log.getLunMap = 获取主机映射
+InitBootHostWizardDialog.log.notCopyOSBefRegister = 还没有复制操作系统，无法修改注册表
+InitBootHostWizardDialog.log.noneBootDirDevPath = 找不到boot目录所在的设备路径
+InitBootHostWizardDialog.log.chgRegForIPFailed = 网络启动时分配ip的注册项生成失败
+InitBootHostWizardDialog.log.saveIbootConf = 网络启动设置
+InitBootHostWizardDialog.log.crtsnap = 为操作系统对应卷创建快照
+InitBootHostWizardDialog.log.notCopy = 卷创建失败或格式化失败，无法进行数据复制。
+InitBootHostWizardDialog.log.save3rdDhcpInfo = 保存第三方DHCP设置
+InitBootHostWizardDialog.log.saveIscsiHBAInfo = 保存iSCSI HBA信息
+InitBootHostWizardDialog.log.commitTaskFail = 提交逻辑保护的复制任务失败。
+InitBootHostWizardDialog.log.crtMirCluster = 生成集群配置信息失败
+
+###################### InitNWinHostWizardDialog
+InitNWinHostWizardDialog.title  = 非Windows客户端逻辑初始化向导
+InitNWinHostWizardDialog.title1 = 选择客户端
+InitNWinHostWizardDialog.title2 = 选择需要保护的文件系统
+InitNWinHostWizardDialog.title3 = 选择启动网卡
+InitNWinHostWizardDialog.title4 = 设置DHCP
+InitNWinHostWizardDialog.title5 = 定制保护策略
+InitNWinHostWizardDialog.title6 = 选择需要完成的任务
+InitNWinHostWizardDialog.title7 = 运行任务
+
+InitNWinHostWizardDialog.tip1 = 在该窗口中，请输入客户端的IP地址和端口。也可以点击“选择”按钮，来选择\n已有的客户端。
+InitNWinHostWizardDialog.tip2 = 在该窗口中，选择需要保护的文件系统，并为它们创建对应的卷，也可以选择\n现有的空闲卷。
+InitNWinHostWizardDialog.tip3 = 在该窗口中，请进行DHCP设置。注意：1）同一网络环境中只能有一台DHCP服务器有效。\n2）当没有指定提供DHCP服务的UWS服务器或指定的UWS服务器不能正常提供DHCP服务时，\n只能选择第三方提供的DHCP服务。
+InitNWinHostWizardDialog.tip4 = 在该窗口中，请定制保护策略。一个保护策略包含了所选内容、自动调度和保护选项等信息。必须为操作系统创建一个策略，即复制内容为 / 的策略。
+InitNWinHostWizardDialog.tip5 = 在该窗口中，请选择灾难发生时需要启动的网卡。系统将从选中的网卡上进行系统启动。
+InitNWinHostWizardDialog.tip6 = 在该窗口中，对应任务的“完成”检查框被勾选上，表示该任务已经完成；反之，\n则该任务将在下一步中完成。
+InitNWinHostWizardDialog.tip7 = 在该窗口中，将运行所有需要的任务。
+
+InitNWinHostWizardDialog.confirm1 = 没有任务需要做，是否退出?
+InitNWinHostWizardDialog.confirm2 = 你真的不复制操作系统吗?
+InitNWinHostWizardDialog.confirm3 = 修改启动配置之前必须先复制操作系统，你确信已经复制操作系统了吗?
+InitNWinHostWizardDialog.wizardText1 = \n * 选择需要保护的文件系统 \n * 定制保护策略 \n * 进行数据保护(含操作系统)
+InitNWinHostWizardDialog.error.notUnixHost = 该向导只保护非Windows主机。
+InitNWinHostWizardDialog.error.mustProtectOS = 根文件系统必须被保护。
+InitNWinHostWizardDialog.error.notAllowtoFormat = 不能格式化操作系统所在卷，否则修改启动配置将失败。
+InitNWinHostWizardDialog.error.notSelCard = 没有选择启动网卡。
+InitNWinHostWizardDialog.error.noProtectedDisk = 没有需要保护的文件系统。
+InitNWinHostWizardDialog.error.notProtectCdisk = C盘没有被选择保护，不能进行操作系统备份。
+InitNWinHostWizardDialog.error.notActivePart = 本机当前没有从C盘启动，不能进行操作系统备份。
+InitNWinHostWizardDialog.error.noSelService = 没有选择任何服务。
+InitNWinHostWizardDialog.error.initOK = 初始化客户端成功完成。
+InitNWinHostWizardDialog.error.notDoneManualJob = 请确认手工工作是否完成；如果完成，请将对应的检查框勾选上。
+InitNWinHostWizardDialog.error.needReInit = 初始化客户端没有完全成功。请查明原因后，再次进行初始化。
+InitNWinHostWizardDialog.error.getOrphanVol = 获取目标卷信息失败。
+InitNWinHostWizardDialog.error.bootFromNet = 该主机从网络启动, 不能进行初始化。只能对从本地盘启动的主机进行初始化。
+InitNWinHostWizardDialog.error.notAllowtoFormat = 不能格式化操作系统对应卷，否则修改启动配置将失败。
+InitNWinHostWizardDialog.error.notWinHost = 该向导只保护Windows主机。
+InitNWinHostWizardDialog.error.dhcpInfoLost = 该客户端的DHCP信息丢失了。 
+InitNWinHostWizardDialog.error.mustProtectBoot = Boot文件系统必须被保护。
+InitNWinHostWizardDialog.error.notOsContents = 还没有复制操作系统，无法修改启动配置。
+InitNWinHostWizardDialog.error.mustProtectFS = 该文件系统必须被保护 :
+
+InitNWinHostWizardDialog.log.crtNothing = 没有需要创建的目标卷。
+InitNWinHostWizardDialog.log.crtTgt = 创建目标卷
+InitNWinHostWizardDialog.log.getHostNameFailed = 无法获取iscsi target服务器的主机名
+InitNWinHostWizardDialog.log.formatVol = 格式化目标卷
+InitNWinHostWizardDialog.log.formatNothing = 没有需要格式化的目标卷。
+InitNWinHostWizardDialog.log.tooLargeFsSize = 可能原因：文件系统的尺寸对FAT来说太大了
+InitNWinHostWizardDialog.log.invalidSize = 无效的卷大小
+InitNWinHostWizardDialog.log.addPortal = 登陆iscsi Target 服务器 
+InitNWinHostWizardDialog.log.refreshTargets = 刷新目标卷
+InitNWinHostWizardDialog.log.notFoundTDisk = 找不到目标卷
+InitNWinHostWizardDialog.log.loginTarget = 登陆目标卷
+InitNWinHostWizardDialog.log.logoutTarget = 注销目标卷
+InitNWinHostWizardDialog.log.getIpInfo = 获取其它信息
+InitNWinHostWizardDialog.log.getHostInfo = 获取客户端信息
+InitNWinHostWizardDialog.log.addHost = 增加客户端
+InitNWinHostWizardDialog.log.modHost = 修改客户端
+InitNWinHostWizardDialog.log.notNeedCopyOS = 不需要复制操作系统。
+InitNWinHostWizardDialog.log.notNeedCopy = 不需要数据复制。
+InitNWinHostWizardDialog.log.modVolMap = 修改MDB中的卷信息
+InitNWinHostWizardDialog.log.addVolMap = 向MDB增加卷信息
+InitNWinHostWizardDialog.log.delVolMap = 从MDB中删除卷信息
+InitNWinHostWizardDialog.log.saveIPConf = 保存网络信息
+InitNWinHostWizardDialog.log.saveDhcpConf = DHCP设置
+InitNWinHostWizardDialog.log.savePartInfo = 保存系统分区信息
+InitNWinHostWizardDialog.log.savefstab = 保存文件系统表信息
+InitNWinHostWizardDialog.log.addServMap = 向MDB增加服务信息
+InitNWinHostWizardDialog.log.delServMap = 从MDB中删除服务信息
+InitNWinHostWizardDialog.log.notFormat = 没有格式化操作系统对应的卷或格式化失败
+InitNWinHostWizardDialog.log.loginOSDiskFailed = 登陆操作系统对应的卷失败
+
+InitNWinHostWizardDialog.log.crtOSDiskFailed = 创建操作系统对应卷失败
+InitNWinHostWizardDialog.log.notFoundDriver = 找不到操作系统对应卷的盘符 
+InitNWinHostWizardDialog.log.notFoundOSDriver = 找不到操作系统分区信息
+InitNWinHostWizardDialog.log.notFoundWindir = 找不到操作系统安装目录
+InitNWinHostWizardDialog.log.copyOSOK = 复制操作系统
+InitNWinHostWizardDialog.log.regOS = 修改注册表（以便从iscsi启动操作系统）
+InitNWinHostWizardDialog.log.regOS1 = 修改注册表（以便从本地盘启动操作系统）
+InitNWinHostWizardDialog.log.lunmap = 主机映射
+InitNWinHostWizardDialog.log.submitCopy = 发送复制命令
+InitNWinHostWizardDialog.log.setactive = 设置活动分区
+InitNWinHostWizardDialog.log.unknowOSType = 未知的windows平台，无法进行操作系统复制
+InitNWinHostWizardDialog.log.noWayToCopy = 不支持对该平台的复制
+InitNWinHostWizardDialog.log.copyingOS = 正在复制操作系统
+InitNWinHostWizardDialog.log.needSetActive = 该分区不是活动分区，请手工改成活动分区
+InitNWinHostWizardDialog.log.invalidOccupied = 获取的操作系统已用空间无效
+InitNWinHostWizardDialog.log.invalidFree = 获取的操作系统对应卷空闲空间无效
+InitNWinHostWizardDialog.log.tooSmallDest = 操作系统对应卷太小
+InitNWinHostWizardDialog.log.delLunMap = 删除主机映射
+InitNWinHostWizardDialog.log.getLunMap = 获取主机映射
+InitNWinHostWizardDialog.log.notCopyOSBefRegister = 还没有复制操作系统，无法修改启动配置
+InitNWinHostWizardDialog.log.noTgtNameSpace = Target名字空间被用光了。
+InitNWinHostWizardDialog.log.crtVg = 创建卷组
+InitNWinHostWizardDialog.log.crtLV = 创建卷 
+InitNWinHostWizardDialog.log.isCrtLVOnTgt = 检查卷组是否存在卷
+InitNWinHostWizardDialog.log.isCrtVgOnTgt = 检查目标卷是否创建卷组
+InitNWinHostWizardDialog.log.addLVVolMap = 向MDB增加卷信息
+InitNWinHostWizardDialog.log.addVgVolMap = 向MDB增加卷组信息
+InitNWinHostWizardDialog.log.notFoundLV = 不存在该卷，无法格式化它
+InitNWinHostWizardDialog.log.notFoundVG = 不存在该卷组，无法格式化其上的卷
+InitNWinHostWizardDialog.log.delVG = 删除卷组
+InitNWinHostWizardDialog.log.notFoundLVMp = 找不到操作系统卷的装载点
+InitNWinHostWizardDialog.log.getTotalError = 获取不到要复制的文件总数
+InitNWinHostWizardDialog.log.umountOSMp = 卸载操作系统卷
+InitNWinHostWizardDialog.log.setBootInfo = 网络启动设置
+InitNWinHostWizardDialog.log.getTotal = 获取复制的文件总数
+InitNWinHostWizardDialog.log.diffLVMType = LVM类型不一致
+InitNWinHostWizardDialog.log.vgOffline = 卷组离线
+InitNWinHostWizardDialog.log.vgOnline = 卷组在线
+InitNWinHostWizardDialog.log.vgNotOnline = 卷组在线失败
+InitNWinHostWizardDialog.log.modBootConf = 修改启动配置
+InitNWinHostWizardDialog.log.saveNetworkCmd = 保存网络脚本
+InitNWinHostWizardDialog.log.saveKillAllCmd = 保存killall脚本
+InitNWinHostWizardDialog.log.saveHaltCmd = 保存halt脚本
+InitNWinHostWizardDialog.log.getOsLoaderType = 获取操作系统loader类型
+InitNWinHostWizardDialog.log.saveOsLoaderType = 保存操作系统loader类型
+InitNWinHostWizardDialog.log.unknownOsLoader = 未知的操作系统loader类型
+InitNWinHostWizardDialog.log.loadIscsiMod = 加载iSCSI启动器驱动
+InitNWinHostWizardDialog.log.genDelSchFileFailed = 生成将数据复制调度置为无效的配置文件失败。请在网络启动时，手工将调度设为无效。
+InitNWinHostWizardDialog.log.verify = 校验复制内容
+InitNWinHostWizardDialog.log.noneD2DClnt = 找不到对应的D2D客户端。
+InitNWinHostWizardDialog.log.dupCmdFail = 提交复制任务失败
+InitNWinHostWizardDialog.log.saveLVMInfo = 保存LVM信息
+InitNWinHostWizardDialog.log.restorenetfile = 恢复若干网络脚本
+InitNWinHostWizardDialog.log.mountIAHidenFs = 安装隐藏文件系统
+InitNWinHostWizardDialog.log.getIAHidenFs  = 获取隐藏文件系统
+InitNWinHostWizardDialog.log.getMachine = 获取系统平台类型
+InitNWinHostWizardDialog.log.getProfileFailed = 获取复制策略失败。
+InitNWinHostWizardDialog.log.genProfileFailed = 生成复制策略失败
+
+###################### SelectBootHostPane
+SelectBootHostPane.borderTitle.clt = 客户端
+SelectBootHostPane.label.clntIP = IP地址 :
+SelectBootHostPane.label.port = 端口 :
+SelectBootHostPane.button.select = 选择
+SelectBootHostPane.errMsg.sameHost= 相同的客户端。
+
+#######################SelectServicePane
+SelectServicePane.borderTitle.serv = 服务
+SelectServicePane.non-kernel = 所有非系统的服务
+SelectServicePane.select = 指定如下的用户服务（如有数据库，请指定对应的服务）
+SelectServicePane.table.service.isSel = 选择?
+SelectServicePane.table.service.name = 服务名
+SelectServicePane.table.service.desc = 描述
+SelectServicePane.table.service.path = 路径
+
+####################### OptionPaneForInitBootHost
+OptionPaneForInitBootHost.borderTitle.option = 选项
+OptionPaneForInitBootHost.check.autoDR = 灾难发生时，自动进行整个系统的恢复（包括OS和应用系统）
+OptionPaneForInitBootHost.check.autoReboot = 恢复后重启
+
+####################### SelectNetCardPane
+SelectNetCardPane.table.netcard.isSel = 启动?
+SelectNetCardPane.table.netcard.info = 网卡
+SelectNetCardPane.table.netcard.mac = MAC地址
+SelectNetCardPane.table.netcard.interface = 网卡
+SelectNetCardPane.table.netcard.ip = IP
+SelectNetCardPane.table.netcard.subnet = 子网
+SelectNetCardPane.table.netcard.dns = DNS
+SelectNetCardPane.table.netcard.gateway = 网关
+
+###################### SelectProtectedSysVolPane
+SelectProtectedSysVolPane.table.vol.protected = 保护?
+SelectProtectedSysVolPane.table.vol.disk = 盘
+SelectProtectedSysVolPane.table.vol.fs = 卷
+SelectProtectedSysVolPane.table.vol.vol = 本地卷
+SelectProtectedSysVolPane.table.vol.property =属性
+SelectProtectedSysVolPane.table.vol.action = 动作
+SelectProtectedSysVolPane.table.vol.name = 卷名
+SelectProtectedSysVolPane.table.vol.state = 保护状态
+SelectProtectedSysVolPane.table.vol.ptype = 保护类型
+SelectProtectedSysVolPane.table.vol.access = 卷访问路径
+SelectProtectedSysVolPane.table.vol.size = 卷大小[GB]
+SelectProtectedSysVolPane.table.vol.blksize = 块大小[KB]
+SelectProtectedSysVolPane.table.vol.pool = 存储池
+SelectProtectedSysVolPane.table.vol.volType = 卷类型
+SelectProtectedSysVolPane.table.vol.snapSpace = 快照空间[%]
+SelectProtectedSysVolPane.table.vol.maxSnap = 最大快照#
+SelectProtectedSysVolPane.table.vol.formatted = 格式化?
+SelectProtectedSysVolPane.table.vol.desc = 卷描述
+SelectProtectedSysVolPane.label.maxFreeSize = 当前服务器上还有
+SelectProtectedSysVolPane.label.maxFreeSize1 = 空间可以创建卷。
+SelectProtectedSysVolPane.checkBox.copyos = 复制操作系统
+SelectProtectedSysVolPane.radioBtn.copyos =1）复制操作系统并修改注册表
+SelectProtectedSysVolPane.radioBtn.copyos1 =1）复制操作系统并修改启动配置
+SelectProtectedSysVolPane.radioBtn.copyos2 = 复制操作系统
+SelectProtectedSysVolPane.radioBtn.modRegister =2）只修改注册表
+SelectProtectedSysVolPane.radioBtn.modConf =2）只修改启动配置
+SelectProtectedSysVolPane.radioBtn.doNothing =1）和 2）都不做
+
+SelectProtectedSysVolPane.combox.lp = 逻辑保护
+SelectProtectedSysVolPane.combox.pp = 物理保护
+SelectProtectedSysVolPane.error.noneName = 空的卷名
+SelectProtectedSysVolPane.error.sameName = 重复的卷名 
+SelectProtectedSysVolPane.error.invalidVal = 卷大小必须是>0 且<=对应存储池的空闲值的数字。
+SelectProtectedSysVolPane.error.invalidSnapVal = 快照数必须是>=0的整数，且不能超过
+SelectProtectedSysVolPane.error.beyondVgSize = 要创建的卷的总容量超过了该存储池的最大可用值:
+SelectProtectedSysVolPane.error.invalidVolDesc = 卷描述不能包含英文单双引号/空格/<>，并且长度不能超过256。
+SelectProtectedSysVolPane.error.invalidSnapSpace = 快照空间（百分比）必须是>0的整数，且不能超过100
+SelectProtectedSysVolPane.error.reservedKeyWord = TGT或VG被系统保留，请使用其它描述。
+SelectProtectedSysVolPane.error.badLVMType = /boot 文件系统不能建在LVM上。
+SelectProtectedSysVolPane.error.hasMj = 该磁盘对应卷上还有镜像任务必须保护它
+SelectProtectedSysVolPane.error.hasMj1 = 所选择的卷或要替换的卷上有镜像任务
+SelectProtectedSysVolPane.error.invalidVal1 = 存在"卷大小<=磁盘有效容量"的情况，是否接受?
+SelectProtectedSysVolPane.error.notSelVol = 没有选择空闲卷
+###################### TaskConfigPane
+TaskConfigPane.table.task.isFinish = 完成?
+TaskConfigPane.table.task.seq = 序号
+TaskConfigPane.table.task.task = 任务
+TaskConfigPane.table.task.status = 状态
+
+###################### RunningTaskPane
+RunningTaskPane.checkBox.dhcpBind = 使用第三方工具进行DHCP设置
+RunningTaskPane.checkBox.dhcpBind1=（要绑定的MAC地址为 :
+RunningTaskPane.checkBox.tdiskBind = MAC地址和目标卷绑定
+
+RunningTaskPane.label.crtVol = 创建卷
+RunningTaskPane.label.crtProtect = 建立镜像关系
+RunningTaskPane.label.formatVol = 格式化卷
+RunningTaskPane.label.getInfo = 获取信息
+RunningTaskPane.label.saveInfo = 保存信息
+RunningTaskPane.label.copyOs = 数据复制
+RunningTaskPane.label.lunmap = 主机映射
+
+###################### FailoverWizardDialog
+FailoverWizardDialog.title  = 灾难恢复向导(网络启动)
+FailoverWizardDialog.tit    = 切换到网络盘向导
+FailoverWizardDialog.title0 = 选择恢复方式
+FailoverWizardDialog.title1 = 选择网络启动的物理主机
+FailoverWizardDialog.title2 = 选择服务
+FailoverWizardDialog.title2.5 = 选择启动网卡
+FailoverWizardDialog.title2.6 = 设置DHCP
+FailoverWizardDialog.title3 = 选择快照
+FailoverWizardDialog.title4 = 输入iBoot服务器的IP和端口号
+FailoverWizardDialog.title5 = 选择需要完成的任务
+FailoverWizardDialog.title6 = 运行任务
+
+FailoverWizardDialog.tip0 = 在该窗口中，请选择网络启动的物理主机。可以选择已有主机或通过MAC地址来指定物理机器。注意：只有硬件架构与原机器同构的机器网络启动才能成功。缺省选择原有的进行了初始化的主机。
+FailoverWizardDialog.tip1 = 在该窗口中，请选择灾难恢复的方式和有关选项。
+FailoverWizardDialog.tip2 = 在该窗口中，请选择需要关注的服务。所有选中的服务将在系统恢复时被自动\n停止，而后再自动启动。
+FailoverWizardDialog.tip3 = 在该窗口中，请为每个要恢复的文件系统选择一个快照。
+FailoverWizardDialog.tip4 = 在该窗口中，对应任务的“完成”检查框被勾选上，表示该任务已经完成；反之，\n则该任务将在下一步中完成。
+FailoverWizardDialog.tip5 = 在该窗口中，将运行所有需要的任务。
+FailoverWizardDialog.tip6 = 在该窗口中，请输入 iBoot 服务器的IP和端口号。
+
+FailoverWizardDialog.wizardText1 = \n * 选择恢复版本 \n * 恢复操作系统 \n * 恢复应用系统(包括数据库系统)
+FailoverWizardDialog.wizardText2 = \n * 选择恢复版本 \n * 恢复应用系统(包括数据库系统)
+
+FailoverWizardDialog.confirm1 = 当前主机已经网络启动，请确认新选操作系统盘版本是否与当前使用的一样，\n如果一样就点击“确定”按钮，如果不一样就点击“撤消”按钮，\n否则直接使用新选版本将使主机出现严重故障!
+FailoverWizardDialog.confirm2 = 请确定当前选择的快照副本
+FailoverWizardDialog.confirm3 = 是否正在被其他机器使用，\n如果没被使用就点击“确定”按钮，如果被使用就点击“撤销”按钮，\n否则将会影响当前正在使用该快照副本的主机! 
+FailoverWizardDialog.confirm4 = 当该主机的快照被自己或其它主机用来网启的情况下，使用本操作将会对网启系统造成严重故障! \n如果该主机的快照没有被用来网启，请点击“确定”按钮，否则点击“撤销”按钮。
+FailoverWizardDialog.error.notFinishChgBIOS = 请确认网络启动的BIOS选项是否修改；如果已修改，请将对应的检查框勾选上。
+FailoverWizardDialog.error.noNCInfo = 没有得到要进行网络启动的物理主机的网卡信息。请指定其网卡地址。
+FailoverWizardDialog.error.drRecoverOK = 灾难恢复( 网络启动 )成功完成。
+FailoverWizardDialog.error.needReDrRecover = 灾难恢复( 网络启动 )并没有完全成功。请查明原因后，再次进行。
+FailoverWizardDialog.error.notRecoverCDisk = 必须恢复操作系统。
+FailoverWizardDialog.error.allFinished = 没有任务需要运行。
+FailoverWizardDialog.error.getServiceList = 获取所有非核心服务失败。可能机器正在重启，请稍后再运行。
+FailoverWizardDialog.error.crtView = 为快照创建快照副本失败
+FailoverWizardDialog.error.addLunmap = 为快照副本增加主机映射失败
+FailoverWizardDialog.error.addLunmapForOS = 为操作系统的快照副本增加主机映射失败
+FailoverWizardDialog.error.notFoundBootMac = 获取网络配置信息失败
+FailoverWizardDialog.error.notFoundIscsiHBABootIp = 获取iSCSI HBA启动IP失败
+FailoverWizardDialog.log.modBootRec = 设置网络启动信息失败
+FailoverWizardDialog.log.mismatchedOSVer = 当前正在使用的操作系统盘版本与新选版本不一样，直接使用新选版本\n将使主机出现严重故障。使用新选版本须再次重启主机。
+FailoverWizardDialog.log.addNBH = 增加网络启动主机
+FailoverWizardDialog.log.modNBH = 修改网络启动主机
+
+FailoverWizardDialog.log.getPartition = 获取原有分区信息失败! \n取消所有后续任务。
+FailoverWizardDialog.log.getPartition1 = 获取原有分区信息
+FailoverWizardDialog.log.getPersistentTarget = 获取永久目标卷
+FailoverWizardDialog.log.getNewPartition = 获取最新分区信息失败! \n取消所有后续任务。
+FailoverWizardDialog.log.getNewPartition1 = 获取最新分区信息
+FailoverWizardDialog.log.getSavePersistent = 获取保存的永久目标卷
+FailoverWizardDialog.log.savePersistentTgt = 保存当前使用的永久目标卷
+FailoverWizardDialog.log.connectHostOK = 连接客户端成功
+FailoverWizardDialog.log.getStartupInfo = 获取系统启动方式
+FailoverWizardDialog.log.startupFromSAN = 从网络成功启动
+FailoverWizardDialog.log.notStartupFromSAN = 系统从本地盘启动! \n取消所有后续任务。请设置为网络启动!
+FailoverWizardDialog.log.assignDriver = 分配盘符
+FailoverWizardDialog.log.startService = 启动服务
+FailoverWizardDialog.log.stopService = 停止服务 
+FailoverWizardDialog.log.getBootNetFailed = 获取启动网卡地址失败
+FailoverWizardDialog.log.bindOSTgtVolandMac = 绑定操作系统目标卷和启动网卡MAC地址
+FailoverWizardDialog.log.addPersistentTarget = 增加永久目标卷
+FailoverWizardDialog.log.delPersistentTarget = 删除永久目标卷
+FailoverWizardDialog.log.notreboot = 没有选择强制重启选项
+FailoverWizardDialog.log.submitRebootOK = 成功发送重启命令
+FailoverWizardDialog.log.submitRebootFailed = 发送重启命令失败
+FailoverWizardDialog.log.sendInfo = 传输网络信息
+FailoverWizardDialog.log.loadInfo = 加载网络信息
+FailoverWizardDialog.log.notNeedRun = 该任务无需运行。 
+FailoverWizardDialog.log.umount = 卸载本地盘上的C盘 
+FailoverWizardDialog.log.cancelNetBoot = 用户取消了本次网络启动。
+FailoverWizardDialog.log.addSU = 增加启动版本对象
+FailoverWizardDialog.log.modSU = 修改启动版本对象
+FailoverWizardDialog.log.notneedloadinfo= 无需加载相关信息
+FailoverWizardDialog.log.selOSTid = 操作系统盘目标ID :
+FailoverWizardDialog.log.modWorkState = 修改磁盘保护的工作状态失败
+FailoverWizardDialog.error.mustRstAllDisk = 网络启动的主机并不是初始化的原机，所以必须选择恢复所有被保护的磁盘。
+FailoverWizardDialog.error.existActiveSession = 该目标卷设备已经被使用: 
+FailoverWizardDialog.error.modLastBootVer=记录网络启动所用版本失败。
+FailoverWizardDialog.error.modLastSelBootVer=记录网络启动所选版本失败。
+FailoverWizardDialog.error.modLastSelSwitchVer=记录网络盘切换所选版本失败。
+FailoverWizardDialog.error.verisnull = 所选版本为空
+FailoverWizardDialog.error.multiFsToRst = 不能为同一个盘指定多个恢复版本。
+FailoverWizardDialog.error.setBootVer = 设置网络启动版本失败
+FailoverWizardDialog.error.modNetBootAction = 修改网络启动选项失败
+
+######################## FailbackWizardDialog
+FailbackWizardDialog.title  = 灾难恢复向导(恢复源盘后本地启动)
+FailbackWizardDialog.tit = 切换到本地盘向导
+FailbackWizardDialog.title1 = 选择服务
+FailbackWizardDialog.title2 = 选择本地盘
+FailbackWizardDialog.title3 = 选择需要完成的任务
+FailbackWizardDialog.title4 = 运行任务
+FailbackWizardDialog.tip1 = 在该窗口中，请选择需要关注的服务。所有选中的服务将在系统恢复时被自动\n停止，而后再自动启动。
+FailbackWizardDialog.tip2 = 在该窗口中，请选择要使用的本地盘。
+FailbackWizardDialog.tip3 = 在该窗口中，对应任务的“完成”检查框被勾选上，表示该任务已经完成；反之，\n则该任务将在下一步中完成。
+FailbackWizardDialog.tip4 = 在该窗口中，将运行所有需要的任务。
+FailbackWizardDialog.wizardText1 = \n * 恢复操作系统 \n * 恢复应用系统(包括数据库系统)
+FailbackWizardDialog.wizardText2 = \n * 恢复应用系统(包括数据库系统)
+FailbackWizardDialog.error.notFinishChgBIOS = 请确认本地启动的BIOS选项是否修改；如果已修改，请将对应的检查框勾选上。
+FailbackWizardDialog.error.drRecoverOK = 灾难恢复(恢复源盘后本地启动)成功完成。
+FailbackWizardDialog.error.drRecoverOK1 = 切换到本地盘成功完成。
+FailbackWizardDialog.error.needReDrRecover = 灾难恢复(恢复源盘后本地启动)并没有完全成功。请查明原因后，再次进行。
+FailbackWizardDialog.error.needReDrRecover1 = 切换到本地盘并没有完全成功。请查明原因后，再次进行。
+FailbackWizardDialog.log.startupFromLocalDisk = 从本地成功启动
+FailbackWizardDialog.log.notStartupFromLocalDisk = 系统从网络启动! \n取消所有后续任务。请设置为本地盘启动!
+FailbackWizardDialog.log.getCurPartition = 获取当前分区信息
+FailbackWizardDialog.log.getSavedPartition = 获取保存的分区信息
+FailbackWizardDialog.log.notFoundVolInfo = 无法从分区信息中获取本地盘的卷信息
+FailbackWizardDialog.log.mismatched = 分区信息表明该盘是个iSCSI盘，不是本地盘
+FailbackWizardDialog.log.delPersistentTarget = 移除永久目标卷
+FailbackWizardDialog.log.noneedDelPersistentTgt = 没有永久目标卷需要移除
+FailbackWizardDialog.log.listPersistentTarget = 获取永久目标卷
+FailbackWizardDialog.log.listVolInfo = 获取当前卷信息失败
+FailbackWizardDialog.log.getMirrorInfo = 获取镜像状态失败 :
+FailbackWizardDialog.log.getVolMapInfo = 管理数据库中没有该卷的信息 : 
+FailbackWizardDialog.log.getSrvName = 获取服务器名字失败
+FailbackWizardDialog.error.fixMirror = 修正镜像关系失败 :
+
+########################SelectDRRecoverModePane
+SelectDRRecoverModePane.borderTitle.mode = 恢复模式
+SelectDRRecoverModePane.borderTitle.option = 恢复选项
+SelectDRRecoverModePane.radioBtn.auto = 自动
+SelectDRRecoverModePane.radioBtn.manual = 手动
+SelectDRRecoverModePane.checkBox.autoReboot = 自动重启
+######################## SelectSnapshotPane
+SelectSnapshotPane.table.snap.recovered = 恢复?
+SelectSnapshotPane.table.snap.disk = 盘
+SelectSnapshotPane.table.snap.fs = 文件系统
+SelectSnapshotPane.table.snap.ver = 快照版本
+SelectSnapshotPane.table.snap.bootver = 最后一次成功启动所用版本
+######################## OptionPaneForEmboot
+OptionPaneForEmboot.borderTitle.emboot = iBoot
+OptionPaneForEmboot.label.ip = IP :
+OptionPaneForEmboot.label.port = 端口 :
+OptionPaneForEmboot.checkBox.skip = 跳过该步
+######################## RunningTaskForDRPane
+RunningTaskForDRPane.checkBox.selSnap = 选择OS快照
+RunningTaskForDRPane.checkBox.chgBios = 修改BIOS
+RunningTaskForDRPane.label.connect = 连接客户端 
+RunningTaskForDRPane.label.stopServ = 停止服务
+RunningTaskForDRPane.label.loadInfo = 加载信息
+RunningTaskForDRPane.label.chgLabel = 修改盘符
+RunningTaskForDRPane.label.startServ = 启动服务
+RunningTaskForDRPane.label.reboot = 重启
+RunningTaskForDRPane.label.removePersistentTgt = 删除永久目标卷
+
+######################## SelectUnInitedHostDialog
+SelectUnInitedHostDialog.title = 选择
+SelectUnInitedHostDialog.label.clnt = 客户端 :
+
+####################### SelectVolDialog
+SelectVolDialog.title = 选择
+SelectVolDialog.borderTitle.details = 详细信息
+SelectVolDialog.label.vol = 空闲卷 :
+SelectVolDialog.label.name = 名字 :
+SelectVolDialog.label.tid = 目标ID :
+SelectVolDialog.label.cap = 容量 :
+SelectVolDialog.label.raid = 数据安全模式 :
+
+####################### HostPropertyDialog
+HostPropertyDialog.title           = 主机属性
+HostPropertyDialog.title1	   = 集群属性
+HostPropertyDialog.label.targetVol = 保护的设备
+HostPropertyDialog.label.service   = 关注的服务
+HostPropertyDialog.label.network   = 网络信息
+HostPropertyDialog.label.partition = 分区信息
+HostPropertyDialog.label.member    = 节点成员
+
+HostPropertyDialog.error.getNetworkInfo = 获取网络信息失败。
+HostPropertyDialog.error.getPartitionInfo = 获取分区信息失败。
+
+####################### RestoreOriginalDiskWizardDialog
+RestoreOriginalDiskWizardDialog.title  = 恢复源盘向导
+RestoreOriginalDiskWizardDialog.title1 = 选择新磁盘分区的创建方式
+RestoreOriginalDiskWizardDialog.title2 = 指定磁盘间的恢复关系
+RestoreOriginalDiskWizardDialog.title3 = 选择要恢复到本地盘的目标卷
+RestoreOriginalDiskWizardDialog.title4 = 为需要的任务输入快照前后脚本
+RestoreOriginalDiskWizardDialog.title5 = 恢复本地盘
+RestoreOriginalDiskWizardDialog.title6 = 指定Swap设备
+
+RestoreOriginalDiskWizardDialog.tip1 = 在该窗口中，请选择要恢复到本地盘的目标卷以及恢复目的盘符。
+RestoreOriginalDiskWizardDialog.tip2 = 在该窗口中，请给需要的任务输入快照前后脚本。
+RestoreOriginalDiskWizardDialog.tip3 = 在该窗口中，将选中的目标卷恢复到指定的本地盘上。
+RestoreOriginalDiskWizardDialog.tip4 = 在该窗口中，请输入Swap设备。注：Swap设备不是必须的。
+RestoreOriginalDiskWizardDialog.tip5 = 在该窗口中，请选择新磁盘分区的创建方式。注意 : 新磁盘一定要事先安装在系统中。
+RestoreOriginalDiskWizardDialog.tip6 = 在该窗口中，请指定好磁盘间的恢复关系。“原磁盘”指网络启动之前系统上的本地盘；\n“新磁盘”指网络启动之后发现的本地盘，即要恢复的盘。注意 : 双击“原磁盘”列中\n的单元可以查看原盘的详细信息；点击“新磁盘”列中的按钮可以查看新盘的详细信息。
+RestoreOriginalDiskWizardDialog.confirm1 = 仍有磁盘没有选择自动恢复分区，是否继续?
+RestoreOriginalDiskWizardDialog.confirm2 = 请确认要恢复的本地盘是否包含没有被保护的分区，\n否则该分区上的数据将被清除。是否继续?
+RestoreOriginalDiskWizardDialog.confirm3 = 系统发现之前保存的磁盘恢复关系信息，是否继续使用该信息进行源盘恢复?
+
+RestoreOriginalDiskWizardDialog.manualText = 需要利用系统工具手工对新磁盘进行分区和格式化，并加载这些分区。
+RestoreOriginalDiskWizardDialog.manualText1 = 需要利用系统工具手工对新磁盘进行分区和格式化，并安装上面的文件系统。
+RestoreOriginalDiskWizardDialog.autoText = 自动将原有磁盘的分区完整地恢复到新磁盘上，同时自动加载新分区。
+RestoreOriginalDiskWizardDialog.autoText1 = 自动将原有磁盘的分区完整地恢复到新磁盘上，同时自动安装上面的文件系统。
+
+RestoreOriginalDiskWizardDialog.loadstatus.rstPart = 正在分区
+RestoreOriginalDiskWizardDialog.loadstatus.formatPart = 正在格式化
+
+RestoreOriginalDiskWizardDialog.table.rst = 恢复?
+RestoreOriginalDiskWizardDialog.table.olddisk = 原磁盘
+RestoreOriginalDiskWizardDialog.table.newdisk = 新磁盘
+
+RestoreOriginalDiskWizardDialog.wizardText1 = \n * 自动创建磁盘分区 \n * 恢复本地盘
+
+RestoreOriginalDiskWizardDialog.info.noMp = 无安装点
+RestoreOriginalDiskWizardDialog.info.swap = 交换分区
+RestoreOriginalDiskWizardDialog.info.part = 分区
+RestoreOriginalDiskWizardDialog.btn.detail = 查看新盘信息
+RestoreOriginalDiskWizardDialog.borderTitle.swap = Swap设备
+RestoreOriginalDiskWizardDialog.label.swap = Swap设备: 
+RestoreOriginalDiskWizardDialog.pdiagTitle.rst = 正在分区和格式化
+RestoreOriginalDiskWizardDialog.pdiagTip.rst = 正在分区和格式化，请稍候 ...
+RestoreOriginalDiskWizardDialog.pdiagTitle.prepare = 正在为后续操作做准备
+RestoreOriginalDiskWizardDialog.pdiagTip.prepare = 正在为后续操作做准备，请稍候 ...
+RestoreOriginalDiskWizardDialog.misc  = 先复制操作系统，后复制普通数据
+RestoreOriginalDiskWizardDialog.misc1 = 复制操作系统命令提交失败，只能复制普通数据
+RestoreOriginalDiskWizardDialog.misc2 = 复制普通数据命令提交失败，只能复制操作系统
+
+RestoreOriginalDiskWizardDialog.pdiagTitle.mntoldfs = 正在按保存的磁盘恢复关系分配盘符
+RestoreOriginalDiskWizardDialog.pdiagTip.mntoldfs = 正在按保存的磁盘恢复关系分配盘符，请稍候 ...
+RestoreOriginalDiskWizardDialog.pdiagTitle.mntoldfs1 = 正在按保存的磁盘恢复关系安装文件系统
+RestoreOriginalDiskWizardDialog.pdiagTip.mntoldfs1 = 正在按保存的磁盘恢复关系安装文件系统，请稍候 ...
+
+RestoreOriginalDiskWizardDialog.log.getPartInfo = 获取分区信息
+RestoreOriginalDiskWizardDialog.log.saveRstMapInfo = 保存恢复关系信息
+
+RestoreOriginalDiskWizardDialog.error.restoreOK = 恢复源盘成功完成。
+RestoreOriginalDiskWizardDialog.error.todo = 接下来请使用灾难恢复向导(恢复源盘后本地启动)来完成"网络盘到本地盘"的迁移。 
+RestoreOriginalDiskWizardDialog.error.todo1 = 接下来请使用“切换回本地盘向导”来完成"网络盘到本地盘"的迁移。 
+RestoreOriginalDiskWizardDialog.error.needReRestore = 恢复源盘并没有完全成功。请查明原因后，再次进行。
+RestoreOriginalDiskWizardDialog.error.noRestoredDisk = 没有任何目标卷需要恢复。
+RestoreOriginalDiskWizardDialog.error.noneOSDisk = 操作系统所在卷必须被选择恢复。
+RestoreOriginalDiskWizardDialog.error.noneBootDisk = Boot分区必须被选择恢复。
+RestoreOriginalDiskWizardDialog.error.badSwapDev = Swap设备路径必须以"/"打头。 
+RestoreOriginalDiskWizardDialog.error.badRootMp = 根文件系统必须安装在非/的目录下。
+RestoreOriginalDiskWizardDialog.error.badBootMp = Boot文件系统必须安装在非/的目录下。
+RestoreOriginalDiskWizardDialog.error.getOldDiskInfo = 获取不到保存的原有磁盘分区表
+RestoreOriginalDiskWizardDialog.error.getNewDiskInfo = 获取不到当前新磁盘的分区表
+RestoreOriginalDiskWizardDialog.error.noNewDisk = 还没有指定对应的新磁盘
+RestoreOriginalDiskWizardDialog.error.noRstDisk = 没有选择确立任何恢复关系。
+RestoreOriginalDiskWizardDialog.error.noOSDisk = 操作系统分区所在磁盘必须被恢复
+RestoreOriginalDiskWizardDialog.error.sameNewDisk = 该新磁盘已被选择恢复了，请另选一个
+RestoreOriginalDiskWizardDialog.error.notMatch = 原盘和新盘的容量不匹配
+RestoreOriginalDiskWizardDialog.error.genFileFailed = 生成临时文件失败。
+RestoreOriginalDiskWizardDialog.error.rstPart = 恢复分区
+RestoreOriginalDiskWizardDialog.error.rstPart1 = 恢复分区前准备工作
+RestoreOriginalDiskWizardDialog.error.rstPart2 = 恢复分区时遇到设备忙错误，请重启机器，然后重新进行源盘恢复操作。
+RestoreOriginalDiskWizardDialog.error.formatPart1 = 格式化前准备工作1
+RestoreOriginalDiskWizardDialog.error.formatPart2 = 格式化前准备工作2
+RestoreOriginalDiskWizardDialog.error.formatPart3 = 格式化分区时遇到设备忙错误，请重启机器，然后重新进行源盘恢复操作。
+RestoreOriginalDiskWizardDialog.error.formatPart4 = 格式化逻辑卷时遇到设备忙错误，请重启机器，然后重新进行源盘恢复操作。
+RestoreOriginalDiskWizardDialog.error.formatPart = 格式化分区
+RestoreOriginalDiskWizardDialog.error.rstDisk = 恢复新磁盘
+RestoreOriginalDiskWizardDialog.error.rstDisk1 = 自动恢复新磁盘失败，请用手工方式进行。
+RestoreOriginalDiskWizardDialog.error.mntDisk = 自动加载如下盘符失败
+RestoreOriginalDiskWizardDialog.error.missingD2DClnt = 找不到客户端信息
+RestoreOriginalDiskWizardDialog.error.dupRstCmdFail = 数据恢复命令提交失败
+RestoreOriginalDiskWizardDialog.error.missingBHost = 找不到客户端信息
+RestoreOriginalDiskWizardDialog.error.belongDG = 这些盘必须同时恢复 :
+RestoreOriginalDiskWizardDialog.error.getDiskInfo = 获取不到磁盘信息:
+RestoreOriginalDiskWizardDialog.error.buildRstMirror = 建立不了镜像关系 :
+RestoreOriginalDiskWizardDialog.error.assignDriveLetter = 分配盘符失败 :
+RestoreOriginalDiskWizardDialog.error.freshVolInfo = 获取最新的卷信息失败 
+RestoreOriginalDiskWizardDialog.error.verifyIsSync = 恢复镜像不是同步状态
+RestoreOriginalDiskWizardDialog.error.reCrtUUID = 生成新的UUID失败
+RestoreOriginalDiskWizardDialog.error.getUUID = 获取UUID失败
+RestoreOriginalDiskWizardDialog.error.setUUID = 设置UUID失败
+RestoreOriginalDiskWizardDialog.error.checkDisk = 检查磁盘失败:
+RestoreOriginalDiskWizardDialog.error.modDBAftRestOriDisk = 恢复源盘后修改数据库失败
+RestoreOriginalDiskWizardDialog.error.stopService = 停止服务失败：
+RestoreOriginalDiskWizardDialog.error.startService = 启动服务失败：
+
+RestoreOriginalDiskWizardDialog.error.getSnap = 查询当前网启的C盘对应的快照信息失败。
+RestoreOriginalDiskWizardDialog.error.crtView = 为当前网启的C盘创建可用于源盘恢复的替代盘失败。
+RestoreOriginalDiskWizardDialog.error.addLun  = 为可用于源盘恢复的替代盘增加主机映射失败。
+RestoreOriginalDiskWizardDialog.error.getIdleDriverLetter = 为可用于源盘恢复的替代盘找一个空闲盘符失败。
+RestoreOriginalDiskWizardDialog.error.assignLetter = 为可用于源盘恢复的替代盘分配盘符失败。
+
+RestoreOriginalDiskWizardDialog.log.badOccupied = 获取的iSCSI卷已用空间无效。
+RestoreOriginalDiskWizardDialog.log.badFree = 获取的本地盘的空闲空间无效。
+RestoreOriginalDiskWizardDialog.log.badTotalSize = 获取的磁盘总空间数值无效。
+RestoreOriginalDiskWizardDialog.log.tooSmall = 本地盘太小
+RestoreOriginalDiskWizardDialog.log.notFoundSrc = 找不到要复制的卷。
+RestoreOriginalDiskWizardDialog.log.notFoundDest = 找不到本地盘。
+RestoreOriginalDiskWizardDialog.log.umount = 卸载本地盘
+RestoreOriginalDiskWizardDialog.log.getbootmode = 获取快速启动方式失败
+RestoreOriginalDiskWizardDialog.log.getServiceOnVolume = 获取盘上相关联的服务
+
+####################### SelectRestoreDiskPane
+SelectRestoreDiskPane.table.select  = 选择?
+SelectRestoreDiskPane.table.volMap  = 盘
+SelectRestoreDiskPane.table.ptype   = 保护类型
+SelectRestoreDiskPane.table.seq     = 恢复顺序#
+SelectRestoreDiskPane.table.dest    = 恢复到
+SelectRestoreDiskPane.table.label   = 卷标
+SelectRestoreDiskPane.table.restore = 恢复?
+
+SelectRestoreDiskPane.checkBox.inputcmd = 指定快照前后脚本
+SelectRestoreDiskPane.label.realRestOsLetter = 恢复OS所用的网盘的盘符:
+
+SelectRestoreDiskPane.error.invalidVal = 目的盘符必须是[a-z]或[A-Z]，比如D、d、E、e等
+SelectRestoreDiskPane.error.invalidVal1 = 目的路径必须以"/"打头。
+SelectRestoreDiskPane.error.invalidVal2 = 卷标不能为空。
+SelectRestoreDiskPane.error.rstOntoSelf = 恢复目的不能是正在被使用的目标卷
+SelectRestoreDiskPane.error.notLocalDisk = 恢复目的不是本地盘。
+SelectRestoreDiskPane.error.getStartupInfo = 无法判断恢复目的是否为本地盘,也许恢复目的根本不存在。 
+SelectRestoreDiskPane.error.sameLabel = 存在相同的卷标，请另取一个。
+SelectRestoreDiskPane.error.noneLocalDisk = 恢复目的不存在。
+SelectRestoreDiskPane.error.getLatestFsList = 获取最新文件系统信息失败，无法判断恢复目的是否为本地盘。
+SelectRestoreDiskPane.error.missingDev = 找不到对应的设备。
+SelectRestoreDiskPane.error.addlabel = 给设备打卷标失败 :
+SelectRestoreDiskPane.error.badLenOfLabel = 卷标长度不能超过16字节。
+SelectRestoreDiskPane.error.emptyRestSrc  = 恢复OS所用的网盘为空。
+SelectRestoreDiskPane.error.invalidRestSrc = 恢复OS所用的网盘的盘符必须是[a-z]或[A-Z]，比如D、d、E、e等
+SelectRestoreDiskPane.confirm1 = 当网启为推荐方式时，对于64位系统，如果直接以C盘为源进行恢复，速度会很慢。你是否确定要这样？
+######################## InputSnapshotCmdPane
+InputSnapshotCmdPane.table.seq = 恢复次序
+InputSnapshotCmdPane.table.task = 恢复内容
+InputSnapshotCmdPane.table.precmd  = 快照前脚本
+InputSnapshotCmdPane.table.postcmd = 快照后脚本
+
+####################### ReportConfDialog
+ReportConfDialog.borderTitle = UWS报表 
+ReportConfDialog.borderTitle.frequence = 报表生成频率
+ReportConfDialog.borderTitle.type = 类型
+ReportConfDialog.borderTitle.startime = 报表生成时间
+ReportConfDialog.borderTitle.email = 邮件通知
+ReportConfDialog.borderTitle.msgLimit = 消息数限制
+ReportConfDialog.borderTitle.view = 查看报表
+ReportConfDialog.borderTitle.daily = 每天
+ReportConfDialog.borderTitle.weekly = 每周
+ReportConfDialog.borderTitle.monthly = 每月
+ReportConfDialog.radioBtn.dialy = 每天
+ReportConfDialog.radioBtn.weekly = 每周
+ReportConfDialog.radioBtn.monthly = 每月
+ReportConfDialog.label.hour = 点 :
+ReportConfDialog.label.min = 分钟 :
+ReportConfDialog.label.dns = DNS :
+ReportConfDialog.label.gateway= 网关 :
+ReportConfDialog.label.accept = 收件人 :
+ReportConfDialog.label.success = 成功 :
+ReportConfDialog.label.failure = 失败 :
+ReportConfDialog.label.from = 开始 :
+ReportConfDialog.label.to = 截至 : 
+ReportConfDialog.label.year = 年
+ReportConfDialog.label.month = 月
+ReportConfDialog.label.day = 日
+ReportConfDialog.label.reserved = 存档保留 : 
+ReportConfDialog.label.days = 天
+ReportConfDialog.checkbox.sendmail  = 开启
+ReportConfDialog.checkbox.sendmail1 = 当有失败消息时才发送
+ReportConfDialog.checkbox.startRpt = 开启UWS报表
+ReportConfDialog.btn.generate = 生成报表
+ReportConfDialog.btn.sendemail = 报表发送测试
+ReportConfDialog.btn.apply = 生效
+ReportConfDialog.error.badOkRecNum = 成功消息数必须为1和1000之间的数字。
+ReportConfDialog.error.badFailedRecNum = 失败消息数必须为1和1000之间的数字。
+ReportConfDialog.error.badRemainDay = 存档保留天数必须为1和365之间的数字。
+ReportConfDialog.error.saveRptConf = 修改UWS报表配置信息失败。 
+ReportConfDialog.error.saveRptConfOK = 修改UWS报表配置信息成功。
+ReportConfDialog.error.generateTmpRpt = 生成报表失败
+ReportConfDialog.error.mismatched = 开始和截至时间相矛盾。
+ReportConfDialog.error.badBeginYear = 开始年份必须为2001和9999之间的数字。
+ReportConfDialog.error.badEndYear = 截至年份必须为2001和9999之间的数字。
+
+ReportConfDialog.errmsg.noDayofWeek = 必须至少选择一周中的某一天生成报表。
+ReportConfDialog.errmsg.noDayofMonth= 必须至少选择一月中的某一天生成报表。
+
+ReportConfDialog.error.badmail = 无效的邮件地址
+ReportConfDialog.error.noneEMail = 空的邮件地址列表。
+ReportConfDialog.error.reloadRptConf = 重载UWS报表配置信息失败。 
+ReportConfDialog.error.restartRptMon = 修改UWS报表配置信息成功，但是必须手工重启服务才能使修改生效。
+ReportConfDialog.error.sendRptMailOk = 报表发送成功，请稍候查收邮件。
+ReportConfDialog.error.sendRptMailFailed = 报表发送失败 
+
+####################### SDHMSetDialog 系统健康管理设定
+SDHMSetDialog.borderTitle = 系统健康管理设定
+SDHMSetDialog.borderTitle.hostList = 主机列表
+SDHMSetDialog.borderTitle.threshold = 阈值信息
+SDHMSetDialog.borderTitle.interval = 监控频率
+SDHMSetDialog.borderTitle.service = 服务监控
+SDHMSetDialog.borderTitle.availableServices = 服务列表
+SDHMSetDialog.borderTitle.monitoringServices = 监控列表
+SDHMSetDialog.btn.apply = 确定
+SDHMSetDialog.btn.close = 关闭
+SDHMSetDialog.label.ipaddress = 主机地址 :
+SDHMSetDialog.label.monitor = 监控
+SDHMSetDialog.label.cpu = 处理器 :
+SDHMSetDialog.label.disk= 磁盘 :
+SDHMSetDialog.label.diskio = 磁盘I/O :
+SDHMSetDialog.label.memory = 内存 :
+SDHMSetDialog.label.netio = 网络I/O :
+SDHMSetDialog.label.interval = 间隔 :
+SDHMSetDialog.label.mins = 分钟
+
+
+SDHMSetDialog.error.badOkRecNum = 成功消息数必须为1和1000之间的数字。
+SDHMSetDialog.error.badFailedRecNum = 失败消息数必须为1和1000之间的数字。
+SDHMSetDialog.error.badRemainDay = 存档保留天数必须为1和365之间的数字。
+
+SDHMSetDialog.error.getSDHMInfoError = 获取主机设定信息失败 
+SDHMSetDialog.error.getSDHMInfoOK = 获取主机设定信息成功。
+
+SDHMSetDialog.error.setSDHMInfoError = 修改主机设定信息失败 
+SDHMSetDialog.error.setSDHMInfoOK = 修改主机设定信息成功。
+
+SDHMSetDialog.error.getSDHMHostListError = 获取主机列表失败 
+SDHMSetDialog.error.getSDHMHostListOK = 获取主机列表成功。
+
+SDHMSetDialog.error.generateTmpRpt = 生成报表失败
+SDHMSetDialog.error.mismatched = 开始和截至时间相矛盾。
+SDHMSetDialog.error.badPercentValue = 百分比必须是0和100之间的数字。
+SDHMSetDialog.error.badValue = I/O值必须是大于或者等于0的数字。
+
+SDHMSetDialog.errmsg.noDayofWeek = 必须至少选择一周中的某一天生成报表。
+SDHMSetDialog.errmsg.noDayofMonth= 必须至少选择一月中的某一天生成报表。
+
+SDHMSetDialog.error.badmail = 无效的邮件地址
+SDHMSetDialog.error.noneEMail = 空的邮件地址列表。
+SDHMSetDialog.error.reloadRptConf = 重载UWS报表配置信息失败。 
+SDHMSetDialog.error.restartRpt = 修改UWS报表配置信息成功，但是必须手工重启服务才能使修改生效。
+SDHMSetDialog.error.sendRptMailOk = 报表发送成功，请稍候查收邮件。
+SDHMSetDialog.error.sendRptMailFailed = 报表发送失败 
+
+####################### SDHMReportDialog 系统健康管理报告
+SDHMReportDialog.borderTitle = 系统健康管理报告
+SDHMReportDialog.label.hostip = 主机地址 :
+SDHMReportDialog.label.from = 开始 :
+SDHMReportDialog.label.to = 截至 : 
+SDHMReportDialog.label.year = 年
+SDHMReportDialog.label.month = 月
+SDHMReportDialog.label.day = 日
+SDHMReportDialog.label.reserved = 存档保留 : 
+SDHMReportDialog.label.days = 天
+SDHMReportDialog.btn.generateReport = 生成报告
+SDHMReportDialog.btn.close = 关闭
+
+SDHMReportDialog.error.badOkRecNum = 成功消息数必须为1和1000之间的数字。
+SDHMReportDialog.error.badFailedRecNum = 失败消息数必须为1和1000之间的数字。
+SDHMReportDialog.error.badRemainDay = 存档保留天数必须为1和365之间的数字。
+
+SDHMReportDialog.error.saveRptConf = 修改UWS报表配置信息失败。 
+SDHMReportDialog.error.saveRptConfOK = 修改UWS报表配置信息成功。
+
+SDHMReportDialog.error.generateReportError = 报告生成失败
+SDHMReportDialog.error.generateReportOK = 报告生成成功。
+SDHMReportDialog.error.mismatched = 开始和截至时间相矛盾。
+SDHMReportDialog.error.badBeginYear = 开始年份必须为2001和9999之间的数字。
+SDHMReportDialog.error.badEndYear = 截至年份必须为2001和9999之间的数字。
+
+SDHMReportDialog.errmsg.noDayofWeek = 必须至少选择一周中的某一天生成报表。
+SDHMReportDialog.errmsg.noDayofMonth= 必须至少选择一月中的某一天生成报表。
+
+SDHMReportDialog.error.badmail = 无效的邮件地址
+SDHMReportDialog.error.noneEMail = 空的邮件地址列表。
+SDHMReportDialog.error.reloadRptConf = 重载UWS报表配置信息失败。 
+SDHMReportDialog.error.restartRpt = 修改UWS报表配置信息成功，但是必须手工重启服务才能使修改生效。
+SDHMReportDialog.error.sendRptMailOk = 报表发送成功，请稍候查收邮件。
+SDHMReportDialog.error.sendRptMailFailed = 报表发送失败 
+
+SDHMReportDialog.templateName = reportTemplate_zn_CN.xls
+
+####################### SDHMMirrorReportDialog 远程镜像报告
+SDHMMirrorReportDialog.borderTitle = 系统健康报告
+SDHMMirrorReportDialog.borderTitle.diskState = 磁盘信息
+SDHMMirrorReportDialog.borderTitle.UWSState = UWS状态
+SDHMMirrorReportDialog.borderTitle.reportOption = 报表选项
+SDHMMirrorReportDialog.label.totalSpace = UWS磁盘总量 :
+SDHMMirrorReportDialog.label.freeSpace = 未使用磁盘量 :
+SDHMMirrorReportDialog.label.usedSpace = 已使用磁盘量 :
+SDHMMirrorReportDialog.label.localUsed = 本地UWS使用量 :
+SDHMMirrorReportDialog.label.mirrorUsed = 远程镜像使用量 :
+SDHMMirrorReportDialog.label.cpuUsed = CPU使用率 :
+SDHMMirrorReportDialog.label.memoryUsed = 内存使用率 :
+SDHMMirrorReportDialog.label.diskRead = 磁盘读速率 :
+SDHMMirrorReportDialog.label.diskWrite = 磁盘写速率 :
+SDHMMirrorReportDialog.label.netRead = 网络读速率 :
+SDHMMirrorReportDialog.label.netWrite = 网络写速率 :
+SDHMMirrorReportDialog.label.spaceMonitor = 本地UWS报告 
+SDHMMirrorReportDialog.label.agentMonitor = 客户服务器报告 
+SDHMMirrorReportDialog.label.scheduleMonitor = 远程镜像报告 
+SDHMMirrorReportDialog.label.transferMonitor = 远程镜像传输状态报告 
+SDHMMirrorReportDialog.label.recoveryMonitor = 应急恢复报告 
+SDHMMirrorReportDialog.label.from = 开始 :
+SDHMMirrorReportDialog.label.to = 截至 : 
+SDHMMirrorReportDialog.label.year = 年
+SDHMMirrorReportDialog.label.month = 月
+SDHMMirrorReportDialog.label.day = 日
+SDHMMirrorReportDialog.btn.refresh = 刷新
+SDHMMirrorReportDialog.btn.report = 生成报告
+SDHMMirrorReportDialog.btn.close = 关闭
+
+SDHMMirrorReportDialog.text.all = 全部
+
+
+SDHMMirrorReportDialog.error.badOkRecNum = 成功消息数必须为1和1000之间的数字。
+SDHMMirrorReportDialog.error.badFailedRecNum = 失败消息数必须为1和1000之间的数字。
+SDHMMirrorReportDialog.error.badRemainDay = 存档保留天数必须为1和365之间的数字。
+
+SDHMMirrorReportDialog.error.saveRptConf = 修改UWS报表配置信息失败。 
+SDHMMirrorReportDialog.error.saveRptConfOK = 修改UWS报表配置信息成功。
+
+SDHMMirrorReportDialog.error.getSDHMHostListError = 获取主机列表失败 
+SDHMMirrorReportDialog.error.getSDHMMirrorUWSListError = 获取镜像UWS列表失败
+SDHMMirrorReportDialog.error.getSDHMUWSInfoError = 获取UWS信息失败
+SDHMMirrorReportDialog.error.generateReportError = 报表生成失败
+SDHMMirrorReportDialog.error.generateReportOK = 报表生成成功。
+SDHMMirrorReportDialog.error.mismatched = 开始和截至时间相矛盾。
+SDHMMirrorReportDialog.error.beforeToday = 开始和截至时间请输入小于或等于当前的日期。
+SDHMMirrorReportDialog.error.badBeginYear = 开始年份必须为2001和9999之间的数字。
+SDHMMirrorReportDialog.error.badEndYear = 截至年份必须为2001和9999之间的数字。
+SDHMMirrorReportDialog.error.noSelectOption = 必须至少选择一个选项才能生成报表。
+
+SDHMMirrorReportDialog.errmsg.noDayofMonth= 必须至少选择一月中的某一天生成报表。
+
+SDHMMirrorReportDialog.error.badmail = 无效的邮件地址
+SDHMMirrorReportDialog.error.noneEMail = 空的邮件地址列表。
+SDHMMirrorReportDialog.error.reloadRptConf = 重载UWS报表配置信息失败。 
+SDHMMirrorReportDialog.error.restartRpt = 修改UWS报表配置信息成功，但是必须手工重启服务才能使修改生效。
+SDHMMirrorReportDialog.error.sendRptMailOk = 报表发送成功，请稍候查收邮件。
+SDHMMirrorReportDialog.error.sendRptMailFailed = 报表发送失败 
+
+SDHMMirrorReportDialog.templateName = mirrorReportTemplate_zn_CN.xls
+SDHMMirrorReportDialog.templateHeaderSheetName = Header
+SDHMMirrorReportDialog.templateSpaceMonitorSheetName = SpaceMonitor
+SDHMMirrorReportDialog.templateStateMonitorSheetName = StateMonitor
+SDHMMirrorReportDialog.templateAgentMonitorSheetName = AgentMonitor
+SDHMMirrorReportDialog.templateAgentStateMonitorSheetName = AgentStateMonitor
+SDHMMirrorReportDialog.templateScheduleMonitorSheetName = ScheduleMonitor
+SDHMMirrorReportDialog.templateTransferMonitorSheetName = TransferMonitor
+SDHMMirrorReportDialog.templateRecoveryMonitorSheetName = RecoveryMonitor
+SDHMMirrorReportDialog.headerSheetName = 报表首页
+SDHMMirrorReportDialog.spaceMonitorSheetName = 本地UWS磁盘
+SDHMMirrorReportDialog.stateMonitorSheetName = 本地UWS性能
+SDHMMirrorReportDialog.agentMonitorSheetName = 客户服务器磁盘
+SDHMMirrorReportDialog.agentStateMonitorSheetName = 客户服务器性能
+SDHMMirrorReportDialog.scheduleMonitorSheetName = 远程镜像关系
+SDHMMirrorReportDialog.transferMonitorSheetName = 远程镜像服务器性能
+SDHMMirrorReportDialog.recoveryMonitorSheetName = 应急恢复
+
+SDHMMirrorReportDialog.reportDir = report
+
+################################# SetDhcpPane
+SetDhcpPane.manualText = 使用第三方提供的DHCP服务，非UWS提供。
+SetDhcpPane.radioBtn.auto = 使用UWS提供的DHCP服务
+SetDhcpPane.radioBtn.manual = 使用第三方提供的DHCP服务
+SetDhcpPane.label.autoText = 使用本UWS服务器上的DHCP服务。
+SetDhcpPane.label.ibootSrv = 网络启动服务器 :
+SetDhcpPane.label.mac = MAC :
+SetDhcpPane.label.ip = IP : 
+SetDhcpPane.label.subnet = 子网 :
+SetDhcpPane.label.dns = DNS(可选) :
+SetDhcpPane.label.gw = 缺省网关(可选) :
+
+SetDhcpPane.error.noneIP = 空的ip地址。
+SetDhcpPane.error.badIP = 无效的ip地址
+SetDhcpPane.error.noneSubnet = 没有预先设置好的子网，可能UWS服务器上还没有基本的DHCP配置。
+SetDhcpPane.error.badDNS = 无效的域名服务器ip
+SetDhcpPane.error.badDefgw = 无效的缺省网关ip
+
+################################# DhcpDialog
+DhcpDialog.title = 配置DHCP
+DhcpDialog.label.option = 选项
+DhcpDialog.label.subnet = 子网
+DhcpDialog.label.ibootserver = 网络启动服务器
+DhcpDialog.label.clnt = 客户端
+DhcpDialog.label.ip   = IP :
+DhcpDialog.label.port = 端口 :
+DhcpDialog.label.dns  = DNS(可选) :
+DhcpDialog.label.defgw = 缺省网关(可选) :
+DhcpDialog.label.defStartOS = 缺省启动操作系统 :
+DhcpDialog.label.desc = 这里的DHCP服务由UWS提供，请填写提供DHCP服务的UWS服务器的IP地址、端口和管理员口令。
+DhcpDialog.label.acct   = 用户 :
+DhcpDialog.label.passwd = 口令 :
+DhcpDialog.label.status = 状态 :
+DhcpDialog.label.start = 已开启
+DhcpDialog.label.stop = 已停止
+
+DhcpDialog.borderTitle.desc = 描述
+DhcpDialog.borderTitle.opt = 全局选项
+DhcpDialog.button.start = 启用
+DhcpDialog.button.stop = 停用
+DhcpDialog.button.refresh = 刷新DHCP信息
+DhcpDialog.button.restore = 恢复缺省配置
+
+DhcpDialog.initTitle = 正在加载DHCP信息
+DhcpDialog.initLabel = 正在加载DHCP信息，请稍候 ...
+DhcpDialog.error.initfail = 刷新DHCP信息发生以下错误 :
+
+DhcpDialog.table.subnet.netip = 子网
+DhcpDialog.table.subnet.mask = 掩码
+DhcpDialog.table.subnet.start = 起始地址
+DhcpDialog.table.subnet.end = 结束地址
+DhcpDialog.table.subnet.reserved = 保留天数
+DhcpDialog.table.subnet.allowUnknown = 为未知主机分配IP
+
+DhcpDialog.table.ibootsrv.ip = IP
+DhcpDialog.table.ibootsrv.default = 默认启动服务器
+
+DhcpDialog.table.clnt.mac = 网卡地址
+DhcpDialog.table.clnt.ip = 主机IP
+DhcpDialog.table.clnt.ibootSrv = 网络启动服务器
+DhcpDialog.table.clnt.subnet = 子网
+DhcpDialog.table.clnt.boottype = 网启类型
+
+DhcpDialog.confirm1 = 该操作将清除
+DhcpDialog.confirm2 = 上现有的dhcp配置，是否继续?
+
+DhcpDialog.errMsg.invalidDnsIP = 无效的DNS服务器IP。
+DhcpDialog.errMsg.invalidDefgwIP = 无效的默认网关IP。
+DhcpDialog.errMsg.chgOptOk = 修改全局选项成功。
+DhcpDialog.errMsg.noneIP    = 空的DHCP服务器IP地址。
+DhcpDialog.errMsg.invalidIP = 无效的DHCP服务器IP地址。
+DhcpDialog.errMsg.nonePort  = 空的DHCP服务器端口号。
+DhcpDialog.errMsg.invalidPort = DHCP服务器端口号应该为正整数。
+DhcpDialog.errMsg.badPort   = DHCP服务器端口号应该位于1和65535之间（包括1和65535）。
+DhcpDialog.errMsg.nonePasswd = 空的admin口令。
+DhcpDialog.errMsg.noIf = 没有找到任何网络接口。
+DhcpDialog.errMsg.noneAcct = 空的用户名。
+
+############################### EditSubnetDialog
+EditSubnetDialog.title.edit = 编辑子网
+EditSubnetDialog.title.edit1 = 编辑网络启动服务器
+EditSubnetDialog.title.edit2 = 编辑客户端
+EditSubnetDialog.label.mask = 子网掩码 :
+EditSubnetDialog.label.start = 开始地址 :
+EditSubnetDialog.label.end = 结束地址 :
+EditSubnetDialog.label.lease = 保留时间[天] :
+EditSubnetDialog.label.ibootSrv = 网络启动服务器IP地址 :
+EditSubnetDialog.label.ostid = 操作系统卷ID:
+EditSubnetDialog.check.allow = 允许给未知主机分配IP
+EditSubnetDialog.check.default = 默认的网络启动服务器
+EditSubnetDialog.label.mac = MAC地址 :
+EditSubnetDialog.label.ip = 主机IP :
+EditSubnetDialog.label.ibootsrv = 网络启动服务器 :
+EditSubnetDialog.label.subnet = 子网(IP) :
+EditSubnetDialog.label.dns = DNS(可选) :
+EditSubnetDialog.label.defgw = 默认网关(可选) :
+EditSubnetDialog.label.ostype = 操作系统类型 : 
+EditSubnetDialog.button.ipcalc = IP计算
+
+EditSubnetDialog.errMsg.noneMask = 空的子网掩码
+EditSubnetDialog.errMsg.invalidMask =无效的子网掩码
+EditSubnetDialog.errMsg.invalidMask1 = 无效的子网掩码:255.255.255.255
+EditSubnetDialog.errMsg.invalidSubnet= 无效的子网地址
+EditSubnetDialog.errMsg.noneEnd = 空的结束地址
+EditSubnetDialog.errMsg.invalidEnd = 无效的结束地址
+EditSubnetDialog.errMsg.noneStart = 空的开始地址
+EditSubnetDialog.errMsg.invalidStart = 无效的开始地址
+EditSubnetDialog.errMsg.startGrtEnd = 开始地址大于结束地址
+EditSubnetDialog.errMsg.noneLease = 空的保留时间。
+EditSubnetDialog.errMsg.invalidLeaseTime = 保留时间必须为整数，且最小值为1，最大值为365。
+EditSubnetDialog.error.badStartEnd = 错误的起始或结束地址 :
+EditSubnetDialog.errMsg.overlap = 存在相互重叠的子网设置
+EditSubnetDialog.errMsg.sameSubnet = 存在相同的子网
+EditSubnetDialog.errMsg.addSubnetOk = 增加子网成功!
+EditSubnetDialog.errMsg.addSubnetfail = 增加子网失败，请检查DHCP服务器的网络接口是否与子网地址相匹配!
+EditSubnetDialog.errMsg.delSubnetfail = 删除子网失败，请检查DHCP服务器的网络接口是否与子网地址相匹配!
+EditSubnetDialog.errMsg.modSubnetfail = 修改子网失败，请检查DHCP服务器的网络接口是否与子网地址相匹配!
+EditSubnetDialog.errMsg.noneIbootSrv = 空的网络启动服务器ip地址
+EditSubnetDialog.errMsg.invalidIbootSrv = 无效的网络启动服务器ip地址
+EditSubnetDialog.errMsg.sameIbootSrv = 存在相同的网络启动服务器
+EditSubnetDialog.errMsg.addIBootSrvFail = 增加网络启动服务器失败
+EditSubnetDialog.errMsg.delIbootSrvfail = 删除网络启动服务器失败
+EditSubnetDialog.errMsg.invalidMAC = 无效的MAC地址
+EditSubnetDialog.errMsg.addClntFail = 增加客户端失败
+EditSubnetDialog.errMsg.noneHostIP = 空的IP地址
+EditSubnetDialog.errMsg.invalidHostIP = 无效的IP地址
+EditSubnetDialog.errMsg.invalidDNS = 无效的DNS IP地址
+EditSubnetDialog.errMsg.invalidDefGw = 无效的默认网关 Ip地址
+EditSubnetDialog.errMsg.sameMac = 已经为该MAC地址分配了IP :
+EditSubnetDialog.errMsg.delClntfail = 删除客户端失败
+EditSubnetDialog.errMsg.atLeastOneIbootSrv = 必须有默认网络启动服务器
+EditSubnetDialog.errMsg.lastDefIbootSrv = 请将默认网络启动服务器设置为其他机器，然后再删除该服务器
+EditSubnetDialog.errMsg.noneSubnetList = 空的子网列表
+EditSubnetDialog.errMsg.noneIbootSrvList = 空的网络启动服务器
+EditSubnetDialog.errMsg.noneNextServer = 空的网络启动服务器
+EditSubnetDialog.errMsg.invalidNextServer = 无效的网络启动服务器
+EditSubnetDialog.errMsg.badOStid = 操作系统卷ID必须是正整数
+EditSubnetDialog.errMsg.modIBootSrvFail = 修改网络启动服务器失败
+EditSubnetDialog.errMsg.noneSubnet = 空的子网地址
+
+############################## ActModePaneForRestWinOrgDisk
+ActModePaneForRestWinOrgDisk.borTitle = 恢复方式
+ActModePaneForRestWinOrgDisk.radioBtn.auto = 自动恢复原有磁盘分区到新磁盘
+ActModePaneForRestWinOrgDisk.radioBtn.manual = 手工创建新盘分区
+ActModePaneForRestWinOrgDisk.radioBtn.onlyRst = 恢复分区已创建好，直接恢复
+
+############################## DiskPropertyDialog
+DiskPropertyDialog.title = 原磁盘信息 
+DiskPropertyDialog.title1 = 新磁盘信息 
+DiskPropertyDialog.label.disk = 磁盘# :
+DiskPropertyDialog.label.cap = 容量[MB] :
+DiskPropertyDialog.label.contain = 磁盘所包含的卷 :
+
+############################## SelectBootVerDialog
+SelectBootVerDialog.title = 选择恢复版本
+SelectBootVerDialog.checkBox.useSwap = 网络启动时使用交换分区
+SelectBootVerDialog.log.ok = 选择恢复版本成功，可以进行网络启动了。 
+SelectBootVerDialog.error.beyondMaxSnap = 必须确保每个卷至少有一个没有快照副本的快照，否则无法自动创建新快照。
+SelectBootVerDialog.error.getDhcpInfo = 获取dhcp信息失败
+SelectBootVerDialog.snapshot.notautocreate = 要网络启动的非系统卷的自动创建快照已经禁用，如果需要自动创建快照，请到主机卷列表里启 动自动创建快照，建议本地启动之后再启动自动创建快照。
+
+
+############################## CreatePoolDialog
+CreatePoolDialog.title = 创建存储池
+CreatePoolDialog.label.name = 名称 :
+CreatePoolDialog.label.size = 大小[GB]
+CreatePoolDialog.label.pwd  = 密码 :
+CreatePoolDialog.label.pwd1 = 密码确认 :
+
+######################### OptionDialog
+OptionDialog.dialog_title = 管理选项
+OptionDialog.label.availSWU = 可管理的服务器 :
+OptionDialog.label.lang = 语言 :
+OptionDialog.label.loglevel = 日志级别 :
+OptionDialog.label.loglocation = 日志文件 :
+OptionDialog.label.add = 添加要管理的UWS
+OptionDialog.tabTitle.general = 一般
+OptionDialog.tabTitle.swu = UWS
+OptionDialog.opt.name = 选项
+OptionDialog.opt.val  = 值
+OptionDialog.opt.serverip = UWS管理IP
+OptionDialog.opt.port   = UWS管理端口
+OptionDialog.opt.txIP   = UWS数据传输IP
+OptionDialog.opt.user   = 登录用户
+OptionDialog.opt.passwd = 登录密码
+OptionDialog.opt.lang   = 语言
+OptionDialog.opt.pp_ip    = Linux后处理机IP
+OptionDialog.opt.pp_port  = Linux后处理机端口
+OptionDialog.opt.loglevel = 日志级别
+OptionDialog.opt.vm_ip    = Windows虚拟机IP
+OptionDialog.opt.loglocation = 日志文件
+OptionDialog.error.sameIP = 已存在具有相同IP的UWS
+OptionDialog.error.usedIP = 该UWS正在被登录访问，不能删除该项。
+OptionDialog.error.noneAdminIP = 空的管理IP
+OptionDialog.error.noneTxIP = 空的数据传输IP
+OptionDialog.error.badAdminIP = 无效的管理IP
+OptionDialog.error.badTxIP = 无效的数据传输IP
+
+#####################  AddSWUSrvDialog
+AddSWUSrvDialog.dialogTitle.addHost  = 增加镜像服务器
+AddSWUSrvDialog.dialogTitle.editHost = 修改镜像服务器
+
+AddSWUSrvDialog.label.ip       = IP :
+AddSWUSrvDialog.label.port     = 端口 :
+
+AddSWUSrvDialog.errMsg.noneName  = 空的主机名。
+AddSWUSrvDialog.errMsg.noneIP    = 空的IP地址。
+AddSWUSrvDialog.errMsg.invalidIP = 无效的IP地址。
+AddSWUSrvDialog.errMsg.nonePort  = 空的端口号。
+AddSWUSrvDialog.errMsg.invalidPort = 端口号应该为正整数。
+AddSWUSrvDialog.errMsg.badPort   = 端口号应该位于1和65535之间（包括1和65535）。
+AddSWUSrvDialog.errMsg.sameHost  = 重复的主机名或IP。
+
+##################### EditMirrorJobDialog
+EditMirrorJobDialog.dialogTitle.addMj = 增加镜像任务
+EditMirrorJobDialog.dialogTitle.addMj1 = 增加无限增量镜像任务
+EditMirrorJobDialog.dialogTitle.addCj  = 增加复制任务
+EditMirrorJobDialog.dialogTitle.modMj = 修改镜像任务
+EditMirrorJobDialog.dialogTitle.modMj1 = 修改无限增量镜像任务
+EditMirrorJobDialog.dialogTitle.modCj = 修改复制任务
+
+EditMirrorJobDialog.label.name = 名称 :
+EditMirrorJobDialog.label.desc = 描述: 
+EditMirrorJobDialog.label.swu  = UWS服务器 :
+EditMirrorJobDialog.label.pool =存储池 :
+EditMirrorJobDialog.label.type = 类型 :
+EditMirrorJobDialog.borderTitle.general = 常规
+EditMirrorJobDialog.borderTitle.option  = 传输选项
+EditMirrorJobDialog.borderTitle.swu     = 镜像服务器
+
+EditMirrorJobDialog.checkbox.continue = 断点续传
+EditMirrorJobDialog.checkbox.des = 加密
+EditMirrorJobDialog.checkbox.compress = 压缩
+EditMirrorJobDialog.checkbox.copybranch = 传输快照分支
+EditMirrorJobDialog.checkbox.continue1 = 不断点续传
+EditMirrorJobDialog.checkbox.des1 = 不加密
+EditMirrorJobDialog.checkbox.compress1 = 不压缩
+EditMirrorJobDialog.checkbox.copybranch1 = 不传输快照分支
+EditMirrorJobDialog.checkbox.delview = 自动删除快照副本
+EditMirrorJobDialog.checkbox.delview1 = 不自动删除快照副本
+
+EditMirrorJobDialog.error.noneName  = 空的名称。
+EditMirrorJobDialog.error.tooLongName = 名字长度不能超过254字节。
+EditMirrorJobDialog.error.tooLongDesc = 描述长度不能超过254字节。
+EditMirrorJobDialog.error.noneSWUSrvNode = 没有可用的镜像服务器。
+EditMirrorJobDialog.error.nonePool = 镜像服务器上没有可用的存储池
+EditMirrorJobDialog.error.insufficientPool = 存储池空间已用尽
+EditMirrorJobDialog.error.badPoolPasswd = 错误的密码。
+EditMirrorJobDialog.error.mustLocalSWU = 本地的无限增量镜像任务必须发生在本地服务器上。
+EditMirrorJobDialog.error.getSWUHostName = 获取服务器的产品序列号失败。
+EditMirrorJobDialog.error.nopasswd = 没有为镜像目的服务器上的存储池设置口令。
+EditMirrorJobDialog.error.noVolInfo = 找不到主机卷信息
+
+####################### MonitorMJDialog
+MonitorMJDialog.dialog_title = 监控镜像任务
+MonitorMJDialog.dialog_title1 = 监视复制任务
+MonitorMJDialog.label.id = 正在被镜像的快照ID :
+MonitorMJDialog.label.id1 = 正在被复制的快照ID :
+MonitorMJDialog.label.process = 进度 :
+MonitorMJDialog.borderTitle.status = 状态
+MonitorMJDialog.borderTitle.msg = 错误消息
+
+####################### SelectHostForNetBootPane
+SelectHostForNetBootPane.radioBtn.known = 主机列表
+SelectHostForNetBootPane.radioBtn.unknown = MAC地址
+SelectHostForNetBootPane.label.host = 主机:
+SelectHostForNetBootPane.label.mac = MAC地址:
+SelectHostForNetBootPane.error.noSelHost = 没有选中的主机。
+
+###################### EditProfileDialog
+EditProfileDialog.diagTitle  = 增加复制策略
+EditProfileDialog.diagTitle1 = 修改复制策略 
+EditProfileDialog.diagTitle2 = 修改物理保护策略 
+
+EditProfileDialog.borderTitle.switch    = 常规选项
+EditProfileDialog.borderTitle.lastbak   = 上次复制时间
+EditProfileDialog.borderTitle.incFilter = 包含性过滤器
+EditProfileDialog.borderTitle.excFilter = 排斥性过滤器
+EditProfileDialog.borderTitle.schList   = 调度列表
+EditProfileDialog.borderTitle.snapOnClnt= 客户端快照  
+EditProfileDialog.borderTitle.service = 相关服务
+EditProfileDialog.borderTitle.selDisks = 所选的磁盘
+
+EditProfileDialog.radioBtn.notDoSnap = 不做快照
+EditProfileDialog.radioBtn.doSnap = 做快照
+
+EditProfileDialog.label.cleanRedundant1 = 清除冗余数据频率 :
+EditProfileDialog.label.cleanRedundant2 = 次数据复制
+EditProfileDialog.label.bakLevel = 复制级别 :
+EditProfileDialog.label.preCmd   = 复制前执行命令  :
+EditProfileDialog.label.postCmd  = 复制后执行命令  :
+EditProfileDialog.label.snapPrexCmd = 快照前脚本 :
+EditProfileDialog.label.snapPostCmd = 快照后脚本 :
+EditProfileDialog.label.incTip = 只复制符合下列过滤器的文件 : 
+EditProfileDialog.label.incEg = 比如 :  包含过滤器为: *.txt ，则 1.txt 和 2.txt这样的文件将会被复制。  
+EditProfileDialog.label.excTip = 排斥符合下列过滤器的文件 :
+EditProfileDialog.label.excEg = 比如 : 排斥过滤器为: *.txt，则 1.txt 和 2.txt这样的文件将不会被复制。 
+EditProfileDialog.label.interval = 时间间隔 :
+EditProfileDialog.label.day = 日
+EditProfileDialog.label.hour = 时
+EditProfileDialog.label.min = 分
+EditProfileDialog.label.minsize = 最小数据增量 :
+EditProfileDialog.label.bytes=字节
+EditProfileDialog.label.maxver = 最大版本数 :
+EditProfileDialog.label.blksize = 版本块大小 :
+EditProfileDialog.label.pool = 存储池 :
+EditProfileDialog.label.dbtype = 数据库类型 :
+EditProfileDialog.label.instance = 数据库实例 :
+EditProfileDialog.checkbox.mini-overload = 以对用户业务影响最小的方式运行
+ EditProfileDialog.button.addBakSrc = 增加
+EditProfileDialog.button.delBakSrc = 删除
+EditProfileDialog.checkBox.ignoreAllErr = 忽略数据传输中的所有错误
+EditProfileDialog.checkBox.enable  = 生效?
+EditProfileDialog.checkBox.phyincbak = 按数据库方式复制
+EditProfileDialog.checkBox.inc_no_judge_time = 总是做物理增量复制(不管文件大小和修改时间变化)
+EditProfileDialog.checkBox.mustSnapshotOK = 必须在快照有效的情况下复制
+EditProfileDialog.checkBox.lvmsnap = LVM 快照(适用于Linux平台)
+EditProfileDialog.checkBox.startup = 立即开始复制
+EditProfileDialog.checkBox.startwithfull = 以全备进行
+EditProfileDialog.checkBox.logoutTarget = 每次复制完成后，自动将卷离线
+
+EditProfileDialog.tabTitle.advOpt   = 高级
+EditProfileDialog.tabTitle.content  = 内容
+EditProfileDialog.tabTitle.filter   = 过滤器
+EditProfileDialog.tabTitle.sch 	    = 调度
+EditProfileDialog.tabTitle.cpList   = 复制内容
+EditProfileDialog.tabTitle.excList  = 排斥内容
+EditProfileDialog.tabTitle.version  = 版本生成
+
+EditProfileDialog.confirm1 = 删除该备份源意味着删除跟它相关的所有备份数据，是否继续?
+EditProfileDialog.confirm2 = 覆盖加载的模板文件成功 :   
+
+EditProfileDialog.errMsg.invalidName    = 无效的模板名。
+EditProfileDialog.error.crtTmp = 无法在/tmp下创建零时文件。
+EditProfileDialog.error.bakCmdFail = 提交复制任务失败。
+EditProfileDialog.error.pathIsNull = 备份设备路径为空。
+EditProfileDialog.errMsg.sameDevPath = 重复的设备路径。
+EditProfileDialog.errMsg.sameDevName = 重复的设备名。
+EditProfileDialog.error.tooLongBefCmd = 备份前命令长度不能 >1000。
+EditProfileDialog.error.tooLongPostCmd = 备份后命令长度不能 >1000。
+EditProfileDialog.error.tooLongSnapBefCmd = 快照前命令长度不能 >1000。
+EditProfileDialog.error.tooLongSnapPostCmd = 快照后命令长度不能 >1000。
+EditProfileDialog.error.tooLongIncFilter = 包含性过滤器长度不能 >1000。
+EditProfileDialog.error.tooLongExcFilter = 排斥性过滤器长度不能 >1000。
+EditProfileDialog.errMsg.tooLongBakContent = 复制内容总长度不能 >=1000。
+EditProfileDialog.errMsg.tooLongExcludeContent = 排斥内容总长度不能 >=1000。
+EditProfileDialog.error.noneSelBakObj = 没有选中备份源，请选中一个。
+EditProfileDialog.errMsg.notHasSeparator = 过滤器中不能含有 / 和 \\。 
+EditProfileDialog.error.nobaksrc = 空的备份源对象。
+EditProfileDialog.errMsg.excludeWinDir = 不能在FIVStorEX中复制操作系统目录
+EditProfileDialog.errMsg.excludeMsg = 请排斥该目录。
+EditProfileDialog.errMsg.excludeEtcDir = 不能在FIVStorEX中复制/etc/fstab和network,killall,halt这三个脚本。请排斥它们。
+EditProfileDialog.error.getHostNameFailed = 获取服务器名失败
+EditProfileDialog.error.noSWULV = 没有保护该卷，所以不能复制它的数据
+EditProfileDialog.error.lostBakObj = 复制策略中的复制内容已经不存在了。
+EditProfileDialog.error.notselected = 没有任何复制内容，请增加至少一个。
+EditProfileDialog.error.schfailed = 复制策略中的调度没有彻底完成。
+EditProfileDialog.error.getSnapMp = 得不到LVM快照的安装点。
+EditProfileDialog.error.noSWUVgAndTgt = 在UWS中找不到该卷对应的卷组和PV信息。
+EditProfileDialog.error.noSWUVg = 在UWS中找不到该卷对应的卷组信息。
+EditProfileDialog.error.invalidDelRedundantData = 清除冗余数据频率必须是>=0，且小于2147483648的整数。 
+EditProfileDialog.error.getBootMac = 获取启动网卡地址失败。
+EditProfileDialog.error.getMp = 没有找到需要复制的文件系统
+EditProfileDialog.error.getFs = 获取文件系统类型失败
+EditProfileDialog.error.tftp = 获取tftp的根路径失败
+EditProfileDialog.error.coexist = 对于window2000平台，C盘和其他盘不能同时复制。
+EditProfileDialog.error.coexist1 = 对于window2000平台，操作系统与其它目录不能同时复制。
+EditProfileDialog.error.hasSch = 该复制策略上还有调度，不能被覆盖。
+EditProfileDialog.error.getIscsiCmdPath = 获取iscsi命令路径失败
+EditProfileDialog.error.invalidDay = 无效的数值，日取值范围为0到10000的整数。
+EditProfileDialog.error.invalidHour = 无效的数值，时取值范围为0到23的整数。
+EditProfileDialog.error.invalidMin = 无效的数值，分取值范围为0到59的整数。
+EditProfileDialog.error.invalidMinSize = 无效的数值，最小数据增量范围为0到104857600的数值。
+EditProfileDialog.error.invalidMaxSnap = 无效的数值，最大版本数范围为0到
+EditProfileDialog.error.hasOverlap = 所选的磁盘与其他的策略存在冲突。
+EditProfileDialog.error.emptyNonLinear = 空的非线性策略。
+EditProfileDialog.error.noDatabaseLicense = 数据库License已用完，请申请License后继续。
+
+################# SelectBakedFileDialog
+SelectBakedFileDialog.diagTitle = 增加内容
+SelectBakedFileDialog.diagTitle1 = 修改内容
+SelectBakedFileDialog.button.add = 增加
+SelectBakedFileDialog.button.remove = 删除
+SelectBakedFileDialog.button.done = 完成
+SelectBakedFileDialog.button.cancel = 取消
+SelectBakedFileDialog.button.stop   = 停止
+SelectBakedFileDialog.button.exclude = 排斥
+SelectBakedFileDialog.label.enterpath = 键入路径 : 
+SelectBakedFileDialog.title.files      = 文件列表
+SelectBakedFileDialog.title.selections = 所选文件
+
+SelectBakedFileDialog.error.invalidSeprator = "\\"不是合法的路径分割符。
+SelectBakedFileDialog.error.badPath = 输入路径不存在。
+SelectBakedFileDialog.error.sameFile  = 该文件或目录已经被选中了: 
+SelectBakedFileDialog.erorr.notSel = 没有选中任何文件或目录。
+SelectBakedFileDialog.error.nullFile = 空文件名。
+SelectBakedFileDialog.error.badFile = 无效的文件。
+SelectBakedFileDialog.error.badsel  = "../"是无效的选择，请选其他的文件或目录。
+SelectBakedFileDialog.error.alreadySeled = 该目录已被选择复制，无需再选择它的子目录了。
+SelectBakedFileDialog.error.subdirexist = 该目录的子目录已被选择复制，不能再选择该目录复制了。
+SelectBakedFileDialog.error.fcexist  = 父目录和子目录不能同时选择复制。
+SelectBakedFileDialog.error.getfstat    = 无法获取文件状态，也许该文件不存在。
+SelectBakedFileDialog.error.notExist   = 文件或目录不存在。
+SelectBakedFileDialog.error.UnknownErr = 当获取文件状态时发生未知错误。
+SelectBakedFileDialog.error.badRootPath = 输入路径开头必须为: 
+SelectBakedFileDialog.error.badInput = .. 和 . 是无效输入。
+SelectBakedFileDialog.error.specialFile  = /sys, /dev, /proc 无需备份。
+SelectBakedFileDialog.error.specialFile1 = 无需复制。
+SelectBakedFileDialog.error.specialFile2 = 不能在FIVStorEX中复制操作系统目录
+SelectBakedFileDialog.error.specialFile3 = /etc/fstab和network,killall,halt这三个脚本不能备份，否则会影响网络启动。
+SelectBakedFileDialog.error.specialFile4 = 这些为隐藏文件系统，不能按普通文件处理。
+SelectBakedFileDialog.errmsg.notselected = 没有任何内容，请增加至少一个。
+SelectBakedFileDialog.errMsg.excludeEtcDir = 不能复制/etc/fstab和network,killall,halt这三个脚本。请排斥它们。
+SelectBakedFileDialog.error.onlyOne     = 只能选择一个裸设备。
+
+#################### ExcludeBakcontentsDialog
+ExcludeBakcontentsDialog.diagTitle = 内容排斥
+ExcludeBakcontentsDialog.errMsg.tooLongBakContent = 复制内容总长度不能 >=1000。
+ExcludeBakcontentsDialog.errmsg.notselected = 没有可用的文件，请挑选一个。
+ExcludeBakcontentsDialog.erorr.notSel = 没有选中任何文件。
+ExcludeBakcontentsDialog.error.badFile = 无效的文件。
+ExcludeBakcontentsDialog.error.badsel = "../"是无效的选择，请选其他的文件或目录。
+ExcludeBakcontentsDialog.error.subdirexist = 该目录的子目录已被排斥，不能再选择该目录了。
+ExcludeBakcontentsDialog.error.sameFile = 这个文件已经被选中了: 
+ExcludeBakcontentsDialog.border.selFiles = 已选的内容
+ExcludeBakcontentsDialog.border.exclude = 排斥的内容
+ExcludeBakcontentsDialog.error.alreadySeled = 该目录已被排斥，无需再选择它的子目录了。 
+
+#################### BackupHistoryDialog
+BackupHistoryDialog.title     = 数据复制日志
+BackupHistoryDialog.title1    = 最后消息
+BackupHistoryDialog.title.log = 日志内容
+BackupHistoryDialog.miss = [可能已被删除]
+
+BackupHistoryDialog.button.remove = 清除
+BackupHistoryDialog.button.close  = 关闭
+BackupHistoryDialog.button.back   = 上一屏
+BackupHistoryDialog.button.next   = 下一屏
+BackupHistoryDialog.button.remall = 清除全部
+BackupHistoryDialog.tabTitle.general = 常规
+BackupHistoryDialog.tabTitle.summary = 统计
+BackupHistoryDialog.tabTitle.dialog  = 诊断日志
+
+BackupHistoryDialog.label.finalStatus = 最终状态 :
+
+BackupHistoryDialog.confirm1 = 你确定要删除所有历史日志吗?
+
+BackupHistoryDialog.error.nosel = 没有选中表中任何项。
+BackupHistoryDialog.error.getBkObj = 无法获取备份集信息。
+BackupHistoryDialog.error.invalidBkset = 无效的备份集ID。
+BackupHistoryDialog.error.getErrLog = 获取诊断日志失败。
+BackupHistoryDialog.pdiagTitle.deltingTskLog = 正在删除日志
+BackupHistoryDialog.pdiagTip.deltingTskLog =  正在删除日志，请稍候...
+
+####################### InputNameDialog
+InputNameDialog.title = 重命名策略文件
+InputNameDialog.label.name = 新文件名 :
+
+InputNameDialog.error.noneName = 必须键入文件名。
+InputNameDialog.error.badName  = 文件名不能包含英文单双引号,空格和<>。
+InputNameDialog.error.nametoolong = 文件名长度必须 < 255。
+InputNameDialog.error.sameName = 指定的文件名与现有策略文件重名。请指定另一个文件名。
+InputNameDialog.error.notChg = 指定的文件名与原来一样，无需重命令。
+
+####################### DuplicationStrategyPane
+DuplicationStrategyPane.table.isSel = 立即开始?
+DuplicationStrategyPane.table.prof  = 策略文件名
+DuplicationStrategyPane.table.prof1 = 策略名
+DuplicationStrategyPane.table.sch   = 调度个数
+DuplicationStrategyPane.table.contents = 内容摘要
+
+DuplicationStrategyPane.error.nonSel = 没有选中任何复制策略。
+DuplicationStrategyPane.error.nonSel1 = 没有选中任何保护策略。
+DuplicationStrategyPane.error.nonSel2 = 没有指定复制主机。
+DuplicationStrategyPane.error.lostBkobj = 该复制策略缺少复制内容 :
+DuplicationStrategyPane.error.lostD2dClnt = 该复制策略对应的主机不存在 :
+DuplicationStrategyPane.error.lostOSProf = 必须有一个复制操作系统的策略。
+DuplicationStrategyPane.error.lostTarget = 该复制策略缺少复制目的端定义 :
+
+DuplicationStrategyPane.confirm1 = 仍有策略还未设置调度。是否继续下一步?
+DuplicationStrategyPane.confirm2 = 是否所有逻辑保护策略均不立即开始?
+
+####################### IbootForLinuxWizardDialog
+IbootForLinuxWizardDialog.title  = 网络启动向导
+IbootForLinuxWizardDialog.title1 = 选择网络启动的物理主机
+IbootForLinuxWizardDialog.title2 = 选择启动网卡
+IbootForLinuxWizardDialog.title3 = 设置DHCP
+IbootForLinuxWizardDialog.title4 = 选择快照
+
+IbootForLinuxWizardDialog.wizardText1 = \n * 选择恢复版本 \n * 指定启动主机 \n * 指定启动网卡
+
+IbootForLinuxWizardDialog.errMsg.getTftpPath = 获取tftp根路径失败
+IbootForLinuxWizardDialog.errMsg.getPxeInfo  = 获取原机的PXE信息失败
+IbootForLinuxWizardDialog.errMsg.crtPxeInfo  = 生成新的PXE信息失败
+IbootForLinuxWizardDialog.errMsg.noversion   = 某些卷没有可用的版本。
+
+######################## MountSnapOrViewDialog
+MountSnapOrViewDialog.title1 = 安装快照
+MountSnapOrViewDialog.title2 = 安装快照副本
+MountSnapOrViewDialog.tip1 = 该操作将生成一个快照副本，并把它安装在如下主机上。成功安装后，在对应主机上会发现一个新的文件系统（或盘符）。 
+MountSnapOrViewDialog.tip2 = 该操作会把快照副本安装在如下主机上。成功安装后，在对应主机上会发现一个新的文件系统（或盘符）。 
+MountSnapOrViewDialog.label.ip= 主机IP :
+MountSnapOrViewDialog.label.port= 主机端口 :
+
+######################## UmountViewDialog
+UmountViewDialog.title = 卸载快照副本
+UmountViewDialog.tip = 该操作将从如下主机卸载快照副本。卸载之前请确认对应的文件系统（或盘符）不被任何应用程序使用，否则卸载将失败。 
+UmountViewDialog.label.ip= 主机IP :
+UmountViewDialog.label.port= 主机端口 :
+UmountViewDialog.check.delView= 卸载时删除该快照副本
+
+######################## SelectNetBootModePane
+SelectNetBootModePane.radiobtn.bootmode1 = 推荐方式（适用于Windows 2000及以上平台）
+SelectNetBootModePane.radiobtn.bootmode2 = 替代方式（适用于Windows 2003、2008等平台）
+SelectNetBootModePane.radiobtn.bootmode3 = ISCSI HBA
+SelectNetBootModePane.radiobtn.bootmode4 = Window PE
+SelectNetBootModePane.borderTitle.mode = 方式
+SelectNetBootModePane.label.bootip = 快速启动IP : 
+
+######################## CreateCloneDiskDialog
+CreateCloneDiskDialog.title = 创建克隆盘
+CreateCloneDiskDialog.error.tooLongName = 名字长度不能超过254字节。
+CreateCloneDiskDialog.error.tooLongDesc = 描述长度不能超过254字节。
+
+######################## QueryUnlimitedIncSnapDialog
+QueryUnlimitedIncSnapDialog.title = 浏览/查询增量快照
+QueryUnlimitedIncSnapDialog.border.browser = 分页浏览
+QueryUnlimitedIncSnapDialog.border.condition = 查询条件
+QueryUnlimitedIncSnapDialog.btn.first = 第一页
+QueryUnlimitedIncSnapDialog.btn.prev  = 上一页
+QueryUnlimitedIncSnapDialog.btn.next  = 下一页
+QueryUnlimitedIncSnapDialog.btn.last  = 末一页
+QueryUnlimitedIncSnapDialog.btn.start = 开始查询
+QueryUnlimitedIncSnapDialog.btn.delete = 删除
+QueryUnlimitedIncSnapDialog.btn.clone = 克隆
+QueryUnlimitedIncSnapDialog.btn.crtCJ = 创建复制任务
+QueryUnlimitedIncSnapDialog.label.goto = 转至
+QueryUnlimitedIncSnapDialog.label.start = 开始日期
+QueryUnlimitedIncSnapDialog.label.end = 截止日期
+QueryUnlimitedIncSnapDialog.label.pagesize = 页数
+
+QueryUnlimitedIncSnapDialog.error.invalidPage = 无效的页数，页数必须是正整数。
+QueryUnlimitedIncSnapDialog.error.invalidYear = 无效的年份，年份必须是正整数。
+QueryUnlimitedIncSnapDialog.error.cloneOK = 克隆成功。
+QueryUnlimitedIncSnapDialog.error.cloneFail = 克隆失败。
+QueryUnlimitedIncSnapDialog.error.crtCjOk = 创建复制任务成功。
+QueryUnlimitedIncSnapDialog.error.crtCjFailed= 创建复制任务失败。
+
+######################## EditVolumeDialog
+EditVolumeDialog.title = 修改保护内容 
+EditVolumeDialog.border.disklist = 卷列表
+EditVolumeDialog.border.seldisklist = 所选的卷
+
+EditVolumeDialog.erorr.notSel = 没有选中任何卷。
+EditVolumeDialog.errmsg.notselected = 没有选择任何卷，请增加至少一个。
+
+######################## EditServiceDialog
+EditServiceDialog.title = 修改相关服务
+
+EditServiceDialog.border = 服务列表
+
+######################## QuerySyncStateDialog
+QuerySyncStateDialog.title = 设置同步状态
+QuerySyncStateDialog.border.curState = 磁盘保护的当前状态
+QuerySyncStateDialog.border.syncMode = 设置磁盘保护的工作状态
+QuerySyncStateDialog.border.cluster  = 支持双机
+QuerySyncStateDialog.btn.supCluster = 支持双机 
+QuerySyncStateDialog.btn.nsupCluster = 不支持双机
+QuerySyncStateDialog.desc = 注意：磁盘保护的当前状态为同步时数据保持同步，但是占的CPU等资源比较多；状态为异步时，占的资源比较少，但是需要转为同步才可以将数据转到服务器上。磁盘保护的工作状态为异步时，不能自动生成版本。
+
+QuerySyncStateDialog.label.supportHA = 支持双机
+QuerySyncStateDialog.label.nsupportHA = 不支持双机
+
+QuerySyncStateDialog.error.getSyncState = 获取当前状态失败
+QuerySyncStateDialog.error.getWorkState = 获取工作状态失败
+QuerySyncStateDialog.error.getHAInfo = 获取双机支持信息失败
+
+######################## QueryInitProgressDialog
+QueryInitProgressDialog.title = 监控物理保护初始化进度
+QueryInitProgressDialog.table.disk = 盘
+QueryInitProgressDialog.table.percent =完成百分比
+QueryInitProgressDialog.table.speed = 速率
+QueryInitProgressDialog.table.restTime = 剩余时间
+QueryInitProgressDialog.table.elapsedTime = 已用时间
+QueryInitProgressDialog.table.handled = 完成量
+
+######################## StartOrStopMjInBatchDialog
+StartOrStopMjInBatchDialog.title = 批量启/停镜像任务
+StartOrStopMjInBatchDialog.btn.qStart = 快速启动
+StartOrStopMjInBatchDialog.btn.start = 启动
+StartOrStopMjInBatchDialog.btn.stop = 停止
+
+StartOrStopMjInBatchDialog.checkBox.forceDel = 强制删除
+
+StartOrStopMjInBatchDialog.title.qstart = 快速启动镜像任务
+StartOrStopMjInBatchDialog.label.tip.qstart = 正在快速启动镜像任务，请稍候...
+
+StartOrStopMjInBatchDialog.title.start = 启动镜像任务
+StartOrStopMjInBatchDialog.label.tip.start = 正在启动镜像任务，请稍候...
+
+StartOrStopMjInBatchDialog.title.stop = 停止镜像任务
+StartOrStopMjInBatchDialog.label.tip.stop = 正在停止镜像任务，请稍候...
+
+StartOrStopMjInBatchDialog.title.del = 删除镜像任务
+StartOrStopMjInBatchDialog.label.tip.del = 正在删除镜像任务，请稍候...
+
+StartOrStopMjInBatchDialog.loadstatus.start = 启动 :
+StartOrStopMjInBatchDialog.loadstatus.stop  = 停止 :
+StartOrStopMjInBatchDialog.loadstatus.qstart = 快速启动 :
+StartOrStopMjInBatchDialog.loadstatus.del   = 删除 :
+
+StartOrStopMjInBatchDialog.error.qstart = 下列镜像任务快速启动失败 :
+StartOrStopMjInBatchDialog.error.start  = 下列镜像任务启动失败 :
+StartOrStopMjInBatchDialog.error.stop   = 下列镜像任务停止失败 :
+
+StartOrStopMjInBatchDialog.error.transfer1 = 下列主机的相关信息传输失败:
+StartOrStopMjInBatchDialog.error.transfer2 = 下列镜像主机（回滚主机）的相关信息传输失败:
+StartOrStopMjInBatchDialog.error.noSel  = 请选择至少一个镜像任务进行相关操作。
+
+StartOrStopMjInBatchDialog.confirm1 = 你真的要删除这些镜像任务吗?
+
+######################### CreateMjInBatchDialog
+CreateMjInBatchDialog.title = 批量创建镜像任务
+
+CreateMjInBatchDialog.title.crtMj = 创建镜像任务
+CreateMjInBatchDialog.label.tip.crtMj = 正在创建镜像任务，请稍候...
+CreateMjInBatchDialog.loadstatus.create = 创建 :
+
+CreateMjInBatchDialog.error.create = 下列镜像任务创建失败 :
+CreateMjInBatchDialog.error.noSel = 请选择至少一个盘（文件系统）来创建镜像任务。
+
+######################### ModifyMjInBatchDialog
+ModifyMjInBatchDialog.title = 批量修改镜像任务
+
+ModifyMjInBatchDialog.loadstatus.modify = 修改 : 
+ModifyMjInBatchDialog.label.crtOpt = 选项控制 :
+
+ModifyMjInBatchDialog.title.modMj = 修改镜像任务
+ModifyMjInBatchDialog.label.tip.modMj = 正在修改镜像任务，请稍候...
+ModifyMjInBatchDialog.error.modify = 下列镜像任务修改失败 :
+
+ModifyMjInBatchDialog.error.noSel  = 请选择至少一个镜像任务进行修改。
+
+######################### EditMjSchDialog
+EditMjSchDialog.title = 创建镜像时间计划
+EditMjSchDialog.title1 = 修改镜像时间计划
+
+EditMjSchDialog.checkBox.defaultTime = 缺省时间: 晚上10点到次日早上6点
+EditMjSchDialog.checkBox.selAll = 全选
+
+EditMjSchDialog.error.isUsed = 该镜像时间计划被使用，不能删除。
+EditMjSchDialog.error.stopMj = 修改镜像时间计划后，停/启相关镜像任务失败。
+
+######################### SetupMjSchDialog
+SetupMjSchDialog.title = 设置镜像时间计划
+SetupMjSchDialog.title1 = 镜像时间计划详情
+SetupMjSchDialog.checkbox.selAll = 全选
+SetupMjSchDialog.table.mjName = 镜像任务名称
+SetupMjSchDialog.error.noSel  = 请选择至少一个镜像任务进行操作。
+SetupMjSchDialog.title.crtMj = 设置镜像时间计划
+SetupMjSchDialog.label.tip.crtMj = 正在设置镜像时间计划，请稍候...
+SetupMjSchDialog.loadstatus.setup = 设置 :
+SetupMjSchDialog.error.setup = 为下列镜像任务设置时间计划失败 :
+
+########################  UserMgrDialog
+UserMgrDialog.title = 用户管理
+UserMgrDialog.label.name = 名字 :
+UserMgrDialog.label.right = 权限 :
+UserMgrDialog.label.passwd = 口令 :
+UserMgrDialog.label.passwd1 = 口令确认 :
+UserMgrDialog.button.custom= 定制权限 ... 
+UserMgrDialog.rd.admin = 管理员权限
+UserMgrDialog.rd.common= 普通权限
+UserMgrDialog.borderTitle.details = 详细信息
+UserMgrDialog.borderTitle.list = 用户列表
+UserMgrDialog.btn.modPasswd = 修改口令
+
+UserMgrDialog.table.user.name = 名字
+UserMgrDialog.table.user.desc = 描述
+UserMgrDialog.table.user.pass = 口令
+UserMgrDialog.table.user.right = 权限
+UserMgrDialog.table.user.workgroup = 工作组
+UserMgrDialog.table.user.dev  = 设备
+
+UserMgrDialog.error.noneSelUsr = 没有选中用户。  
+UserMgrDialog.error.delMe = 不能删除该用户,因为它是登陆用户。
+UserMgrDialog.error.lastAdminUser = 该用户是最后一个具有管理员权限的用户。
+UserMgrDialog.error.delAdminUser = 不能删除缺省的管理员用户。
+UserMgrDialog.errMsg.invalidUsrName = 无效的用户名。
+UserMgrDialog.errMsg.badUser = 用户名中不能包含空格和英文的单双引号。
+UserMgrDialog.errMsg.nonePasswd = 口令为空。
+UserMgrDialog.errMsg.badPasswd = 口令中不能包含空格和英文单双引号。
+UserMgrDialog.errMsg.tooBigPasswd = 口令长度应该 >0 并且 <32。
+UserMgrDialog.error.modMe = 不能修改该用户，因为它是登陆用户。
+UserMgrDialog.errMsg.sameUserName = 重复的用户名，请另取一个。
+UserMgrDialog.errMsg.tooLargeUser = 用户名长度应该 >0 并且 <32。
+UserMgrDialog.confirm3 = 你真的想删除这个用户?
+
+######################## AuditLogDialog
+AuditLogDialog.title = 审计日志
+AuditLogDialog.table.audit.id    = ID
+AuditLogDialog.table.audit.user  = 用户
+AuditLogDialog.table.audit.stime = 时间
+AuditLogDialog.table.audit.clnt  = 客户端
+AuditLogDialog.table.audit.event = 事件类型
+AuditLogDialog.pdiagTitle.deltingAuditLog = 正在删除审计日志
+AuditLogDialog.pdiagTip.deltingAuditLog =  正在删除审计日志，请稍后...
+AuditLogDialog.confirm1 = 你真的想删除所有的审计日志吗?
+
+
+
+
+######################## RightCustomDialog
+RightCustomDialog.title = 权限定制
+
+RightCustomDialog.checkbox.crtpool = 创建存储池 
+RightCustomDialog.checkbox.delpool = 删除存储池
+
+RightCustomDialog.checkbox.crtprof = 创建复制策略
+RightCustomDialog.checkbox.modprof = 修改复制策略
+RightCustomDialog.checkbox.delprof = 删除复制策略
+RightCustomDialog.checkbox.runprof = 运行复制策略
+RightCustomDialog.checkbox.verprof = 校验复制策略
+RightCustomDialog.checkbox.renprof = 重命名
+
+RightCustomDialog.checkbox.crtsch = 创建调度
+RightCustomDialog.checkbox.modsch = 修改调度
+RightCustomDialog.checkbox.delsch = 删除调度
+
+RightCustomDialog.checkbox.delduplog = 删除复制日志
+
+RightCustomDialog.checkbox.crtlm = 创建主机映射
+RightCustomDialog.checkbox.dellm = 删除主机映射
+
+RightCustomDialog.checkbox.delnetboothost = 删除网络启动主机
+
+RightCustomDialog.checkbox.init = 初始化主机
+RightCustomDialog.checkbox.phy-init = 物理保护-初始化主机
+RightCustomDialog.checkbox.netboot = 网络启动
+RightCustomDialog.checkbox.phy-netboot = 物理保护-网络启动
+RightCustomDialog.checkbox.rstOriDisk = 源盘恢复
+RightCustomDialog.checkbox.phy-rstOriDisk = 物理保护-源盘恢复
+RightCustomDialog.checkbox.localdiskboot = 本地盘启动
+RightCustomDialog.checkbox.phy-localdiskboot = 物理保护-本地盘启动
+RightCustomDialog.checkbox.canceljob = 取消任务
+RightCustomDialog.checkbox.shutdown = 关闭UWS服务器
+
+RightCustomDialog.border.host = 主机
+RightCustomDialog.border.snap = 快照
+RightCustomDialog.border.dup = 数据复制
+RightCustomDialog.border.other = 其他
+
+RightCustomDialog.error.modRightOk = 权限定制成功。
+RightCustomDialog.error.modRightfailed = 权限定制失败。
+
+########################## ClusterSetupPane
+ClusterSetupPane.title = 修改集群配置
+ClusterSetupPane.label.priip = 私有IP ( 用于心跳 ) :
+ClusterSetupPane.label.pubip = 公有IP ( 用于VIP ) :
+ClusterSetupPane.label.vip   = 虚拟IP ( 用于飘移 ) :
+ClusterSetupPane.label.clusterName = 集群名称 :
+ClusterSetupPane.label.clusterType = 集群类型 :
+ClusterSetupPane.label.node = 节点
+
+ClusterSetupPane.borderTitle.general = 基本信息
+ClusterSetupPane.borderTitle.serverPair = 节点信息
+ClusterSetupPane.borderTitle.hbDsk = 心跳盘/仲裁盘
+
+###################### PhyInitWinClusterWizardDialog
+PhyInitWinClusterWizardDialog.title  = Windows集群物理初始化向导
+PhyInitWinClusterWizardDialog.title1 = 配置集群节点
+
+PhyInitWinClusterWizardDialog.error.clusterNameNone = 空的集群名称。
+PhyInitWinClusterWizardDialog.error.clusterNameTooLong = 集群名称不能大于60个字节。
+PhyInitWinClusterWizardDialog.error.notProtectSharedDisk = 至少要保护一个共享卷。
+PhyInitWinClusterWizardDialog.error.notProtectLocalDisk = 至少要保护两个本地卷。
+PhyInitWinClusterWizardDialog.error.conflictOnSharedLocalDisk = 共享盘和本地盘之间存在冲突。
+PhyInitWinClusterWizardDialog.error.conflictOnSharedDisks = 共享盘之间存在冲突。
+PhyInitWinClusterWizardDialog.error.conflictOnSharedDisks1 = 对于非ORACLE RAC的集群来说，同一共享盘对应的ip应该是同一虚拟IP。
+PhyInitWinClusterWizardDialog.error.noneHbDsk = 心跳或仲裁盘不能为空，必须选择一个。
+
+##################### SelectMTPPHostDialog
+SelectMTPPHostDialog.title = 选择创建逻辑策略的主机
+SelectMTPPHostDialog.label.mtppHost = 主机 :
+
+##################### ADSch
+common.adschlist = 提前预删除快照调度
+common.desc.adschList   = 由UWS服务器管理的提前预删除快照调度
+
+View.pdiagTitle.getADSch = 正在获取提前预删除调度
+View.pdiagTip.getADSch = 正在获取提前预删除调度，请稍等...
+
+View.table.adscheduler.id = 标识
+View.table.adscheduler.enable = 生效?
+View.table.adscheduler.name = 调度名称
+View.table.adscheduler.startTime = 开始时间
+View.table.adscheduler.volume = 虚拟磁盘卷
+View.table.adscheduler.client = 主机
+View.table.adscheduler.keepnum = 保留快照数
+View.MenuItem.addADSch = 增加预删除调度 
+
+common.cmd.addDBADSche  = 增加提前预删除快照调度
+
+ADSchedDialog.label.count = 保留快照数
+ADSchedDialog.label.VDisk = 虚拟磁盘
+
+ADSchedDialog.errmsg.noneNumber = 必须填写保留快照数
+ADSchedDialog.errmsg.badNumber = 保留快照数必须是数字
+ADSchedDialog.errmsg.wrongNumber = 保留快照数需要>0，且<128
+ADSchedDialog.errmsg.noneVolume = 必须指定一个虚拟磁盘。
+ADSchedDialog.errmsg.sameSched = 该磁盘卷已经存在一个预删除快照调度，请重新选择...
+
+##################### refresh
+View.MenuItem.refresh = 刷新
+View.tooltip.refresh = 刷新
+
+##################### cluster
+SelectBootHostPane.borderTitle.cluster = 是否仅单独保护数据盘
+
+##################### snap
+View.MenuItem.modSnap = 设为永久快照
+
+View.pdiagTitle.modSnap = 正在设为永久快照
+View.pdiagTip.modSnap = 正在设为永久快照，请稍候...
+ConnectDialog.dialog_snap.title = 用户验证
+
+##################### ams
+View.MenuItem.init5 = 物理初始化Linux主机
+InitNWinHostWizardDialog.log.amscreate = 创建物理保护
+InitNWinHostWizardDialog.ams.title  = 非Windows客户端物理初始化向导
+
+##################### setUcsPane
+SetUcsPane.label.OldestPool = Oldest存储池
+SetUcsPane.label.LatestPool = Latest存储池
+SetUcsPane.label.LogPool    = Log存储池
+SetUcsPane.label.LogNumber  = Log个数
+SetUcsPane.label.LogMaxTime = 最大跨度时间(m)
+SetUcsPane.label.LogMaxSize   = 回放速度(k/s)
+CreatePoolDialog.label.poolType = 存储池类型
+CreatePoolDialog.label.idleDisk = 是否选择空闲盘
+CreatePoolDialog.label.normalPool = 普通存储池
+CreatePoolDialog.label.UCSPool =UCS存储池
+View.table.pool.type = 类型
+SelectProtectedSysVolPane.combox.up = 物理UCS
+SelectProtectedSysVolPane.error.ucswrong = UCS连续保护模式下UCS设置不能为空值.
+CreateOrphanVol.error.noIdleDisk = 没有空闲盘
+InitBootHostWizardDialog.confirm5 =用UCS方式保护的系统盘不能进行网络启动，您是否确认系统盘要使用UCS方式保护？
+
+##################### crtUcsSnap
+View.MenuItem.crtUcsSnap    = 回放
+CrtUcsSnap.label.Title      = 快照回放将实现ucs连续快照功能。
+CrtUcsSnap.label.AsTime     = 按时间回放
+CrtUcsSnap.label.Time       = 回放时刻
+CrtUcsSnap.label.AsIO       = 按IO数回放
+CrtUcsSnap.label.IO         = 回放的IO数
+CrtUcsSnap.label.submit     = 确定
+CrtUcsSnap.label.cancel     = 取消
+CrtUcsSnap.label.forwordto  = 回放到 ：
+View.menuItem.UcsForword    = UCS回放
+MenuAndBtnCenter.success.forworducs = 回放成功。
+MenuAndBtnCenter.error.forworducsFail = 回放失败，请查明原因。
+MenuAndBtnCenter.Ucs.isnotucsdiskview = 该副本所在的保护盘不是用ucs方式保护,需要进行回放，请选择ucs方式保护的盘的副本。
+View.pdiagTitle.forworducs  = 日志回放
+View.pdiagTip.forworducs    = 正在准备数据，请稍后...
+ModPhyProfile.confirm       = 时间间隔过长，会导致速度慢
+
+####################amsrebuild
+MenuAndBtnCenter.success.amsrebuild = 重新初始化成功。
+
+###########################createpooltableheader
+SelectIdleDiskDialog.table.disk.select  = 选择
+SelectIdleDiskDialog.table.disk.name    = 空闲盘名
+SelectIdleDiskDialog.table.disk.size    = 空闲盘大小
+CreatePoolDialog.label.select   = 选择
+CreateOrphanVol.error.noselectIdleDisk = 请选择空闲盘
+CreateNormalPool.confirm =存储池大小未填，默认为空闲盘的容量
+
+############################# remote mirror job
+EditMirrorJobDialog.label.mgintervaltime = 回放时间间隔(m)：
+EditMirrorJobDialog.label.mglogmaxtime   = 单次最大时间(m)：
+EditMirrorJobDialog.error.timeMustInteger = 输入时间必须为正整数
+common.logmirrorlist = 日志镜像任务列表
+View.MenuItem.crtLMj = 增加日志镜像任务
+MenuAndBtnCenter.error.notucsdisk = 不是ucs盘，不能创建日志镜像任务
+EditMirrorJobDialog.label.mgmaxsnapshot = 最大快照数：
+View.table.mj.mgintervaltime = 回放时间间隔(m)
+View.table.mj.mglogmaxtime = 单次最大时间(m)
+View.table.mj.mgmaxsnapshot = 最大快照数
+common.mjtype.log = 日志型
+
+############################# vm
+common.vmhostlist = 虚拟主机列表
+common.desc.vmhostlist = 属于该主机的虚拟机
+
+CreateVM.label.ok = 确定
+CreateVM.label.create = 创建
+CreateVM.label.modify = 修改
+CreateVM.label.cancel = 取消
+CreateVM.label.ip = 宿主机IP：
+CreateVM.label.port = 宿主机端口：
+CreateVM.label.vip = 虚拟机IP：
+CreateVM.label.path = 虚拟机路径：
+CreateVM.label.letter = 请选择虚机启动盘：
+CreateVM.label.snap-view = 请选择启动快照：
+
+View.table.vmhost.name = 虚拟机名
+View.table.vmhost.path = 虚拟机路径
+View.table.vmhost.vip =虚拟机IP
+View.table.vmhost.targetid = 目标卷ID
+View.table.vmhost.letter = 盘符号
+View.table.vmhost.status = 状态
+
+View.MenuItem.addVMHost = 添加虚拟机
+View.MenuItem.modVMHost = 虚拟机设置
+View.MenuItem.delVMHost = 删除虚拟机
+
+CreateVM.label.tip = 添加虚拟机
+CreateVM.label.tip2 = 编辑虚拟机
+CreateVMHost.error.wrongIP = IP格式错误，请重新输入IP
+CreateVMHost.error.wrongPort = 端口格式错误，请重新输入
+CreateVMHost.error.wrongpath = 路径格式错误，请重新输入
+CreateVMHost.error.wrongServer = 获取服务器信息失败
+CreateVMHost.error.createfailed = 创建虚拟机失败，请检查原因后重新创建
+CreateVMHost.error.wrongcrtview = 为所选快照创建副本失败，请重新操作
+CreateVMHost.error.wrongletter = 请选择系统盘
+
+View.MenuItem.powerOnVMHost = 启动虚拟机
+View.MenuItem.powerOffVMHost = 关闭虚拟机
+
+View.table.vmhost.status.start = 运行中
+View.table.vmhost.status.stop = 关闭或通讯错误
+
+View.pdiagTitle.getVMHost = 获取虚拟机
+View.pdiagTip.getVMHost = 正在获取虚拟机，请稍后...
+View.pdiagTitle.powerOnVMHost = 启动虚拟机
+View.pdiagTip.powerOnVMHost = 正在启动虚拟机，请稍候...
+View.pdiagTitle.powerOffVMHost = 关闭虚拟机
+View.pdiagTip.powerOffVMHost = 正在关闭虚拟机，请稍候...
+VMHostInfo.error.powerOnfailed = 启动虚拟机失败，请查明原因后重试...
+VMHostInfo.error.powerOfffailed = 关闭虚拟机失败，请查明原因后重试...
+VMHostInfo.error.notpoweronVMHost = 虚拟机未启动，请先启动虚拟机再操作
+
+
+VMHostInfo.mes.powerOn = 虚拟机已经启动
+VMHostInfo.mes.powerOff = 虚拟机已经关闭
+VMHostInfo.mes.powerOnAlready = 虚拟机已经启动，请先关闭
+
+View.pdiagTitle.enableIboot = 设置网络启动
+View.pdiagTip.enableIboot = 正在设置网络启动，请稍候...
+View.MenuItem.enableIboot = 网络启动设置
+
+EnableIboot.error.wrongOSletter = 请选择操作系统盘所属的副本
+EnableIboot.mes.success = 设置网络启动成功
+EnableIboot.mes.failed = 设置网络启动失败，请查明原因后继续...
+EnableIboot.label.server_ip = IP：
+EnableIboot.label.server_port = 端口：
+EnableIboot.label.ok = 确定
+EnableIboot.label.cancel = 取消
+
+RestoreOriginalDiskWizardDialog.title4-1 = 请选择需要恢复的系统版本
+RestoreOriginalDiskWizardDialog.error.wrongOperationForOSCopy = 挂在要恢复的系统镜像盘失败，请重新操作...
+
+View.MenuItem.delVMHostIP = 清空IP
+View.MenuItem.recoverVMHostIP = 恢复IP
+View.pdiagTitle.delVMHostIP = 删除客户端IP
+View.pdiagTitle.recoverVMHostIP = 恢复客户端IP
+View.pdiagTip.delVMHostIP = 正在删除客户端IP，请稍后...
+View.pdiagTip.recoverVMHostIP = 正在恢复客户端IP，请稍后...
+VMHostInfo.error.delVMHostIP = 删除IP失败，请查明原因之后重试.
+VMHostInfo.error.recoverVMHostIP = 恢复IP失败，请查明原因之后重试.
+
+MenuAndBtnCenter.confirm.delVMHostIP = 确定要删除客户端所有IP吗?(保留通信IP)
+MenuAndBtnCenter.confirm.recoverVMHostIP = 确定要恢复客户端原来保留的IP吗
+CreateVM.label.recoverIP = 启动虚拟机时是否自动恢复IP？
+
+View.MenuItem.seeVMHostIP = 查看IP信息
+View.pdiagTitle.seeVMHostIP = 获取IP信息
+View.pdiagTip.seeVMHostIP = 正在获取IP信息，请稍候...
+VMHostInfo.error.seeVMHostIP = 获取IP信息失败，请查明原因之后重试.
+
+CreateVMHost.error.usedIP = 该IP已经被使用，请重新填写VIP。
+
+VMHostInfo.error.powerOnfailed-1 = 虚拟机已关闭
+VMHostInfo.error.powerOnfailed-2 = 虚拟机启动超时，请查明原因。
+
+CreateVMMachineDialog.label.IP = 宿主机IP：
+CreateVMMachineDialog.label.PORT = 宿主机端口：
+CreateVMMachineDialog.label.VIP = 虚拟机IP：
+CreateVMMachineDialog.label.NAME = 虚拟机名：
+CreateVMMachineDialog.label.PATH =虚拟机路径：
+CreateVMMachineDialog.label.NETWORKNUMBER = 虚拟机网卡数：
+CreateVMMachineDialog.label.MEMZIE = 虚拟机内存：
+CreateVMMachineDialog.label.SNAPSHOT = 启动快照：
+CreateVMMachineDialog.label.TITLE = 自动创建虚拟机配置：
+
+CreateVMMachineDialog.error.wrongName = 虚拟机名为空，请输入虚拟机名！
+CreateVMMachineDialog.error.nullNumber = 网卡数为空，请输入网卡数！
+CreateVMMachineDialog.error.nullNumber1 = 内存值为空，请输入内存值！
+CreateVMMachineDialog.error.PNumber = 错误的输入，请输入正整数！
+CreateVMMachineDialog.error.wrongtype = 错误的类型，请输入整数类型！
+CreateVMMachine.error.getInfofailed = 获取主机系统信息失败，请查明原因后重试！
+
+View.MenuItem.crtVMMachine = 自动创建虚拟机并设置启动版本
+View.MenuItem.quickLogonDataDisk = 快速切换数据盘
+
+QuickLogonDataDiskAction.error.addPortalFailed = 添加门户失败
+QuickLogonDataDiskAction.error.notpingtohost = 网络连接失败，请检查网络是否连通之后，再重试！
+QuickLogonDataDiskAction.LunMapFailed = 添加映射失败！
+QuickLogonDataDiskAction.success.successful = 快速切换数据盘成功！
+QuickLogonDataDiskAction.error.switchFailed = 快速切换数据盘没有完全成功，错误原因：
+
+View.pdiagTitle.createVMHost = 创建虚拟机
+View.pdiagTip.createVMHost = 正在设置启动版本，请稍后...
+
+View.pdiagTitle.quickLogonView = 快速切换网络盘
+View.pdiagTip.quickLogonView = 正在挂载数据盘，请稍候...
+
+View.MenuItem.setVMServiceInfo = 虚拟机服务器设置
+SetVMServiceInfo.Title = 虚拟机服务器信息设置
+SetVMServiceInfo.label.serverip = 虚拟机服务器IP：
+SetVMServiceInfo.label.serverport =虚拟机服务器端口：
+
+SetVMServiceInfoAction.success.successful = 设置虚拟机服务器信息成功
+SetVMServiceInfoAction.error.failed = 设置虚拟机服务器信息失败
+
+CreateVMHost.error.noServiceInfo = 找不到虚拟机服务器信息，请先到设置中对虚拟机服务器进行信息设置
+VMHostPowerOnSelect.select.LongonDataDisk = 是否在启动虚拟机之后立即挂载数据盘？
+QuickLogonDataDiskAction.error.wrongDataDisk = 类型错误
+SelectDataDiskSnapVersionDialog.title = 选择要挂载的数据盘版本
+
+##################### lvm
+View.MenuItem.init6 = lvm初始化Linux主机
+
+View.MenuItem.ExportView 	 = 导出
+AddLunMapDialog.error.noneDrive = 空的盘符。
+
+SelectIdleDiskDialog.table.disk.existname = 盘符已存在，请重新选择
+
+View.pdiagTitle.setupIbootForLinux64 = 网启设置
+View.pdiagTip.setupIbootForLinux64 = 正在进行网络启动设置，请稍后...
+IbootForLinux6WizardDialog.title = 网络启动设置
+IbootForLinux6WizardDialog.label.path = 临时文件目录
+IbootForLinux6WizardDialog.label.netdrv =网卡驱动型号
+
+IbootForLinux64WizardDialog.successful = 网启设置成功！
+IbootForLinux64WizardDialog.error.getDeviceInfoFailed = 获取设备信息失败
+IbootForLinux64WizardDialog.error.addIscsiInitorDriverFailed = 添加iscsi驱动失败
+IbootForLinux64WizardDialog.error.addlunmapfailed = 添加主机映射失败
+IbootForLinux64WizardDialog.error.formatUnixVolFailed = 网络盘格式化失败
+IbootForLinux64WizardDialog.error.getDeviceNameFailed = 获取设备名失败
+IbootForLinux64WizardDialog.error.addclientFailed = 添加客户端信息失败
+IbootForLinux64WizardDialog.error.sendfailedFailed = 上传文件到服务器失败
+IbootForLinux64WizardDialog.error.mkdirFailed = 创建目录失败
+IbootForLinux64WizardDialog.error.gettftpRootPathFailed = 获取根目录失败
+IbootForLinux64WizardDialog.error.setupIbootFailed = 创建网启设置失败
+IbootForLinux64WizardDialog.error.vgonlineFailed = 注册卷失败
+IbootForLinux64WizardDialog.error.loginUnixVolFailed = 挂载卷失败
+IbootForLinux64WizardDialog.error.addLVFailed = 添加LV失败
+IbootForLinux64WizardDialog.error.addVGFailed = 添加VG失败
+IbootForLinux64WizardDialog.error.addOrphVolFailed = 添加空闲卷失败
+IbootForLinux64WizardDialog.error.getpoolFailed = 获取存储池失败
+IbootForLinux64WizardDialog.error.nopath = 请输入临时文件目录
+IbootForLinux64WizardDialog.error.nonetdrv = 请输入网卡驱动型号

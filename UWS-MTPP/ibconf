@@ -1,0 +1,26 @@
+[global]
+lang=zh
+#LogLevel 0:debug  1:info  2:warning  3:error
+loglevel=0
+#Restore Mirror Type 0:full 2:incremental
+rst_mirror_type=2
+#global high size delta(maybe minus)
+global_hight_delta=20
+#global width size delta(maybe minus)
+global_width_delta=20
+
+[198.88.88.102]
+server_ip=198.88.88.102
+tx_ip=198.88.88.102
+port=5010
+user=admin
+[192.168.2.253]
+server_ip=192.168.2.253
+tx_ip=192.168.2.253
+port=5010
+user=admin
+[192.168.1.253]
+server_ip=192.168.1.253
+tx_ip=192.168.1.253
+port=5010
+user=admin

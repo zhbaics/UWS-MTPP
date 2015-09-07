@@ -1,0 +1,11 @@
+start_time=20140106172437
+clnt_name=user-176338dbfa
+task_type=1
+task_result=END
+task_msg=初始化客户端成功完成。
+task_clnt_id=105
+task_clnt_type=0
+task_parent_clnt_id=-1
+task_parent_clnt_type=-1
+task_clnt_mac=
+task_clnt_dhcp_ip=

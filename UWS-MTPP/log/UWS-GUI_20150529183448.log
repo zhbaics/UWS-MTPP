@@ -1,0 +1,717 @@
+2015-5-29 18:34:48 INFO:[guisanboot.ui.SanBootView] UWS 管理器 6.2.0 版 buildtime:   Log Level: 1
+2015-5-29 18:34:48 INFO:[guisanboot.ui.SanBootView] Restore mirror type: 2
+2015-5-29 18:34:48 INFO:[guisanboot.ui.SanBootView] global high delta: 20
+2015-5-29 18:34:48 INFO:[guisanboot.ui.SanBootView] global width delta: 20
+2015-5-29 18:34:50 INFO:[guisanboot.action.LoginAction] ########### Entering login action. 
+2015-5-29 18:34:54 INFO:[guisanboot.data.ManageDB] begin to login server.
+2015-5-29 18:34:54 INFO:[guisanboot.data.ManageDB] login server successfully.
+2015-5-29 18:34:54 INFO:[guisanboot.data.GetConfigFile]  get config file cmd: cat /etc/odybk.conf
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> INSTALL_PATH=/usr/odybk
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> SNAPDB=/usr/odybk/vsnap/db/snapdb
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> VIBOOTDB=/usr/odybk/vsnap/vidb/ibootdb
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> UIBOOTDB=/usr/odybk/vsnap/uidb/ibootdb
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> SNAPPATH=/usr/odybk/vsnap
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> SYNC_INSTALL_PATH=/usr/odysync
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> SYNCDB=/usr/odysync/db/Odysyncdb
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> ODBROOT=/usr/odybk/server/db/OdyBkinfo
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> D2DODBROOT=/usr/odybk/d2dserver/db/d2dOdyBkinfo
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> compress_cmd=/usr/bin/bzip2
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> compress_suffix=bz2
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> compress_days=7
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> admin_email=root
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> task_expired=60
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> MAX_BACKUP_LEVEL=6
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> MSPORT=6020
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> MSDB=/usr/odybk/d2dserver/db/msdb
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> IBOOTDB=/usr/odybk/server/db/ibootdb
+2015-5-29 18:34:55 DEBUG:[guisanboot.data.GetConfigFile] ========> DEBUG=1
+2015-5-29 18:34:55 INFO:[guisanboot.data.GetConfigFile]  get config file retcode: 0
+2015-5-29 18:34:55 INFO:[guisanboot.data.GetDhcpConfig]  get dhcp config cmd: cat /usr/odybk/server/conf/dhcp.conf
+2015-5-29 18:34:56 INFO:[guisanboot.data.GetDhcpConfig]  get dhcp config retcode: 0
+2015-5-29 18:34:56 INFO:[guisanboot.data.GetBootHost]  get BootHost cmd: /usr/odybk/server/bin/idbmgr -clnt -prt all
+2015-5-29 18:34:57 INFO:[guisanboot.data.GetBootHost]  get BootHost retcode: 0
+2015-5-29 18:34:57 INFO:[guisanboot.datadup.cmd.GetBakClient]  get bak clnt cmd: /usr/odybk/server/bin/dbmgr -clnt -prt all
+2015-5-29 18:34:58 INFO:[guisanboot.datadup.cmd.GetBakClient]  get bak clnt cmd retcode: 0
+2015-5-29 18:34:58 INFO:[guisanboot.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2015-5-29 18:34:59 INFO:[guisanboot.data.GetVolumeMap]  get volmap list retcode: 0
+2015-5-29 18:34:59 INFO:[guisanboot.cluster.cmd.GetCluster]  get cluster cmd: /usr/odybk/server/bin/idbmgr -cluster -prt all
+2015-5-29 18:35:00 INFO:[guisanboot.cluster.cmd.GetCluster]  get cluster retcode: 0
+2015-5-29 18:35:00 INFO:[guisanboot.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2015-5-29 18:35:01 DEBUG:[guisanboot.data.GetIbootObjList] ========> ibenc table:
+2015-5-29 18:35:01 DEBUG:[guisanboot.data.GetIbootObjList] ========> --------------------
+2015-5-29 18:35:01 DEBUG:[guisanboot.data.GetIbootObjList] ========> #MAC_Address Ena Host_IP         Host_Name        Portal_IP       PPort Options  RAMs UNDIs UserName             Password             Initiator_Name Target_Name Living_Days
+2015-5-29 18:35:01 DEBUG:[guisanboot.data.GetIbootObjList] ========> --------------------
+2015-5-29 18:35:01 INFO:[guisanboot.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2015-5-29 18:35:01 INFO:[guisanboot.data.GetServMap]  get servicemap cmd: /usr/odybk/server/bin/idbmgr -serv -prt all
+2015-5-29 18:35:02 INFO:[guisanboot.data.GetServMap]  get servicemap retcode: 0
+2015-5-29 18:35:02 INFO:[guisanboot.data.GetBackupUser]  get bak user cmd: /usr/odybk/server/bin/dbmgr -acct -prt all
+2015-5-29 18:35:03 DEBUG:[guisanboot.data.GetBackupUser]  ======> Record:  1
+2015-5-29 18:35:03 DEBUG:[guisanboot.data.GetBackupUser]  ======> account_id=1
+2015-5-29 18:35:03 DEBUG:[guisanboot.data.GetBackupUser]  ======> account_name=admin
+2015-5-29 18:35:03 DEBUG:[guisanboot.data.GetBackupUser]  ======> account_pass=admin
+2015-5-29 18:35:03 DEBUG:[guisanboot.data.GetBackupUser]  ======> account_priv=1
+2015-5-29 18:35:03 DEBUG:[guisanboot.data.GetBackupUser]  ======> account_dev_list=
+2015-5-29 18:35:03 INFO:[guisanboot.data.GetBackupUser]  get bak user cmd retcode: 0
+2015-5-29 18:35:03 INFO:[guisanboot.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2015-5-29 18:35:04 DEBUG:[guisanboot.data.GetPool] ========> Record:  1
+2015-5-29 18:35:04 DEBUG:[guisanboot.data.GetPool] ========> pool_id=1
+2015-5-29 18:35:05 DEBUG:[guisanboot.data.GetPool] ========> pool_name=bzh
+2015-5-29 18:35:05 DEBUG:[guisanboot.data.GetPool] ========> pool_path=/mnt/ResVol0
+2015-5-29 18:35:05 DEBUG:[guisanboot.data.GetPool] ========> pool_vol_name=/dev/evms/ResVol0
+2015-5-29 18:35:05 DEBUG:[guisanboot.data.GetPool] ========> pool_passwd=admin
+2015-5-29 18:35:05 DEBUG:[guisanboot.data.GetPool] ========> pool_flag=1
+2015-5-29 18:35:05 DEBUG:[guisanboot.data.GetPool] ========> pool_melt_move_data=0
+2015-5-29 18:35:05 DEBUG:[guisanboot.data.GetPool] ========> pool_type=0
+2015-5-29 18:35:05 INFO:[guisanboot.data.GetPool]  getpool retcode: 0
+2015-5-29 18:35:05 INFO:[guisanboot.data.GetUWSrvNode]  get SWU server cmd: /usr/odybk/vsnap/vdbmgr -uws -prt all
+2015-5-29 18:35:06 INFO:[guisanboot.data.GetUWSrvNode]  get SWU server retcode: 0
+2015-5-29 18:35:06 INFO:[guisanboot.data.GetSrcAgnt]  get src_agent cmd: /usr/odybk/server/bin/idbmgr -srcagnt -prt all
+2015-5-29 18:35:07 INFO:[guisanboot.data.GetSrcAgnt]  get src_agent retcode: 0
+2015-5-29 18:35:07 INFO:[guisanboot.data.GetMGList]  get mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt all
+2015-5-29 18:35:08 INFO:[guisanboot.data.GetMGList]  get mg retcode: 0
+2015-5-29 18:35:08 INFO:[guisanboot.data.GetMJList]  get mj cmd: /usr/odybk/vsnap/vdbmgr -mj -prt all
+2015-5-29 18:35:09 INFO:[guisanboot.data.GetMJList]  get mj retcode: 0
+2015-5-29 18:35:09 INFO:[guisanboot.remotemirror.cmd.GetMJScheduler]  get mj-sch list cmd:/usr/odybk/vsnap/vdbmgr -scheduler -prt all
+2015-5-29 18:35:10 INFO:[guisanboot.remotemirror.cmd.GetMJScheduler]  get mj-sch list cmd retcode:0
+2015-5-29 18:35:10 INFO:[guisanboot.data.GetNetBootedHost]  get netbooted-host cmd: /usr/odybk/server/bin/idbmgr -dstagnt -prt all
+2015-5-29 18:35:11 INFO:[guisanboot.data.GetNetBootedHost]  get netbooted-host retcode: 0
+2015-5-29 18:35:11 INFO:[guisanboot.data.GetMirrorSnapusage]  get mirror_snap_usage cmd: /usr/odybk/server/bin/idbmgr -snapusage -prt all
+2015-5-29 18:35:12 INFO:[guisanboot.data.GetMirrorSnapusage]  get mirror_snap_usage retcode: 0
+2015-5-29 18:35:12 INFO:[guisanboot.data.GetMirrorDiskInfo]  get mirror_disk_info cmd: /usr/odybk/server/bin/idbmgr -diskinfo -prt all
+2015-5-29 18:35:13 INFO:[guisanboot.data.GetMirrorDiskInfo]  get mirror_disk_info retcode: 0
+2015-5-29 18:35:13 INFO:[guisanboot.cmdp.service.GetDriveGroup]  get drivegroup cmd: /usr/odybk/server/bin/phydup_hash.sh uws_drivesgroup_getall
+2015-5-29 18:35:15 INFO:[guisanboot.cmdp.service.GetDriveGroup]  get drivegroup retcode: 0
+2015-5-29 18:35:15 INFO:[guisanboot.datadup.cmd.ListProfile]  list profile cmd: /usr/odybk/server/bin/listprofile
+2015-5-29 18:35:16 INFO:[guisanboot.datadup.cmd.ListProfile]  list profile recode: 0
+2015-5-29 18:35:16 INFO:[guisanboot.datadup.cmd.GetBakObjList]  list bakobj cmd: /usr/odybk/server/bin/dbmgr -bobj -prt all
+2015-5-29 18:35:17 INFO:[guisanboot.datadup.cmd.GetBakObjList]  list bakobj cmd retcode: 0
+2015-5-29 18:35:17 INFO:[guisanboot.datadup.cmd.GetSchList]  get sch list cmd: /usr/odybk/server/bin/dbmgr -sch -prt all
+2015-5-29 18:35:18 INFO:[guisanboot.datadup.cmd.GetSchList]  get sch list cmd retcode: 0
+2015-5-29 18:35:18 INFO:[guisanboot.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2015-5-29 18:35:19 DEBUG:[guisanboot.data.GetPoolInfo] ========> /mnt/ResVol0 capacity=105689214976 freecapaciy=100123656192 visual_used=0
+2015-5-29 18:35:19 INFO:[guisanboot.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2015-5-29 18:35:19 INFO:[guisanboot.data.GetLicence]  get license cmd: /usr/odybk/server/bin/listlicence
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence] ========> MTPP:32 250 0
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence]  product of license: MTPP
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence]  point of license: 32 for MTPP
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence]  maxsnap of license: 250 for MTPP
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence] ========> CMDP:32 250 0
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence]  product of license: CMDP
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence]  point of license: 32 for CMDP
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence]  maxsnap of license: 250 for CMDP
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence] ========> DEFAULT:2 4 512
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence]  product of license: DEFAULT
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence]  point of license: 2 for DEFAULT
+2015-5-29 18:35:20 DEBUG:[guisanboot.data.GetLicence]  maxsnap of license: 4 for DEFAULT
+2015-5-29 18:35:20 INFO:[guisanboot.data.GetLicence]  get license retcode: 0
+2015-5-29 18:35:20 INFO:[guisanboot.ui.InitApp] mtpp point: 32
+2015-5-29 18:35:20 INFO:[guisanboot.ui.InitApp] cmdp point: 32
+2015-5-29 18:35:20 INFO:[guisanboot.ui.InitApp] mtpp maxsnap num: 250
+2015-5-29 18:35:20 INFO:[guisanboot.ui.InitApp] cmdp maxsnap num: 250
+2015-5-29 18:35:20 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 0 ] root node on tree
+2015-5-29 18:35:20 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] type ======> : 0
+2015-5-29 18:35:20 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] level ======> : 0
+2015-5-29 18:35:20 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] select level: 0
+2015-5-29 18:35:24 INFO:[guisanboot.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20150529183524 audit_clnt_id=0 audit_event_id=2  "audit_event_desc=Logon to system successfully."
+2015-5-29 18:35:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:35:25 DEBUG:[guisanboot.data.AddCmdNetworkRunning] =====> 16
+2015-5-29 18:35:25 INFO:[guisanboot.data.ManageDB]  add audit log retcode: 0
+2015-5-29 18:35:25 INFO:[guisanboot.action.LoginAction] ########### End of login action. 
+2015-5-29 18:35:32 INFO:[guisanboot.action.DhcpSet] ########### Entering dhcp operation action. 
+2015-5-29 18:35:32 INFO:[guisanboot.data.GetDhcpConfig] dhcpstatus: /usr/odybk/server/bin/phydup_fun.sh IsDchpEnable
+2015-5-29 18:35:33 INFO:[guisanboot.data.GetDhcpConfig] get dhcp status cmd retcode: 1
+2015-5-29 18:35:37 INFO:[guisanboot.data.ViewTextFile] viewFile cmd: cat /etc/sysconfig/customdrv/dhcpenable
+2015-5-29 18:35:38 INFO:[guisanboot.data.ViewTextFile] viewFile cmd retcode: 0
+2015-5-29 18:35:38 INFO:[guisanboot.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listglobal
+2015-5-29 18:35:39 DEBUG:[guisanboot.data.GetGlobalOptFromDHCP] ========> domain
+2015-5-29 18:35:39 DEBUG:[guisanboot.data.GetGlobalOptFromDHCP] ========> gateway
+2015-5-29 18:35:39 DEBUG:[guisanboot.data.GetGlobalOptFromDHCP] ========> os
+2015-5-29 18:35:39 INFO:[guisanboot.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP retcode: 0
+2015-5-29 18:35:39 INFO:[guisanboot.data.GetSubnetFromDHCP] getSubnet from dhcp cmd: /usr/odybk/server/bin/dhcp_set.sh getsubnetinfo
+2015-5-29 18:35:40 DEBUG:[guisanboot.data.GetSubnetFromDHCP] ========> 192.168.1.0 255.255.255.0 192.168.1.1 192.168.1.254 86400 -1
+2015-5-29 18:35:40 INFO:[guisanboot.data.GetSubnetFromDHCP] getSubnet from dhcp retcode: 0
+2015-5-29 18:35:40 INFO:[guisanboot.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listnextserver
+2015-5-29 18:35:41 DEBUG:[guisanboot.data.GetIBootSrvFromDHCP] ========> 192.168.1.253 0
+2015-5-29 18:35:41 INFO:[guisanboot.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP retcode: 0
+2015-5-29 18:35:41 INFO:[guisanboot.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2015-5-29 18:35:42 INFO:[guisanboot.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2015-5-29 18:35:42 INFO:[guisanboot.data.GetDhcpConfig] dhcpstatus: /usr/odybk/server/bin/phydup_fun.sh IsDchpEnable
+2015-5-29 18:35:44 INFO:[guisanboot.data.GetDhcpConfig] get dhcp status cmd retcode: 1
+2015-5-29 18:35:46 INFO:[guisanboot.data.GetServerNetInterface]  get ifconfig cmd: cat  /etc/sysconfig/startnet.sh
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ========> #!/bin/bash
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ========> #default ethernet config
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ========> ifconfig eth0 192.168.1.253 netmask 255.255.255.0 broadcast 192.168.1.255 up
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ifconfig eth0 192.168.1.253 255.255.255.0 192.168.1.255 up
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ========> ifconfig eth1 10.10.2.253 netmask 255.255.255.0 broadcast 10.10.2.255 up
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ifconfig eth1 10.10.2.253 255.255.255.0 10.10.2.255 up
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ========> ifconfig eth2 10.10.3.253 netmask 255.255.255.0 broadcast 10.10.3.255 up
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ifconfig eth2 10.10.3.253 255.255.255.0 10.10.3.255 up
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ========> ifconfig eth3 10.10.4.253 netmask 255.255.255.0 broadcast 10.10.4.255 up
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ifconfig eth3 10.10.4.253 255.255.255.0 10.10.4.255 up
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ========> tar zxvf /etc/sysconfig/www.tgz -C /www/cgi-bin
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] 6
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] ========> tar zxvf /etc/sysconfig/www.tgz -C /www/cgi-bin
+2015-5-29 18:35:47 DEBUG:[guisanboot.data.GetServerNetInterface] 6
+2015-5-29 18:35:47 INFO:[guisanboot.data.GetServerNetInterface]  get ifconfig cmd retcode: 0
+2015-5-29 18:35:47 INFO:[guisanboot.data.DHCPdb]  send this file to server: tmp7677855894930457179tmp
+2015-5-29 18:35:47 INFO:[guisanboot.data.DHCPdb]  send file to server retcode: 0
+2015-5-29 18:35:47 INFO:[guisanboot.data.DHCPdb]  mv cmd: mv /usr/odybk/server/tmp/tmp7677855894930457179tmp /etc/sysconfig/dhcpd.conf
+2015-5-29 18:35:48 INFO:[guisanboot.data.DHCPdb]  mv cmd retcode: 0
+2015-5-29 18:35:48 INFO:[guisanboot.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh stop
+2015-5-29 18:35:49 DEBUG:[guisanboot.data.SyncOpCmdWithNoOutput]  #########:(SyncOpCmd: output): 
+2015-5-29 18:35:49 INFO:[guisanboot.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 0
+2015-5-29 18:35:49 INFO:[guisanboot.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh start
+2015-5-29 18:35:49 DEBUG:[guisanboot.data.SyncOpCmdWithNoOutput]  #########:(SyncOpCmd: output): 
+2015-5-29 18:35:49 INFO:[guisanboot.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 0
+2015-5-29 18:35:49 INFO:[guisanboot.data.ViewTextFile] viewFile cmd: cat /etc/sysconfig/customdrv/dhcpenable
+2015-5-29 18:35:50 INFO:[guisanboot.data.ViewTextFile] viewFile cmd retcode: 0
+2015-5-29 18:35:50 INFO:[guisanboot.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listglobal
+2015-5-29 18:35:51 DEBUG:[guisanboot.data.GetGlobalOptFromDHCP] ========> domain
+2015-5-29 18:35:51 DEBUG:[guisanboot.data.GetGlobalOptFromDHCP] ========> gateway
+2015-5-29 18:35:51 DEBUG:[guisanboot.data.GetGlobalOptFromDHCP] ========> os
+2015-5-29 18:35:51 INFO:[guisanboot.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP retcode: 0
+2015-5-29 18:35:51 INFO:[guisanboot.data.GetSubnetFromDHCP] getSubnet from dhcp cmd: /usr/odybk/server/bin/dhcp_set.sh getsubnetinfo
+2015-5-29 18:35:52 DEBUG:[guisanboot.data.GetSubnetFromDHCP] ========> 192.168.1.0 255.255.255.0 192.168.1.1 192.168.1.254 86400 -1
+2015-5-29 18:35:52 INFO:[guisanboot.data.GetSubnetFromDHCP] getSubnet from dhcp retcode: 0
+2015-5-29 18:35:52 INFO:[guisanboot.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listnextserver
+2015-5-29 18:35:53 DEBUG:[guisanboot.data.GetIBootSrvFromDHCP] ========> 192.168.1.253 0
+2015-5-29 18:35:53 INFO:[guisanboot.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP retcode: 0
+2015-5-29 18:35:53 INFO:[guisanboot.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2015-5-29 18:35:54 INFO:[guisanboot.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2015-5-29 18:35:54 INFO:[guisanboot.data.GetDhcpConfig] dhcpstatus: /usr/odybk/server/bin/phydup_fun.sh IsDchpEnable
+2015-5-29 18:35:56 INFO:[guisanboot.data.GetDhcpConfig] get dhcp status cmd retcode: 1
+2015-5-29 18:35:58 INFO:[guisanboot.action.DhcpSet] ########### End of dhcp operation acion. 
+2015-5-29 18:36:00 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 1 ] local swu manager
+2015-5-29 18:36:01 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 3 ] chief host
+2015-5-29 18:36:01 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] type ======> : 3
+2015-5-29 18:36:01 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] level ======> : 1
+2015-5-29 18:36:01 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] select level: 1
+2015-5-29 18:36:02 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 3 ] chief host
+2015-5-29 18:36:03 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 39 ] chief scheduler
+2015-5-29 18:36:03 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] type ======> : 39
+2015-5-29 18:36:03 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] level ======> : 29
+2015-5-29 18:36:03 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] select level: 29
+2015-5-29 18:36:03 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 3 ] chief host
+2015-5-29 18:36:03 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] type ======> : 3
+2015-5-29 18:36:03 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] level ======> : 1
+2015-5-29 18:36:03 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] select level: 1
+2015-5-29 18:36:06 INFO:[guisanboot.action.InitHostAction] ########### Entering window host's init process
+2015-5-29 18:36:06 INFO:[guisanboot.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2015-5-29 18:36:07 DEBUG:[guisanboot.data.GetPool] ========> Record:  1
+2015-5-29 18:36:07 DEBUG:[guisanboot.data.GetPool] ========> pool_id=1
+2015-5-29 18:36:07 DEBUG:[guisanboot.data.GetPool] ========> pool_name=bzh
+2015-5-29 18:36:07 DEBUG:[guisanboot.data.GetPool] ========> pool_path=/mnt/ResVol0
+2015-5-29 18:36:07 DEBUG:[guisanboot.data.GetPool] ========> pool_vol_name=/dev/evms/ResVol0
+2015-5-29 18:36:07 DEBUG:[guisanboot.data.GetPool] ========> pool_passwd=admin
+2015-5-29 18:36:07 DEBUG:[guisanboot.data.GetPool] ========> pool_flag=1
+2015-5-29 18:36:07 DEBUG:[guisanboot.data.GetPool] ========> pool_melt_move_data=0
+2015-5-29 18:36:07 DEBUG:[guisanboot.data.GetPool] ========> pool_type=0
+2015-5-29 18:36:07 INFO:[guisanboot.data.GetPool]  getpool retcode: 0
+2015-5-29 18:36:07 INFO:[guisanboot.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2015-5-29 18:36:08 DEBUG:[guisanboot.data.GetPoolInfo] ========> /mnt/ResVol0 capacity=105689214976 freecapaciy=100123656192 visual_used=0
+2015-5-29 18:36:08 INFO:[guisanboot.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2015-5-29 18:36:20 INFO:[guisanboot.data.GetAgentInfo]  get agt cmd: /usr/odybk/server/bin/ibootcmd 192.168.1.118 5000 ib_get_osinfo.exe
+2015-5-29 18:36:21 DEBUG:[guisanboot.data.GetAgentInfo] ####: OS_NAME=windows
+2015-5-29 18:36:21 DEBUG:[guisanboot.data.GetAgentInfo] ####: OS_RELEASE=XP
+2015-5-29 18:36:21 DEBUG:[guisanboot.data.GetAgentInfo] ####: OS_BIT=32
+2015-5-29 18:36:21 DEBUG:[guisanboot.data.GetAgentInfo] ####: ARCHITECTURE=x86
+2015-5-29 18:36:21 DEBUG:[guisanboot.data.GetAgentInfo] ####: HOSTNAME=uwstest1
+2015-5-29 18:36:21 DEBUG:[guisanboot.data.GetAgentInfo] ####: HOSTID=00000000
+2015-5-29 18:36:21 INFO:[guisanboot.data.GetAgentInfo]  get agt cmd retcode: 0
+2015-5-29 18:36:21 INFO:[guisanboot.data.GetAgentUUID]  get agt uuid cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.118 5000 pc_gen_uuid.exe zxcvb12345 -get
+2015-5-29 18:36:22 DEBUG:[guisanboot.data.GetAgentUUID] c87084f3-b816-41ec-984f-8047be82484f
+2015-5-29 18:36:22 INFO:[guisanboot.data.GetAgentUUID]  get agt uuid cmd retcode: 0
+2015-5-29 18:36:22 INFO:[guisanboot.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2015-5-29 18:36:23 INFO:[guisanboot.data.GetVolumeMap]  get volmap list retcode: 0
+2015-5-29 18:36:23 INFO:[guisanboot.data.GetMirrorDiskInfo]  get mirror_disk_info cmd: /usr/odybk/server/bin/idbmgr -diskinfo -prt all
+2015-5-29 18:36:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:36:24 INFO:[guisanboot.data.GetMirrorDiskInfo]  get mirror_disk_info retcode: 0
+2015-5-29 18:36:24 INFO:[guisanboot.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd:/usr/odybk/vsnap/idbmgr -cloneinfo -prt  all 
+2015-5-29 18:36:25 INFO:[guisanboot.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd retcode:0
+2015-5-29 18:36:25 INFO:[guisanboot.data.GetFreePhyVol] listdisk cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_opened_type=2 or snap_opened_type=3 or snap_opened_type=4;"
+2015-5-29 18:36:27 INFO:[guisanboot.data.GetFreePhyVol] listdisk cmd retcode: 0
+2015-5-29 18:36:27 INFO:[guisanboot.data.GetPartitionOnClnt]  get partition (confile) cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.118 5000 ib_get_partition_info.exe
+2015-5-29 18:36:29 DEBUG:[guisanboot.data.GetPartitionOnClnt] ========> C:\;*;;\\?\Volume{5629adf1-942d-11e4-8f80-806d6172696f}\;NTFS;6134;2268;ide ;
+2015-5-29 18:36:29 DEBUG:[guisanboot.data.GetPartitionOnClnt] ========> D:\;;VRMPVOL_CN;\\?\Volume{5629adef-942d-11e4-8f80-806d6172696f}\;CDFS;592;0;cdrom;
+2015-5-29 18:36:29 DEBUG:[guisanboot.data.GetPartitionOnClnt] ========> E:\;;新加卷;\\?\Volume{e5b99e68-e992-11e4-8539-000c297a8035}\;NTFS;1019;1010;ide ;
+2015-5-29 18:36:29 INFO:[guisanboot.data.GetPartitionOnClnt]  get partition (confile) retcode: 0
+2015-5-29 18:36:29 INFO:[guisanboot.data.GetDiskPartitionTableForWinOnClnt]  get old(new) disk partition table for win cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.118 5000 ib_save_partition.exe -list_local
+2015-5-29 18:36:30 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> diskno=0;disk_size=1069286400;PartitionCount=4;signature=2107610255
+2015-5-29 18:36:30 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=32256;PartitionLength=1069254144;HiddenSectors=63;PartitionNumber=1;PartitionType=7;BootIndicator=0;RecognizedPartition=1;RewritePartition=0;letter=E;label=新加卷;filesystem=NTFS;
+2015-5-29 18:36:30 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-5-29 18:36:30 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-5-29 18:36:30 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-5-29 18:36:30 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> diskno=1;disk_size=6440394240;PartitionCount=4;signature=3848004955
+2015-5-29 18:36:30 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=32256;PartitionLength=6432136704;HiddenSectors=63;PartitionNumber=1;PartitionType=7;BootIndicator=1;RecognizedPartition=1;RewritePartition=0;letter=C;label=;filesystem=NTFS;
+2015-5-29 18:36:30 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-5-29 18:36:30 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-5-29 18:36:30 DEBUG:[guisanboot.data.GetDiskPartitionTableForWinOnClnt] ========> StartingOffset=0;PartitionLength=0;HiddenSectors=0;PartitionNumber=0;PartitionType=0;BootIndicator=0;RecognizedPartition=0;RewritePartition=0;
+2015-5-29 18:36:30 INFO:[guisanboot.data.GetDiskPartitionTableForWinOnClnt]  get old(new) disk partition table for win retcode: 0
+2015-5-29 18:36:30 INFO:[guisanboot.data.ManageDB] isStartupfromSAN cmd: /usr/odybk/server/bin/ibootcmd 192.168.1.118 5000 ib_get_disk_type.exe C
+2015-5-29 18:36:32 DEBUG:[guisanboot.data.IsStartupFromSAN] ========> Bus:ide Vendor:
+2015-5-29 18:36:32 INFO:[guisanboot.data.ManageDB] isStartupFromSAN cmd retcode: 0
+2015-5-29 18:36:32 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]  ######### init new host: 192.168.1.118 / 5000
+2015-5-29 18:36:32 DEBUG:[guisanboot.ui.InitBootHostWizardDialog] disk num: 0
+2015-5-29 18:36:32 DEBUG:[guisanboot.ui.InitBootHostWizardDialog] VolMap num: 0
+2015-5-29 18:36:32 DEBUG:[guisanboot.ui.InitBootHostWizardDialog] mdi num: 0
+2015-5-29 18:36:39 INFO:[guisanboot.data.GetLicenseCount]  get LicenseCount cmd: /usr/odybk/server/bin/phydup_hash.sh zulu_mtpp_can_protect_system_database 
+2015-5-29 18:36:41 INFO:[guisanboot.data.GetLicenseCount]  get LicenseCount retcode: 0
+2015-5-29 18:36:41 INFO:[guisanboot.ui.SelectProtectedSysVolPane]  num: 4 res:maxsnap: 250 for [ 0,8 ]
+2015-5-29 18:36:41 INFO:[guisanboot.data.SystemPartitionForWin]  disk total size : 6134 disk avaliable size: 2268
+2015-5-29 18:36:41 INFO:[guisanboot.data.SystemPartitionForWin]  disk total size : 6134 disk avaliable size: 2268
+2015-5-29 18:36:41 INFO:[guisanboot.data.SystemPartitionForWin]  disk total size : 6134 disk avaliable size: 2268
+2015-5-29 18:36:41 INFO:[guisanboot.data.GetServiceOnClnt]  get service (confile) cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.118 5000 services_process.exe list
+2015-5-29 18:36:42 DEBUG:[guisanboot.data.GetServiceOnClnt] ========> odysys_mirror Odysys Mirror
+2015-5-29 18:36:42 DEBUG:[guisanboot.data.GetServiceOnClnt] ========> Themes Themes
+2015-5-29 18:36:42 DEBUG:[guisanboot.data.GetServiceOnClnt] ========> WebClient WebClient
+2015-5-29 18:36:42 DEBUG:[guisanboot.data.GetServiceOnClnt] ========> wscsvc Security Center
+2015-5-29 18:36:42 INFO:[guisanboot.data.GetServiceOnClnt]  get service (confile) retcode: 0
+2015-5-29 18:36:42 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]  host ==null 0000000000000000000000
+2015-5-29 18:36:43 INFO:[guisanboot.data.GetIpInfoOnClnt]  get IP info of client cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.118 5000 ib_get_net_info.exe -a 00-00-00-00-00-00
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> HostName: 	UWSTEST1
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Adapter: 	AMD PCNET Family PCI Ethernet Adapter - 数据包计划程序微型端口
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Mac Address:  	00-0C-29-7A-80-35
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Connection:  	本地连接
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Conn Type:  	Ethernet
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> IP Address: 	192.168.1.118
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Sub Mask: 	255.255.255.0
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Gateway: 	192.168.1.1
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> DHCP Enabled: 	Yes
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> DHCP Server: 	192.168.1.1
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Lease Obtained: 1432893295
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Lease Expires: 5309089
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Have Wins: 	No
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> DNS Address: 	58.20.127.170
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> DNS Address: 	58.20.127.238
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Media Status:
+2015-5-29 18:36:45 INFO:[guisanboot.data.GetIpInfoOnClnt]  get IP info of client retcode: 0
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)HostName: 	UWSTEST1
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)2
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)HostName
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)Adapter: 	AMD PCNET Family PCI Ethernet Adapter - 数据包计划程序微型端口
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)2
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ======>(getAllNetCard)Adapter
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Mac Address:  	00-0C-29-7A-80-35
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  111111111111111111111: Mac Address:  	00-0C-29-7A-80-35
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Connection:  	本地连接
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Conn Type:  	Ethernet
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: IP Address: 	192.168.1.118
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  222222222222222222222222: IP Address: 	192.168.1.118
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  333333333333333333: Gateway: 	192.168.1.1
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Gateway: 	192.168.1.1
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  gateway indx: 7
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Gateway: 	192.168.1.1
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: DHCP Enabled: 	Yes
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: DHCP Server: 	192.168.1.1
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Lease Obtained: 1432893295
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Lease Expires: 5309089
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Have Wins: 	No
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: DNS Address: 	58.20.127.170
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: DNS Address: 	58.20.127.238
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  findPattern: Media Status:
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  Media Status indx: 15
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  ip=======: IP Address: 	192.168.1.118
+2015-5-29 18:36:45 DEBUG:[guisanboot.data.GetIpInfoOnClnt]  mask=======: Sub Mask: 	255.255.255.0
+2015-5-29 18:36:47 INFO:[guisanboot.data.GetWindir]  get windir cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.118 5000 ib_get_win_dir.exe
+2015-5-29 18:36:49 DEBUG:[guisanboot.data.GetWindir] ========> C:\WINDOWS
+2015-5-29 18:36:49 INFO:[guisanboot.data.GetWindir]  get windir cmd retcode: 0
+2015-5-29 18:36:54 INFO:[guisanboot.data.GetWindir]  get windir cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.118 5000 ib_get_win_dir.exe
+2015-5-29 18:36:56 DEBUG:[guisanboot.data.GetWindir] ========> C:\WINDOWS
+2015-5-29 18:36:56 INFO:[guisanboot.data.GetWindir]  get windir cmd retcode: 0
+2015-5-29 18:37:03 INFO:[guisanboot.datadup.cmd.GetFileList] get file cmd: /usr/odybk/server/bin/listdir -d 192.168.1.118 5000 "/"
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList] =====> A:/
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList]  fileStr: /A:
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList] =====> C:/
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList]  fileStr: /C:
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList] =====> D:/
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList]  fileStr: /D:
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList] =====> E:/
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList]  fileStr: /E:
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList] =====> Y:/
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList]  fileStr: /Y:
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList] =====> Z:/
+2015-5-29 18:37:05 DEBUG:[guisanboot.datadup.cmd.GetFileList]  fileStr: /Z:
+2015-5-29 18:37:07 DEBUG:[guisanboot.datadup.ui.SelectBakedFileDialog] bak clnt os: WinXP
+2015-5-29 18:37:07 DEBUG:[guisanboot.datadup.ui.SelectBakedFileDialog] Selected file(add file): /C:/
+2015-5-29 18:37:18 DEBUG:[guisanboot.datadup.ui.EditProfileWhenInitDialog]  =====>: C:\
+2015-5-29 18:37:18 INFO:[guisanboot.data.GetTargetServerName]  get target server name cmd: hostname
+2015-5-29 18:37:19 DEBUG:[guisanboot.data.GetTargetServerName] ========> bzh
+2015-5-29 18:37:19 INFO:[guisanboot.data.GetTargetServerName]  get target server name cmd retcode: 0
+2015-5-29 18:37:19 DEBUG:[guisanboot.datadup.ui.EditProfileWhenInitDialog] begin to add a profile .....
+2015-5-29 18:37:19 INFO:[guisanboot.data.ManageDB]  add clnt cmd: /usr/odybk/server/bin/dbmgr -clnt -add  clnt_name=uwstest1 clnt_ip=192.168.1.118 clnt_machine=x86 clnt_port=5000 clnt_os=WinXP clnt_status=active clnt_uuid=c87084f3-b816-41ec-984f-8047be82484f clnt_account_id=-1
+2015-5-29 18:37:21 DEBUG:[guisanboot.data.AddCmdNetworkRunning] =====> 1
+2015-5-29 18:37:21 INFO:[guisanboot.data.ManageDB]  add clnt retcode: 0
+2015-5-29 18:37:21 INFO:[guisanboot.data.ManageDB]  send this file to server: tmp4840851937907647149bkobj
+2015-5-29 18:37:21 INFO:[guisanboot.data.ManageDB]  send file to server retcode: 0
+2015-5-29 18:37:21 INFO:[guisanboot.data.ManageDB] add bakobj cmd: /usr/odybk/server/bin/dbmgr -bobj -add filename=/usr/odybk/server/tmp/tmp4840851937907647149bkobj
+2015-5-29 18:37:22 DEBUG:[guisanboot.data.AddCmdNetworkRunning] =====> 1
+2015-5-29 18:37:22 INFO:[guisanboot.data.ManageDB] add bakobj cmd retcode: 0
+2015-5-29 18:37:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:37:25 DEBUG:[guisanboot.datadup.ui.EditProfileWhenInitDialog] profile: [identity]
+bkobj_id=1
+bkobj_sn=0
+dev_id=0
+sch_id=0
+sch_level=1
+clnt_id=1
+prof_id=0
+rstrobj_id=0
+action=backup-file
+filename=/usr/odybk/server/profile/-1-2015-05-29-06-37-24.prf
+target=0
+bks_retention=
+autoresobj_id=
+restore_id=
+add_queue=0
+user_info=
+mirror_flag=1
+[header]
+profile-name=-1-2015-05-29-06-37-24.prf
+act=backup-file
+drive1=
+drive2=
+parallel=1
+size=4096
+split=YES
+zip-level=0
+pre-script=
+post-script=
+snap_bf_script=
+snap_af_script=
+post_argument=
+verify-level=
+enable-crypt=NO
+verbose=YES
+shvol=YES
+bkobj_desc=
+mirror_flag=1
+source_dest_reference=
+linux_lvm_snap=0
+linux_lvm_reference=
+[drive-1]
+path=
+user=
+password=
+size=
+san_flag=
+san_port=
+ms_flag=
+ms_port=
+[backup]
+min-depth=0
+max-depth=0
+backup-level=0
+begin-restore-level=0
+last-time=
+backup-raw=NO
+sn=
+src=/C:/;
+src-type=4
+src-os=
+seek=0
+bs=0
+include=
+incl-type=
+incl-case=YES
+exclude=
+excl-type=
+excl-case=YES
+single-fs=YES
+target=
+force-ovwr=YES
+ovwr-old=
+curtime=
+restore-raw=
+vol_max_file=10000
+zip_file_list=
+kill_prescript=0
+blk_inc_rst_mode=0
+inc_no_judge_time=0
+bak_with_snap=1
+exclude_from_bak=
+delete_redundant_file=10
+ignore_all_copy_error=0
+crt_snap=1
+[iboot]
+iboot_bf_cmd=
+iboot_snap_bf_cmd=
+iboot_af_cmd=
+iboot_snap_bf_cmd1=
+only_localboot_backup=1
+snap_flag=1
+uws_username=admin
+uws_passwd=admin
+uws_ip=192.168.1.253
+uws_port=5010
+mgid_info=
+logout_target=1
+
+2015-5-29 18:37:25 INFO:[guisanboot.data.ManageDB]  send this file to server: tmp1010310690453711561prof
+2015-5-29 18:37:25 INFO:[guisanboot.data.ManageDB]  send file to server retcode: 0
+2015-5-29 18:37:25 INFO:[guisanboot.data.ManageDB]  mv cmd: mv /usr/odybk/server/tmp/tmp1010310690453711561prof /usr/odybk/server/profile/-1-2015-05-29-06-37-24.prf
+2015-5-29 18:37:26 INFO:[guisanboot.data.ManageDB]  mv cmd retcode: 0
+2015-5-29 18:37:26 INFO:[guisanboot.data.ManageDB]  add sch cmd: /usr/odybk/server/bin/dbmgr -sch -add  sch_name=test sch_type=1 sch_min=0 sch_hour=0 sch_day=* sch_month=* sch_week=* sch_level=1 sch_prof=1 sch_dev=-1 sch_obj=1 "sch_profname=/usr/odybk/server/profile/-1-2015-05-29-06-37-24.prf"
+2015-5-29 18:37:27 DEBUG:[guisanboot.data.AddCmdNetworkRunning] =====> 1
+2015-5-29 18:37:27 INFO:[guisanboot.data.ManageDB]  add(mod) sch cmd retcode: 0
+2015-5-29 18:37:30 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Init Windows Host Begin ###################@@ 
+2015-5-29 18:37:30 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Create Volume Begin ###################@@ 
+2015-5-29 18:37:30 INFO:[guisanboot.data.ManageDB] addVol cmd: /usr/odybk/vsnap/newdisk -b 17 -n 49152 -p 1 -o MTPP -v C192.168.1.118
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol]  #########:(SyncOpCmd: output): invalid target id
+-------------vdisk info-------------
+snap_local_snapid=1
+snap_name=C192.168.1.118
+snap_root_id=1
+snap_pool_id=1
+snap_parent=0
+snap_orig_id=0
+snap_block_size=17
+snap_max_block_no=49152
+snap_type=2
+snap_child_list=
+snap_target_id=32768
+snap_localid=1
+snap_create_time=20150424184418
+snap_desc=
+snap_owner=MTPP
+snap_log_no=0
+snap_log_pos=0
+------------------------------------
+
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): invalid target id
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): -------------vdisk info-------------
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_local_snapid=1
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_name=C192.168.1.118
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_root_id=1
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_pool_id=1
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_parent=0
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_orig_id=0
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_block_size=17
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_max_block_no=49152
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_type=2
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_child_list=
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_target_id=32768
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_localid=1
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_create_time=20150424184418
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_desc=
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_owner=MTPP
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_log_no=0
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): snap_log_pos=0
+2015-5-29 18:37:31 DEBUG:[guisanboot.data.AddOrphanVol] (AddOrphanVol): ------------------------------------
+2015-5-29 18:37:31 INFO:[guisanboot.data.ManageDB] addVol cmd retcode: 0
+2015-5-29 18:37:31 INFO:[guisanboot.data.ManageDB] addLM cmd: /usr/odybk/server/bin/ib_server_add_lunmap.sh addlunmap 32768 192.168.1.118 255.255.255.255 rw    
+2015-5-29 18:37:32 INFO:[guisanboot.data.ManageDB] addLM cmd retcode: 0
+2015-5-29 18:37:33 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Create Volume End ###################@@ 
+2015-5-29 18:37:33 INFO:[guisanboot.ui.InitBootHostWizardDialog] seled vol num: 0
+2015-5-29 18:37:33 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Format Volume Begin ###################@@ 
+2015-5-29 18:37:33 INFO:[guisanboot.data.GetTargetServerName]  get target server name cmd: hostname
+2015-5-29 18:37:34 DEBUG:[guisanboot.data.GetTargetServerName] ========> bzh
+2015-5-29 18:37:34 INFO:[guisanboot.data.GetTargetServerName]  get target server name cmd retcode: 0
+2015-5-29 18:37:35 INFO:[guisanboot.data.ManageDB] addPortal cmd: /usr/odybk/server/bin/ibootcmd 192.168.1.118 5000 iscsi_demo.exe AddPortal 192.168.1.253 3260
+2015-5-29 18:37:36 INFO:[guisanboot.data.ManageDB] addPortal cmd retcode: 0
+2015-5-29 18:37:36 INFO:[guisanboot.data.ListTargetDiskOnClnt]  list target disk on client cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.118 5000 iscsi_demo.exe ListTargets
+2015-5-29 18:37:40 DEBUG:[guisanboot.data.ListTargetDiskOnClnt] ========> iqn.2005-05.cn.com.odysys.iscsi.bzh:32768
+2015-5-29 18:37:40 INFO:[guisanboot.data.ListTargetDiskOnClnt]  list target disk on client retcode: 0
+2015-5-29 18:37:40 INFO:[guisanboot.ui.InitBootHostWizardDialog] targetid: 32768  original dev size: 6134  iscsi vol size: 6
+2015-5-29 18:37:40 INFO:[guisanboot.data.ManageDB] loginTarget cmd: /usr/odybk/server/bin/ibootcmd 192.168.1.118 5000 iscsi_demo.exe LoginTarget iqn.2005-05.cn.com.odysys.iscsi.bzh:32768
+2015-5-29 18:37:41 INFO:[guisanboot.data.ManageDB] loginTarget cmd retcode: 0
+2015-5-29 18:37:41 INFO:[guisanboot.data.ManageDB] formatVol cmd: /usr/odybk/server/bin/ibootcmd 192.168.1.118 5000 ib_format_disk.exe iqn.2005-05.cn.com.odysys.iscsi.bzh:32768 NTFS iscsi-118-C Active
+2015-5-29 18:37:41 INFO:[guisanboot.data.ManageDB] format time out: 36000000
+2015-5-29 18:38:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:39:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:40:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:40:58 INFO:[guisanboot.data.ManageDB] formatVol cmd retcode: 0
+2015-5-29 18:40:58 INFO:[guisanboot.data.GetTargetDriver]  get target driver cmd: /usr/odybk/server/bin/ibootcmd 192.168.1.118 5000 ib_get_target_driver.exe iqn.2005-05.cn.com.odysys.iscsi.bzh:32768
+2015-5-29 18:40:59 DEBUG:[guisanboot.data.GetTargetDriver] ========> GetDisknoByTarget
+2015-5-29 18:40:59 DEBUG:[guisanboot.data.GetTargetDriver] ========> GetDiskLetter_2k
+2015-5-29 18:40:59 DEBUG:[guisanboot.data.GetTargetDriver] ========> Mounted on X:\
+2015-5-29 18:40:59 INFO:[guisanboot.data.GetTargetDriver]  get target driver cmd retcode: 0
+2015-5-29 18:40:59 INFO:[guisanboot.data.ManageDB] logoutTarget cmd: /usr/odybk/server/bin/ibootcmd 192.168.1.118 5000 iscsi_demo.exe LogoutTargetNew iqn.2005-05.cn.com.odysys.iscsi.bzh:32768 X:
+2015-5-29 18:41:10 INFO:[guisanboot.data.ManageDB] logoutTarget cmd retcode: 0
+2015-5-29 18:41:10 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Format Volume End ###################@@ 
+2015-5-29 18:41:10 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Get other info Begin ###################@@ 
+2015-5-29 18:41:10 INFO:[guisanboot.data.GetIpInfoOnClnt]  get IP info of client cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.118 5000 ib_get_net_info.exe -a 00-0C-29-7A-80-35
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> HostName: 	UWSTEST1
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Adapter(*): 	AMD PCNET Family PCI Ethernet Adapter - 数据包计划程序微型端口
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Mac Address:  	00-0C-29-7A-80-35
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Connection:  	本地连接
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Conn Type:  	Ethernet
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> IP Address: 	192.168.1.118
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Sub Mask: 	255.255.255.0
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Gateway: 	192.168.1.1
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> DHCP Enabled: 	Yes
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> DHCP Server: 	192.168.1.1
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Lease Obtained: 1432893295
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Lease Expires: 5309089
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Have Wins: 	No
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> DNS Address: 	58.20.127.170
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> DNS Address: 	58.20.127.238
+2015-5-29 18:41:11 DEBUG:[guisanboot.data.GetIpInfoOnClnt] ========> Media Status:
+2015-5-29 18:41:11 INFO:[guisanboot.data.GetIpInfoOnClnt]  get IP info of client retcode: 0
+2015-5-29 18:41:11 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Get other info END ###################@@ 
+2015-5-29 18:41:11 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Copy OS Begin ###################@@ 
+2015-5-29 18:41:11 INFO:[guisanboot.data.ManageDB] add boot host: /usr/odybk/server/bin/idbmgr -clnt -add  clnt_ip=192.168.1.118 clnt_port=5000 clnt_port1=5000 clnt_name=uwstest1 "clnt_os=WinXP" clnt_machine=x86 clnt_status=Online clnt_conf=c87084f3-b816-41ec-984f-8047be82484f clnt_inited_flag=0 clnt_auto_dr_flag=0 clnt_auto_reboot_flag=0 clnt_stop_base_service=0 clnt_boot_mode=1 clnt_mode=0 clnt_protect_type=1 clnt_cluster_id=0 clnt_d2d_cid=0 clnt_pri_ip= clnt_vip= clnt_opt=0
+2015-5-29 18:41:12 DEBUG:[guisanboot.data.AddBootHostNetworkRunning] =====> 1
+2015-5-29 18:41:12 INFO:[guisanboot.data.ManageDB] add boot host retcode: 0
+2015-5-29 18:41:12 INFO:[guisanboot.data.ManageDB]  add volmap cmd: /usr/odybk/server/bin/idbmgr -vol -add  vol_name=C192.168.1.118 vol_clntid=1 vol_disklabel=C:\ vol_target_id=32768 vol_max_snap=4 "vol_desc=" vol_rootid=1 "rollback_orgi_volname=" "rollback_orgi_uws=" vol_protect_type=1 vol_opt=0 vol_cluster_id=0
+2015-5-29 18:41:14 INFO:[guisanboot.data.ManageDB]  add volmap cmd retcode: 0
+2015-5-29 18:41:14 INFO:[guisanboot.data.GetTargetServerName]  get target server name cmd: hostname
+2015-5-29 18:41:15 DEBUG:[guisanboot.data.GetTargetServerName] ========> bzh
+2015-5-29 18:41:15 INFO:[guisanboot.data.GetTargetServerName]  get target server name cmd retcode: 0
+2015-5-29 18:41:15 INFO:[guisanboot.data.GetWindir]  get windir cmd: /usr/odybk/server/bin/ibootcmd  192.168.1.118 5000 ib_get_win_dir.exe
+2015-5-29 18:41:16 DEBUG:[guisanboot.data.GetWindir] ========> C:\WINDOWS
+2015-5-29 18:41:16 INFO:[guisanboot.data.GetWindir]  get windir cmd retcode: 0
+2015-5-29 18:41:16 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]  mp size:1
+2015-5-29 18:41:16 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]  =====>: C:\
+2015-5-29 18:41:18 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]  mp size:1
+2015-5-29 18:41:18 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]  =====>: C:\
+2015-5-29 18:41:21 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]  mp size:1
+2015-5-29 18:41:21 DEBUG:[guisanboot.ui.InitBootHostWizardDialog]  =====>: C:\
+2015-5-29 18:41:21 INFO:[guisanboot.data.ManageDB]  send this file to server: tmp7729070630757278580prof
+2015-5-29 18:41:22 INFO:[guisanboot.data.ManageDB]  send file to server retcode: 0
+2015-5-29 18:41:22 INFO:[guisanboot.data.ManageDB]  mv cmd: mv /usr/odybk/server/tmp/tmp7729070630757278580prof /usr/odybk/server/profile/-1-2015-05-29-06-37-24.prf
+2015-5-29 18:41:23 INFO:[guisanboot.data.ManageDB]  mv cmd retcode: 0
+2015-5-29 18:41:23 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Copy OS End ###################@@ 
+2015-5-29 18:41:23 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Save info Begin ###################@@ 
+2015-5-29 18:41:23 WARNING:[guisanboot.ui.InitBootHostWizardDialog]  old dhcp info is null, new mac: 000C297A8035
+2015-5-29 18:41:23 INFO:[guisanboot.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh delcli -p 000C297A8035
+2015-5-29 18:41:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:41:25 DEBUG:[guisanboot.data.SyncOpCmdWithNoOutput]  #########:(SyncOpCmd: output): 
+2015-5-29 18:41:25 INFO:[guisanboot.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 0
+2015-5-29 18:41:25 INFO:[guisanboot.data.GetTargetServerName]  get target server name cmd: hostname
+2015-5-29 18:41:26 DEBUG:[guisanboot.data.GetTargetServerName] ========> bzh
+2015-5-29 18:41:26 INFO:[guisanboot.data.GetTargetServerName]  get target server name cmd retcode: 0
+2015-5-29 18:41:31 INFO:[guisanboot.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh addcli  -i 192.168.1.118 -p 000C297A8035 -s 192.168.1.0 -x 192.168.1.253 -ostype windows
+2015-5-29 18:41:33 DEBUG:[guisanboot.data.SyncOpCmdWithNoOutput]  #########:(SyncOpCmd: output): 
+2015-5-29 18:41:33 INFO:[guisanboot.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 0
+2015-5-29 18:41:33 INFO:[guisanboot.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2015-5-29 18:41:34 DEBUG:[guisanboot.data.GetClientFromDHCP] ======>192.168.1.118 00:0C:29:7A:80:35 unspecified 192.168.1.253 unspecified unspecified windows emboot
+2015-5-29 18:41:34 INFO:[guisanboot.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2015-5-29 18:41:34 DEBUG:[guisanboot.data.GetClientFromDHCP]  size: 1 mac: 00:0C:29:7A:80:35
+2015-5-29 18:41:34 DEBUG:[guisanboot.data.GetClientFromDHCP]  find mac in dhcpinfo list 
+2015-5-29 18:41:34 DEBUG:[guisanboot.data.GetClientFromDHCP]  dns:  defgw:  os: windows
+2015-5-29 18:41:34 WARNING:[guisanboot.ui.InitBootHostWizardDialog]  (iboot setup)old dhcp info is null, new mac: 000C297A8035
+2015-5-29 18:41:34 INFO:[guisanboot.data.ManageDB] addLM cmd: /usr/odybk/server/bin/ib_server_add_lunmap.sh addlunmap 32768 192.168.1.118 255.255.255.255 rw    
+2015-5-29 18:41:35 INFO:[guisanboot.data.ManageDB] addLM cmd retcode: 0
+2015-5-29 18:41:35 INFO:[guisanboot.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2015-5-29 18:41:36 DEBUG:[guisanboot.data.GetIbootObjList] ========> ibenc table:
+2015-5-29 18:41:36 DEBUG:[guisanboot.data.GetIbootObjList] ========> --------------------
+2015-5-29 18:41:36 DEBUG:[guisanboot.data.GetIbootObjList] ========> #MAC_Address Ena Host_IP         Host_Name        Portal_IP       PPort Options  RAMs UNDIs UserName             Password             Initiator_Name Target_Name Living_Days
+2015-5-29 18:41:36 DEBUG:[guisanboot.data.GetIbootObjList] ========> --------------------
+2015-5-29 18:41:36 INFO:[guisanboot.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2015-5-29 18:41:36 INFO:[guisanboot.data.ManageDB]  add iboot cmd: shell iboot add 000C297A8035 192.168.1.253 32768
+2015-5-29 18:41:37 INFO:[guisanboot.data.ManageDB]  add iboot cmd retcode: 0
+2015-5-29 18:41:37 INFO:[guisanboot.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2015-5-29 18:41:39 DEBUG:[guisanboot.data.GetIbootObjList] ========> ibenc table:
+2015-5-29 18:41:39 DEBUG:[guisanboot.data.GetIbootObjList] ========> --------------------
+2015-5-29 18:41:39 DEBUG:[guisanboot.data.GetIbootObjList] ========> #MAC_Address Ena Host_IP         Host_Name        Portal_IP       PPort Options  RAMs UNDIs UserName             Password             Initiator_Name Target_Name Living_Days
+2015-5-29 18:41:39 DEBUG:[guisanboot.data.GetIbootObjList] ========> 000C297A8035 Yes <NULL>          <NULL>           192.168.1.253   3260  000000a0  128     0 <NULL>               <NULL>               <NULL> iqn.2005-05.cn.com.odysys.iscsi.bzh:32768 0-0:0
+2015-5-29 18:41:39 DEBUG:[guisanboot.data.GetIbootObjList] 
+ mac: 000C297A8035
+ ena: Yes
+ hostip: <NULL>
+ hostName: <NULL>
+ pip: 192.168.1.253
+ pport: 3260
+ options: 000000a0
+ rams: 128
+ unids: 0
+ uname: <NULL>
+ password: <NULL>
+ ini_name: <NULL>
+ tgt_name: iqn.2005-05.cn.com.odysys.iscsi.bzh:32768
+ living_days: 0-0:0
+2015-5-29 18:41:39 DEBUG:[guisanboot.data.GetIbootObjList] ========> --------------------
+2015-5-29 18:41:39 INFO:[guisanboot.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2015-5-29 18:41:39 DEBUG:[guisanboot.ui.InitBootHostWizardDialog] ip contents: HostName: 	UWSTEST1
+Adapter(*): 	AMD PCNET Family PCI Ethernet Adapter - 数据包计划程序微型端口
+Mac Address:  	00-0C-29-7A-80-35
+Connection:  	本地连接
+Conn Type:  	Ethernet
+IP Address: 	192.168.1.118
+Sub Mask: 	255.255.255.0
+Gateway: 	192.168.1.1
+DHCP Enabled: 	Yes
+DHCP Server: 	192.168.1.1
+Lease Obtained: 1432893295
+Lease Expires: 5309089
+Have Wins: 	No
+DNS Address: 	58.20.127.170
+DNS Address: 	58.20.127.238
+Media Status:
+2015-5-29 18:41:39 INFO:[guisanboot.data.ManageDB]  send this file to server: tmp7808967277846336796ipInfo
+2015-5-29 18:41:39 INFO:[guisanboot.data.ManageDB]  send file to server retcode: 0
+2015-5-29 18:41:39 INFO:[guisanboot.data.ManageDB]  mv cmd: mv /usr/odybk/server/tmp/tmp7808967277846336796ipInfo /usr/odybk/server/conf//1.conf
+2015-5-29 18:41:40 INFO:[guisanboot.data.ManageDB]  mv cmd retcode: 0
+2015-5-29 18:41:40 INFO:[guisanboot.data.ManageDB]  send this file to server: tmp5812124400067838343ipInfo
+2015-5-29 18:41:40 INFO:[guisanboot.data.ManageDB]  send file to server retcode: 0
+2015-5-29 18:41:40 INFO:[guisanboot.data.ManageDB]  mv cmd: mv /usr/odybk/server/tmp/tmp5812124400067838343ipInfo /usr/odybk/server/conf//1-disk.conf
+2015-5-29 18:41:41 INFO:[guisanboot.data.ManageDB]  mv cmd retcode: 0
+2015-5-29 18:41:41 INFO:[guisanboot.data.ManageDB]  send this file to server: tmp5262462432406260517ipInfo
+2015-5-29 18:41:41 INFO:[guisanboot.data.ManageDB]  send file to server retcode: 0
+2015-5-29 18:41:41 INFO:[guisanboot.data.ManageDB]  mv cmd: mv /usr/odybk/server/tmp/tmp5262462432406260517ipInfo /usr/odybk/server/conf//1-part.conf
+2015-5-29 18:41:42 INFO:[guisanboot.data.ManageDB]  mv cmd retcode: 0
+2015-5-29 18:41:42 INFO:[guisanboot.data.ManageDB]  send this file to server: tmp5840931943433339931ipInfo
+2015-5-29 18:41:42 INFO:[guisanboot.data.ManageDB]  send file to server retcode: 0
+2015-5-29 18:41:42 INFO:[guisanboot.data.ManageDB]  mv cmd: mv /usr/odybk/server/tmp/tmp5840931943433339931ipInfo /usr/odybk/server/conf//1-service.conf
+2015-5-29 18:41:43 INFO:[guisanboot.data.ManageDB]  mv cmd retcode: 0
+2015-5-29 18:41:43 ERROR:[guisanboot.data.ManageDB] Not found mg related rootid: 1 for host: 192.168.1.118
+2015-5-29 18:41:43 INFO:[guisanboot.data.ManageDB] stop_allserv: 1
+2015-5-29 18:41:43 INFO:[guisanboot.data.ManageDB] mod boot host: /usr/odybk/server/bin/idbmgr -clnt -mod  clnt_id=1 clnt_inited_flag=1 clnt_auto_dr_flag=0 clnt_auto_reboot_flag=0 clnt_stop_base_service=1 clnt_mac_address=00-0C-29-7A-80-35 clnt_boot_mode=1
+2015-5-29 18:41:44 INFO:[guisanboot.data.ManageDB] mod boot host retcode: 0
+2015-5-29 18:41:44 INFO:[guisanboot.data.ManageDB]  send this file to server: tmp883476634690635023uwstmpfile
+2015-5-29 18:41:44 INFO:[guisanboot.data.ManageDB]  send file to server retcode: 0
+2015-5-29 18:41:44 INFO:[guisanboot.data.ManageDB]  add swu report: /usr/odybk/server/bin/idbmgr -report -add filename=/usr/odybk/server/tmp/tmp883476634690635023uwstmpfile
+2015-5-29 18:41:46 DEBUG:[guisanboot.data.AddCmdNetworkRunning] =====> 1
+2015-5-29 18:41:46 INFO:[guisanboot.data.ManageDB]  add swu report retcode: 0
+2015-5-29 18:41:46 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Save info End ###################@@ 
+2015-5-29 18:41:46 INFO:[guisanboot.ui.InitBootHostWizardDialog]  @@#################  Init Windows host End ###################@@ 
+2015-5-29 18:42:01 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] type ======> : 3
+2015-5-29 18:42:01 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] level ======> : 1
+2015-5-29 18:42:01 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] select level: 1
+2015-5-29 18:42:01 INFO:[guisanboot.action.InitHostAction] ########### End of window host's init process action. 
+2015-5-29 18:42:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:43:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:44:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:45:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:46:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:47:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:48:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:49:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:50:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:51:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:52:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:53:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:54:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:55:00 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 4 ] host
+2015-5-29 18:55:02 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 4 ] host
+2015-5-29 18:55:02 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] type ======> : 4
+2015-5-29 18:55:02 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] level ======> : 2
+2015-5-29 18:55:02 DEBUG:[guisanboot.MenuAndBtnCenterForMainUi] select level: 2
+2015-5-29 18:55:02 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 5 ] chief host volume
+2015-5-29 18:55:04 DEBUG:[guisanboot.ui.SanBootView]  ##### Selected Object on GUI: [ 4 ] host
+2015-5-29 18:55:05 INFO:[guisanboot.action.ModHostBootAction] ########### Entering modify hostBoot action. 
+2015-5-29 18:55:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:56:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:57:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:58:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 18:59:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:00:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:01:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:02:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:03:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:04:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:05:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:06:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:07:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:08:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:09:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:10:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:11:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:12:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:13:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:14:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:15:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:16:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:17:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:18:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............
+2015-5-29 19:19:24 DEBUG:[guisanboot.tool.UWSSockConnectManager] begin to check socket connections.............

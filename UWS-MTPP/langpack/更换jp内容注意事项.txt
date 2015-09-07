@@ -1,0 +1,1 @@
+更换jp_sb.txt时一定要先把原来的jp_sb.txt中前面有!!!的语句挪到新的jp_sb.txt中。

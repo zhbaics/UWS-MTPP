@@ -1,0 +1,2445 @@
+##################### common
+common.button.ok     = 確認
+common.button.cancel = キャンセル
+common.button.close  = 閉じる
+common.button.start  = 開始
+common.button.add    = 追加．．．
+common.button.mod    = 編集．．．
+common.button.del    = 削除
+common.button.change = 変更
+common.button.save   = 保存
+common.button.add1   = 追加
+common.button.finish = 終了
+common.button.stop   = 停止
+common.button.mod1   = 編集
+
+## language
+common.language = 言語
+common.us       = English
+common.china    = Chinese
+common.jp       = Japanese
+common.run      = 実行
+common.unknown  = 未知
+
+## misc
+common.bakMode.full = 完全
+common.bakMode.incremental = 増分
+common.completed = 完了
+common.error   = エラー
+common.confirm = 確認
+common.message = メッセージ
+common.failed  = 失敗
+common.success = 実行成功
+common.ignore  = 下記のファイルがコピーできなくて、無視されます。：
+common.ok = 成功
+common.id = ID
+common.adminperm  = 管理者権限
+common.normalperm = 一般ユーザ権限
+common.error.loginerr = ユーザー名またはパスワードが違います。
+common.error.loginLimit = ログイン数の上限を超えました。
+common.error.unknownHost = 未知のホストです
+common.error.io = ネットワークエラーが発生しました
+common.error.loginfail = UWSサーバーへのログインが失敗しました
+common.error.loginfail1 = DHCPサービスを提供するUWSサーバーへのログインが失敗しました
+common.error.getsrvdir = サーバーディレクトリーの取得が失敗しました。
+common.error.lostProf  = 下記のスケジューリングに対応するコピー策略ファイルがなくなりました。
+common.error.timeout = ネットワークの接続はタイムアウトが発生しました。再接続してください。
+common.error.noVG1 = システム中にボリュームグループがないため、http://を訪問してください。
+common.error.noDHCP = DHCPサービスを提供するUWSサーバー情報が不完全であります。
+common.error.ibootNotStartup = UWSはネットワーク起動機能が起動しません
+common.error.initLog = ログシステムの初期化が失敗するため、システムを終了します。
+common.error.nopostprocessip = Linux後処理ホストのIPを指定しないため、プロファイルの中に指定してください。
+common.error.disconnect = GUIとサーバーの接続が切れました。 再ログインしてください。
+common.table.item = アイテム
+common.table.desc = 説明
+common.every = every
+common.hours = 時間
+common.minutes = 分間
+common.hostlist = ホストリスト
+common.rbhostlist = ロールバックホストリスト
+common.copyprofile = コピー策略
+common.copyproflist = コピー策略リスト
+common.schlist = スケジューリングリスト
+common.sch = スケジューリング
+common.hostvollist = ボリュームリスト
+common.netboothostlist = ネットブートホストリスト
+common.orphanvollist = アイドルボリュームリスト
+common.mjlist = ミラータスクマネージメント
+common.user = ユーザー
+common.poolList = ストレージプールリスト
+common.destSWU = ミラーサーバー
+common.pool = ストレージプール
+common.lmlist = ホストマッピング
+common.snaplist = スナップショットリスト
+common.swulist = UWSリスト
+common.mirrorlist = ミラージョブリスト
+common.snap = スナップショット
+common.view = スナップショットビュー
+common.vol = ローカルボリューム
+common.crt = 新規
+common.sel = 選択
+common.task = タスク
+common.restoreLocalDisk.restore = リストア
+common.restoreLocalDisk.to = 別々に．．．へ
+common.restoreLocalDisk.to1 = ．．．へ
+common.desc.schList     = UWSサーバーよって管理するスケジューリング
+common.desc.hostList    = UWSサーバーによって管理するクライアント
+common.desc.rbhostList  = UWSサーバーよって管理するロールバックホスト
+common.desc.orphVolList = どのクライアントにも属しないターゲットボリューム
+common.desc.localSWU = ローカルUWS MTPPサーバーを管理する
+common.desc.remoteSWU = ミラーUWS MTPPサーバーを管理する
+common.desc.poollist = ローカルUWSのストレージプールを管理する
+common.desc.rhostList = ミラーUWS MTPPサーバーのクライアント
+common.desc.rFreeVolList = ミラーUWS MTPPサーバーのボリューム（クライアントに所属しない）
+common.desc.destSWU = リモートUWSサーバー
+common.desc.mjlist = 全部のミラージョブを管理する
+common.desc.hostVolList = ホストに所属するボリューム
+common.desc.netbootedHostList = このホストのボリュームからネット起動されたホスト
+common.desc.profList = ホストに所属するコピー策略
+common.localSWU = ローカルUWS　MTPP管理
+common.remoteSWU = ミラーUWS　MTPP
+common.disk = ディスク
+common.status.online=オンライン
+common.status.offline=オフライン
+common.noprotected = ネットワーク起動しない
+common.product = UWS　MTPP
+common.loglevel.debug   = デバッグ
+common.loglevel.info    = インフォ
+common.loglevel.warning = ワーニング
+common.loglevel.error   = エラー
+common.error.noVol = ボリュームが見つかりません
+common.boottype.boot = お勧めモード
+common.boottype.iboot = 置換モード
+common.boottype.iscsihba = iSCSI HBA
+
+####### init tasks
+common.inittask.dhcp = DHCPサーバーにMACアドレスとIPのボンドを行う
+common.inittask.crtVol = ターゲットボリュームを新規する
+common.inittask.formatVol =  ターゲットボリュームをフォーマットする
+common.inittask.getInfo = ほかの情報を取得する
+common.inittask.saveInfo = 情報を保存する
+common.inittask.copyOs = OSをコピーする
+common.inittask.embootBind = MACアドレスとターゲットボリュームをボンドする
+
+common.DrRecover.selOsSnap = OSスナップショットを選択する
+common.DrRecover.chgBIOS   = BIOSをネットワークから起動に変更する
+common.DrRecover.connect   = クライアントに接続して、ネットワークから起動することを確定する
+common.DrRecover.connect1  = クライアントに接続して、ローカルディスクから起動することを確定する
+common.DrRecover.stopServ  = 関連サービスを停止する
+common.DrRecover.loadInfo  = 関連情報をロードする
+common.DrRecover.chgLabel  = ドライブレターをアサイン・変更する
+common.DrRecover.startServ = 関連サービスを開始する
+common.DrRecover.reboot    = システムリブート
+common.DrRecover.removePersistentTgt = パーシステントターゲットボリュームを削除する
+
+common.failback.chgBIOS  = BIOSをローカルから起動に変更する
+common.failback.stopServ = 関連サービスを停止する
+common.failback.chgLabel = ドライブレターをアサイン・変更する
+common.failback.delPersistenTgt = パーシステントターゲットボリュームを削除する
+common.failback.startServ = 関連サービスを開始する
+
+common.taskSta.ready    = 実行待ち
+common.taskSta.running  = 実行中
+common.taskSta.end      = 終了
+common.taskSta.failed   = 失敗
+common.taskSta.warning  = ワーニング
+common.taskSta.unknown  = 未知
+
+### common.loadstatus
+common.loadstatus.dhcpConf  = DHCPコンフィグのロード中です
+common.loadstatus.conf      = コンフィギュレーションのロード中です
+common.loadstatus.host      = クライアントのロード中です
+common.loadstatus.vol	    = ボリューム情報のロード中です
+common.loadstatus.sch       = スケジューリングのロード中です
+common.loadstatus.user      = 管理ユーザー情報のロード中です
+common.loadstatus.isCrtVg   = ボリュームグループ情報のロード中です
+common.loadstatus.service   = ホストサービスの取得中です
+common.loadstatus.subnet    = サブネット情報のロード中です
+common.loadstatus.ibootsrv  = ネットワーク起動サーバーのロード中です
+common.loadstatus.clnt      = DHCPアサイン情報のロード中です
+common.loadstatus.global    = グローバルオプションのロード中です
+common.loadstatus.isDHCPStart = DHCP開始状態のチェック中です
+common.loadstatus.iboot     = ネットワーク起動配置のロード中です
+common.loadstatus.getPool   = ストレージプールのロード中です
+common.loadstatus.chkLic    = ソフトウェアライセンス認定をチェックします
+common.loadstatus.getswu    = ミラーサーバーのロード中です
+common.loadstatus.getmg     = MGのロード中です
+common.loadstatus.getmj     = ミラータスクのロード中です
+common.loadstatus.getDA     = ネットワーク起動ホストのロード中です
+common.loadstatus.getSU     = 起動バージョン対象のロード中です
+common.loadstatus.profile   = コピー策略のロード中です
+common.loadstatus.parse     = コピー策略を分析中です
+common.loadstatus.objlist   = コピー内容を取得中です
+common.loadstatus.clnt      = コピーホストのロード中です
+common.loadstatus.schlist   = スケジューリングのロード中です
+common.loadstatus.getDiskInfo = ミラーボリュームのロード中です
+common.loadstatus.getsrcagnt = ロールバックホストのロード中です
+
+### command errcode 
+common.errcode.unknown = 未知のエラーが発生しました
+common.errcode.delVol.hasSnap = ボリュームにはスナップショットがあります
+
+common.errcode.crtSnap.sameSnap = 重複のスナップショット名
+common.errcode.crtSnap.noTid = 使用可能なターゲットIDがない
+common.errcode.crtSnap.crtDevLink = デバイスリンクを作成できない
+common.errcode.crtSnap.crtVol=下位レイヤデバイスは対応のボリュームを作成できない
+
+common.errcode.delSnap.noVol = ボリューム名を見つからない
+common.errcode.delSnap.hasSnap = 当該ボリュームの中のスナップショット
+common.errcode.delSnap.noOrgVol = オリジナルボリューム名を見つからない
+common.errcode.delSnap.delVol =下位レイヤデバイスは対応のボリュームを削除できない
+
+common.errcode.extSnap.tooSmall = 入力するサイズはスナップショットの元サイズより小さい
+common.errcode.extSnap.notChange = 下位レイヤデバイスはスナップショットのサイズを変更できない
+
+common.errcode.crtVol.sameVol = 重複のボリューム名
+common.errcode.getVolSize.noVol = 下位レイヤドライバは指定されるボリュームを見つからない
+common.errcode.inconsistentProf  = コピー策略情報は不完全ですので、使うことができません！
+common.errcode.errProfReason     = エラー原因：
+common.errcode.consistentProf    = コピー策略が適切です。
+common.errcode.profile.noBkClnt  = ホスト情報がなくなりました。
+common.errcode.profile.noDest    = ターゲットがなくなりました。
+common.errcode.profile.noCmd     = スクリプトがなくなりました。
+common.errcode.profile.notFoundWindir = OSディレクトリが見つかりません。
+
+## Command
+common.cmd.addVol 	= ターゲットボリュームを追加する
+common.cmd.delVol	= ターゲットボリュームを削除する
+common.cmd.getVol 	= ターゲットボリュームを取得する
+common.cmd.getVolSize   = ボリュームサイズを取得する
+common.cmd.getVgSize    = ボリュームグループサイズを取得する
+common.cmd.isCrtedVg    = ボリュームグループは既存している
+common.cmd.onlineDev    = デバイスをオンラインする
+common.cmd.offlineDev   = デバイスをオフラインする
+
+common.cmd.addVolMap    = ボリューム情報を追加する
+common.cmd.delVolMap    = ボリューム情報を削除する
+common.cmd.modVolMap    = ボリューム情報を変更する
+common.cmd.getVolMap    = ボリューム情報を取得する
+
+common.cmd.addUser   	= ユーザーを追加する
+common.cmd.delUser   	= ユーザーを削除する
+common.cmd.modUser 	= ユーザーを変更する
+common.cmd.getUser   	= ユーザーを取得する
+common.cmd.modUserPwd   = ユーザーのパスワードを変更する
+
+common.cmd.initClnt     = クライアントを初期化する
+common.cmd.drRecover    = ディザスタリカバリー
+common.cmd.restDisk     = ディスクリストア
+common.cmd.unknown     	= 未知コマンド
+
+common.cmd.addDBSche    = 管理データベーススケジューリングを追加する
+common.cmd.delDBSche    = 管理データベーススケジューリングを削除する
+common.cmd.modDBSche    = 管理データベーススケジューリングを変更する
+common.cmd.getDBSche    = 管理データベーススケジューリングを取得する
+
+common.cmd.getConf = プロファイルを取得する
+
+common.cmd.getClnt = クライアントを取得する
+common.cmd.modClnt = クライアントを変更する
+common.cmd.delClnt = クライアントを削除する
+common.cmd.addClnt = クライアントを追加する
+common.cmd.getClntInfo = クライアント情報を取得する
+
+common.cmd.addClient = クライアントを追加する
+common.cmd.delClient = クライアントを削除する
+common.cmd.modClient = クライアントを変更する
+common.cmd.getClient = クライアントを取得する
+
+common.cmd.listdir = ディレクトリをリストする
+common.cmd.isdir  = ファイル状態を取得する
+common.cmd.getLastModTime = ファイル変更時間を取得する
+
+common.cmd.getServMap = サービスマッピングを取得する
+common.cmd.delServMap = サービスマッピングを削除する
+common.cmd.addServMap = サービスマッピングを追加する
+common.cmd.getServ = サービスを取得する
+common.cmd.delServ = サービスを削除する
+
+common.cmd.addSnap = スナップショットを作成する
+common.cmd.delSnap = スナップショットを削除する
+common.cmd.resetSnap = スナップショットをリセットする
+common.cmd.getSnap = スナップショットを取得する
+common.cmd.expSSpace = スナップショットスペースを拡張する
+common.cmd.modSnap = スナップショットを変更する
+
+common.cmd.addLM = ホストマッピング
+common.cmd.delLM = ホストマッピングをキャンセルする
+
+common.cmd.getActLink = アクティブリンクを取得する
+
+common.cmd.getView = スナップショットコピーを取得する
+common.cmd.addView = スナップショットコピーを作成する
+common.cmd.delView = スナップショットコピーを削除する
+
+common.cmd.getPool = ストレージプールを取得する
+common.cmd.getPoolInfo = ストレージプール情報を取得する
+
+common.cmd.login = ログイン
+common.cmd.logout = ログアウト
+common.cmd.catFile = ファイルを調べる
+common.cmd.mvFile = ファイルを移動する
+common.cmd.delFile = ファイルを削除する
+common.cmd.mkDir = ディレクトリを作成する
+common.cmd.cpFile = ファイルをコピーする
+common.cmd.getPart = システムパーティションを取得する
+common.cmd.getFsList = ファイルシステムリストを取得する
+common.cmd.getNetCard = ネットワークカードを取得する
+common.cmd.getService = システムサービスを取得する
+common.cmd.getHostName = ホスト名を取得する
+common.cmd.format = フォーマット
+common.cmd.isTargetVol = ディスク類型を取得する
+common.cmd.getCopyProcess = コピープログレスを取得する
+common.cmd.getSubNetList = DHCPサブネットリストを取得する
+common.cmd.getDhcpClnt = DHCPクライアントリストを取得する
+common.cmd.getDhcpGlobalOpt = DHCPグローバルオプションを取得する
+common.cmd.getDhcpIbootSrv = DHCP iBootサーバーリストを取得する
+common.cmd.dhcpIsStart = DHCP開始状態をチェックする
+common.cmd.startDHCP = DHCPを開始する
+common.cmd.stopDHCP = DHCPを停止する
+common.cmd.chgOpt = グローバルオプションを変更する
+common.cmd.listIBoot = ネットワーク起動配置を取得する
+common.cmd.chkLic = ソフトウェアライセンス認定をチェックする
+common.cmd.getSnapUnderDisk = ボリューム直属のスナップショットを取得する
+common.cmd.getSnapUnderView = ボリュームコピー直属のスナップショットを取得する
+common.cmd.queryDB = データベースをクェリする
+common.cmd.getRemotePool = ミラーサーバーのストレージプールを取得する
+common.cmd.getRemotePoolInfo = ミラーサーバーのストレージプール情報を取得する
+common.cmd.getUUID= ホストのUUIDを取得する
+common.cmd.getIf = サーバーのネットワークポートを取得する
+common.cmd.adjustDrv = ドライブ名を変更する
+common.cmd.viewErrLog = ログを解析する
+common.cmd.dup = データをコピーする
+common.cmd.anti-dup = データを復元する
+
+common.cmd.getSWUSrv = ミラーサーバーを取得する
+common.cmd.modSWUSrv = ミラーサーバーを更新する
+common.cmd.delSWUSrv = ミラーサーバーを削除する
+common.cmd.addSWUSrv = ミラーサーバーを追加する
+
+common.cmd.getmglist = ミラーサーバーグループを取得する
+common.cmd.modmg     = ミラーサーバーグループを更新する
+common.cmd.delmg     = ミラーサーバーグループを削除する
+common.cmd.addmg     = ミラーサーバーグループを追加する
+common.cmd.chkmg     = ミラーサーバーグループステータスをチェックする
+common.cmd.startmg   = ミラーサーバーグループをスタートする
+common.cmd.stopmg    = ミラーサーバーグループをストップする
+common.cmd.sendSig2Mg = スナップショットを作成するのメッセージに通知します。
+
+common.cmd.getmjlist = ミラージョブを取得する
+common.cmd.modmj     = ミラージョブを更新する
+common.cmd.delmj     = ミラージョブを削除する
+common.cmd.addmj     = ミラージョブを追加する
+common.cmd.startmj   = ミラージョブをスタートする
+common.cmd.stopmj    = ミラージョブをストップする
+common.cmd.getMjStatus = ミラージョブステータスを取得する
+
+common.cmd.getSrcAgnt = リモートホストを取得する
+common.cmd.delSrcAgnt = リモートホストを削除する
+common.cmd.modSrcAgnt = リモートホストを更新する
+common.cmd.getMirrorDisk = ミラーボリュームを取得する
+common.cmd.delMirrorDisk = ミラーボリュームを削除する
+common.cmd.modMirrorDisk = ミラーボリュームを更新する
+
+common.cmd.getNetbootedHost = ネットブートホストを取得する
+common.cmd.addNetbootedHost = ネットブートホストを追加する
+common.cmd.delNetbootedHost = ネットブートホストを削除する
+common.cmd.modNetbootedHost = ネットブートホストを更新する
+
+common.cmd.getSnapUsage = ブート用スナップショットを取得する
+common.cmd.addSnapUsage = ブート用スナップショットを追加する
+common.cmd.delSnapUsage = ブート用スナップショットを削除する
+
+common.cmd.addProfile 	= コピー策略ファイルを追加する
+common.cmd.delProfile 	= コピー策略ファイルを削除する
+common.cmd.modProfile  	= コピー策略ファイルを更新する
+common.cmd.getProfile 	= コピー策略ファイルを取得する
+common.cmd.renameProf   = コピー策略ファイルをリネームする
+
+common.cmd.getTskLog    = コピーログを取得する
+common.cmd.delTskLog    = コピーログを削除する
+common.cmd.delAllTskLog = 全部コピーログを削除する
+common.cmd.delTask	= タスクを削除する
+common.cmd.killTask    	= タスクを取消する
+common.cmd.activeTask   = タスクをスタートする
+common.cmd.getTask     	= タスクを取得する
+
+common.cmd.addBkObj = コピー内容を追加する
+common.cmd.modBkObj = コピー内容を更新する
+common.cmd.delBkObj = コピー内容を削除する
+
+common.cmd.getDhcpConf = DHCPコンフィグを取得する
+common.cmd.getConf = OSコンフィグを取得する
+common.cmd.saveDhcpConf =DHCPコンフィグを保存する
+common.cmd.getWinDir = OSディレクトリを取得する
+
+common.table.ms.id           = ID
+common.table.ms.name 	     = 名前
+common.table.ms.service_type = プロトコル
+common.table.ms.media_type   = メディアタイプ
+common.table.ms.path 	     = パス
+common.table.ms.capacity     = 容量[M]
+common.table.ms.user 	     = ユーザー
+common.table.ms.passwd 	     = パスワード
+common.table.ms.used 	     = 使用率
+
+## common communication error msg
+common.errmsg1 = 通信プロトコルが一致していません！
+common.errmsg2 = コミュニケーションを中断しました！
+common.errmsg3 = ログインが失敗しました！
+common.errmsg4 = 通信中断またはサーバーエラーが発生しました！
+common.error.initfail = プログラムの初期化途中に以下のエラーが発生しました:
+common.errmsg.badmagic = 通信プロトコルエラー：不正なマジックナンバー！
+common.errmsg.badLen = 通信プロトコルエラー：不正なパッケージ長さ！
+common.errmsg.badVer = 通信プロトコルエラー：不正なプロトコルバージョン！
+common.errmsg.netio  = ネットワーク通信はエラーが発生しました！
+common.errmsg.generalErr = 未知エラー！
+common.errmsg.crtTmpFileLocallyFailed = テンポラリーファイルの作成が失敗しました！
+common.errmsg.sendFileFailed = ファイル内容の送信が失敗しました！
+common.errmsg.rstfiletoolong = リストアファイルリストの長さは < 1024にすべきです。
+common.errmsg.noPool = システムはまだストレージプールを作成しませんでした！
+common.errmsg.format = 通信プロトコルフォーマットには誤りがあります。
+
+#####################   SanBootView
+View.frameTitle = UWS MTPP マネジャー
+
+View.Menu.file  = ファイル(F)
+View.Menu.winop = Windowsホスト(M)を保護する
+View.Menu.nwinop = 非Windowsホスト(U)を保護する
+View.Menu.dup    = データコピー(R)
+View.Menu.setup = 設置(S)
+View.Menu.help  = ヘルプ(H)
+View.Menu.device = デバイス(D)
+View.Menu.vol  = ボリューム
+View.Menu.view = スナップショットコピー
+View.Menu.snap = スナップショット
+View.Menu.lm   = ホストマッピング
+View.Menu.host = ホスト
+View.Menu.user = ユーザー
+View.Menu.SWU  = ミラーサーバー
+View.Menu.mj   = ミラージョブ
+View.Menu.prof = コピー策略
+View.Menu.sch  = スケジューリング
+
+View.MenuItem.connect    = 接続...
+View.MenuItem.disConnect = ディスコネクト
+View.MenuItem.exit       = 終了
+View.MenuItem.property   = プロパティ
+View.MenuItem.bakMdb     = 管理データベースをバックアップする
+View.MenuItem.resMdb     = 管理データベースをリストアする
+View.MenuItem.about      = UWS マネージャ GUIについて...
+View.MenuItem.init       = 初期化
+View.MenuItem.init1	 = Windowsホストを初期化する
+View.MenuItem.init2	 = Linuxホストを初期化する
+View.MenuItem.dataDisater= ディザスタリカバリー
+View.MenuItem.failover   = ネットワーク起動
+View.MenuItem.failback   = ディスクリストアした後でローカルから起動する
+View.MenuItem.rstOriData = オリジナルディスクリストア
+View.MenuItem.crtVol     = ボリュームを作成する
+View.MenuItem.delVol     = ボリュームを削除する
+View.MenuItem.crtView    = スナップショットコピーを作成する
+View.MenuItem.delView    = スナップショットコピーを削除する
+View.MenuItem.crtSnap    = スナップショットを作成する
+View.MenuItem.delSnap    = スナップショットを削除する
+View.MenuItem.resetSnap  = スナップショットをリセットする
+View.MenuItem.expsspace  = スナップショットを拡張する
+View.MenuItem.crtLm 	 = マッピング
+View.MenuItem.delLm      = マッピングをキャンセルする
+View.MenuItem.crtHost = ホストを追加する
+View.MenuItem.delHost = ホストを削除する
+View.MenuItem.delRHost = ロールバックホストを削除する
+View.MenuItem.modHost = ホストを変更する
+View.MenuItem.crtUser = ユーザーを追加する
+View.MenuItem.delUser = ユーザーを削除する
+View.MenuItem.modUser = ユーザーを変更する
+View.MenuItem.modPasswd = パスワードを変更する
+View.MenuItem.msgReport = レポート
+View.MenuItem.dhcp     = DHCP
+View.MenuItem.selBootVer = リストアバージョンを選択する
+View.MenuItem.pool = ストレージプール
+View.MenuItem.crtPool = 作成
+View.MenuItem.delPool = 削除
+View.MenuItem.adminOpt = 管理オプション
+View.MenuItem.crtSWU = 追加
+View.MenuItem.delSWU = 削除
+View.MenuItem.modSWU = 更新
+View.MenuItem.crtMj  = 追加
+View.MenuItem.delMj  = 削除
+View.MenuItem.modMj  = 更新
+View.MenuItem.startMj = スタート
+View.MenuItem.stopMj  = ストップ
+View.MenuItem.monMj   = モニター
+View.MenuItem.modSrcSWU = ミラーUWS　MTPPサーバーを修正する
+View.MenuItem.onlineDev = オンライン
+View.MenuItem.offlineDev = オフライン
+View.MenuItem.addProf = 策略を追加する
+View.MenuItem.modProf = 策略を更新する
+View.MenuItem.delProf = 策略を削除する
+View.MenuItem.renameProf = リネーム
+View.MenuItem.addSch = スケジューリングを追加する
+View.MenuItem.modSch = スケジューリングを更新する
+View.MenuItem.delSch = スケジューリングを削除する
+View.MenuItem.duplog = ログ
+View.MenuItem.mon = モニター
+View.MenuItem.runProf = スケジューリングを実行する
+View.MenuItem.verifyProf = 策略を確認する
+View.MenuItem.modPass =  ユーザーのパスワード
+View.MenuItem.delDstAgnt = ネットブートホストを削除する
+View.MenuItem.ibootForLinux = ネットブートウィザード
+View.MenuItem.mntSnap = マウントスナップショット
+View.MenuItem.mntView = マウントビュー
+View.MenuItem.umntView = アンマウントビュー
+View.MenuItem.rollback = ロールバック
+
+View.comment1 = システムの全部情報を調べる
+View.tooltip.connect        = 接続
+View.tooltip.disconnect     = ディスコネクト
+View.tooltip.about          = バージョン情報
+View.tooltip.exit           = 終了
+View.tooltip.initHost 	    = ホストを初期化する
+View.tooltip.failover       = ローカルディスクからiSCSIボリュームへ遷移する
+View.tooltip.rstOriData     = オリジナルディスクリストア
+View.tooltip.productReport  = UWSレポート
+View.tooltip.duplog	    = コピーログを調べる
+View.tooltip.mon            = コピージョブをモニターする
+
+View.table.scheduler.id = ID
+View.table.scheduler.enable = アクティブ？
+View.table.scheduler.name = スケジューリング名
+View.table.scheduler.startTime = スタート時間
+View.table.scheduler.profileName = 策略ファイル
+View.table.scheduler.client = ホスト
+
+View.table.host.id   = ID
+View.table.host.name = ホスト名
+View.table.host.ip   = IP
+View.table.host.port = ポート
+View.table.host.os   = OS
+View.table.host.machine = マシンタイプ
+View.table.host.status  = 状態
+View.table.host.inited  = 初期化？
+View.table.host.autoDR  = 自動ディザスタリカバリー？
+View.table.host.autoReboot = 自動リブート？
+View.table.host.mac = MACアドレス
+View.table.host.bootMode = ファスト起動モード
+
+View.table.volmap.name = ボリューム名
+View.table.volmap.fs   = ファイルシステム
+View.table.volmap.targetid = ボリュームID
+View.table.volmap.disklabel = ドライブレター
+View.table.volmap.maxSnap = 最大スナップショット#
+View.table.volmap.size = 容量
+View.table.volmap.status = 状態
+View.table.volmap.desc = 記述
+View.table.volmap.selBootVer = 最後に選択したリストアバージョン
+View.table.volmap.bootVer = 最後に成功したリストアバージョン
+View.table.volmap.id   = ID
+
+View.table.vol.name = 名前
+View.table.vol.targetid = ターゲットID
+View.table.vol.cap = 容量
+View.table.vol.raid = データセーフモード
+View.table.vol.status = 状態
+View.table.vol.id  = ID
+
+View.table.user.id    = ID
+View.table.user.name  = 名前
+View.table.user.right = 権限
+
+View.table.actlink.ip = IP
+View.table.actlink.initor = 起動者
+View.table.actlink.targetID = ターゲットID
+View.table.actlink.send = 送信
+View.table.actlink.rec = 受信
+
+View.table.lm.ip = IP
+View.table.lm.mask = マスク
+View.table.lm.access = アクセス権限
+View.table.lm.srvusr = サーバーユーザー名
+View.table.lm.cltusr = クライアントユーザー名
+
+View.table.snap.viewid = スナップショットコピー識別子
+View.table.snap.snapid = スナップショット識別子
+View.table.snap.targetID = ターゲットID
+View.table.snap.name = 名前
+View.table.snap.crtTime = 作成時間
+View.table.snap.cap = 容量
+View.table.snap.status = 状態
+View.table.snap.used = 使用%
+View.table.snap.occuped = オリジナルボリュームを占める％
+View.table.snap.finish  = 完了
+
+View.table.pool.id   = ID
+View.table.pool.name = 名前
+View.table.pool.path = パス
+View.table.pool.size = 総サイズ
+View.table.pool.used = 使用可能なスペース
+
+View.table.disk.name = ボリューム
+View.table.disk.cap  = 容量
+
+View.tree.userobject.topnode = UWS MTPP　マネジャー
+
+View.table.swu.id   = ID
+View.table.swu.ip   = IP
+View.table.swu.port = ポート
+View.table.swu.psn  = 製品のシリアルナンバー
+
+View.table.mj.id    = ID
+View.table.mj.name  = サーバー名
+View.table.mj.swu_ip = UWS MTPPミラーサーバーのアドレス
+View.table.mj.swu_port = UWS MTPPミラーサーバーのポート
+View.table.mj.swu_pool = UWS MTPPミラーサーバーのストレージプール
+View.table.mj.opt      = 伝送方式
+View.table.mj.status   = 状態
+View.table.mj.desc     = 記述
+
+View.table.profile.name = 策略ファイル名
+View.table.profile.sch  = スケジューリング数
+View.table.profile.content = 内容概要
+
+View.pdiagTitle.delSnap = スナップショットの削除中です
+View.pdiagTip.delSnap = スナップショットの削除中です。しばらくお待ちください…
+
+View.pdiagTitle.crtSnap = スナップショットの作成中です
+View.pdiagTip.crtSnap = スナップショットの作成中です。しばらくお待ちください…
+
+View.pdiagTitle.getInitInfo = ホスト情報の収集中です
+View.pdiagTip.getInitInfo = ホスト情報の収集中です。しばらくお待ちください…
+
+View.pdiagTitle.delview = スナップショットコピーの削除中です
+View.pdiagTip.delview = スナップショットコピーの削除中です。しばらくお待ちください…
+
+View.pdiagTitle.getSnapVer = リストアバージョンの準備中です
+View.pdiagTip.getSnapVer = リストアバージョンの準備中です。しばらくお待ちください…
+
+View.pdiagTitle.modifyHost = ホストの修正中です
+View.pdiagTip.modifyHost = ホストの修正中です。しばらくお待ちください…
+
+View.pdiagTitle.modifyHost1 = ホスト情報の更新中です
+View.pdiagTip.modifyHost1 = ホスト情報の更新中です。しばらくお待ちください…
+
+View.pdiagTitle.selRstVer = リストアバージョンの設置中です
+View.pdiagTip.selRstVer = リストアバージョンの設置中です。しばらくお待ちください…
+
+View.pdiagTitle.crtView = スナップショットコピーを作成する
+View.pdiagTip.crtView = 選択されたスナップショットのスナップショットコピーの作成中です。しばらくお待ちください…
+
+View.pdiagTitle.delvol = アイドルボリュームの削除中です
+View.pdiagTip.delvol = アイドルボリュームの削除中です。しばらくお待ちください…
+
+View.pdiagTitle.getView = スナップショットコピーの取得中です
+View.pdiagTip.getView = スナップショットコピーの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getActlink = アクティブリンクの取得中です
+View.pdiagTip.getActlink = アクティブリンクの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getSnap = スナップショットの取得中です
+View.pdiagTip.getSnap = スナップショットの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getPool = ストレージプール情報の取得中です
+View.pdiagTip.getPool = ストレージプール情報の取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getPool1 = ストレージプールの使用可能スペースのチェック中です
+View.pdiagTip.getPool1 = ストレージプールの使用可能スペースのチェック中です。しばらくお待ちください…
+
+View.pdiagTitle.getPool2 = ミラーサーバーのストレージプール情報の取得中です
+View.pdiagTip.getPool2 = ミラーサーバーのストレージプール情報の取得中です。しばらくお待ちください…
+
+View.pdiagTitle.crtPool = ストレージプールの作成中です
+View.pdiagTip.crtPool = ストレージプールの作成中です。しばらくお待ちください…
+
+View.pdiagTitle.getOrphVol = アイドルボリュームの取得中です
+View.pdiagTip.getOrphVol = アイドルボリュームの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getLunMap = ホストマッピングの取得中です
+View.pdiagTip.getLunMap = ホストマッピングの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getVol = ホストボリュームの取得中です
+View.pdiagTip.getVol = ホストボリュームの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.generateRpt = レポートの作成中です
+View.pdiagTip.generateRpt = レポートの作成中です。しばらくお待ちください…
+
+View.pdiagTitle.getMj = ミラージョブの取得中です
+View.pdiagTip.getMj = ミラージョブの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.startMj = ミラージョブの起動中です
+View.pdiagTip.startMj = ミラージョブの起動中です。しばらくお待ちください…
+
+View.pdiagTitle.stopMj = ミラージョブの停止中です
+View.pdiagTip.stopMj = ミラージョブの停止中です。しばらくお待ちください…
+
+View.pdiagTitle.getSrcSWU = ミラーUWSサーバーの取得中です
+View.pdiagTip.getSrcSWU = ミラーUWSサーバーの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getDestSWU = ミラーサーバーの取得中です
+View.pdiagTip.getDestSWU = ミラーサーバーの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getRHost = リモートホストの取得中です
+View.pdiagTip.getRHost = リモートホストの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getMirrorVol = ミラーボリュームの取得中です
+View.pdiagTip.getMirrorVol = ミラーボリュームの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getFreeMirrorVol = アイドルミラーボリュームの取得中です
+View.pdiagTip.getFreeMirrorVol = アイドルミラーボリュームの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getMirrorProcess = ミラープログレスの取得中です
+View.pdiagTip.getMirrorProcess = ミラープログレスの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.onlineDev = デバイスのオンライン中です
+View.pdiagTip.onlineDev = デバイスのオンライン中です。しばらくお待ちください…
+
+View.pdiagTitle.getNetbootedHost = ネットワーク起動ホストの取得中です
+View.pdiagTip.getNetbootedHost = ネットワーク起動ホストの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.generateDhcpConf = DHCPデフォルトコンフィグの作成中です
+View.pdiagTip.generateDhcpConf = DHCPデフォルトコンフィグの作成中です。しばらくお待ちください…
+
+View.pdiagTitle.delMj = ミラージョブの削除中です
+View.pdiagTip.delMj = ミラージョブの削除中です。しばらくお待ちください…
+
+View.pdiagTitle.mntLocalVol = ローカルディスクにドライブレターの割当中です
+View.pdiagTip.mntLocalVol = ローカルディスクにドライブレターの割当中です。しばらくお待ちください…
+
+View.pdiagTitle.getSch = スケジューリングの取得中です
+View.pdiagTip.getSch = スケジューリングの取得中です。しばらくお待ちください…
+
+View.pdiagTitle.getProf = コピー策略の取得中です
+View.pdiagTip.getProf = コピー策略の取得中です。しばらくお待ちください…
+
+View.pdiagTitle.delHost = ホストの削除中です
+View.pdiagTip.delHost = ホストの削除中です。しばらくお待ちください…
+
+View.pdiagTitle.modUser = ユーザ／パスワードの更新中です
+View.pdiagTip.modUser = ユーザ／パスワードの更新中です。しばらくお待ちください…
+
+View.pdiagTitle.modProf = コピー策略の更新中です
+View.pdiagTip.modProf = コピー策略の更新中です。しばらくお待ちください…
+
+View.pdiagTitle.delNBHost = ネットワーク起動ホストの削除中です
+View.pdiagTip.delNBHost = ネットワーク起動ホストの削除中です。しばらくお待ちください…
+
+View.pdiagTitle.modSWUSrvNode = ミラーサーバーの更新中です
+View.pdiagTip.modSWUSrvNode = ミラーサーバーの更新中です。しばらくお待ちください…
+
+View.pdiagTitle.rollback =　ロールバック中です
+View.pdiagTip.rollback = ロールバック中です。しばらくお待ちください…
+
+View.pdiagTitle.crtSWUSrvNode = ミラーサーバーの作成中です
+View.pdiagTip.crtSWUSrvNode = ミラーサーバーの作成中です。しばらくお待ちください…
+
+##################### MenuAndBtnCenter
+MenuAndBtnCenter.confirm1 = これらのボリュームを削除します。よろしいですか？ 
+MenuAndBtnCenter.confirm2 = このスナップショットを削除します。よろしいですか？
+MenuAndBtnCenter.confirm3 = このホストを削除します。よろしいですか？
+MenuAndBtnCenter.confirm4 = このホストマッピングをキャンセルします。よろしいですか？
+MenuAndBtnCenter.confirm5 = この操作は「オリジナルディスクリストアウィザード」が成功に完成した後で実行すべきで、よろしいですが？ 
+MenuAndBtnCenter.confirm6 = ネットワークから起動します。よろしいですか？
+MenuAndBtnCenter.confirm7 = これらのスナップショットコピーを削除します。よろしいですか？
+MenuAndBtnCenter.confirm8 = このストレージプールを削除します。よろしいですか？
+MenuAndBtnCenter.confirm9 = このストレージプールを削除する前に必ずこの中のボリューム／スナップショット／スナップショットコピーを削除しなければなりません。続けてもよろしいですか？
+MenuAndBtnCenter.confirm10 = 削除すべきホストに接続できないが、このホストが存在しないかもしれません。削除を続けてもよろしいですか？
+MenuAndBtnCenter.confirm11 = スナップショット数はすでに最大値に達しています。新しいスナップショットの作成のために最も古いスナップショットを削除してもよろしいですか？
+MenuAndBtnCenter.confirm12 = このミラーサーバーを削除するのとき、関連するミラージョブを全部削除します。よろしいですか？
+MenuAndBtnCenter.confirm13 = このミラージョブを削除します。よろしいですか？
+MenuAndBtnCenter.confirm14 = このスケジューリングを削除します。よろしいですか？
+MenuAndBtnCenter.confirm15 = このコピー策略を削除します。よろしいですか？
+MenuAndBtnCenter.confirm16 = ホストの状態が判断できません。ローカルディスクから起動するまたはシステムを停止するの場合、バージョンの選択ができるです。よろしいですか？
+MenuAndBtnCenter.confirm17 = ホストの情報を比較して、二つが違います。続けでもよろしいですか？
+MenuAndBtnCenter.confirm18 = このネットワーク起動ホストを削除します。よろしいですか？
+MenuAndBtnCenter.confirm19 = 下記のうち一つを満たす必要があります：\n1）ミラーされたUWSサーバーのミラージョブを削除しました;\n2）あるいは、ミラーされたUWSサーバーを削除しました。\n上述の条件は満たすか？
+MenuAndBtnCenter.confirm20 = このミラージョブ対応しるホスト情報を削除します。よろしいですか？
+
+MenuAndBtnCenter.pdiagTitle.gettingAgentInfo = クライアント情報の取得中です
+MenuAndBtnCenter.pdiagTip.gettingAgentInfo = クライアント情報の取得中です。しばらくお待ちください…
+
+MenuAndBtnCenter.error.crtSnap = スナップショットを作成することができません。
+MenuAndBtnCenter.error.crtView = スナップショットコピーを作成することができません。
+MenuAndBtnCenter.error.notInited = このクライアントはまだ初期化されていません。
+MenuAndBtnCenter.error.notChgVerWhenNetboot = このホストネットワークから起動しました。バージョンの選択ができません。
+MenuAndBtnCenter.error.notStartFromNet = このクライアントはネットワークから起動するのではありません。
+MenuAndBtnCenter.error.notStartFromLocal = ローカルディスクからクライアントを完全起動した後、この操作を実行してください。
+MenuAndBtnCenter.error.getVgSize = システムボリュームスペースサイズの取得が失敗しました。
+MenuAndBtnCenter.error.noVgSpace = システムには使用可能なボリュームスペースがありませんでした。
+MenuAndBtnCenter.error.notWinHost = このウィザートをWindowsホストだけに適用する。
+MenuAndBtnCenter.error.isWinHost = このウィザートを非Windowsホストだけに適用する。
+MenuAndBtnCenter.error.notFoundTgtVolMap = MDB中に以下のlv対応のターゲットボリューム情報を見つかりません:
+MenuAndBtnCenter.error.addPool = ストレージプールオブジェクトの作成は失敗しました:
+MenuAndBtnCenter.error.mountFS = ストレージプールのマウントは失敗しました：
+MenuAndBtnCenter.error.mkfs = ストレージプールのフォーマットは失敗しました：
+MenuAndBtnCenter.error.umountFS = ストレージプールのアンマウントは失敗しました：
+MenuAndBtnCenter.error.crtResVol = ストレージプールのためのスペースアサインは失敗しました：
+MenuAndBtnCenter.error.delPool = ストレージプールオブジェクトの削除は失敗しました:
+MenuAndBtnCenter.error.delResVol = ストレージプールスペースの回収は失敗しました:
+MenuAndBtnCenter.error.notFoundPool = このボリュームに対応するストレージプールを見つからなくて、スナップショットを作成することができません。
+MenuAndBtnCenter.error.getPool = ストレージプールの取得は失敗しました：
+MenuAndBtnCenter.error.noPool = システム中にはストレージプールがありませんでした。
+MenuAndBtnCenter.error.noPool1 = ミラーサーバーの利用可能なストレージプールがありませんでした。
+MenuAndBtnCenter.error.noEnoughSpace = すべてのストレージプールのスペースが使われました。
+MenuAndBtnCenter.error.noEnoughSpace1 = ミラーサーバーの利用可能なストレージプールのスペースが使われました。
+MenuAndBtnCenter.error.badSnapNum = システムにはスナップショットの作成を許せない、またはソフトウェアライセンス認定に規定された最大のスナップショット数を正確的に取得することができません。
+MenuAndBtnCenter.error.badSnapNum1 = 初期化の時にこのボリュームがスナップショットを作成しないと規定されています。
+MenuAndBtnCenter.error.getVerifyDir = プロキシプログラムのインストールパスの取得が失敗しました。
+MenuAndBtnCenter.error.noPostProcessHost = Linux後処理ホストのIPを指定しないため、プロファイルの中に指定してください。
+MenuAndBtnCenter.error.beyondMaxSnapNum = ボリュームごとに少なくとも一つのスナップショットのないスナップショットコピーがあることを確保しなければならなくて、さもなくば後処理の時に自動的に新しいスナップショットを作成することができません。
+MenuAndBtnCenter.error.startMjOk = ミラージョブの起動が成功しました。
+MenuAndBtnCenter.error.stopMjOk  = ミラージョブの停止が成功しました。
+MenuAndBtnCenter.error.mjisrunning = 起動中のミラージョブを削除することができません。
+MenuAndBtnCenter.error.mjisrunning1 = 起動中のミラージョブを更新することができません。
+MenuAndBtnCenter.error.hasActiveMj = 下記のボリュームに起動中のミラージョブがありますので、削除できません。
+MenuAndBtnCenter.error.prepareJobFail = ミラージョブ起動前のタスクが失敗しました。ログを見てください。
+MenuAndBtnCenter.error.getIbootConf = ネットワーク起動コンフィグの取得が失敗しました。
+MenuAndBtnCenter.error.delSrcSWU = これはミラーUWSサーバーです。削除できません。。
+MenuAndBtnCenter.error.getLVMInfo = LVM情報の取得が失敗しました。
+MenuAndBtnCenter.error.sameUUID = このUUIDが既に存在しました。再生成してください。
+MenuAndBtnCenter.error.mismatchedOS = 異なるOSホスト間で、変更できません。
+MenuAndBtnCenter.error.badConsistance = データベース情報は一致しません。
+MenuAndBtnCenter.error.findUser = 対応するユーザ情報を見つかりません。
+MenuAndBtnCenter.error.modUser = 対応するユーザ情報を見つかりません。
+MenuAndBtnCenter.error.notFoundWinDir = OSディレクトリが見つかりません。
+MenuAndBtnCenter.error.modmj   = 下記のミラージョブの更新することが失敗しました:
+MenuAndBtnCenter.error.startmj = 下記のミラージョブの起動することが失敗しました:
+MenuAndBtnCenter.error.noVersion = いくつかのシステムファイルのスナップショットが見つかりません
+MenuAndBtnCenter.error.parseVolInfo = ボリューム情報の分析することが失敗しました
+MenuAndBtnCenter.error.missinglv = ボリューム情報が見つかりません
+MenuAndBtnCenter.error.missingvg = ボリュームグループ情報が見つかりません
+MenuAndBtnCenter.error.getHostName = サーバーのシリアルナンバーの取得することが失敗しました
+MenuAndBtnCenter.error.notSameSWU = ミラーサーバーのIPとポートを更新することしかできません。
+
+#####################  AboutDialog
+AboutDialog.dialog_title = UWS MTPP マネージャ GUIについて
+AboutDialog.label.manager = マネージャ
+AboutDialog.copyright = Copyright(C) 2002-2009 Odysys Inc.
+AboutDialog.version = 4.0.0 バージョン
+AboutDialog.about = バージョン情報 
+AboutDialog.right = 当該製品の所有権はOdysysに属する.
+
+#################### CreateSchedulerDialog
+CreateSchedulerDialog.border.crtScheduler = スケジューリングを作成する
+CreateSchedulerDialog.border.detail = 詳細
+CreateSchedulerDialog.label.strategyMode = 策略モード：
+
+#################### DayBakPane
+DayBakPane.label.day = 日 :
+DayBakPane.label.year= 年 :
+DayBakPane.label.month = 月 :
+DayBakPane.label.bakType = バックアップタイプ：
+
+#################### MonthWeeklyDayPane
+MonthWeeklyDayPane.1stWeek  = 第一週
+MonthWeeklyDayPane.2sedWeek = 第二週
+MonthWeeklyDayPane.3thdWeek = 第三週
+MonthWeeklyDayPane.4thWeek  = 第四週
+
+MonthWeeklyDayPane.label.bakType = バックアップタイプ：
+MonthWeeklyDayPane.label.week = 週：
+MonthWeeklyDayPane.label.day = 日：
+
+MonthWeeklyDayPane.bakType.none = 
+MonthWeeklyDayPane.bakType.full = すべて
+MonthWeeklyDayPane.bakType.incremental = インクリメンタル
+
+MonthWeeklyDayPane.table.one    = 月曜日
+MonthWeeklyDayPane.table.two    = 火曜日
+MonthWeeklyDayPane.table.three  = 水曜日
+MonthWeeklyDayPane.table.four   = 木曜日
+MonthWeeklyDayPane.table.five   = 金曜日
+MonthWeeklyDayPane.table.six    = 土曜日
+MonthWeeklyDayPane.table.senven = 日曜日
+
+######################     ConnectDialog
+ConnectDialog.dialog_title = 接続
+
+ConnectDialog.border.title1 = 接続
+ConnectDialog.border.title2 = ログイン
+
+ConnectDialog.button.connect = 接続
+ConnectDialog.button.adminOpt = 管理オプション...
+
+ConnectDialog.label.text1 = パスワード：
+ConnectDialog.label.text2 = ユーザー：
+ConnectDialog.label.text3 = サーバー：
+ConnectDialog.label.text4 = ポート：
+
+ConnectDialog.errmsg = 無効な入力！
+ConnectDialog.errMsg.nullPort = ポート値が空です。
+ConnectDialog.errMsg.badPort  = ポート値は正整数でなければならない！
+ConnectDialog.errMsg.toosmallport = ポート値は>0の値でなければならない。
+
+ConnectDialog.error.noneIP = IPアドレスが空である。
+ConnectDialog.error.badIP = 無効なIPアドレス。
+ConnectDialog.errMsg.invalidPort = ポートは1-65535の中の正整数(1と65535を含む)であるべきだ。
+ConnectDialog.errMsg.noneUser = ユーザー名が空である。
+ConnectDialog.errMsg.badUser = ユーザー名には半角英文字の一重・二重引用符とスペースは使えません。
+ConnectDialog.errMsg.invalidUser = ユーザー名の長さは>0，<32であるべきだ。
+ConnectDialog.errMsg.invalidPwd = パスワードの長さは>0，<32であるべきだ。
+
+######################  WeeklyBakPane
+WeeklyBakPane.label.day = 日：
+WeeklyBakPane.label.bakType = バックアップタイプ：
+WeeklyBakPane.table.one = 月曜日
+WeeklyBakPane.table.two = 火曜日
+WeeklyBakPane.table.three = 水曜日
+WeeklyBakPane.table.four = 木曜日
+WeeklyBakPane.table.five = 金曜日
+WeeklyBakPane.table.six = 土曜日
+WeeklyBakPane.table.senven = 日曜日
+
+###################### MonthDayBakPane
+MonthDayBakPane.label.day = 日：
+MonthDayBakPane.label.bakType = バックアップタイプ：
+MonthlyDayBakPane.label.lastDay = 最後の一日
+
+###################### WeeklyScheduler
+WeeklyScheduler.firstWeek = 第一週
+WeeklyScheduler.twoWeek   = 第二週
+WeeklyScheduler.threeWeek = 第三週
+WeeklyScheduler.fourWeek  = 第四週
+
+####################### ProfileChooser
+ProfileChooser.title.open   = 開く
+ProfileChooser.title.saveas = 名前を付けて保存
+ProfileChooser.label.name   = テンプレート名：
+ProfileChooser.label.type   = テンプレートタイプ：
+ProfileChooser.button.open  = 開く
+ProfileChooser.button.save  = 保存
+
+ProfileChooser.errMsg.notSelect = テンプレートを選択しない。
+ProfileChooser.errMsg.notExist  = テンプレートが存在しない。
+ProfileChooser.errMsg.notName   = テンプレート名を付けなかった。
+
+ProfileChooser.confirmmsg1 = このテンプレートが既に存在します。上書きしますか？
+
+ProfileChooser.errmsg.badname   = テンプレート名には半角英文字の一重・二重引用符とスペースは使えません。
+ProfileChooser.errmsg.tooLargePname = テンプレート名の長さは>= 1000できません。
+
+##################### SchedulerDialog
+SchedulerDialog.dialogTitle.scheduler = スケジューリング
+SchedulerDialog.button.new    = 新規
+SchedulerDialog.button.modify = 変更
+SchedulerDialog.button.delete = 削除
+SchedulerDialog.button.close  = 閉じる
+
+SchedulerDialog.table.scheduler.id           = スケジューリングID
+SchedulerDialog.table.scheduler.profileName  = テンプレート名
+SchedulerDialog.table.scheduler.profileDes   = テンプレート説明
+SchedulerDialog.table.scheduler.strategyName = バックアップ策略名
+SchedulerDialog.table.scheduler.strategyDes  = バックアップ策略説明
+
+SchedulerDialog.table.scheduler.desc        = 名前
+SchedulerDialog.table.scheduler.startTime   = 開始時間
+SchedulerDialog.table.scheduler.type        = タイプ
+SchedulerDialog.table.scheduler.profileName  = テンプレート名
+SchedulerDialog.table.scheduler.profileDes   = テンプレート説明
+SchedulerDialog.table.scheduler.level       = コピーレベル
+SchedulerDialog.table.scheduler.id          = ID
+SchedulerDialog.table.scheduler.name        = 名前
+SchedulerDialog.table.scheduler.src   	    = ソース
+SchedulerDialog.table.scheduler.active      = アクティブ？
+SchedulerDialog.table.scheduler.dest        = データデスティネーション
+SchedulerDialog.table.scheduler.node        = ノード方向
+SchedulerDialog.table.scheduler.dataType    = データタイプ
+SchedulerDialog.table.scheduler.enable      = アクティブ？
+
+SchedulerDialog.errMsg.wrongprof = 以下のスケジューリングにかかわる同期ノードまたは同期テンプレートが存在しない：
+SchedulerDialog.error.noneScher  = スケジューリングを選択しなかった。一つを選びください.
+SchedulerDialog.confirm1 = このスケジューリングを削除します。よろしいですか？
+
+#####################  Strategy
+Strategy.bakType.none =
+Strategy.bakType.full = 完全
+Strategy.bakType.incremental1 = I 増分
+Strategy.bakType.incremental2 = II 増分
+
+Strategy.bakType.selective   = 選択
+Strategy.bakType.master      = 完全
+Strategy.bakType.incremental = 増分
+
+Strategy.period.month   = 毎月
+Strategy.period.week    = 毎週
+Strategy.period.day     = 毎日
+Strategy.period.onlyOne = 一回
+Strategy.period.unknown = 未知
+
+Strategy.strategyType.onlyone   = 一回だけ
+Strategy.strategyType.frequency = 繰り返し
+Strategy.strategyType.unknown   = 未知
+
+##################### PrivateInfoOfStrategy
+PrivateInfoOfStrategy.privateInfo = バックアップレベル情報
+PrivateInfoOfStrategy.val         = バックアップ日期
+PrivateInfoOfStrategy.level       = バックアップレベル
+
+#####################  ManageDB
+ManageDB.status.format    = 不正なプロトコル形式.
+ManageDB.status.io        = サーバーIOエラーは発生しました.
+ManageDB.status.nomen     = サーバーメモリ不足.
+ManageDB.status.nosupp    = サーバーがサポートしない機能.
+ManageDB.status.ok        = 成功に完成しました.
+ManageDB.status.parameter = プロトコル中には不正なパラメータが発見されました.
+ManageDB.status.running   = サーバーランニング中にエラーが発生しました.
+ManageDB.status.toolong   = プロトコル中にいくつかのパラメータが長すぎます.
+ManageDB.status.toomany   = プロトコル中に無駄なパラメータが発見されました.
+ManageDB.status.unknown   = サーバー側の未知エラー.
+
+#################### WaitingForDialog
+WaitingForDialog.dialogTitle        = 実行中です。お待ちください．．．
+WaitingForDialog.label.waiting      = しばらくお待ちください．．．
+WaitingForDialog.label.backuping    = データベースのバックアップ中です。
+WaitingForDialog.label.restoringDB  = データベースのリストア中です。
+WaitingForDialog.label.restoringCls = 策略集のリストア中です。
+
+################### InputPasswdDialog
+InputPasswdDialog.dialogTitle.modify = パスワードを更新します
+InputPasswdDialog.dialogTitle1 = プールのパスワード
+InputPasswdDialog.label.name   = ユーザ名：
+InputPasswdDialog.label.newPwd = 新しいパスワードの入力：
+InputPasswdDialog.label.oldPwd = 現在のパスワードの入力：
+InputPasswdDialog.label.inputAgain = 新しいパスワードの確認入力：
+InputPasswdDialog.label.tip = ユーザ名とパスワードを修正することができます。
+InputPasswdDialog.label.pwd = パスワード： 
+InputPasswdDialog.label.tip1 = 安全のために、選択したプールのパスワードを入力してください。
+
+InputPasswordDialog.errMsg.nonName = ユーザ名は空にはできません。
+InputPasswordDialog.errMsg.badName = ユーザー名には半角英文字の一重・二重引用符とスペースは使えません。
+InputPasswordDialog.errMsg.tooLargeUser = ユーザー名の長さは>0，<32であるべきだ。
+InputPasswordDialog.errMsg.sameName = ユーザ名は既に存在します。
+InputPasswordDialog.errMsg.nonNewPasswd = パスワードは空にはできません。
+InputPasswordDialog.errMsg.badPasswd = ユーザー名には半角英文字の一重・二重引用符とスペースは使えません。
+InputPasswordDialog.errMsg.wrongOldPwd  = 入力されたパスワードは正しくありません。
+InputPasswordDialog.errMsg.disMatched   = 入力されたパスワードは一致しません。
+InputPasswordDialog.errMsg.tooBigPasswd = パスワードの長さは>0，<32であるべきだ。
+InputPasswordDialog.msg.modOk = ユーザ情報の修正が成功しました。
+InputPasswordDialog.msg.modfail = ユーザ情報の修正：
+
+#################### SchedDialog
+SchedDialog.dialogTitle = スケジューリング
+SchedDialog.borderTitle.frequence = 発生頻度
+SchedDialog.borderTitle.weekly  = 毎週
+SchedDialog.borderTitle.dailyfreq = 日頻度
+SchedDialog.borderTitle.once = 一回
+SchedDialog.borderTitle.daily = 日
+SchedDialog.borderTitle.monthly = 月
+SchedDialog.borderTitle.content = 内容
+SchedDialog.borderTitle.snode = 同期ノード
+SchedDialog.borderTitle.sprof = 同期テンプレート
+SchedDialog.borderTitle.mode  = 動作
+SchedDialog.check.active = アクティブ
+SchedDialog.label.name = 名前：
+SchedDialog.label.profile = テンプレート名：
+SchedDialog.label.syncnode = 同期ノード：
+SchedDialog.label.sdir    = 同期ディレクトリ：
+SchedDialog.label.type    = タイプ：
+SchedDialog.label.client  = ホスト：
+SchedDialog.radioButton.once = 一回
+SchedDialog.label.year = 年：
+SchedDialog.label.hour1 = 時間：
+SchedDialog.label.month = 月：
+SchedDialog.label.min1   = 分間：
+SchedDialog.label.day  = 日：
+SchedDialog.label.level = コピーレベル：
+SchedDialog.radioButton.freq = 繰り返し現れます
+SchedDialog.radioButton.monthly = 毎月
+SchedDialog.radioButton.weekly = 毎週
+SchedDialog.radioButton.daily = 毎日
+SchedDialog.radioButton.onceOccur = 一回発生しました :
+SchedDialog.radioButton.freqOccur = 発生周期：
+SchedDialog.radioButton.syncnode = 同期ノード
+SchedDialog.radioButton.syncprof = 同期テンプレート
+SchedDialog.label.hour = 時間
+SchedDialog.label.min = 分間
+SchedDialog.button.browse = 参照．．．
+SchedDialog.unit.hour = 時間
+SchedDialog.unit.min  = 分間
+
+SchedDialog.errmsg.noneProfile    = 一つのテンプレートを指定しなければなりません。
+SchedDialog.errmsg.noneSyncNode   = 一つの同期ノードを指定しなければなりません。
+SchedDialog.errmsg.noneSyncProf   = 一つの同期テンプレートを指定しなければなりません。
+SchedDialog.errmsg.nonesdir       = 一つの同期ディレクトリを指定しなければなりません。
+SchedDialog.errmsg.noDayofWeek    = この作業の実行が一週間中の一日を選択しなければなりません。
+SchedDialog.errmsg.noDayofMonth   = この作業の実行が一月間中の一日を選択しなければなりません。
+SchedDialog.errmsg.noneName       = このスケジューリングに名前を付けなければなりません。
+SchedDialog.errmsg.sameSchedName  = このスケジューリング名が既に存在します。ほかの名前を付けてください。
+SchedDialog.errmsg.sameSched      = このスケジューリングの時間・コマンドと同じスケジューリングが既に存在します。
+SchedDialog.error.tooOlder        = 選択された時間が古すぎます。
+SchedDialog.errmsg.noneclient     = 選択されたテンプレートのバックアップクライアントが存在しません。
+SchedDialog.errmsg.badName = スケジューリング名には半角英文字の一重・二重引用符とスペースは使えません。
+SchedDialog.errmsg.tooLargeName = スケジューリング名の長さは>0，<32であるべきです。
+SchedDialog.errmsg.invalidObj   = 選択されたテンプレートのコピーデータが存在しません。
+
+################# MonthlyPane
+MonthlyPane.label.each = each
+MonthlyPane.label.month = 月
+
+################# Weekly
+WeeklyPane.checkBox.monday      = 月曜日
+WeeklyPane.checkBox.tuesday     = 火曜日
+WeeklyPane.checkBox.wednesday   = 水曜日
+WeeklyPane.checkBox.thursday    = 木曜日
+WeeklyPane.checkBox.friday      = 金曜日
+WeeklyPane.checkBox.saturday    = 土曜日
+WeeklyPane.checkBox.sunday      = 日曜日
+
+###############  MonitorDialog
+MonitorDialog.table.task.id     = タスクID
+MonitorDialog.table.task.msg    = タスクメッセージ
+MonitorDialog.table.task.client = クライアント
+MonitorDialog.table.task.type   = タイプ
+MonitorDialog.table.task.pid    = PID
+MonitorDialog.table.task.dev    = デバイス
+MonitorDialog.table.task.log    = ログ
+MonitorDialog.table.task.status = 状態
+MonitorDialog.table.task.stime  = スタート時間
+MonitorDialog.table.task.bakSet = バックアップセット
+MonitorDialog.table.task.schid  = スケジューリングID
+MonitorDialog.table.task.prof   = 策略
+
+MonitorDialog.diagTitle.monitor = モニター
+MonitorDialog.button.close      = クローズ
+MonitorDialog.button.killJob    = キャンセル
+MonitorDialog.button.activeJob  = スタート
+MonitorDialog.border.message    = タスクメッセージ
+
+MonitorDialog.errMsg.notFoundClient = クライアントが見つかりません。
+MonitorDialog.errMsg.killJobFailed  = タスクを取消することが失敗しました。
+MonitorDialog.errMsg.killJobOk      = タスクを取消することが成功しました。
+MonitorDialog.errMsg.getTaskerPid   = タスクPIDを取得することが失敗しました。
+MonitorDialog.errMsg.badTaskerPid   = 無効なタスクPID
+MonitorDialog.errMsg.activeJobFailed = タスクをスタートすることが失敗しました。
+MonitorDialog.confirm = タスクをキャンセルします。よろしいですか？ 
+
+############## AbstractSchedule
+AbstractSchedule.once = 一回限り
+AbstractSchedule.freq = 周期性
+
+############## BackupMDBDialog
+BackupMDBDialog.diagTitle.bakMdb = 管理データベースをバックアップする
+BackupMDBDialog.border.bakMode = バックアップ方式
+BackupMDBDialog.label.bakPath = バックアップパス：
+BackupMDBDialog.button.browse = 参照
+BackupMDBDialog.radioButton.manual = 手動
+BackupMDBDialog.radioButton.schedule = スケジュール
+BackupMDBDialog.label.every = 毎
+BackupMDBDialog.label.hours = 時間(s)
+
+BackupMDBDialog.button.del = 削除
+
+BackupMDBDialog.JFileChooser.select = MDBの保存先を選択してください
+
+BackupMDBDialog.error.notargetpath = バックアップパスが空である。
+BackupMDBDialog.error.bakMDBFail = MDBの手動バックアップが失敗しました。ディスクは一杯になる可能性があります。
+BackupMDBDialog.error.saveScheFail = MDBバックアップのスケジューリング情報の保存が失敗しました。
+
+BackupMDBDialog.ok.bakMDBOK = MDBの手動バックアップが成功しました。
+BackupMDBDialog.ok.saveScheOK = MDBバックアップのスケジューリング情報の保存が失敗しました。
+
+BackupMDBDialog.error.badPath = バックアップ先のパスには半角英文字の一重・二重引用符とスペースは使えません。
+BackupMDBDialog.error.toolongpath = バックアップ先のパスの長さは>1024できません。
+BackupMDBDialog.error.notexistpath = バックアップ先のパスは存在しません。
+BackupMDBDialog.error.permissionDenied = バックアップ先のパスに書く権限がありません。
+
+BackupMDBDialog.error.delScheFail = バックアップ管理データベースのスケジューリングの削除が失敗しました。
+BackupMDBDialog.error.delScheOk   = バックアップ管理データベースのスケジューリングの削除が成功しました。
+
+BackupMDBDialog.error.listerr = ディレクトリまたはファイルをリストするのは失敗しました。
+BackupMDBDialog.error.isFile  = バックアップ先のパスは一つのディレクトリでなければなりません。
+
+BackupMDBDialog.pdiagTitle.backuping = 管理データベースのバックアップ中です
+BackupMDBDialog.pdiagTip.backuping = 管理データベースのバックアップ中です。しばらくお待ちください．．．
+
+############### RestoreMDBDialog
+RestoreMDBDialog.diagTitle = 管理データベースをリストアする
+RestoreMDBDialog.button.restore = リストア
+RestoreMDBDialog.radioButton.manual = 手動リストア
+RestoreMDBDialog.label.restFrom = リストアパス：
+RestoreMDBDialog.button.browse = 参照
+RestoreMDBDialog.radioButton.schedule = スケジューリングリストア
+RestoreMDBDialog.label.bakTime = 最後のバックアップ時間：
+RestoreMDBDialog.label.bakStatus = 最後のバックアップ状態：
+
+RestoreMDBDialog.JFileChooser.select = MDBのリストア先を選択してください
+
+RestoreMDBDialog.error.noRestPath  = リストア先パスが空です。
+RestoreMDBDialog.error.incompleted = バックアップされた管理データベースは不完全です。
+RestoreMDBDialog.error.noneRestDir = リストアディレクトリが空です。
+RestoreMDBDialog.restMDBOK         = 管理データベースのリストアが成功しました。
+RestoreMDBDialog.error.restMDBFailed = 管理データベースのリストアが失敗しました。ディスクは一杯になる可能性があります。
+
+RestoreMDBDialog.error.tooLongRestDir = リストアパスの長さは>1024できません。
+
+RestoreMDBDialog.error.notexistpath = 管理データベースソースパスが存在しません。
+RestoreMDBDialog.error.permissionDenied = 管理データベースソースパスに読む権限がありません。
+RestoreMDBDialog.confirm = ウォーニング： 管理データベースをリストアする前に、バックアップサーバーのサービスを既に停止したことをご確認してください。続けてもよろしいですか？
+
+RestoreMDBDialog.pdiagTitle.restoring = 管理データベースのリストア中です
+RestoreMDBDialog.pdiagTip.restoring = 管理データベースのリストア中です。しばらくお待ちください．．．
+
+################### InitProgramDialog
+InitProgramDialog.title = プログラムを初期化します
+InitProgramDialog.label.tip = プログラムの初期化中です。しばらくお待ちください．．．
+
+#################### IndicatorPane
+IndicatorPane.tooltip.back = 前のページへ戻る
+IndicatorPane.tooltip.next = 次のページへ進む
+IndicatorPane.label.curPage  = 現在ページ：
+IndicatorPane.label.go     = へ
+IndicatorPane.label.page2  = ページ
+IndicatorPane.title.indicator = インジケータ
+
+IndicatorPane.error.invalidPage = ページ数は正整数でなければなりません。
+IndicatorPane.error.beyondLimit = 有効なページ範囲を超えています。
+ndicatorPane.error.rightPage   = 現在ページなので、ページを捲る必要がありません。
+
+####################### AddUserDialog
+AddUserDialog.diagTitle.Add = ユーザーの追加
+AddUserDialog.diagTitle.mod = ユーザーの変更
+AddUserDialog.label.name   = 名前：
+AddUserDialog.label.passwd = パスワード：
+AddUserDialog.label.passwdAgain = パスワード確認：
+AddUserDialog.label.perm = 権限：
+AddUserDialog.radioButton.admin = 管理者権限
+AddUserDialog.radioButton.oper  = 一般ユーザ権限
+
+AddUserDialog.errMsg.moduserfail  = ユーザー変更が失敗しました！
+AddUserDialog.errMsg.sameUser     = 重複のユーザー名。
+AddUserDialog.errMsg.adduserfail  = ユーザー追加が失敗しました！ 
+AddUserDialog.errMsg.mismatchpasswd = 入力されたパスワードは一致しません。もう一度入力してください。
+
+AddUserDialog.errMsg.nonename = ユーザー名が空です。
+AddUserDialog.errMsg.badName = ユーザー名には半角英文字の一重・二重引用符とスペースは使えません。
+AddUserDialog.errMsg.invalidName = ユーザー名の長さは>0，<32であるべきです。
+AddUserDialog.errMsg.invalidPwd = パスワードの長さは>8，<32であるべきです。
+AddUserDialog.error.delAdmUser  = このユーザーがシステム中のただ一つの管理者ユーザーなので、一般ユーザーに変更することができません。
+
+#####################  AddHostDialog
+AddHostDialog.dialogTitle.addHost  = ホストを追加する
+AddHostDialog.dialogTitle.editHost = ホストを変更する 
+AddHostDialog.dialogTitle.aRbHost  = ロールバックホストを追加する
+
+AddHostDialog.label.ip       = IP :
+AddHostDialog.label.port     = ポート：
+AddHostDialog.checkBox.autoDR = 自動的にディザスタリカバリー
+AddHostDialog.checkBox.autoReboot = 自動リブート
+
+AddHostDialog.errMsg.noneName  = ホスト名が空です。
+AddHostDialog.errMsg.noneIP    = IPアドレスが空です。
+AddHostDialog.errMsg.noneUUID  = UUIDが空です。
+AddHostDialog.errMsg.invalidIP = 無効なIPアドレス。
+AddHostDialog.errMsg.sameIP    = 重複のIPアドレスが存在します。
+AddHostDialog.errMsg.nonePort  = ポート値が空です。
+AddHostDialog.errMsg.invalidPort = ポート値が正整数であるべきです。
+AddHostDialog.errMsg.badPort   = ポート値は1～65535の間（1と65535を含む）の値であるべきです。
+AddHostDialog.errMsg.noneOsVer = OSバージョンが空です。
+AddHostDialog.errMsg.sameHost  = 重複のホスト名またはIP。
+AddHostDialog.errMsg.badName = ホスト名には半角英文字の一重・二重引用符とスペースは使えません。
+AddHostDialog.errMsg.invalidName = ホスト名の長さは>0，<16であるべきだ。
+AddHostDialog.errMsg.nonePasswd = adminパスワードが空です。
+
+####################### AddLunMapDialog
+AddLunMapDialog.title.add = ホストマッピングを追加する
+AddLunMapDialog.label.ip = IP :
+AddLunMapDialog.label.mask = マスク：
+AddLunMapDialog.label.access = アクセス権限：
+AddLunMapDialog.label.srvusr = サーバーユーザー名：
+AddLunMapDialog.label.passwd = パスワード：
+AddLunMapDialog.label.passwd1 = パスワード確認： 
+AddLunMapDialog.label.clntusr = クライアントユーザー名：
+
+AddLunMapDialog.error.noneIP = IPアドレスが空です。
+AddLunMapDialog.errMsg.invalidIP = 無効なIPアドレス。
+AddLunMapDialog.error.noneMask = マスクが空です。
+AddLunMapDialog.errMsg.invalidMask = 無効なマスク。
+AddLunMapDialog.errMsg.misMatchedSrvPass = サーバーのパスワードが一致しません。
+AddLunMapDialog.errMsg.misMatchedClntPass = クライアントのパスワードが一致しません。
+
+####################### InputPercentDialog
+InputPercentDialog.title.input = 百分比を入力する
+InputPercentDialog.label.increase = スナップショット容量がオリジナルボリューム容量を占める百分比を．．．に上げる
+InputPercentDialog.errMsg.nonePercent = 百分比値が空です。
+InputPercentDialog.errMsg.invalidPercent = 百分比値が>0，同時に<100でなければなりません。
+InputPercentDialog.errMsg.mustBig = 百分比値は増加することしかできなくて、減らすことができません。
+
+####################### CreateSnapDialog
+CreateSnapDialog.title = スナップショットを作成する
+CreateSnapDialog.title1 = スナップショットコピーを作成する
+CreateSnapDialog.label.name = スナップショット名：
+CreateSnapDialog.label.name1 = スナップショットコピー名：
+CreateSnapDialog.label.size = スナップショット予備容量（最大占用容量はソースボリュームのサイズと等しいが、普通にはそんな大きいサイズは必要ではない）
+CreateSnapDialog.label.pool = ストレージプール：
+
+CreateSnapDialog.error.noneName = スナップショット名が空です。
+CreateSnapDialog.error.nonePoolName = ストレージプール名が空です。
+CreateSnapDialog.error.noneViewName = スナップショットコピー名が空です。
+CreateSnapDialog.error.badName = スナップショット名には半角英文字の一重・二重引用符とスペースは使えません。
+CreateSnapDialog.error.nametoolong = スナップショット名の長さは< 255でなければなりません。
+CreateSnapDialog.error.badViewName = スナップショットコピー名には半角英文字の一重・二重引用符とスペースは使えません。
+CreateSnapDialog.error.viewNametoolong = スナップショットコピー名の長さは< 255でなければなりません。
+CreateSnapDialog.error.badPoolName = ストレージプール名には半角英文字の一重・二重引用符とスペースは使えません。
+CreateSnapDialog.error.poolNametoolong = ストレージプール名の長さは< 255でなければなりません。
+CreateSnapDialog.error.nonePool = 使用可能なストレージプールがありません。
+CreateSnapDialog.error.noneVal = 百分比値が空です。
+CreateSnapDialog.error.invalidVal = 百分比値は>0且つ<=100の整数でなければなりません。
+
+####################### CreateOrphanVol
+CreateOrphanVol.title = ボリュームを作成する
+CreateOrphanVol.label.name = ボリューム名：
+CreateOrphanVol.label.size = ボリュームサイズ[GB] 
+CreateOrphanVol.label.max = (最大値=
+CreateOrphanVol.label.blksize = ブロックサイズ[GB]
+CreateOrphanVol.label.pool = ストレージプール
+
+CreateOrphanVol.error.nonePool = 使用可能なストレージプールがありません。
+CreateOrphanVol.error.noneName = ボリューム名が空です。
+CreateOrphanVol.error.sameName = 同じ名前が存在しています。もう一つを選びください。
+CreateOrphanVol.error.badName = ボリューム名には半角英文字の一重・二重引用符とスペースは使えません。
+CreateOrphanVol.error.nametoolong = ボリューム名の長さは< 255でなければなりません。
+CreateOrphanVol.error.noneVal = ボリュームサイズが空です。
+CreateOrphanVol.error.invalidVal = ボリュームサイズは>0 且つ<= 最大値の数でなければなりません。
+CreateOrphanVol.error.nonePoolVal = ストレージプールサイズが空です。
+CreateOrphanVol.error.invalidPoolVal = ストレージプールサイズは>0 且つ<= 最大値の数でなければなりません。
+CreateOrphanVol.error.invalidName = ボリューム名の最大と最小の長さは別々に４と２で、且つ頭文字は必ずアルファベットではじめ（しかしsd/sD/Sd/SDではじめることができない）、たとえばc188,D35,v0です。
+CreateOrphanVol.error.noSpaceOnPool = このストレージプールのスペースが使われました：
+CreateOrphanVol.error.noSpaceOnPool1 = このボリュームに対応するストレージプールのスペースが使われました：
+CreateOrphanVol.error.noSpaceOnPool2 = このスナップショットに対応するストレージプールのスペースが使われました：
+CreateOrphanVol.error.pwdMisMatched = 二度の入力したパスワードは一致しません！
+
+######################  WizardDialogSample
+WizardDialogSample.button.back   = 戻る
+WizardDialogSample.button.next   = 次へ
+WizardDialogSample.button.cancel = キャンセル
+WizardDialogSample.button.exit   = 退出
+WizardDialogSample.button.finish = 終了
+
+WizardDialogSample.wizardText = このウィザートを利用して、以下のように完成することができます：
+
+###################### InitBootHostWizardDialog
+InitBootHostWizardDialog.title  = Windowsクライアント初期化ウィザート
+InitBootHostWizardDialog.title1 = クライアントを選択する
+InitBootHostWizardDialog.title2 = 保護必要なファイルシステムを選択する
+InitBootHostWizardDialog.title3 = サービスを選択する
+InitBootHostWizardDialog.title4 = 起動ネットワークカードを選択する
+InitBootHostWizardDialog.title5 = DHCPを設置する
+InitBootHostWizardDialog.title6 = コピー策略を選択する
+InitBootHostWizardDialog.title7 = タスクを実行する
+InitBootHostWizardDialog.selNetBootMode = ファスト起動モードを選択する
+
+InitBootHostWizardDialog.tip1 = このウィンドウにはクライアントのIPアドレスとポート値を入力してください。プルダウンリストによって既存のクライアントを選択することができます。
+InitBootHostWizardDialog.tip2 = このウィンドウには保護必要なファイルシステムを選択して、且つUWSサーバーに対応のボリュームを作成し、\n現有のアイドルボリュームを選択することもできます。
+InitBootHostWizardDialog.tip3 = このウィンドウには注意必要なサービスを選択してください。すべての選択されたサービスはシステムのリストアの時、自動的に\\n停止されて、その後自動的に起動します。
+InitBootHostWizardDialog.tip4 = このウィンドウには以下のオプションを配置してください。もしオプションの意味がわからない場合、ディフォルト値を使用してください。
+InitBootHostWizardDialog.tip5 = このウィンドウにはディザスタ発生するときに起動必要なネットワークカードを選択してください。システムは選択されたネットワークカードで起動します。
+InitBootHostWizardDialog.tip6 = このウィンドウには対応のタスクの「完成」チェックボックスが選択されて、このタスクは完成済みを示します；逆に、\nこのタスクは次のステップに完成します。
+InitBootHostWizardDialog.tip7 = このウィンドウにはすべての必須のタスクを実行します。
+
+
+InitBootHostWizardDialog.wizardText1 = \n * 保護必要なファイルシステムを選択する \n * OSをコピーする
+InitBootHostWizardDialog.error.notSelCard = 起動ネットワークカードを選択しません。
+InitBootHostWizardDialog.error.noProtectedDisk = 保護必要なファイルシステムがありません。
+InitBootHostWizardDialog.error.notProtectCdisk = Cディスクは保護を選択されないので、OSバックアップが行えません。
+InitBootHostWizardDialog.error.mustProtectOS = Cディスク（OS）の保護を選択しなければなりません。
+InitBootHostWizardDialog.error.notActivePart = 本機はCディスクから起動しないので、OSバックアップが行えません。
+InitBootHostWizardDialog.error.noSelService = どのサービスも選択しません。
+InitBootHostWizardDialog.error.initOK = クライアントの初期化がみごとに完成しました。
+InitBootHostWizardDialog.error.notDoneManualJob = 手動動作の完成状況を確認してください；完成したら、対応するチェックボックスを選択してください。
+InitBootHostWizardDialog.error.needReInit = クライアントの初期化が完全に成功しませんでした。原因を探し出した後、再び初期化を実行してください。
+InitBootHostWizardDialog.error.getOrphanVol = ターゲットボリューム情報の取得が失敗しました。
+InitBootHostWizardDialog.error.bootFromNet = このホストはネットワークから起動するので、初期化することができません。ローカルディスクから起動するホストだけを初期化することができます。
+InitBootHostWizardDialog.error.notAllowtoFormat = OS対応のボリュームをフォーマットすることができません。そうでなければレジストリの変更は失敗します。
+InitBootHostWizardDialog.error.notWinHost = このウィザートはWindowsホストだけを保護します。
+InitBootHostWizardDialog.error.conflictIP = 本機を接続するネットワーク上、重複しないアドレスを使用します。
+
+InitBootHostWizardDialog.confirm1 = 実行必要なタスクがありません。終了しますか？
+InitBootHostWizardDialog.confirm2 = OSをコピーしないことを確定しますか？
+InitBootHostWizardDialog.confirm3 = レジストリを変更する前に先OSをコピーしなければなりません。OSをコピーしたことを確定しますか？
+InitBootHostWizardDialog.confirm4 = 初期化必要な情報は書き済んで、後でまもなく初期化操作が始まります。続けてよろしいですか？
+ 
+InitBootHostWizardDialog.log.crtNothing = 作成必要なターゲットボリュームがありません。
+InitBootHostWizardDialog.log.crtVol = ターゲットボリュームを作成します
+InitBootHostWizardDialog.log.getHostNameFailed = iscsi targetサーバーのホスト名を取得することができません
+InitBootHostWizardDialog.log.formatVol = ターゲットボリュームをフォーマットします
+InitBootHostWizardDialog.log.formatNothing = フォーマット必要なターゲットボリュームがありません。
+InitBootHostWizardDialog.log.tooLargeFsSize = 可能な原因：ファイルシステムのサイズはFATに対して大きすぎます
+InitBootHostWizardDialog.log.invalidSize = 無効なボリュームサイズ
+InitBootHostWizardDialog.log.addPortal = iscsi Target サーバーをログインします 
+InitBootHostWizardDialog.log.refreshTargets = ターゲットボリュームをリフレッシュします
+InitBootHostWizardDialog.log.notFoundTDisk = ターゲットボリュームを見つかりません
+InitBootHostWizardDialog.log.loginTarget = ターゲットボリュームをログインします。
+InitBootHostWizardDialog.log.logoutTarget = ターゲットボリュームをログアウトします
+InitBootHostWizardDialog.log.getIpInfo = ほかの情報を取得します
+InitBootHostWizardDialog.log.getHostInfo = クライアント情報を取得します
+InitBootHostWizardDialog.log.addHost = クライアントを追加します
+InitBootHostWizardDialog.log.modHost = クライアントを変更します
+InitBootHostWizardDialog.log.notNeedCopyOS = OSをコピーすることが必要ではありません。
+InitBootHostWizardDialog.log.modVolMap = MDB中のボリューム情報を変更します
+InitBootHostWizardDialog.log.addVolMap = MDBへボリューム情報を追加します
+InitBootHostWizardDialog.log.delVolMap = MDB中からボリューム情報を削除します
+InitBootHostWizardDialog.log.saveIPConf = ネットワーク情報を保存します
+InitBootHostWizardDialog.log.saveServiceInfo = システムサービスを保存します
+InitBootHostWizardDialog.log.saveFsInfo = ファイルシステム情報を保存します
+InitBootHostWizardDialog.log.savePartInfo = システムパーティション情報を保存します
+InitBootHostWizardDialog.log.addServMap = MDBへサービス情報を追加します
+InitBootHostWizardDialog.log.delServMap = MDB中からサービス情報を削除します
+InitBootHostWizardDialog.log.notFormat = OS対応のボリュームをフォーマットしない、またはフォーマットが失敗しました
+InitBootHostWizardDialog.log.loginOSDiskFailed = OS対応のボリュームをログインすることが失敗しました
+InitBootHostWizardDialog.log.crtOSDiskFailed = OS対応のボリュームを作成することが失敗しました
+InitBootHostWizardDialog.log.notFoundDriver = OS対応のボリュームのドライブレターを見つかりません 
+InitBootHostWizardDialog.log.notFoundOSDriver = OSパーティションの情報を見つかりません
+InitBootHostWizardDialog.log.notFoundWindir = OSのインストールディレクトリを見つかりません
+InitBootHostWizardDialog.log.copyOSOK = OSをコピーします
+InitBootHostWizardDialog.log.regOS = OSをiscsiから起動するために、レジストリを変更します。
+InitBootHostWizardDialog.log.regOS1 = OSをローカルディスクから起動するために、レジストリを変更します。
+InitBootHostWizardDialog.log.lunmap = ホストマッピング
+InitBootHostWizardDialog.log.submitCopy = コピーコマンドを提出します
+InitBootHostWizardDialog.log.setactive = アクティブパーティションを設置します
+InitBootHostWizardDialog.log.unknowOSType = 未知のwindowsプラットフォームなので、OSコピーすることができません
+InitBootHostWizardDialog.log.noWayToCopy = このプラットフォームに対するコピーをサポートしません
+InitBootHostWizardDialog.log.copyingOS =OSのコピー中です
+InitBootHostWizardDialog.log.needSetActive = このパーティションはアクティブパーティションではないので、手動にアクティブパーティションに変更してください。
+InitBootHostWizardDialog.log.invalidOccupied = 取得したOS使用されたスペースは無効です
+InitBootHostWizardDialog.log.invalidFree = 取得したOS対応のボリュームアイドルスペースは無効です
+InitBootHostWizardDialog.log.tooSmallDest = OS対応のボリュームは小さすぎます
+InitBootHostWizardDialog.log.delLunMap = ホストマッピングを削除します
+InitBootHostWizardDialog.log.getLunMap = ホストマッピングを取得します
+InitBootHostWizardDialog.log.notCopyOSBefRegister = まだOSをコピーしないので、レジストリを変更することができません
+InitBootHostWizardDialog.log.noneBootDirDevPath = bootディレクトリ所在のデバイスパスを見つかりません
+InitBootHostWizardDialog.log.chgRegForIPFailed = ネットワーク起動の時にipアサインのレジストレーション項目の生成が失敗しました
+InitBootHostWizardDialog.log.saveIbootConf = ネットワーク起動設置
+InitBootHostWizardDialog.log.crtsnap = OS対応のボリュームにスナップショットを作成します
+InitBootHostWizardDialog.log.notCopy = ボリュームを作成すること、またはフォーマットすることが失敗しました、データのコピーはできません。
+InitBootHostWizardDialog.log.save3rdDhcpInfo = DHCP設置を保存します
+InitBootHostWizardDialog.log.saveIscsiHBAInfo = iSCSI HBA設置を保存します
+
+###################### InitNWinHostWizardDialog
+InitNWinHostWizardDialog.title  = 非Windowsクライアント初期化ウィザート
+InitNWinHostWizardDialog.title1 = クライアントを選択します
+InitNWinHostWizardDialog.title2 = 保護必要なファイルシステムを選択します
+InitNWinHostWizardDialog.title3 = 起動ネットワークカードを選択する
+InitNWinHostWizardDialog.title4 = DHCPを設置します
+InitNWinHostWizardDialog.title5 = コピー策略を選択する
+InitNWinHostWizardDialog.title6 = 完成の必要なタスクを選択します
+InitNWinHostWizardDialog.title7 = タスクを実行します
+
+InitNWinHostWizardDialog.tip1 = このウィンドウにはクライアントのIPアドレスとポート値を入力してください。「選択」ボタンをクリックして、\n既存のクライアントを選択することもできます。
+InitNWinHostWizardDialog.tip2 = このウィンドウには保護必要なファイルシステムを選択して、且つ対応のボリュームを作成し、\n現有のアイドルボリュームを選択することもできます。
+InitNWinHostWizardDialog.tip3 = このウィンドウにはDHCP設置をしてください。注意：1）同じネットワーク中にただ一台のDHCPサーバーが有効です。\n2）DHCPサービスを提供するUWSサーバーを指定しない、または指定するUWSサーバーが正常にDHCPサービスを提供することができない場合、\n第三者に提供されるDHCPサービスだけを選択することができます。
+InitNWinHostWizardDialog.tip4 = このウィンドウには以下のオプションを配置してください。もしオプションの意味がわからない場合、ディフォルト値を使用してください。
+InitNWinHostWizardDialog.tip5 = このウィンドウにはディザスタ発生するときに起動必要なネットワークカードを選択してください。システムは選択されたネットワークカードで起動します。
+InitNWinHostWizardDialog.tip6 = このウィンドウには対応のタスクの「完成」チェックボックスが選択されて、このタスクは完成済みを示します；逆に、\nこのタスクは次のステップに完成します。
+InitNWinHostWizardDialog.tip7 = このウィンドウにはすべての必須のタスクを実行します。
+
+InitNWinHostWizardDialog.confirm1 = 実行必要なタスクがありません。終了しますか？
+InitNWinHostWizardDialog.confirm2 = OSをコピーしないことを確定しますか？
+InitNWinHostWizardDialog.confirm3 = 起動配置を変更する前に先OSをコピーしなければなりません。OSをコピーしたことを確定しますか？
+
+InitNWinHostWizardDialog.wizardText1 = \n * 保護必要なファイルシステムを選択する \n * OSをコピーする
+InitNWinHostWizardDialog.error.notUnixHost = このウィザートは非Windowsホストだけを保護します。
+InitNWinHostWizardDialog.error.mustProtectOS = ルートファイルシステムは保護されなければなりません。
+InitNWinHostWizardDialog.error.notAllowtoFormat = OS所在のボリュームをフォーマットすることができません。そうでなければ起動配置の変更は失敗します。
+InitNWinHostWizardDialog.error.notSelCard = 起動ネットワークカードを選択しません。
+InitNWinHostWizardDialog.error.noProtectedDisk = 保護必要なファイルシステムがありません。
+InitNWinHostWizardDialog.error.notProtectCdisk = Cディスクは保護を選択されないので、OSバックアップが行えません。
+InitNWinHostWizardDialog.error.notActivePart = 本機はCディスクから起動しないので、OSバックアップが行えません。
+InitNWinHostWizardDialog.error.noSelService = どのサービスも選択しません。
+InitNWinHostWizardDialog.error.initOK = クライアントの初期化がみごとに完成しました。
+InitNWinHostWizardDialog.error.notDoneManualJob = 手動動作の完成状況を確認してください；完成したら、対応するチェックボックスを選択してください。
+InitNWinHostWizardDialog.error.needReInit = クライアントの初期化が完全に成功しませんでした。原因を探し出した後、再び初期化を実行してください。
+InitNWinHostWizardDialog.error.getOrphanVol = ターゲットボリューム情報の取得が失敗しました。
+InitNWinHostWizardDialog.error.bootFromNet = このホストはネットワークから起動するので、初期化することができません。ローカルディスクから起動するホストだけを初期化することができます。
+InitNWinHostWizardDialog.error.notAllowtoFormat = OS対応のボリュームをフォーマットすることができません。そうでなければ起動配置の変更は失敗します。
+InitNWinHostWizardDialog.error.notWinHost = このウィザートはWindowsホストだけを保護します。
+InitNWinHostWizardDialog.error.dhcpInfoLost = このクライアントのDHCP情報がなくなりました。 
+InitNWinHostWizardDialog.error.mustProtectBoot = Bootファイルシステムは保護されなければなりません。
+InitNWinHostWizardDialog.error.notOsContents = まだOSをコピーしないので、起動配置を変更することができません。
+
+InitNWinHostWizardDialog.log.crtNothing = 作成必要なターゲットボリュームがありません。
+InitNWinHostWizardDialog.log.crtTgt = ターゲットボリュームを作成します
+InitNWinHostWizardDialog.log.getHostNameFailed = iscsi targetサーバーのホスト名を取得することができません
+InitNWinHostWizardDialog.log.formatVol = ターゲットボリュームをフォーマットします
+InitNWinHostWizardDialog.log.formatNothing = フォーマット必要なターゲットボリュームがありません。
+InitNWinHostWizardDialog.log.tooLargeFsSize = 可能な原因：ファイルシステムのサイズはFATに対して大きすぎます
+InitNWinHostWizardDialog.log.invalidSize = 無効なボリュームサイズ
+InitNWinHostWizardDialog.log.addPortal = iscsi Target サーバーをログインします 
+InitNWinHostWizardDialog.log.refreshTargets = ターゲットボリュームをリフレッシュします
+InitNWinHostWizardDialog.log.notFoundTDisk = ターゲットボリュームを見つかりません
+InitNWinHostWizardDialog.log.loginTarget = ターゲットボリュームをログインします。
+InitNWinHostWizardDialog.log.logoutTarget = ターゲットボリュームをログアウトします
+InitNWinHostWizardDialog.log.getIpInfo = ほかの情報を取得します
+InitNWinHostWizardDialog.log.getHostInfo = クライアント情報を取得します
+InitNWinHostWizardDialog.log.addHost = クライアントを追加します
+InitNWinHostWizardDialog.log.modHost = クライアントを変更します
+InitNWinHostWizardDialog.log.notNeedCopyOS = OSをコピーすることが必要ではありません。
+InitNWinHostWizardDialog.log.notNeedCopy = データをコピーすることが必要ではありません。
+InitNWinHostWizardDialog.log.modVolMap = MDB中のボリューム情報を変更します
+InitNWinHostWizardDialog.log.addVolMap = MDBへボリューム情報を追加します
+InitNWinHostWizardDialog.log.delVolMap = MDB中からボリューム情報を削除します
+InitNWinHostWizardDialog.log.saveIPConf = ネットワーク情報を保存します
+InitNWinHostWizardDialog.log.saveDhcpConf = DHCP設置
+InitNWinHostWizardDialog.log.savePartInfo = システムパーティション情報を保存します
+InitNWinHostWizardDialog.log.savefstab = ファイルシステムテーブル情報を保存します
+InitNWinHostWizardDialog.log.addServMap = MDBへサービス情報を追加します
+InitNWinHostWizardDialog.log.delServMap = MDB中からサービス情報を削除します
+InitNWinHostWizardDialog.log.notFormat = OS対応のボリュームをフォーマットしない、またはフォーマットが失敗しました
+InitNWinHostWizardDialog.log.loginOSDiskFailed = OS対応のボリュームをログインすることが失敗しました
+
+InitNWinHostWizardDialog.log.crtOSDiskFailed = OS対応のボリュームを作成することが失敗しました
+InitNWinHostWizardDialog.log.notFoundDriver = OS対応のボリュームのドライブレターを見つかりません 
+InitNWinHostWizardDialog.log.notFoundOSDriver = OSパーティションの情報を見つかりません
+InitNWinHostWizardDialog.log.notFoundWindir = OSのインストールディレクトリを見つかりません
+InitNWinHostWizardDialog.log.copyOSOK = OSをコピーします
+InitNWinHostWizardDialog.log.regOS = OSをiscsiから起動するために、レジストリを変更します。
+InitNWinHostWizardDialog.log.regOS1 = OSをローカルディスクから起動するために、レジストリを変更します。
+InitNWinHostWizardDialog.log.lunmap = ホストマッピング
+InitNWinHostWizardDialog.log.submitCopy = コピーコマンドを提出します
+InitNWinHostWizardDialog.log.setactive = アクティブパーティションを設置します
+InitNWinHostWizardDialog.log.unknowOSType = 未知のwindowsプラットフォームなので、OSコピーすることができません
+InitNWinHostWizardDialog.log.noWayToCopy = このプラットフォームに対するコピーをサポートしません
+InitNWinHostWizardDialog.log.copyingOS = OSのコピー中です
+InitNWinHostWizardDialog.log.needSetActive = このパーティションはアクティブパーティションではないので、手動にアクティブパーティションに変更してください。
+InitNWinHostWizardDialog.log.invalidOccupied = 取得したOS使用されたスペースは無効です
+InitNWinHostWizardDialog.log.invalidFree = 取得したOS対応のボリュームアイドルスペースは無効です
+InitNWinHostWizardDialog.log.tooSmallDest = OS対応のボリュームは小さすぎます
+InitNWinHostWizardDialog.log.delLunMap = ホストマッピングを削除します
+InitNWinHostWizardDialog.log.getLunMap = ホストマッピングを取得します
+InitNWinHostWizardDialog.log.notCopyOSBefRegister = まだOSをコピーしないので、起動配置を変更することができません
+InitNWinHostWizardDialog.log.noTgtNameSpace = Target名スペースが使われました。
+InitNWinHostWizardDialog.log.crtVg = ボリュームグループを作成します
+InitNWinHostWizardDialog.log.crtLV = ボリュームを作成します 
+InitNWinHostWizardDialog.log.isCrtLVOnTgt = ボリュームグループにはボリュームが存在しているかをチェックします
+InitNWinHostWizardDialog.log.isCrtVgOnTgt = ターゲットボリュームがボリュームグループを作成するかをチェックします
+InitNWinHostWizardDialog.log.addLVVolMap = MDBへボリューム情報を追加します
+InitNWinHostWizardDialog.log.addVgVolMap = MDBへボリュームグループ情報を追加します
+InitNWinHostWizardDialog.log.notFoundLV = このボリュームが存在しないので、フォーマットすることができません
+InitNWinHostWizardDialog.log.notFoundVG = このボリュームグループが存在しないので、その中のボリュームをフォーマットすることができません
+InitNWinHostWizardDialog.log.delVG = ボリュームグループを削除します
+InitNWinHostWizardDialog.log.notFoundLVMp = OSボリュームのロードポートを見つかりません
+InitNWinHostWizardDialog.log.getTotalError = コピーするつもりのファイル総数を取得できません
+InitNWinHostWizardDialog.log.umountOSMp = OSボリュームをアンマウントします
+InitNWinHostWizardDialog.log.setBootInfo = ネットワーク起動設置
+InitNWinHostWizardDialog.log.getTotal = コピーするファイル総数を取得します
+InitNWinHostWizardDialog.log.diffLVMType = LVMタイプが一致しません
+InitNWinHostWizardDialog.log.vgOffline = ボリュームグループがオフラインです
+InitNWinHostWizardDialog.log.vgOnline = ボリュームグループがオンラインです
+InitNWinHostWizardDialog.log.vgNotOnline = ボリュームグループはオンラインが失敗しました
+InitNWinHostWizardDialog.log.modBootConf = 起動配置を変更します
+InitNWinHostWizardDialog.log.saveNetworkCmd = ネットワークスクリプトを保存します
+InitNWinHostWizardDialog.log.saveKillAllCmd = killallスクリプトを保存します
+InitNWinHostWizardDialog.log.saveHaltCmd = haltスクリプトを保存します
+InitNWinHostWizardDialog.log.getOsLoaderType = OSのloaderタイプを取得します
+InitNWinHostWizardDialog.log.saveOsLoaderType = OSのloaderタイプを保存します
+InitNWinHostWizardDialog.log.unknownOsLoader = 未知のOSのloaderタイプ
+InitNWinHostWizardDialog.log.loadIscsiMod = iSCSI起動器ドライバをロードします
+InitNWinHostWizardDialog.log.genDelSchFileFailed = データのコピースケジューリングを無効にする配置ファイルの生成が失敗しました。ネットワークが起動するときに、手動にスケジューリングを無効に設定してください。
+InitNWinHostWizardDialog.log.verify = コピーした内容をベリファイします
+InitNWinHostWizardDialog.log.noneD2DClnt = D2Dクライアントを見つかりません。
+InitNWinHostWizardDialog.log.dupCmdFail = コピータスクが失敗しました。
+InitNWinHostWizardDialog.log.saveLVMInfo = LVM情報を保存します。
+InitNWinHostWizardDialog.log.restorenetfile = スクリプトをリストアします
+
+###################### SelectBootHostPane
+SelectBootHostPane.borderTitle.clt = クライアント
+SelectBootHostPane.label.clntIP = クライアントIP：
+SelectBootHostPane.label.port = ポート：
+SelectBootHostPane.button.select = 選択
+
+SelectBootHostPane.errMsg.sameHost= 同じクライアント。
+
+#######################SelectServicePane
+SelectServicePane.borderTitle.serv = サービス
+SelectServicePane.non-kernel = すべての非システムのサービス（初級ユーザーに推薦）
+SelectServicePane.select = 以下のようなユーザーサービスを指定します　 
+
+SelectServicePane.table.service.isSel = 選択？
+SelectServicePane.table.service.name = サービス名
+SelectServicePane.table.service.desc = 記述
+
+####################### OptionPaneForInitBootHost
+OptionPaneForInitBootHost.borderTitle.option = オプション
+OptionPaneForInitBootHost.check.autoDR = ディザスタが発生する時に、自動的に全システムのリストア（OSと応用システムを含む）を行います
+OptionPaneForInitBootHost.check.autoReboot = リストアした後はリブートします
+
+###################### SelectNetCardPane
+SelectNetCardPane.table.netcard.isSel = 起動？
+SelectNetCardPane.table.netcard.info = ネットワークカード
+SelectNetCardPane.table.netcard.mac = MACアドレス
+SelectNetCardPane.table.netcard.interface = ネットワークカード
+SelectNetCardPane.table.netcard.ip = IP
+SelectNetCardPane.table.netcard.subnet = サブネット
+SelectNetCardPane.table.netcard.dns = DNS
+SelectNetCardPane.table.netcard.gateway = ゲートウェイ
+
+###################### SelectProtectedSysVolPane
+SelectProtectedSysVolPane.table.vol.protected = 保護？
+SelectProtectedSysVolPane.table.vol.disk = ディスク
+SelectProtectedSysVolPane.table.vol.fs = ファイルシステム
+SelectProtectedSysVolPane.table.vol.property =プロパティ
+SelectProtectedSysVolPane.table.vol.action = 動作
+SelectProtectedSysVolPane.table.vol.name = ボリューム名
+SelectProtectedSysVolPane.table.vol.size = ボリュームサイズ[GB]
+SelectProtectedSysVolPane.table.vol.blksize = ブロックサイズ[GB]
+SelectProtectedSysVolPane.table.vol.pool = ストレージプール
+SelectProtectedSysVolPane.table.vol.volType = ボリュームタイプ
+SelectProtectedSysVolPane.table.vol.snapSpace = スナップショットスペース[%]
+SelectProtectedSysVolPane.table.vol.maxSnap = 最大のスナップショット#
+SelectProtectedSysVolPane.table.vol.formatted = フォーマット？
+SelectProtectedSysVolPane.table.vol.desc = ボリューム説明
+SelectProtectedSysVolPane.label.maxFreeSize = カレントUWSサーバーにはまだあります
+SelectProtectedSysVolPane.label.maxFreeSize1 = スペースにはボリュームを作成できます。
+SelectProtectedSysVolPane.checkBox.copyos = OSをコピーします
+SelectProtectedSysVolPane.radioBtn.copyos =1）OSをコピーして、且つレジストリを変更します
+SelectProtectedSysVolPane.radioBtn.copyos1 =1）OSをコピーして、且つ起動配置を変更します
+SelectProtectedSysVolPane.radioBtn.copyos2 = OSをコピーします
+SelectProtectedSysVolPane.radioBtn.modRegister =2）レジストリだけを変更します
+SelectProtectedSysVolPane.radioBtn.modConf =2）起動配置だけを変更します
+SelectProtectedSysVolPane.radioBtn.doNothing =1）と 2）もしません
+
+SelectProtectedSysVolPane.error.noneName = ボリューム名は空です
+SelectProtectedSysVolPane.error.sameName = 重複のボリューム名 
+SelectProtectedSysVolPane.error.invalidVal = ボリュームサイズは>0 且つ<=ストレージプールに対応するアイドル数でなければなりません。
+SelectProtectedSysVolPane.error.invalidSnapVal = スナップショット数は>=0の整数でなければならなくて、且つ超えません
+SelectProtectedSysVolPane.error.beyondVgSize = 作成するつもりのボリュームの総容量はこのストレージプールの最大使用可能値を超えます：
+ASelectProtectedSysVolPane.error.invalidVolDesc = ボリューム説明には半角英文字の一重・二重引用符は使えなくて、且つ長さは256を超えません。
+SelectProtectedSysVolPane.error.invalidSnapSpace = スナップショットスペース（百分比）は>0の整数でなければならなくて、且つ100を超えません
+SelectProtectedSysVolPane.error.reservedKeyWord = TGTまたはVGがシステムにリザーブされて、ほかの説明を使用してください。
+SelectProtectedSysVolPane.error.badLVMType = /boot ファイルシステムはLVMに作成することができません。
+SelectProtectedSysVolPane.error.hasMj = このボリュームにミラージョブがありますので、保護することが必要です。
+SelectProtectedSysVolPane.error.hasMj1 = 選択されたボリュームまたは置換されたボリュームには、ミラージョブがあります。
+SelectProtectedSysVolPane.error.invalidVal1 = 「ボリューム容量＜＝ディスクの有効な容量」の情況が存在して、よろしいですか？
+
+###################### TaskConfigPane
+TaskConfigPane.table.task.isFinish = 完成？
+TaskConfigPane.table.task.seq = シーケンス
+TaskConfigPane.table.task.task = タスク
+TaskConfigPane.table.task.status = 状態
+
+###################### RunningTaskPane
+RunningTaskPane.checkBox.dhcpBind = 第三者ツールを使ってDHCPを設置します
+RunningTaskPane.checkBox.dhcpBind1=（ボンドするつもりのMACアドレスは：
+RunningTaskPane.checkBox.tdiskBind = MACアドレスとターゲットボリュームのボンド
+
+RunningTaskPane.label.crtVol = ボリュームを作成します
+RunningTaskPane.label.formatVol = ボリュームをフォーマットします
+RunningTaskPane.label.getInfo = 情報を取得します
+RunningTaskPane.label.saveInfo = 情報を保存する
+RunningTaskPane.label.copyOs = OSをコピーします
+RunningTaskPane.label.lunmap = ホストマッピング
+
+###################### FailoverWizardDialog
+FailoverWizardDialog.title  = ディザスタリカバリーウィザート（ネットワーク起動）
+FailoverWizardDialog.title0 = リストア方式を選択します
+FailoverWizardDialog.title1 = ネットワーク起動ホストを選択します
+FailoverWizardDialog.title2 = サービスを選択します
+FailoverWizardDialog.title2.5 = 起動ネットワークカードを選択する
+FailoverWizardDialog.title2.6 = DHCPを設置する
+FailoverWizardDialog.title3 = スナップショットを選択します
+FailoverWizardDialog.title4 = iBootサーバーのIPとポート値を入力します
+FailoverWizardDialog.title5 = 完成の必要なタスクを選択します
+FailoverWizardDialog.title6 = タスクを実行します
+
+FailoverWizardDialog.tip0 = このウィンドウにはネットワーク起動ホストを選択してください。
+FailoverWizardDialog.tip1 = このウィンドウにはディザスタリカバリーの方式と関連オプションを選択してください。
+FailoverWizardDialog.tip2 = このウィンドウには注意必要なサービスを選択してください。すべての選択されたサービスはシステムのリストアの時、自動的に\\n停止されて、その後自動的に起動します。
+FailoverWizardDialog.tip3 = このウィンドウにはリストアするつもりのファイルシステムごとに一つのスナップショットを選択してください。
+FailoverWizardDialog.tip4 = このウィンドウには対応のタスクの「完成」チェックボックスが選択されて、このタスクは完成済みを示します；逆に、\nこのタスクは次のステップに完成します。
+FailoverWizardDialog.tip5 = このウィンドウにはすべての必須のタスクを実行します。
+FailoverWizardDialog.tip6 = このウィンドウにはiBootサーバーのIPとポート値を入力してください。
+
+FailoverWizardDialog.wizardText1 = \n * リストアバージョンを選択する \n * OSをリストアする \n * 応用システム（データベースシステムを含む）をリストアする
+
+FailoverWizardDialog.confirm1 = カレントホストが既にネットワークで起動されました、新選するOSディスクバージョンが現在と一致しますかどうかを確認してください。\n一致すれば、「確定」ボタンをクリックします。一致しなければ、「キャンセル」ボタンをクリックします。\nそうでなければ、直接に新選バージョンを使って、ホストに厳しい故障が起こします！
+FailoverWizardDialog.confirm2 = 選択されたスナップショットを確認してください。
+FailoverWizardDialog.confirm3 = その他のホストに使われますか？\n使われなくなった場合は「確定」を押してください。使われた場合は「キャンセル」を押してください。，\nそうでなければ、ホストに厳しい故障が起こします！
+
+FailoverWizardDialog.error.notFinishChgBIOS = ネットワークから起動するBIOSオプションを変更したかどうかを確認してください；変更したら、対応するチェックボックスを選択してください。
+FailoverWizardDialog.error.noNCInfo = ネットワーク起動ホストのネットワークカード情報の取得が失敗しました。ネットワークカードアドレスを入力してください。
+FailoverWizardDialog.error.drRecoverOK = ディザスタリカバリー（ネットワークから起動）がみごとに完成しました。
+FailoverWizardDialog.error.needReDrRecover =ディザスタリカバリー（ネットワークから起動）が完全に成功しませんでした。原因を探し出した後、再び実行してください。
+FailoverWizardDialog.error.notRecoverCDisk = OSをリストアしなければなりません。
+FailoverWizardDialog.error.allFinished = 実行必要なタスクがありません。
+FailoverWizardDialog.error.getServiceList = すべての非核心サービスの取得が失敗しました。マシンがリブート中かもしれませんが、しばらくお待ちください。
+FailoverWizardDialog.error.crtView = スナップショットにスナップショットコピーの作成が失敗しました
+FailoverWizardDialog.error.addLunmap = スナップショットコピーにホストマッピングの追加が失敗しました
+FailoverWizardDialog.error.addLunmapForOS = OSのスナップショットコピーにホストマッピングの追加が失敗しました
+FailoverWizardDialog.error.notFoundBootMac = ネットワーク配置情報の取得が失敗しました
+FailoverWizardDialog.error.notFoundIscsiHBABootIp = iSCSI HBA起動IPの取得が失敗しました。
+FailoverWizardDialog.log.modBootRec = ネットワーク起動情報の設置が失敗しました
+FailoverWizardDialog.log.mismatchedOSVer = 現在使用中のOSディスクバージョンが新選バージョンと一致しませんので、直接に新選バージョン\nを使って、ホストに厳しい故障が起こします。新選バージョンを使えば、再びホストをリブートしなければなりません。
+FailoverWizardDialog.log.addNBH = ネットワーク起動ホストを追加します
+FailoverWizardDialog.log.modNBH = ネットワーク起動ホストを修正します
+FailoverWizardDialog.log.getPartition = 元のパーティション情報の取得が失敗しました。\nすべての後続タスクをキャンセルします。
+FailoverWizardDialog.log.getPartition1 = 元のパーティション情報を取得します
+FailoverWizardDialog.log.getPersistentTarget = 永遠のターゲットボリュームを取得します
+FailoverWizardDialog.log.getSavePersistent = 保存された永遠のターゲットボリュームを取得します
+FailoverWizardDialog.log.savePersistentTgt = 現在使用中の永遠のターゲットボリュームを保存します
+FailoverWizardDialog.log.connectHostOK = クライアントの接続が成功しました
+FailoverWizardDialog.log.getStartupInfo = システム起動方式を取得しました
+FailoverWizardDialog.log.startupFromSAN = ネットワークからみごとに起動しました
+FailoverWizardDialog.log.notStartupFromSAN = システムはローカルディスクから起動します！ \nすべての後続タスクをキャンセルします。ネットワークでの起動に設置してください！
+FailoverWizardDialog.log.assignDriver = ドライブレターをアサインします
+FailoverWizardDialog.log.startService = サービスを開始します
+FailoverWizardDialog.log.stopService = サービスを停止します 
+FailoverWizardDialog.log.getBootNetFailed = 起動ネットワークカードアドレスの取得が失敗しました
+FailoverWizardDialog.log.bindOSTgtVolandMac = OSターゲットボリュームと起動ネットワークカードMACアドレスをボンドします
+FailoverWizardDialog.log.addPersistentTarget = 永遠のターゲットボリュームを追加します
+FailoverWizardDialog.log.delPersistentTarget = 永遠のパーシステントターゲットボリュームを削除する
+FailoverWizardDialog.log.notreboot = 強制リブートオプションを選択しません
+FailoverWizardDialog.log.submitRebootOK = みごとにリブートコマンドを提出しました
+FailoverWizardDialog.log.submitRebootFailed = リブートコマンドの提出が失敗しました
+FailoverWizardDialog.log.sendInfo = ネットワーク情報を転送します
+FailoverWizardDialog.log.loadInfo = ネットワーク情報をロードします
+FailoverWizardDialog.log.notNeedRun = このタスクは実行する必要がありません。 
+FailoverWizardDialog.log.umount = ローカルディスクのCディスクをアンマウントします 
+FailoverWizardDialog.log.cancelNetBoot = ユーザーは今回のネットワーク起動をキャンセルしました。
+FailoverWizardDialog.log.addSU = 起動バージョン対象を追加する
+FailoverWizardDialog.log.modSU = 起動バージョン対象を更新する
+FailoverWizardDialog.error.mustRstAllDisk = ネットワーク起動ホストは初期化の元ホストじゃない。全部保護されたボリュームを選択してください。
+FailoverWizardDialog.error.existActiveSession = このターゲットボリュームすでに使われました： 
+FailoverWizardDialog.error.modLastBootVer=ネットワーク起動バージョンの保存が失敗しました。
+FailoverWizardDialog.error.modLastSelBootVer=選択されたネットワーク起動バージョンの保存が失敗しました。
+FailoverWizardDialog.error.modLastBootVer=ネットワーク起動バージョンの保存が失敗しました。
+FailoverWizardDialog.error.modLastSelBootVer=選択したネットワーク起動バージョンの保存が失敗しました。
+
+######################## FailbackWizardDialog
+FailbackWizardDialog.title  = ディザスタリカバリーウィザート（オリジナルディスクをリストアした後ローカル起動）
+FailbackWizardDialog.title1 = サービスを選択します
+FailbackWizardDialog.title2 = ローカルディスクを選択します
+FailbackWizardDialog.title3 = 完成の必要なタスクを選択します
+FailbackWizardDialog.title4 = タスクを実行します
+
+FailbackWizardDialog.tip1 = このウィンドウには注意必要なサービスを選択してください。すべての選択されたサービスはシステムのリストアの時、自動的に\\n停止されて、その後自動的に起動します。
+FailbackWizardDialog.tip2 = このウィンドウには使用するつもりのローカルディスクを選択してください。
+FailbackWizardDialog.tip3 = このウィンドウには対応のタスクの「完成」チェックボックスが選択されて、このタスクは完成済みを示します；逆に、\nこのタスクは次のステップに完成します。
+FailbackWizardDialog.tip4 = このウィンドウにはすべての必須のタスクを実行します。
+
+FailbackWizardDialog.wizardText1 = \n * OSをリストアする \n * 応用システム（データベースシステムを含む）をリストアする
+
+FailbackWizardDialog.error.notFinishChgBIOS = ローカルから起動するBIOSオプションを変更したかどうかを確認してください；変更したら、対応するチェックボックスを選択してください。
+FailbackWizardDialog.error.drRecoverOK = ディザスタリカバリー（オリジナルディスクをリストアした後ローカル起動）がみごとに完成しました。
+FailbackWizardDialog.error.needReDrRecover = ディザスタリカバリー（オリジナルディスクをリストアした後ローカル起動）が完全に成功しませんでした。原因を探し出した後、再び実行してください。
+
+FailbackWizardDialog.log.startupFromLocalDisk = ローカルからみごとに起動しました
+FailbackWizardDialog.log.notStartupFromLocalDisk = システムはネットワークから起動します！ \nすべての後続タスクをキャンセルします。ローカルディスクでの起動に設置してください！
+
+FailbackWizardDialog.log.getCurPartition = 現在のパーティション情報を取得します
+FailbackWizardDialog.log.getSavedPartition = 保存されたパーティション情報を取得します
+FailbackWizardDialog.log.notFoundVolInfo = パーティション情報からローカルディスクのボリューム情報を取得できません。
+FailbackWizardDialog.log.mismatched = パーティション情報はこのディスクがiSCSIディスクで、ローカルディスクでないことを明確に示しています。
+FailbackWizardDialog.log.delPersistentTarget = 永遠のパーシステントターゲットボリュームをリムーブする
+FailbackWizardDialog.log.noneedDelPersistentTgt = リムーブ必要な永遠のパーシステントターゲットボリュームがありません
+FailbackWizardDialog.log.listPersistentTarget = 永遠のパーシステントターゲットボリュームを取得する
+
+########################SelectDRRecoverModePane
+SelectDRRecoverModePane.borderTitle.mode = リストアモード
+SelectDRRecoverModePane.borderTitle.option = リストアオプション
+SelectDRRecoverModePane.radioBtn.auto = 自動
+SelectDRRecoverModePane.radioBtn.manual = 手動
+SelectDRRecoverModePane.checkBox.autoReboot = 自動リブート
+
+######################## SelectSnapshotPane
+SelectSnapshotPane.table.snap.recovered = リストア？
+SelectSnapshotPane.table.snap.disk = ディスク
+SelectSnapshotPane.table.snap.fs = ファイルシステム
+SelectSnapshotPane.table.snap.ver = スナップショットバージョン
+SelectSnapshotPane.table.snap.bootver = 最後に成功したリストアバージョン
+
+######################## OptionPaneForEmboot
+OptionPaneForEmboot.borderTitle.emboot = iBoot
+OptionPaneForEmboot.label.ip = IP :
+OptionPaneForEmboot.label.port = ポート：
+OptionPaneForEmboot.checkBox.skip = このステップをスキップします
+
+######################## RunningTaskForDRPane
+RunningTaskForDRPane.checkBox.selSnap = OSスナップショットを選択します
+RunningTaskForDRPane.checkBox.chgBios = BIOSを変更します
+RunningTaskForDRPane.label.connect = クライアントを接続します 
+RunningTaskForDRPane.label.stopServ = サービスを停止します
+RunningTaskForDRPane.label.loadInfo = 情報をロードします
+RunningTaskForDRPane.label.chgLabel = ドライブレターを変更します
+RunningTaskForDRPane.label.startServ = サービスを開始します
+RunningTaskForDRPane.label.reboot = リブート
+RunningTaskForDRPane.label.removePersistentTgt = 永遠のパーシステントターゲットボリュームを削除します
+
+######################## SelectUnInitedHostDialog
+SelectUnInitedHostDialog.title = 選択
+SelectUnInitedHostDialog.label.clnt = クライアント：
+
+####################### SelectVolDialog
+SelectVolDialog.title = 選択
+SelectVolDialog.borderTitle.details = 詳しい情報
+SelectVolDialog.label.vol = アイドルボリューム：
+SelectVolDialog.label.name = 名前：
+SelectVolDialog.label.tid = ターゲットID：
+SelectVolDialog.label.cap = 容量：
+SelectVolDialog.label.raid = データセーフモード：
+
+####################### HostPropertyDialog
+HostPropertyDialog.title           = ホストのプロパティ
+HostPropertyDialog.label.targetVol = 保護するデバイス
+HostPropertyDialog.label.service   = 注意するサービス
+HostPropertyDialog.label.network   = ネットワーク情報
+HostPropertyDialog.label.partition = パーティション情報
+
+HostPropertyDialog.error.getNetworkInfo = ネットワーク情報の取得が失敗しました。
+HostPropertyDialog.error.getPartitionInfo = パーティション情報の取得が失敗しました。
+
+####################### RestoreOriginalDiskWizardDialog
+RestoreOriginalDiskWizardDialog.title  = オリジナルディスクリストアウィザード
+RestoreOriginalDiskWizardDialog.title1 = 新しいディスクパーティションの作成方式を選択します
+RestoreOriginalDiskWizardDialog.title2 = ディスクの間のリストア関係を指定しました
+RestoreOriginalDiskWizardDialog.title3 = ローカルディスクにリストアするターゲットボリュームを選択します
+RestoreOriginalDiskWizardDialog.title4 = 需要のタスクにスナップショットの前後スクリプトを入力します
+RestoreOriginalDiskWizardDialog.title5 = ローカルディスクをリストアします
+RestoreOriginalDiskWizardDialog.title6 = Swapデバイスを指定します
+
+RestoreOriginalDiskWizardDialog.tip1 = このウィンドウにはローカルディスクにリストアするターゲットボリュームおよびリストア先のドライブレターを選択してください。
+RestoreOriginalDiskWizardDialog.tip2 = このウィンドウには需要のタスクにスナップショットの前後スクリプトを入力してください。
+RestoreOriginalDiskWizardDialog.tip3 = このウィンドウには選択されるターゲットボリュームを指定されるローカルディスクの上にリストアします。
+RestoreOriginalDiskWizardDialog.tip4 = このウィンドウにはSwapデバイスを入力してください。注：Swapデバイスは必須ではありません。
+RestoreOriginalDiskWizardDialog.tip5 = このウィンドウには新しいディスクパーティションの作成方式を選択してください。注意 : 新しいディスクは必ず予めシステム中に取り付けなければなりません。
+RestoreOriginalDiskWizardDialog.tip6 = このウィンドウにはディスクの間のリストア関係を指定してください。「元ディスク」とはネットワークが起動する前にシステム中のローカルディスクです；\n「新ディスク」とはネットワークが起動した後に発見されたローカルディスクで、すなわちリストアするつもりのディスクです。注意： 「元ディスク」列中\nのユニットをダブルクリックすると元ディスクの詳しい情報を見えます；「新ディスク」列中のボタンをクリックすると新ディスクの詳しい情報を見えます。
+
+RestoreOriginalDiskWizardDialog.confirm1 = 自動的にパーティションリストアを選択しないディスクがまだ存在しています。続けてよろしいですか？
+RestoreOriginalDiskWizardDialog.confirm2 = 自動パーティションリストアが間もなくはじめます。続けてよろしいですか？
+RestoreOriginalDiskWizardDialog.confirm3 = システムは以前保存したディスクリストア関係を発見しました。この情報でオリジナルディスクのリストアを続けますか？
+
+RestoreOriginalDiskWizardDialog.manualText = システムツールを利用して新しいディスクをパーティション作成とフォーマットし、且つそれらのパーティションをロードします。
+RestoreOriginalDiskWizardDialog.manualText1 = システムツールを利用して新しいディスクをパーティション作成とフォーマットし、且つその中のファイルシステムをインストールします。
+RestoreOriginalDiskWizardDialog.autoText = 自動的に元ディスクのパーティションを新ディスクに完全にリストアして、同時に自動的に新しいパーティションをロードします。
+RestoreOriginalDiskWizardDialog.autoText1 = 自動的に元ディスクのパーティションを新ディスクに完全にリストアして、同時に自動的にその中のファイルシステムをインストールします。
+
+RestoreOriginalDiskWizardDialog.loadstatus.rstPart = パーティションの作成中です
+RestoreOriginalDiskWizardDialog.loadstatus.formatPart = フォーマット中です
+
+RestoreOriginalDiskWizardDialog.table.rst = リストア？
+RestoreOriginalDiskWizardDialog.table.olddisk = 元ディスク
+RestoreOriginalDiskWizardDialog.table.newdisk = 新ディスク
+
+RestoreOriginalDiskWizardDialog.wizardText1 = \n * 自動的にディスクパーティションを作成する \n * ローカルディスクをリストアする
+
+RestoreOriginalDiskWizardDialog.info.noMp = マウントポイントがありません
+RestoreOriginalDiskWizardDialog.info.swap = 交換パーティション
+RestoreOriginalDiskWizardDialog.info.part = パーティション
+RestoreOriginalDiskWizardDialog.btn.detail = 新しいディスクの情報を調べます
+RestoreOriginalDiskWizardDialog.borderTitle.swap = Swapデバイス
+RestoreOriginalDiskWizardDialog.label.swap = Swapデバイス： 
+RestoreOriginalDiskWizardDialog.pdiagTitle.rst = パーティションの作成・フォーマット中です
+RestoreOriginalDiskWizardDialog.pdiagTip.rst = パーティションの作成・フォーマット中です。しばらくお待ちください．．．
+RestoreOriginalDiskWizardDialog.pdiagTitle.prepare = 続行操作に準備をしています
+RestoreOriginalDiskWizardDialog.pdiagTip.prepare = 続行操作に準備をしています。しばらくお待ちください．．．
+RestoreOriginalDiskWizardDialog.misc  = 先にOSをコピーして、それから普通のデータをコピーします。
+RestoreOriginalDiskWizardDialog.misc1 = OSコピーのコマンドを失敗しましたので、普通のデータのみをコピーします。
+RestoreOriginalDiskWizardDialog.misc2 = 普通のデータのコピーのコマンドを失敗しましたので、OSのみをコピーします。
+
+RestoreOriginalDiskWizardDialog.pdiagTitle.mntoldfs = 保存したディスクレストア関係によって、ドライブ名を割当中です
+RestoreOriginalDiskWizardDialog.pdiagTip.mntoldfs = 保存したディスクレストア関係によって、ドライブ名を割当中です。しばらくお待ちください．．．
+RestoreOriginalDiskWizardDialog.pdiagTitle.mntoldfs1 = 保存したディスクレストア関係によって、ファイルシステムをインストール中です
+RestoreOriginalDiskWizardDialog.pdiagTip.mntoldfs1 = 保存したディスクレストア関係によって、ファイルシステムをインストール中です。しばらくお待ちください．．．
+
+RestoreOriginalDiskWizardDialog.log.getPartInfo = パーティション情報を取得します
+RestoreOriginalDiskWizardDialog.log.saveRstMapInfo = リストア関係情報を保存します
+
+RestoreOriginalDiskWizardDialog.error.restoreOK = オリジナルディスクのリストアがみごとに完成しました。
+RestoreOriginalDiskWizardDialog.error.todo = 次はディザスタリカバリーウィザート（オリジナルディスクをリストアした後ローカル起動）で「ネットワークディスク→ローカルディスク」の遷移を完成してください。 
+RestoreOriginalDiskWizardDialog.error.needReRestore = オリジナルディスクのリストアが完全に成功しませんでした。原因を探し出した後、再び実行してください。
+RestoreOriginalDiskWizardDialog.error.noRestoredDisk = リストア必要なターゲットボリュームがありません。
+RestoreOriginalDiskWizardDialog.error.noneOSDisk = OS所在のボリュームはリストアを選択しなければなりません。
+RestoreOriginalDiskWizardDialog.error.noneBootDisk = Bootパーディ所んはリストアを選択しなければなりません。
+RestoreOriginalDiskWizardDialog.error.badSwapDev = Swapデバイスパスは"/"ではじめなければなりません。 
+RestoreOriginalDiskWizardDialog.error.badRootMp = ルートファイルシステムは非/のディレクトリの下にインストールしなければなりません。
+RestoreOriginalDiskWizardDialog.error.badBootMp = Bootファイルシステムは非/のディレクトリの下にインストールしなければなりません。
+RestoreOriginalDiskWizardDialog.error.getOldDiskInfo = 元ディスクのパーティションテーブルを取得できません
+RestoreOriginalDiskWizardDialog.error.getNewDiskInfo = 現在の新ディスクのパーティションテーブルを取得できません
+RestoreOriginalDiskWizardDialog.error.noNewDisk = 対応する新ディスクをまだ指定しません
+RestoreOriginalDiskWizardDialog.error.noRstDisk = どのリストア関係も選択し確立しません
+RestoreOriginalDiskWizardDialog.error.noOSDisk = OSパーティション所在のディスクはリストアしなければなりません
+RestoreOriginalDiskWizardDialog.error.sameNewDisk = この新ディスクは既にリスト兄選択されたので、もう一つを選びください
+RestoreOriginalDiskWizardDialog.error.notMatch = 元ディスクと新ディスクの容量が一致しません
+RestoreOriginalDiskWizardDialog.error.genFileFailed = テンプレートファイルの生成が失敗しました。
+RestoreOriginalDiskWizardDialog.error.rstPart = パーティションのリストア
+RestoreOriginalDiskWizardDialog.error.rstPart1 = パーティションのリストア前の準備
+RestoreOriginalDiskWizardDialog.error.rstPart2 = パーティションをリストアするとき、「デバイス使用中」エラーが発生しました。 再起動してください、それからオリジナルディスクのリストアを再実行します。
+RestoreOriginalDiskWizardDialog.error.formatPart1 = フォーマット前の準備１
+RestoreOriginalDiskWizardDialog.error.formatPart2 = フォーマット前の準備２
+RestoreOriginalDiskWizardDialog.error.formatPart3 = パーティションをフォーマットするとき、「デバイス使用中」エラーが発生しました。 再起動してください、それからオリジナルディスクのリストアを再実行します。
+RestoreOriginalDiskWizardDialog.error.formatPart4 = ボリュームをフォーマットするとき、「デバイス使用中」エラーが発生しました。 再起動してください、それからオリジナルディスクのリストアを再実行します。
+RestoreOriginalDiskWizardDialog.error.formatPart = パーティションのフォーマット
+RestoreOriginalDiskWizardDialog.error.rstDisk = 新ディスクのリストア
+RestoreOriginalDiskWizardDialog.error.rstDisk1 = 新ディスクの自動リストアが失敗しました。手動でレストアしてください。
+RestoreOriginalDiskWizardDialog.error.mntDisk = 自動的に以下のドライブレターをロードするのは失敗しました
+RestoreOriginalDiskWizardDialog.error.missingD2DClnt = クライアント情報を見つかりません
+RestoreOriginalDiskWizardDialog.error.dupRstCmdFail = データレストアのコマンドを失敗しました
+RestoreOriginalDiskWizardDialog.error.missingBHost = クライアント情報を見つかりません
+
+RestoreOriginalDiskWizardDialog.log.badOccupied = 取得したiSCSIボリューム使用されたスペースは無効です。
+RestoreOriginalDiskWizardDialog.log.badFree = 取得したローカルディスクのアイドルスペースは無効です
+RestoreOriginalDiskWizardDialog.log.tooSmall = ローカルディスクは小さすぎます
+RestoreOriginalDiskWizardDialog.log.notFoundSrc = コピーするつもりのボリュームを見つかりません。
+RestoreOriginalDiskWizardDialog.log.notFoundDest = ローカルディスクを見つかりません。
+RestoreOriginalDiskWizardDialog.log.umount = ローカルディスクをアンマウントします
+RestoreOriginalDiskWizardDialog.log.getbootmode = ファスト起動方式の取得が失敗しました。
+
+####################### SelectRestoreDiskPane
+SelectRestoreDiskPane.table.select  = 選択？
+SelectRestoreDiskPane.table.volMap  = ディスク
+SelectRestoreDiskPane.table.seq     = リストア順序#
+SelectRestoreDiskPane.table.dest    = …にリストアします
+SelectRestoreDiskPane.table.label   = ボリュームタグ
+SelectRestoreDiskPane.table.restore = リストア？
+
+SelectRestoreDiskPane.checkBox.inputcmd = スナップショット前後スクリプトを指定します
+
+SelectRestoreDiskPane.error.invalidVal = ターゲットドライブレターは必ず[a-z]または[A-Z]で、たとえばD、d、E、eなどです
+SelectRestoreDiskPane.error.invalidVal1 = ターゲットパスは必ず「/」で始めます。
+SelectRestoreDiskPane.error.invalidVal2 = ボリュームタグは空にはできません。
+SelectRestoreDiskPane.error.rstOntoSelf = リストアターゲットは使用中のターゲットボリュームにはできません。
+SelectRestoreDiskPane.error.notLocalDisk = リストアターゲットはローカルディスクではありません。
+SelectRestoreDiskPane.error.getStartupInfo = リストアターゲットはローカルディスクだかどうかを判断することができません。リストアターゲットは存在しないかもしれません。 
+SelectRestoreDiskPane.error.sameLabel = 同じボリュームタグが存在しています。もう一つを選びください。
+SelectRestoreDiskPane.error.noneLocalDisk = リストアターゲットは存在しません。
+SelectRestoreDiskPane.error.getLatestFsList = 最新のファイルシステム情報の取得が失敗しましたので、リストアターゲットはローカルディスクかどうか分かりません。
+SelectRestoreDiskPane.error.missingDev = 対応するデバイスを見つかりません。
+SelectRestoreDiskPane.error.addlabel = デバイスにラベルを追加するのは失敗しました：
+SelectRestoreDiskPane.error.badLenOfLabel = ボリュームタグの長さは1000を超えません。
+
+######################## InputSnapshotCmdPane
+InputSnapshotCmdPane.table.seq = リストア順序
+InputSnapshotCmdPane.table.task = リストア内容
+InputSnapshotCmdPane.table.precmd  = スナップショット前のスクリプト
+InputSnapshotCmdPane.table.postcmd = スナップショット後のスクリプト
+
+####################### ReportConfDialog
+ReportConfDialog.borderTitle = UWSレポート 
+ReportConfDialog.borderTitle.frequence = レポート生成頻度
+ReportConfDialog.borderTitle.type = タイプ
+ReportConfDialog.borderTitle.startime = レポート生成時間
+ReportConfDialog.borderTitle.email = メールお知らせ
+ReportConfDialog.borderTitle.msgLimit = メッセージ数制限
+ReportConfDialog.borderTitle.view = レポートを読みます
+ReportConfDialog.borderTitle.daily = 毎日
+ReportConfDialog.borderTitle.weekly = 毎週
+ReportConfDialog.borderTitle.monthly = 毎月
+ReportConfDialog.radioBtn.dialy = 毎日
+ReportConfDialog.radioBtn.weekly = 毎週
+ReportConfDialog.radioBtn.monthly = 毎月
+ReportConfDialog.label.hour = 時：
+ReportConfDialog.label.min = 分：
+ReportConfDialog.label.dns = DNS :
+ReportConfDialog.label.gateway= ゲートウェイ：
+ReportConfDialog.label.accept = 宛先：
+ReportConfDialog.label.success = 成功：
+ReportConfDialog.label.failure = 失敗：
+ReportConfDialog.label.from = 開始時間：
+ReportConfDialog.label.to = 締切時間：
+ReportConfDialog.label.year = 年
+ReportConfDialog.label.month = 月
+ReportConfDialog.label.day = 日
+ReportConfDialog.label.reserved = アーカイブ保留： 
+ReportConfDialog.label.days = 日
+ReportConfDialog.checkbox.sendmail  = 開く
+ReportConfDialog.checkbox.sendmail1 = 失敗メッセージのある場合送信します
+ReportConfDialog.checkbox.startRpt = UWSレポートを開きます
+ReportConfDialog.btn.generate = レポートの生成
+ReportConfDialog.btn.sendemail = レポート送信テスト
+ReportConfDialog.btn.apply = 有効になります
+
+ReportConfDialog.error.badOkRecNum = 成功メッセージ数は必ず1～1000の間の数でなければなりません。
+ReportConfDialog.error.badFailedRecNum = 失敗メッセージ数は必ず1～1000の間の数でなければなりません。
+ReportConfDialog.error.badRemainDay = アーカイブ保留日数は必ず1～365の間の数でなければなりません。
+
+ReportConfDialog.error.saveRptConf = UWSレポート配置情報の変更が失敗しました。 
+ReportConfDialog.error.saveRptConfOK = UWSレポート配置情報の変更が成功しました。
+
+ReportConfDialog.error.generateTmpRpt = レポートの生成が失敗しました
+ReportConfDialog.error.mismatched = 開始時間と締切時間は互いに矛盾しています。
+ReportConfDialog.error.badBeginYear = 開始年は必ず2001～9999の間の数でなければなりません。
+ReportConfDialog.error.badEndYear = 締切年は必ず2001～9999の間の数でなければなりません。
+
+ReportConfDialog.errmsg.noDayofWeek = レポートの生成が一週間中の一日を選択しなければなりません。
+ReportConfDialog.errmsg.noDayofMonth= レポートの生成が一月間中の一日を選択しなければなりません。
+
+ReportConfDialog.error.badmail = 無効なメールアドレス
+ReportConfDialog.error.noneEMail = メールアドレスリストが空です。
+ReportConfDialog.error.reloadRptConf = UWSレポート配置情報のオーバロードが失敗しました。 
+ReportConfDialog.error.restartRpt = UWSレポート配置情報の変更が成功しましたが、変更を有効になるため、手動にサービスをリブートしなければなりません。
+ReportConfDialog.error.sendRptMailOk = レポート送信が成功しました。しばらくしてメールを受信してください。
+ReportConfDialog.error.sendRptMailFailed = レポート送信が失敗しました 
+
+################################# SetDhcpPane
+SetDhcpPane.manualText = 第三者に提供されるDHCPサービスを使って、UWSに提供されません。
+SetDhcpPane.radioBtn.auto = UWSに提供されるDHCPサービスを使います
+SetDhcpPane.radioBtn.manual = 第三者に提供されるDHCPサービスを使います
+SetDhcpPane.label.autoText = 本UWSサーバーのDHCPサービスを使います。
+SetDhcpPane.label.ibootSrv = ネットワーク起動サーバー：
+SetDhcpPane.label.mac = MAC :
+SetDhcpPane.label.ip = IP : 
+SetDhcpPane.label.subnet = サブネット：
+SetDhcpPane.label.dns = DNS(任意) :
+SetDhcpPane.label.gw = ディフォルトゲートウェイ(任意)：
+
+SetDhcpPane.error.noneIP = IPアドレスが空です。
+SetDhcpPane.error.badIP = 無効なIPアドレス
+SetDhcpPane.error.noneSubnet = 予め設置されたサブネットがありません。UWSサーバーに基本的なDHCP配置がないかもしれません。
+SetDhcpPane.error.badDNS = 無効なDNS ip
+SetDhcpPane.error.badDefgw = 無効なディフォルトゲートウェイip
+
+################################# SelectUnixRestoreDiskPane
+SelectUnixRestoreDiskPane.error.invalidVal = ターゲットドライブレターをリストアします
+
+################################# DhcpDialog
+DhcpDialog.title = DHCPを配置する
+DhcpDialog.label.option = オプション
+DhcpDialog.label.subnet = サブネット
+DhcpDialog.label.ibootserver = ネットワーク起動サーバー
+DhcpDialog.label.clnt = クライアント
+DhcpDialog.label.ip   = IP :
+DhcpDialog.label.port = ポート：
+DhcpDialog.label.dns  = DNS（任意）：
+DhcpDialog.label.defgw = ディフォルトゲートウェイ（任意）：
+DhcpDialog.label.defStartOS = ディフォルトブートOS：
+DhcpDialog.label.desc = ここのDHCPサービスはUWSによって提供します。DHCPサービスを提供するUWS\nサーバーのIPアドレス、ポートと管理者パスワードを書き込みください。
+DhcpDialog.label.acct   = ユーザ：
+DhcpDialog.label.passwd = Adminパスワード：
+DhcpDialog.label.status = 状態：
+DhcpDialog.label.start = 開始
+DhcpDialog.label.stop = 停止
+
+DhcpDialog.borderTitle.desc = 説明
+DhcpDialog.borderTitle.opt = グローバルオプション
+DhcpDialog.button.start = 開始
+DhcpDialog.button.stop = 停止
+DhcpDialog.button.refresh = DHCP情報をリフレッシュします
+DhcpDialog.button.restore = デフォルトコンフィグをレストアします
+
+DhcpDialog.initTitle = DHCP情報のロード中です
+DhcpDialog.initLabel = DHCP情報のロード中です。しばらくお待ちください．．．
+DhcpDialog.error.initfail = DHCP情報をリフレッシュする時に以下のエラーが発生しました：
+
+DhcpDialog.table.subnet.netip = サブネット
+DhcpDialog.table.subnet.mask = マスク
+DhcpDialog.table.subnet.start = 開始アドレス
+DhcpDialog.table.subnet.end = 終了アドレス
+DhcpDialog.table.subnet.reserved = 保留日数
+DhcpDialog.table.subnet.allowUnknown = 未知のホストにIPをアサインします
+
+DhcpDialog.table.ibootsrv.ip = IP
+DhcpDialog.table.ibootsrv.default = ディフォルト起動サーバー
+
+DhcpDialog.table.clnt.mac = ネットワークカードアドレス
+DhcpDialog.table.clnt.ip = ホストIP
+DhcpDialog.table.clnt.ibootSrv = ネットワーク起動サーバー
+DhcpDialog.table.clnt.subnet = サブネット
+
+DhcpDialog.confirm1 = この操作は
+DhcpDialog.confirm2 = のdhcpコンフィグを削除します。よろしいですか？
+
+DhcpDialog.errMsg.invalidDnsIP = 無効なDNSサーバーIP。
+DhcpDialog.errMsg.invalidDefgwIP = 無効なディフォルトゲートウェイIP。
+DhcpDialog.errMsg.chgOptOk = グローバルオプションの変更が成功しました。
+DhcpDialog.errMsg.noneIP    = DHCPサーバーIPアドレスが空です。
+DhcpDialog.errMsg.invalidIP = 無効なDHCPサーバーIPアドレス。
+DhcpDialog.errMsg.nonePort  = DHCPサーバーポート値が空です。
+DhcpDialog.errMsg.invalidPort = DHCPサーバーポート値が正整数であるべきです。
+DhcpDialog.errMsg.badPort   = DHCPサーバーポート値は1～65535の間（1と65535を含む）の値であるべきです。
+DhcpDialog.errMsg.nonePasswd = adminパスワードが空です。
+DhcpDialog.errMsg.noIf = ネットワークポートを見つかりません。
+DhcpDialog.errMsg.noneAcct = ユーザ名は空です。
+
+############################### EditSubnetDialog
+EditSubnetDialog.title.edit = サブネットを編集します
+EditSubnetDialog.title.edit1 = ネットワーク起動サーバーを編集します
+EditSubnetDialog.title.edit2 = クライアントを編集します
+EditSubnetDialog.label.mask = サブネットマスク：
+EditSubnetDialog.label.subnet = サブネットアドレス：
+EditSubnetDialog.label.start = 開始アドレス：
+EditSubnetDialog.label.end = 終了アドレス：
+EditSubnetDialog.label.lease = 保留時間[日]：
+EditSubnetDialog.label.ibootSrv = ネットワーク起動サーバーIPアドレス：
+EditSubnetDialog.label.ostid = OSボリュームのID:
+EditSubnetDialog.check.allow = 未知のホストにIPをアサインことを許します
+EditSubnetDialog.check.default = ディフォルトネットワーク起動サーバー
+EditSubnetDialog.label.mac = MACアドレス：
+EditSubnetDialog.label.ip = ホストIP：
+EditSubnetDialog.label.ibootsrv = ネットワーク起動サーバー：
+EditSubnetDialog.label.subnet = サブネット：
+EditSubnetDialog.label.dns = DNS(任意) :
+EditSubnetDialog.label.defgw = ディフォルトゲートウェイ(任意) :
+EditSubnetDialog.label.ostype = OSタイプ : 
+EditSubnetDialog.button.ipcalc = IP計算
+
+EditSubnetDialog.errMsg.noneMask = サブネットマスクが空です
+EditSubnetDialog.errMsg.invalidMask = 無効なサブネットマスク
+EditSubnetDialog.errMsg.invalidMask1 = 無効なサブネットマスク:255.255.255.255
+EditSubnetDialog.errMsg.invalidSubnet= 無効なサブネットアドレス
+EditSubnetDialog.errMsg.noneEnd = 終了アドレスが空です
+EditSubnetDialog.errMsg.invalidEnd = 無効な終了アドレス
+EditSubnetDialog.errMsg.noneStart = 開始アドレスが空です
+EditSubnetDialog.errMsg.invalidStart = 無効な開始アドレス
+EditSubnetDialog.errMsg.startGrtEnd = 開始アドレスは終了アドレスより大きい
+EditSubnetDialog.errMsg.noneLease = 保留時間が空です。
+EditSubnetDialog.errMsg.invalidLeaseTime = 保留時間は必ず整数で、且つ最小値は1，最大値は365でなければなりません。
+EditSubnetDialog.error.badStartEnd = 間違い開始または終了アドレス :
+EditSubnetDialog.errMsg.overlap = 互いに重複のサブネット設置が存在します
+EditSubnetDialog.errMsg.sameSubnet = 同じサブネットが存在します
+EditSubnetDialog.errMsg.addSubnetOk = サブネットの追加が成功しました！
+EditSubnetDialog.errMsg.addSubnetfail = サブネットの追加が失敗しました。DHCPサーバーのネットワークポートがサブネットアドレスと合うかどうかをチェックしてください！
+EditSubnetDialog.errMsg.delSubnetfail = サブネットの削除が失敗しました。DHCPサーバーのネットワークポートがサブネットアドレスと合うかどうかをチェックしてください！
+EditSubnetDialog.errMsg.modSubnetfail = サブネットの変更が失敗しました。DHCPサーバーのネットワークポートがサブネットアドレスと合うかどうかをチェックしてください！
+EditSubnetDialog.errMsg.noneIbootSrv = ネットワーク起動サーバーIPアドレスが空です
+EditSubnetDialog.errMsg.invalidIbootSrv = 無効なネットワーク起動サーバーIPアドレス
+EditSubnetDialog.errMsg.sameIbootSrv = 同じネットワーク起動サーバーが存在します
+EditSubnetDialog.errMsg.addIBootSrvFail = ネットワーク起動サーバーの追加が失敗しました
+EditSubnetDialog.errMsg.delIbootSrvfail = ネットワーク起動サーバーの削除が失敗しました
+EditSubnetDialog.errMsg.invalidMAC = 無効なMACアドレス
+EditSubnetDialog.errMsg.addClntFail = クライアントの追加が失敗しました
+EditSubnetDialog.errMsg.noneHostIP = IPアドレスが空です
+EditSubnetDialog.errMsg.invalidHostIP = 無効なIPアドレス
+EditSubnetDialog.errMsg.invalidDNS = 無効なDNS　IPアドレス
+EditSubnetDialog.errMsg.invalidDefGw = 無効なディフォルトゲートウェイIPアドレス。
+EditSubnetDialog.errMsg.sameMac = このMACアドレスにIPを既にアサインしました :
+EditSubnetDialog.errMsg.delClntfail = クライアントの削除が失敗しました
+EditSubnetDialog.errMsg.atLeastOneIbootSrv = ディフォルトネットワーク起動サーバーが必ずあります
+EditSubnetDialog.errMsg.lastDefIbootSrv = ディフォルトネットワーク起動サーバーをほかのマシンに設置した後、このサーバーを削除してください。
+EditSubnetDialog.errMsg.noneSubnetList = サブネットリストが空です
+EditSubnetDialog.errMsg.noneIbootSrvList = ネットワーク起動サーバーが空です
+EditSubnetDialog.errMsg.noneNextServer = ネットワーク起動サーバーが空です
+EditSubnetDialog.errMsg.invalidNextServer = ネットワーク起動サーバーが無効です
+EditSubnetDialog.errMsg.badOStid = OSボリュームのIDは正の整数でなければなりません
+
+############################## ActModePaneForRestWinOrgDisk
+ActModePaneForRestWinOrgDisk.borTitle = リストア方式
+ActModePaneForRestWinOrgDisk.radioBtn.auto = 自動的に元ディスクのパーティションを新ディスクにリストアします
+ActModePaneForRestWinOrgDisk.radioBtn.manual = 手動に新ディスクパーティションを作成します
+ActModePaneForRestWinOrgDisk.radioBtn.onlyRst = リストアパーティションがさくせいしましたが、直接にリストアします
+
+############################## DiskPropertyDialog
+DiskPropertyDialog.title = 元ディスク情報 
+DiskPropertyDialog.title1 = 新ディスク情報 
+DiskPropertyDialog.label.disk = ディスク# :
+DiskPropertyDialog.label.cap = 容量[MB] :
+DiskPropertyDialog.label.contain = ディスクに含まれるボリューム :
+
+############################## SelectBootVerDialog
+SelectBootVerDialog.title = リストアバージョンを選択します
+SelectBootVerDialog.checkBox.useSwap =ネットワーク起動するとき、スワップを使用します。
+SelectBootVerDialog.log.ok = リストアバージョンの選択が成功しましたが、ネットワーク起動を行えます。 
+SelectBootVerDialog.error.beyondMaxSnap = ボリュームごとに少なくとも一つのスナップショットのないスナップショットコピーがあることを確保しなければならなくて、さもなくば後処理の時に自動的に新しいスナップショットを作成することができません。
+SelectBootVerDialog.error.getDhcpInfo =　dhcp情報の取得が失敗しました
+
+############################## CreatePoolDialog
+CreatePoolDialog.title = ストレージプールを作成します
+CreatePoolDialog.label.name = 名称：
+CreatePoolDialog.label.size = サイズ[GB]
+CreatePoolDialog.label.pwd  = パスワード：
+CreatePoolDialog.label.pwd1 = 確認パスワード：
+
+######################### OptionDialog
+OptionDialog.dialog_title = 管理オプション
+OptionDialog.label.availSWU = サーバー：
+OptionDialog.label.lang = 言語：
+OptionDialog.label.loglevel = ログレベル
+OptionDialog.label.loglocation = ログファイル
+OptionDialog.label.add = UWS MTPPを追加します
+OptionDialog.tabTitle.general = 普通
+OptionDialog.tabTitle.swu = UWS MTPP
+OptionDialog.opt.name = オプション
+OptionDialog.opt.val  = 値
+OptionDialog.opt.serverip = UWS MTPPサーバーIP
+OptionDialog.opt.port   = UWS MTPPサーバーポート
+OptionDialog.opt.txIP   = UWS MTPPデータ転送IP
+OptionDialog.opt.user   = ログインユーザー
+OptionDialog.opt.passwd = ログインパスワード
+OptionDialog.opt.lang   = 言語
+OptionDialog.opt.pp_ip    = Linux後処理機IP
+OptionDialog.opt.pp_port  =Linux後処理機ポート
+OptionDialog.opt.loglevel = ログレベル
+OptionDialog.opt.vm_ip    = WindowsバーチャルマシンIP
+OptionDialog.opt.loglocation = ログファイル
+OptionDialog.error.sameIP = 同じIPのUWS MTPPが既に存在します。
+OptionDialog.error.usedIP = このUWS MTPPをアクセス中ですので、削除することができません。
+OptionDialog.error.noneAdminIP = サーバーIPIPが空です。
+OptionDialog.error.noneTxIP = データ転送IPが空です。
+OptionDialog.error.badAdminIP = 無効なサーバーIP。
+OptionDialog.error.badTxIP = 無効なデータ転送IP。
+
+#####################  AddSWUSrvDialog
+AddSWUSrvDialog.dialogTitle.addHost  = ミラーサーバーを追加する
+AddSWUSrvDialog.dialogTitle.editHost = ミラーサーバーを更新する
+
+AddSWUSrvDialog.label.ip       = IP：
+AddSWUSrvDialog.label.port     = ポート：
+
+AddSWUSrvDialog.errMsg.noneName  = ホスト名が空です。
+AddSWUSrvDialog.errMsg.noneIP    = IPアドレスが空です。
+AddSWUSrvDialog.errMsg.invalidIP = 無効なIPアドレス。
+AddSWUSrvDialog.errMsg.nonePort  = ポート値が空です。
+AddSWUSrvDialog.errMsg.invalidPort = ポート値が正整数であるべきです。
+AddSWUSrvDialog.errMsg.badPort   = ポート値は1～65535の間（1と65535を含む）の値であるべきです。
+AddSWUSrvDialog.errMsg.sameHost  = 重複のホスト名またはIP。
+
+##################### EditMirrorJobDialog
+EditMirrorJobDialog.dialogTitle.addMj = ミラージョブを追加する
+EditMirrorJobDialog.dialogTitle.modMj = ミラージョブを更新する
+EditMirrorJobDialog.label.name = 名前：
+EditMirrorJobDialog.label.desc = 記述： 
+EditMirrorJobDialog.label.swu  = UWSサーバー：
+EditMirrorJobDialog.label.pool =ストレージプール：
+EditMirrorJobDialog.borderTitle.general = 普通
+EditMirrorJobDialog.borderTitle.option  = 転送オプション
+EditMirrorJobDialog.borderTitle.swu     = ミラーサーバー
+
+EditMirrorJobDialog.checkbox.continue = リジューム
+EditMirrorJobDialog.checkbox.des = 暗号化
+EditMirrorJobDialog.checkbox.compress = 圧縮
+EditMirrorJobDialog.checkbox.copybranch = スナップショットブランチを転送する
+EditMirrorJobDialog.checkbox.continue1 = アン　レジューム
+EditMirrorJobDialog.checkbox.des1 = 非暗号化
+EditMirrorJobDialog.checkbox.compress1 = 非圧縮
+EditMirrorJobDialog.checkbox.copybranch1 = スナップショットブランチを転送しない
+EditMirrorJobDialog.checkbox.delview = ビューを自動削除します
+EditMirrorJobDialog.checkbox.delview1 = ビューを自動削除しない
+
+EditMirrorJobDialog.error.noneName  = 名前は空です。
+EditMirrorJobDialog.error.tooLongName = 名前の長さは256を超えません。
+EditMirrorJobDialog.error.tooLongDesc = 記述の長さは256を超えません。
+EditMirrorJobDialog.error.noneSWUSrvNode = 利用可能なミラーサーバーがありません。
+EditMirrorJobDialog.error.nonePool = ミラーサーバーの利用可能なストレージプールがありませんでした。
+EditMirrorJobDialog.error.insufficientPool = ストレージプールスペースがありませんでした。 
+EditMirrorJobDialog.error.badPoolPasswd = パスワードの入力に誤りがあります。
+
+####################### MonitorMJDialog
+MonitorMJDialog.dialog_title = モニターミラージョブ
+MonitorMJDialog.label.id = ミラー中のスナップショットID
+MonitorMJDialog.label.process = プロセス：
+MonitorMJDialog.borderTitle.status = 状態
+MonitorMJDialog.borderTitle.msg = エラーメッセージ
+
+####################### SelectHostForNetBootPane
+SelectHostForNetBootPane.radioBtn.known = ホストリスト
+SelectHostForNetBootPane.radioBtn.unknown = MACアドレス
+SelectHostForNetBootPane.label.host = ホスト：
+SelectHostForNetBootPane.label.mac = MACアドレス：
+SelectHostForNetBootPane.error.noSelHost = 選択しないホスト。
+
+###################### EditProfileDialog
+EditProfileDialog.diagTitle  = コピー策略を追加する
+EditProfileDialog.diagTitle1 = コピー策略を更新する
+
+EditProfileDialog.borderTitle.switch    = 常規のオプション
+EditProfileDialog.borderTitle.lastbak   = ラストコピー時間
+EditProfileDialog.borderTitle.incFilter = INCLUSIVE-フィルタ
+EditProfileDialog.borderTitle.excFilter = EXCLUSIVE-フィルタ
+EditProfileDialog.borderTitle.schList   = スケジューリングリスト
+EditProfileDialog.borderTitle.snapOnClnt= クライアントのスナップショット 
+
+EditProfileDialog.radioBtn.notDoSnap = スナップショットをしません
+EditProfileDialog.radioBtn.doSnap = スナップショットをします
+
+EditProfileDialog.label.cleanRedundant1 = 冗長データのクリア頻度:
+EditProfileDialog.label.cleanRedundant2 = 回のデータコピー
+EditProfileDialog.label.bakLevel = コピーレベル：
+EditProfileDialog.label.preCmd   = コピー前のスクリプト：
+EditProfileDialog.label.postCmd  = コピー後のスクリプト：
+EditProfileDialog.label.snapPrexCmd = スナップショット前のスクリプト：
+EditProfileDialog.label.snapPostCmd = スナップショット後のスクリプト：
+EditProfileDialog.label.incTip = 次のフィルタと一致するファイルをコピーします： 
+EditProfileDialog.label.incEg = 例えば：　INCLUSIVE-フィルタは：*.txt 、1.txtと2.txtはコピーされます。  
+EditProfileDialog.label.excTip = 次のフィルタと一致するファイルを排斥します： 
+EditProfileDialog.label.excEg = 例えば：　EXCLUSIVE-フィルタは：*.txt 、1.txtと2.txtはコピーされません。 
+
+EditProfileDialog.button.addBakSrc = 追加
+EditProfileDialog.button.delBakSrc = 削除
+EditProfileDialog.checkBox.ignoreAllErr = 転送中のエラーが無視されます
+EditProfileDialog.checkBox.enable  = アクティブ？
+EditProfileDialog.checkBox.phyincbak = データベース方式によってコピーします
+EditProfileDialog.checkBox.inc_no_judge_time = いつでも増分コピーします
+EditProfileDialog.checkBox.mustSnapshotOK = スナップショットが有効な場合は、コピーします
+EditProfileDialog.checkBox.lvmsnap = LVM スナップショット（Linux適用）
+EditProfileDialog.checkBox.startup = すぐにコピーします
+EditProfileDialog.checkBox.startwithfull = コピーレベル「完全」でコピーします
+EditProfileDialog.checkBox.logoutTarget = 毎回コピーした後、ボリュームを自動オフラインします
+
+EditProfileDialog.tabTitle.advOpt   = 詳細
+EditProfileDialog.tabTitle.content  = 内容
+EditProfileDialog.tabTitle.filter   = フィルタ
+EditProfileDialog.tabTitle.sch 	    = スケジューリング
+EditProfileDialog.tabTitle.cpList   = コピー内容
+EditProfileDialog.tabTitle.excList  = 排斥内容
+
+EditProfileDialog.confirm1 = このバックアップ対象を削除するのとき、関連するバックアップデータを全部削除します。よろしいですか？
+EditProfileDialog.confirm2 = テンプレートファイルは上書き保存が成功しました： 
+
+EditProfileDialog.errMsg.invalidName    = 無効なテンプレート名。
+EditProfileDialog.error.crtTmp = /tmpの中でテンポラリファイル作成が失敗しました。
+EditProfileDialog.error.bakCmdFail = コピーコマンドが失敗しました。
+EditProfileDialog.error.pathIsNull = バックアップパスが空です。
+EditProfileDialog.errMsg.sameDevPath = デバイスパスが既に存在します。
+EditProfileDialog.errMsg.sameDevName = デバイス名が既に存在します。
+EditProfileDialog.error.tooLongBefCmd = バックアップ前のコマンドの長さは1000を超えません。
+EditProfileDialog.error.tooLongPostCmd = バックアップ後のコマンドの長さは1000を超えません。
+EditProfileDialog.error.tooLongSnapBefCmd = スナップショット前のコマンドの長さは1000を超えません。
+EditProfileDialog.error.tooLongSnapPostCmd = スナップショット後のコマンドの長さは1000を超えません。
+EditProfileDialog.error.tooLongIncFilter = INCLUSIVE-フィルタの長さは1000を超えません。
+EditProfileDialog.error.tooLongExcFilter = EXCLUSIVE-フィルタの長さは1000を超えません。
+EditProfileDialog.errMsg.tooLongBakContent = コピー内容の長さは1000を超えません。
+EditProfileDialog.errMsg.tooLongExcludeContent = 排斥内容の長さは1000を超えません。
+EditProfileDialog.error.noneSelBakObj = なにもバックアップ対象を選択しません。バックアップ対象を選択してください。
+EditProfileDialog.errMsg.notHasSeparator = フィルタには/と\\が使えません。
+EditProfileDialog.error.nobaksrc = バックアップ対象が空です。
+EditProfileDialog.errMsg.excludeWinDir = FIVStorEXの中でOSディレクトリーをコピーすることができません。
+EditProfileDialog.errMsg.excludeMsg = このディレクトリーを選択しないでください。
+EditProfileDialog.errMsg.excludeEtcDir = FIVStorEXの中で/etc/fstab、network、killallとhaltをコピーすることができません。以上のディレクトリーまたはファイルを選択しないでください。
+EditProfileDialog.error.getHostNameFailed = ホスト名の取得が失敗しました。
+EditProfileDialog.error.noSWULV = ボリュームを保護しないので、データをコピーすることができません。
+EditProfileDialog.error.lostBakObj = コピー対象はコピー策略になくなりました。
+EditProfileDialog.error.notselected = なにもコピー内容がありません。コピー内容を追加してください。
+EditProfileDialog.error.schfailed = コピー策略のスケジューリングが完成しません。
+EditProfileDialog.error.getSnapMp = LVMスナップショットのマウントポイントを取得できません。
+EditProfileDialog.error.noSWUVgAndTgt = UWSの中でこのボリューム対応するボリュームグループとPV情報が見つかりません。
+EditProfileDialog.error.noSWUVg = UWSの中でこのボリューム対応するボリュームグループ情報が見つかりません。
+EditProfileDialog.error.invalidDelRedundantData = 冗長データをクリアするの頻度は必ず整数で、且つ最小値は０，最大値は2147483648でなければなりません。
+EditProfileDialog.error.getBootMac = 起動ネットワークカードアドレスの取得が失敗しました。
+EditProfileDialog.error.getMp = ファイルシステムを見つかりません。
+EditProfileDialog.error.getFs = ファイルシステムタイプの取得が失敗しました。
+EditProfileDialog.error.tftp = tftpルートパスの取得が失敗しました。
+EditProfileDialog.error.coexist = windows2000について、Cドライブとその他のドライブを一緒にコピーすることができません。
+EditProfileDialog.error.coexist1 = windows2000について、OSとその他のディレクトリーを一緒にコピーすることができません。
+EditProfileDialog.error.hasSch = このコピー策略の中でスケジューリングが存在しますので、上書き保存ができません。
+EditProfileDialog.error.getIscsiCmdPath = iscsiコマンドのパスの取得が失敗しました
+
+################# SelectBakedFileDialog
+SelectBakedFileDialog.diagTitle = 内容を追加する
+SelectBakedFileDialog.diagTitle1 = 内容を更新する
+SelectBakedFileDialog.button.add = 追加
+SelectBakedFileDialog.button.remove = 削除
+SelectBakedFileDialog.button.done =　完了
+SelectBakedFileDialog.button.cancel = 取消
+SelectBakedFileDialog.button.stop   = 停止
+SelectBakedFileDialog.button.exclude = 排斥
+SelectBakedFileDialog.label.enterpath = パスを入力してください： 
+SelectBakedFileDialog.title.files      = ファイルリスト
+SelectBakedFileDialog.title.selections = 選択されたファイル
+
+SelectBakedFileDialog.error.invalidSeprator = ”\\”が無効な経路分離符です。
+SelectBakedFileDialog.error.badPath = 入力したパスが存在しない。
+SelectBakedFileDialog.error.sameFile  = このディレクトリーまたはファイルは既に選択されました。
+SelectBakedFileDialog.erorr.notSel = なにもディレクトリーまたはファイルは選択されていません。
+SelectBakedFileDialog.error.nullFile = ファイル名が空です。
+SelectBakedFileDialog.error.badFile = 無効なファイル。
+SelectBakedFileDialog.error.badsel  = ”..”は無効です。その他のディレクトリーまたはファイルを選択してください。
+SelectBakedFileDialog.error.alreadySeled = このディレクトリーは既に選択されたので、サブディレクトリーは選択される必要がありません。
+SelectBakedFileDialog.error.subdirexist = このディレクトリーのサブディレクトリーは既に選択されたので，選択される必要がありません。
+SelectBakedFileDialog.error.fcexist  = ディレクトリーとサブディレクトリーは一緒に選択されることができません。
+SelectBakedFileDialog.error.getfstat    = ファイル状態の取得ができません、または、ファイルが存在しない。
+SelectBakedFileDialog.error.notExist   = ディレクトリーまたはファイルが存在しない。
+SelectBakedFileDialog.error.UnknownErr = ファイル状態を取得するとき、未知のエラーが発生しました。
+SelectBakedFileDialog.error.badRootPath = 入力するパスの頭文字は必ず： 
+SelectBakedFileDialog.error.badInput = ..と.が無効です。
+SelectBakedFileDialog.error.specialFile  = /sys、/devと/procをバックアップする必要はありません。
+SelectBakedFileDialog.error.specialFile1 = コピーする必要はありません。
+SelectBakedFileDialog.error.specialFile2 = FIVStorEXの中でOSディレクトリーをコピーすることができません。
+SelectBakedFileDialog.error.specialFile3 = /etc/fstab、network、killallとhaltをバックアップすることができません。もしならば、ネットネットワークが起動できない可能性があります。
+SelectBakedFileDialog.errmsg.notselected = なにもコピー内容がありません。コピー内容を追加してください。
+SelectBakedFileDialog.errMsg.excludeEtcDir = /etc/fstab、network、killallとhaltをコピーすることができません。以上のディレクトリーまたはファイルを選択しないでください。
+
+#################### ExcludeBakcontentsDialog
+ExcludeBakcontentsDialog.diagTitle = 内容の排斥
+ExcludeBakcontentsDialog.errMsg.tooLongBakContent = コピー内容の長さは1000を超えません。
+ExcludeBakcontentsDialog.errmsg.notselected = なにもファイルを選択しません。ファイルを選択してください。
+ExcludeBakcontentsDialog.erorr.notSel = なにもファイルを選択しません。
+ExcludeBakcontentsDialog.error.badFile = 無効なファイル。
+ExcludeBakcontentsDialog.error.badsel = ”..”は無効です。その他のディレクトリーまたはファイルを選択してください。
+ExcludeBakcontentsDialog.error.subdirexist = このディレクトリーのサブディレクトリーを排斥されましたので、選択されることができません。
+ExcludeBakcontentsDialog.error.sameFile = このファイルを選択されました：
+ExcludeBakcontentsDialog.border.selFiles = 選択された内容
+ExcludeBakcontentsDialog.border.exclude = 排斥された内容
+ExcludeBakcontentsDialog.error.alreadySeled = このディレクトリーを排斥されましたので、サブディレクトリーを選択されることは必要がありません。
+
+#################### BackupHistoryDialog
+BackupHistoryDialog.title     = データコピーログ
+BackupHistoryDialog.title1    = ラストメッセージ
+BackupHistoryDialog.title.log = ログ内容
+BackupHistoryDialog.miss = [既に削除した可能性がある]
+
+BackupHistoryDialog.button.remove = クリア
+BackupHistoryDialog.button.close  = クローズ
+BackupHistoryDialog.button.back   = 前へ
+BackupHistoryDialog.button.next   = 次へ
+BackupHistoryDialog.button.remall = 全部クリア
+
+BackupHistoryDialog.tabTitle.general = 普通
+BackupHistoryDialog.tabTitle.summary = 統計
+BackupHistoryDialog.tabTitle.dialog  = 診断ログ
+
+BackupHistoryDialog.label.finalStatus = 最終状態：
+
+BackupHistoryDialog.confirm1 = 全部ログを削除します。よろしいですか？
+
+BackupHistoryDialog.error.nosel = なにも項目を選択しません。
+BackupHistoryDialog.error.getBkObj = バックアップセット情報が取得できません。
+BackupHistoryDialog.error.invalidBkset = 無効なバックアップセットID。
+BackupHistoryDialog.error.getErrLog = 診断ログの取得が失敗しました。
+
+BackupHistoryDialog.pdiagTitle.deltingTskLog = ログの削除中です
+BackupHistoryDialog.pdiagTip.deltingTskLog =  ログの削除中です。しばらくお待ちください…
+
+####################### InputNameDialog
+InputNameDialog.title = 策略ファイルをリネームする
+InputNameDialog.label.name = 新しいファイル名：
+
+InputNameDialog.error.noneName = ファイル名を入力してください。
+InputNameDialog.error.badName  = ファイル名には半角英文字の一重・二重引用符とスペースは使えません。
+InputNameDialog.error.nametoolong = ファイル名の長さは256を超えません。
+InputNameDialog.error.sameName = そのファイル名が既に存在しますので、その他のファイル名を入力してください。
+InputNameDialog.error.notChg = 入力したファイル名は現在のファイル名と同じです。
+
+####################### DuplicationStrategyPane
+DuplicationStrategyPane.table.isSel = すぐにスタート？
+DuplicationStrategyPane.table.prof  = 策略ファイル名
+DuplicationStrategyPane.table.sch   = スケジューリング＃
+DuplicationStrategyPane.table.contents = 内容概要
+
+DuplicationStrategyPane.error.nonSel = コピー策略を選択してください。
+DuplicationStrategyPane.error.lostBkobj = このコピー策略にはコピー内容が不足しています：
+DuplicationStrategyPane.error.lostOSProf = OSコピー策略が必要です。
+DuplicationStrategyPane.error.lostTarget = このコピー策略のコピーターゲットがありません：
+
+DuplicationStrategyPane.confirm1 = 一部コピー策略にはスケジューリングがありません。よろしいですか？
+DuplicationStrategyPane.confirm2 = 全部コピー策略がすぐにスタートしませんか？
+
+####################### IbootForLinuxWizardDialog
+IbootForLinuxWizardDialog.title  = ネットブートウィザード
+IbootForLinuxWizardDialog.title1 = ネットワーク起動ホストを選択する
+IbootForLinuxWizardDialog.title2 = 起動ネットワークカードを選択する
+IbootForLinuxWizardDialog.title3 = DHCPを設置する
+IbootForLinuxWizardDialog.title4 = スナップショットを選択する
+
+IbootForLinuxWizardDialog.wizardText1 = \n ＊　リストアバージョンを選択する \n ＊　起動ホストを選択する \n ＊　起動ネットワークカードを選択する
+
+IbootForLinuxWizardDialog.errMsg.getTftpPath = tftpのルートパスの取得が失敗しました。
+IbootForLinuxWizardDialog.errMsg.getPxeInfo  = PXE情報の取得が失敗しました
+IbootForLinuxWizardDialog.errMsg.crtPxeInfo  = 新しいPXE情報の生成が失敗しました
+
+######################## MountSnapOrViewDialog
+MountSnapOrViewDialog.title1 = マウントスナップショット
+MountSnapOrViewDialog.title2 = マウントビュー
+MountSnapOrViewDialog.tip1 = この操作は下記のホストの上にスナップショットのビューを生成して、新しいファイルシステム（あるいはドライブ名）が作成されます。
+MountSnapOrViewDialog.tip2 = この操作は下記のホストの上にスナップショットのビューをマウントして、新しいファイルシステム（あるいはドライブ名）が作成されます。
+MountSnapOrViewDialog.label.ip= ホストIP：
+MountSnapOrViewDialog.label.port= ホストポート：
+
+######################## UmountViewDialog
+UmountViewDialog.title = アンマウントビュー
+UmountViewDialog.tip = この操作は下記のホストの上にスナップショットのビューをアンマウントします。アンマウントの前に、別のアプリケーションに使われることを確認してください。
+UmountViewDialog.label.ip= ホストIP：
+UmountViewDialog.label.port= ホストポート：
+UmountViewDialog.check.delView= アンマウントのとき、このビューを削除します。
+
+######################## SelectNetBootModePane
+SelectNetBootModePane.radiobtn.bootmode1 = お勧めモード（Windows 2000以上）
+SelectNetBootModePane.radiobtn.bootmode2 = 置換モード（Windows 2003のみ）
+SelectNetBootModePane.radiobtn.bootmode3 = ISCSI HBA
+
+SelectNetBootModePane.borderTitle.mode = モード
+SelectNetBootModePane.label.bootip = ファスト起動IP：
+
